@@ -1,0 +1,276 @@
+# Tłumaczenia UI (Polski)
+#
+# Zawiera zlokalizowane ciągi znaków dla elementów interfejsu użytkownika
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Kontynuuj
+    new_game: Nowa Gra
+    load_game: Wczytaj Grę
+    preferences: Preferencje
+    credits: Autorzy
+    licenses: Licencje
+    exit: Wyjdź
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Wstecz
+    forward: Dalej
+    history: Historia
+    no_history: Brak poprzednich ekranów
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: Moje Biuro
+    team_management: Zarządzanie Drużyną
+    training: Trening
+    staff: Personel
+    medical: Medycyna
+    finances: Finanse
+    my_competitions: Moje Rozgrywki
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Panel
+    inbox: Skrzynka odbiorcza
+    calendar: Kalendarz
+    competitions: Rozgrywki
+    club_overview: Przegląd Klubu
+    squad_overview: Przegląd Kadry
+    squad_stats: Statystyki Kadry
+    selection_advice: Porady Składu
+    squad_dynamics: Dynamika Kadry
+    squad_hierarchy: Hierarchia Kadry
+    tactics_board: Tablica Taktyczna
+    schedule: Harmonogram
+    coaches: Trenerzy
+    teams: Drużyny
+    development: Rozwój
+    individual_training: Trening Indywidualny
+    staff_overview: Przegląd Personelu
+    staff_contracts: Kontrakty Personelu
+    staff_responsibilities: Obowiązki Personelu
+    injury_report: Raport Kontuzji
+    rehab_plans: Plany Rehabilitacji
+    budgets: Budżety
+    sponsorships: Sponsoring
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Odtwórz
+    pause: Pauza
+    speed: Szybkość
+    fast_forward: Przewiń
+    next_day: Następny Dzień
+    advance_tomorrow: Przejdź do 9:00 jutro
+    cycle_speed: Zmień prędkość gry (kliknij, aby zmienić)
+    processing: Przetwarzanie...
+    advancing: Przechodzenie do następnego dnia
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Zapisz Grę
+    load_game: Wczytaj Grę
+    quick_save: Szybki Zapis
+    save_as: Zapisz Jako
+    overwrite: Nadpisz
+    delete_save: Usuń Zapis
+    confirm_delete: Czy na pewno chcesz usunąć ten zapis?
+    no_saves: Nie znaleziono zapisanych gier
+    save_name: Nazwa Zapisu
+    save_date: Data Zapisu
+    last_played: Ostatnio Grane
+    club: Klub
+    manager: Menedżer
+    season: Sezon
+    game_date: Data gry
+    managers_heading: Menedżerowie ({count})
+    reading_save_file: Odczytywanie pliku zapisu...
+    select_save_to_see_details: Wybierz zapis, aby zobaczyć szczegóły
+    save_location: Lokalizacja zapisu
+    filename: Nazwa pliku
+    filename_placeholder: mój-zapis
+    description: Opis
+    description_placeholder: Opcjonalny opis zapisu...
+    notes: Notatki
+    notes_placeholder: Opcjonalne szczegółowe notatki (mogą być bardzo długie)...
+    notes_hint: Dodaj szczegółowe notatki do tego zapisu. To pole może zawierać dużo tekstu.
+    password: Hasło
+    password_placeholder: Opcjonalne hasło dla zapisów sieciowych
+    password_hint: Ustaw hasło, aby chronić ten zapis podczas wczytywania z lokalizacji sieciowych.
+    quick_save_naming_hint: 'Szybkie zapisy mają automatyczną nazwę (np.: quick-save-YYYY-MM-DD-HHMMSS.db)'
+    quick_save_description: Szybki zapis utworzony {date}
+    file_exists_title: Plik już istnieje
+    file_exists_message: Plik "{filename}.db" już istnieje. Zapis spowoduje jego nadpisanie.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Ładowanie...
+    error: Błąd
+    warning: Ostrzeżenie
+    success: Sukces
+    info: Informacja
+    search: Szukaj
+    search_messages: Szukaj wiadomości
+    filter: Filtruj
+    sort: Sortuj
+    refresh: Odśwież
+    export: Eksportuj
+    import: Importuj
+    settings: Ustawienia
+    stadium: Stadion
+    language: Język
+    help: Pomoc
+    about: O Programie
+    version: Wersja
+    name: Nazwa
+    club: Klub
+    league: Liga
+    country: Kraj
+    founded: Założono
+    reputation: Reputacja
+    player: Zawodnik
+    position: Pozycja
+    rating: Ocena
+    role: Rola
+    age: Wiek
+    type: Typ
+    status: Status
+    date: Data
+    time: Czas
+    actions: Akcje
+    details: Szczegóły
+    overview: Przegląd
+    summary: Podsumowanie
+    total: Razem
+    average: Średnia
+    minimum: Minimum
+    maximum: Maksimum
+    none: Brak
+    all: Wszystko
+    selected: Wybrano
+    clear: Wyczyść
+    copy: Kopiuj
+    paste: Wklej
+    undo: Cofnij
+    redo: Ponów
+    unknown: Nieznane
+    failed_to_load: Nie udało się wczytać
+    unknown_error: Nieznany błąd
+    vacant: Wakant
+    not_available: Brak danych
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Kontynuuj od ostatniego zapisu
+    new_game: Rozpocznij nową karierę
+    load_game: Wczytaj zapisaną grę
+    open_preferences: Otwórz preferencje
+    view_credits: Zobacz autorów gry
+    view_licenses: Zobacz licencje open source
+    exit_game: Wyjdź na pulpit
+    save_game: Zapisz obecną grę
+    exit_to_menu: Wróć do menu głównego
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: Nie można teraz otworzyć wybranego ekranu
+    blocking_attention: Masz {count} ważnych wiadomości, które wymagają Twojej uwagi.
+    advance_day_failed: Nie udało się przejść do następnego dnia. Skontaktuj się ze wsparciem na kanale Discord FC Tycoon.
+    load_success: Gra wczytana pomyślnie
+    save_success: Gra zapisana do {filename}.db
+    loaded_most_recent_save: 'Wczytano najnowszy zapis: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Otwórz folder licencji
+    third_party_notices: Informacje o podmiotach trzecich
+    fc_tycoon_license: Licencja FC Tycoon
+    load_failed: Nie udało się wczytać licencji
+    load_file_failed: Nie udało się wczytać pliku licencji
+    load_file_failed_inline: Nie udało się wczytać tego pliku licencji.
+    open_folder_failed: Nie udało się otworzyć folderu licencji
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: Nie udało się wczytać napisów końcowych
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Nie udało się wczytać gry
+    save_failed: Nie udało się zapisać gry
+    save_failed_with_error: 'Nie udało się zapisać gry: {error}'
+    exit_failed: Nie udało się zamknąć aplikacji
+    open_folder_dialog_failed: Nie udało się otworzyć okna wyboru folderu
+    locate_save_folder_failed: Nie udało się odnaleźć folderu zapisów
+    open_save_dialog_failed: Nie udało się otworzyć okna zapisu
+    load_most_recent_failed: Nie udało się wczytać najnowszego zapisu
+    ui_init_after_load_failed: Gra została wczytana, ale nie udało się zainicjalizować interfejsu
+    loaded_save_no_active_manager: Wczytany zapis nie ma aktywnego menedżera. Być może musisz rozpocząć nową grę lub naprawić ten zapis.
+    connection_lost: Utracono połączenie
+    unexpected_error: Wystąpił nieoczekiwany błąd
+    invalid_input: Nieprawidłowe dane wejściowe
+    permission_denied: Odmowa dostępu
+    file_not_found: Nie znaleziono pliku
+    database_error: Błąd bazy danych
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: Czy na pewno chcesz wyjść?
+    exit_title: Wyjście z gry
+    exit_unsaved: Masz niezapisane zmiany. Wyjść mimo to?
+    delete: Czy na pewno chcesz to usunąć?
+    reset: Czy na pewno chcesz przywrócić wartości domyślne?
+    overwrite: Zapis o tej nazwie już istnieje. Nadpisać?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: Anuluj
+    save: Zapisz
+    not_now: Nie teraz
+    close: Zamknij
+    continue: Kontynuuj
+    back: Wstecz
+    next: Dalej
+    yes: Tak
+    no: Nie
+    confirm: Potwierdź
+    delete: Usuń
+    edit: Edytuj
+    create: Utwórz
+    add: Dodaj
+    remove: Usuń
+    reset: Resetuj
+    apply: Zastosuj
+    browse: Przeglądaj...
+    exit: Wyjście

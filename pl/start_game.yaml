@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: Proszę czekać, przygotowujemy Twoje piłkarskie imperium
+  loading_titles:
+    building: Budowanie Twojego piłkarskiego świata...
+    crafting: Tworzenie Twojego piłkarskiego imperium...
+    preparing: Przygotowywanie Twojej menedżerskiej przygody...
+    assembling: Składanie Twojego piłkarskiego wszechświata...
+    constructing: Budowanie Twojej piłkarskiej dynastii...
+    establishing: Zakładanie Twojego piłkarskiego królestwa...
+  error_copy: Kopiuj błąd
+  error_discord: Pomoc na Discordzie
+  error_back: Powrót do menu głównego
+  error_support: Jeśli problem będzie się powtarzał, skontaktuj się ze wsparciem na naszym serwerze Discord.
+
+  errors:
+    no_database_selected: Nie wybrano bazy danych. Rozpocznij nową grę.

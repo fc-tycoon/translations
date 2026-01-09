@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: 축구 제국을 준비하는 동안 잠시만 기다려 주세요
+  loading_titles:
+    building: 축구 세계를 구축하는 중...
+    crafting: 축구 제국을 만드는 중...
+    preparing: 감독 여정을 준비하는 중...
+    assembling: 축구 세계를 조립하는 중...
+    constructing: 축구 왕조를 건설하는 중...
+    establishing: 축구 왕국을 세우는 중...
+  error_copy: 오류 복사
+  error_discord: Discord에서 도움 받기
+  error_back: 메인 메뉴로 돌아가기
+  error_support: 문제가 계속되면 Discord 서버에서 지원팀에 문의해 주세요.
+
+  errors:
+    no_database_selected: 데이터베이스가 선택되지 않았습니다. 새 게임을 시작하세요.

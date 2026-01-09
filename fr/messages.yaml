@@ -1,0 +1,12 @@
+# ══════════════════════════════════════════════════════════════════════
+# Messages / Modèles de Boîte de Réception
+# ══════════════════════════════════════════════════════════════════════
+
+messages:
+  templates:
+    WELCOME:
+      subject: Bienvenue à {club_name}
+      body: |
+        Bienvenue à {club_name}.
+
+        Votre aventure commence aujourd'hui.

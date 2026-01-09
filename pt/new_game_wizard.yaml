@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: Banco de dados
+  step_database_desc: Selecione o banco de dados e os mods
+  step_leagues_title: Ligas
+  step_leagues_desc: Escolha as ligas para ativar
+  step_club_title: Clube
+  step_club_desc: Escolha seu clube
+  step_settings_title: Configurações do jogo
+  step_settings_desc: Configure a partida
+  step_manager_title: Técnico
+  step_manager_desc: Crie seu perfil
+  step_skills_title: Habilidades
+  step_skills_desc: Distribua pontos de habilidade
+  step_review_title: Revisão
+  step_review_desc: Confirme e inicie o jogo
+
+  navigation:
+    next_to_step: 'Seguinte: {step}'
+
+  pages:
+    club_selection:
+      title: Escolha o seu clube
+      description: Selecione um clube existente, crie um novo ou comece como treinador sem clube
+      modes:
+        existing:
+          title: Clube existente
+          description: Assuma o comando de um clube estabelecido numa das ligas ativadas
+        create:
+          title: Criar clube
+          description: Comece do zero com um novo clube que substitui uma equipa existente
+        journeyman:
+          title: Treinador itinerante
+          description: Comece desempregado e procure a sua primeira oportunidade de treinador
+      filters:
+        search_placeholder: Procurar clubes...
+        all_countries: Todos os países
+        all_leagues: Todas as ligas
+      badges:
+        promoted: Promovido
+        relegated: Rebaixado
+      details:
+        first_team_squad: Equipa principal
+        no_first_team_players: Nenhum jogador atribuído à equipa principal
+        current_manager: Treinador atual
+        key_staff: Equipa técnica-chave
+        no_staff: Nenhum membro da equipa atribuído
+      empty:
+        select_club_details: Selecione um clube para ver detalhes
+      create:
+        sections:
+          club_identity: Identidade do clube
+          league_placement: Colocação na liga
+          starting_attributes: Atributos iniciais
+        fields:
+          club_name: Nome do clube
+          short_name: Nome curto
+          code: Código
+          reserve_team: Equipa reserva
+          club_colors: Cores do clube
+          color_background: Fundo
+          color_text: Texto
+          join_league: Entrar na liga
+          replace_team: Substituir equipa
+          national_rep: Rep. nacional
+          international_rep: Rep. internacional
+          elo_rating: Classificação ELO
+        placeholders:
+          club_name: 'ex.: FC Phoenix'
+          short_name: 'ex.: Phoenix'
+          code: PHX
+          reserve_team: 'ex.: FC Phoenix B'
+          select_league: Selecionar liga
+          select_team_to_replace: Selecionar equipa a substituir
+        hints:
+          code_abbreviation: Abreviação de 3 letras
+          replaced_team_relegated: A equipa substituída será despromovida para uma divisão inferior
+        replace_team_auto: '🎲 Auto (Reputação mais baixa)'
+      journeyman:
+        title: Comece a sua jornada
+        description: Vai começar o jogo sem clube. Veja ofertas, candidate-se ou deixe o jogo simular até surgir uma oportunidade.
+        features:
+          search_vacancies: Procurar vagas de treinador
+          apply_to_clubs: Candidatar-se a clubes que correspondam ao seu perfil
+          build_reputation: Construa a sua reputação desde o início
+          interview_offers: Aceitar ou recusar ofertas de entrevista
+
+  # Toasts / validação
+  messages:
+    applied_preset: "Preset \"{name}\" aplicado ({points} pontos)"
+    skills_reset: Habilidades redefinidas
+  warnings:
+    select_at_least_one_league: Selecione pelo menos uma liga
+    complete_required_fields: Preencha todos os campos obrigatórios
+    not_enough_points_remaining: Não há pontos suficientes restantes
+    allocate_all_skill_points: Distribua todos os pontos de habilidade
+    drop_mod_files_only: Solte apenas arquivos .mod
+    select_a_database: Selecione um banco de dados
+    no_leagues_selected_go_back: Nenhuma liga selecionada. Volte e selecione ligas.
+    complete_club_selection: Conclua a seleção do clube
+  errors:
+    load_seasons_failed: Falha ao carregar as temporadas disponíveis
+    open_file_dialog_failed: Falha ao abrir a caixa de seleção de arquivos
+    load_clubs_failed_with_error: "Falha ao carregar clubes: {error}"
+  mod_import:
+    select_mod_files_title: Selecionar arquivos de mod

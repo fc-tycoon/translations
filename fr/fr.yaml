@@ -1,0 +1,20 @@
+# French Language Meta
+meta:
+  lang: fr
+  dir: ltr
+  name: Français
+
+lang:
+  en: Anglais
+  de: Allemand
+  fr: Français
+  es: Espagnol
+  it: Italien
+  pt: Portugais
+  ru: Russe
+  zh: Chinois
+  ja: Japonais
+  ko: Coréen
+  ar: Arabe
+  nl: Néerlandais
+  pl: Polonais

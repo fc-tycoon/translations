@@ -1,0 +1,29 @@
+inbox:
+  title: Bandeja de Entrada
+  no_messages: Sin mensajes
+  empty_state: Sin mensajes
+  empty_selection: Selecciona un mensaje para leer
+  starred: Destacados
+  important: Importante
+  required: Requerido
+  requires_response: Requiere respuesta
+  star: Marcar con estrella
+  unstar: Quitar estrella
+  starred_label: Con estrella
+  star_label: Estrella
+  mark_read: Marcar como leído
+  mark_unread: Marcar como no leído
+  delete: Eliminar
+  archive: Archivar
+  from: De
+  sender:
+    system: Sistema
+  fallback_subject: Mensaje
+  subject: Asunto
+  date: Fecha
+  priority: Prioridad
+  priority_high: Alta Prioridad
+  priority_normal: Normal
+  priority_low: Baja Prioridad
+  blocking: Requiere Atención
+  blocking_count: "{count} mensaje(s) importante(s) requieren su atención"

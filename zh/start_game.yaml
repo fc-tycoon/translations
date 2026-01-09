@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: 请稍候，我们正在准备你的足球帝国
+  loading_titles:
+    building: 正在搭建你的足球世界...
+    crafting: 正在打造你的足球帝国...
+    preparing: 正在准备你的主教练之旅...
+    assembling: 正在组装你的足球宇宙...
+    constructing: 正在构建你的足球王朝...
+    establishing: 正在建立你的足球王国...
+  error_copy: 复制错误
+  error_discord: 在Discord获取帮助
+  error_back: 返回主菜单
+  error_support: 如果问题仍然存在，请在我们的Discord服务器联系支持。
+
+  errors:
+    no_database_selected: 未选择数据库。请开始新游戏。

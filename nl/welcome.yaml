@@ -1,0 +1,22 @@
+welcome:
+  title: Welkom bij {clubName}
+  continue: Doorgaan
+  skip_tour: Rondleiding Overslaan
+  club_snapshot: Cluboverzicht
+  leadership: Leiderschap
+  facilities: Faciliteiten
+  season_outlook: Seizoensvooruitzicht
+  key_people: Belangrijke Personen om te Ontmoeten
+  introductions: De directeur plant introducties tijdens uw eerste week
+  owner: Eigenaar
+  director: Technisch Directeur
+  head_coach: Hoofdcoach
+  stadium_capacity: Stadioncapaciteit
+  training: Training
+  youth: Jeugd
+  competition: Competitie
+  board_expectation: Bestuursverwachting
+  transfer_budget: Transferbudget
+
+  confirm_save_new_game: "Wil je je nieuwe spel opslaan?"
+  manager_fallback: Manager

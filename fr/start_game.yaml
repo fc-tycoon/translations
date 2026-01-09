@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: Veuillez patienter pendant que nous préparons votre empire footballistique
+  loading_titles:
+    building: Construction de votre monde de football...
+    crafting: Création de votre empire footballistique...
+    preparing: Préparation de votre carrière de manager...
+    assembling: Assemblage de votre univers footballistique...
+    constructing: Construction de votre dynastie footballistique...
+    establishing: Établissement de votre royaume footballistique...
+  error_copy: Copier l'erreur
+  error_discord: Obtenir de l'aide sur Discord
+  error_back: Retour au menu principal
+  error_support: Si le problème persiste, veuillez contacter le support sur notre serveur Discord.
+
+  errors:
+    no_database_selected: Aucune base de données sélectionnée. Veuillez commencer une nouvelle partie.

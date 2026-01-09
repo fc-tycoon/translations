@@ -1,0 +1,32 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Inbox/Messages
+# ══════════════════════════════════════════════════════════════════════
+inbox:
+  title: Inbox
+  empty_state: No messages
+  empty_selection: Select a message to read
+  starred: Starred
+  important: Important
+  required: Required
+  requires_response: Requires response
+  star: Star
+  unstar: Unstar
+  starred_label: Starred
+  star_label: Star
+  from: From
+  sender:
+    system: System
+  fallback_subject: Message
+  date: Date
+  subject: Subject
+  mark_read: Mark as Read
+  mark_unread: Mark as Unread
+  delete: Delete
+  archive: Archive
+  priority: Priority
+  priority_high: High Priority
+  priority_normal: Normal
+  priority_low: Low Priority
+  blocking: Requires Attention
+  blocking_count: "{count} important message(s) require your attention"

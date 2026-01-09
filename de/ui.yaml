@@ -1,0 +1,276 @@
+# UI-Übersetzungen (Deutsch)
+#
+# Enthält lokalisierte Zeichenketten für Benutzeroberflächenelemente
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Fortsetzen
+    new_game: Neues Spiel
+    load_game: Spiel laden
+    preferences: Einstellungen
+    credits: Mitwirkende
+    licenses: Lizenzen
+    exit: Beenden
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Zurück
+    forward: Vorwärts
+    history: Verlauf
+    no_history: Keine vorherigen Bildschirme
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: Mein Büro
+    team_management: Teamverwaltung
+    training: Training
+    staff: Personal
+    medical: Medizin
+    finances: Finanzen
+    my_competitions: Meine Wettbewerbe
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Dashboard
+    inbox: Posteingang
+    calendar: Kalender
+    competitions: Wettbewerbe
+    club_overview: Vereinsübersicht
+    squad_overview: Kaderübersicht
+    squad_stats: Kaderstatistiken
+    selection_advice: Aufstellungsberatung
+    squad_dynamics: Kaderdynamik
+    squad_hierarchy: Kaderhierarchie
+    tactics_board: Taktiktafel
+    schedule: Zeitplan
+    coaches: Trainer
+    teams: Teams
+    development: Entwicklung
+    individual_training: Einzeltraining
+    staff_overview: Personalübersicht
+    staff_contracts: Personalverträge
+    staff_responsibilities: Personalverantwortlichkeiten
+    injury_report: Verletzungsbericht
+    rehab_plans: Reha-Pläne
+    budgets: Budgets
+    sponsorships: Sponsoren
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Abspielen
+    pause: Pause
+    speed: Geschwindigkeit
+    fast_forward: Vorspulen
+    next_day: Nächster Tag
+    advance_tomorrow: Zum nächsten Morgen um 9:00 Uhr vorspulen
+    cycle_speed: Spielgeschwindigkeit ändern (klicken zum Wechseln)
+    processing: Verarbeitung...
+    advancing: Zum nächsten Tag vorspulen
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Spiel speichern
+    load_game: Spiel laden
+    quick_save: Schnellspeicherung
+    save_as: Speichern unter
+    overwrite: Überschreiben
+    delete_save: Spielstand löschen
+    confirm_delete: Sind Sie sicher, dass Sie diesen Spielstand löschen möchten?
+    no_saves: Keine gespeicherten Spiele gefunden
+    save_name: Spielstandname
+    save_date: Speicherdatum
+    last_played: Zuletzt gespielt
+    club: Verein
+    manager: Manager
+    season: Saison
+    game_date: Spieldatum
+    managers_heading: Manager ({count})
+    reading_save_file: Spielstand wird gelesen...
+    select_save_to_see_details: Wählen Sie einen Spielstand aus, um Details zu sehen
+    save_location: Speicherort
+    filename: Dateiname
+    filename_placeholder: mein-spielstand
+    description: Beschreibung
+    description_placeholder: Optionale Spielstandbeschreibung...
+    notes: Notizen
+    notes_placeholder: Optionale ausführliche Notizen (kann sehr lang sein)...
+    notes_hint: Fügen Sie detaillierte Notizen zu diesem Spielstand hinzu. Dieses Feld kann viel Text enthalten.
+    password: Passwort
+    password_placeholder: Optionales Passwort für Netzwerk-Spielstände
+    password_hint: Legen Sie ein Passwort fest, um diesen Spielstand beim Laden von Netzwerkpfaden zu schützen.
+    quick_save_naming_hint: 'Schnellspeicherungen werden automatisch benannt (z. B.: quick-save-YYYY-MM-DD-HHMMSS.db)'
+    quick_save_description: Schnellspeicherung erstellt am {date}
+    file_exists_title: Datei existiert bereits
+    file_exists_message: Die Datei "{filename}.db" existiert bereits. Beim Speichern wird sie überschrieben.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Laden...
+    error: Fehler
+    warning: Warnung
+    success: Erfolg
+    info: Information
+    search: Suchen
+    search_messages: Nachrichten suchen
+    filter: Filtern
+    sort: Sortieren
+    refresh: Aktualisieren
+    export: Exportieren
+    import: Importieren
+    settings: Einstellungen
+    stadium: Stadion
+    language: Sprache
+    help: Hilfe
+    about: Über
+    version: Version
+    name: Name
+    club: Verein
+    league: Liga
+    country: Land
+    founded: Gründung
+    reputation: Ruf
+    player: Spieler
+    position: Position
+    rating: Bewertung
+    role: Rolle
+    age: Alter
+    type: Typ
+    status: Status
+    date: Datum
+    time: Zeit
+    actions: Aktionen
+    details: Details
+    overview: Übersicht
+    summary: Zusammenfassung
+    total: Gesamt
+    average: Durchschnitt
+    minimum: Minimum
+    maximum: Maximum
+    none: Keine
+    all: Alle
+    selected: Ausgewählt
+    clear: Löschen
+    copy: Kopieren
+    paste: Einfügen
+    undo: Rückgängig
+    redo: Wiederholen
+    unknown: Unbekannt
+    failed_to_load: Laden fehlgeschlagen
+    unknown_error: Unbekannter Fehler
+    vacant: Unbesetzt
+    not_available: k. A.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Lizenzordner öffnen
+    third_party_notices: Hinweise zu Drittanbietern
+    fc_tycoon_license: FC Tycoon-Lizenz
+    load_failed: Lizenzen konnten nicht geladen werden
+    load_file_failed: Lizenzdatei konnte nicht geladen werden
+    load_file_failed_inline: Diese Lizenzdatei konnte nicht geladen werden.
+    open_folder_failed: Lizenzordner konnte nicht geöffnet werden
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: Credits konnten nicht geladen werden
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Vom letzten Spielstand fortsetzen
+    new_game: Neue Karriere starten
+    load_game: Gespeichertes Spiel laden
+    open_preferences: Einstellungen öffnen
+    view_credits: Mitwirkende anzeigen
+    view_licenses: Open-Source-Lizenzen anzeigen
+    exit_game: Zum Desktop beenden
+    save_game: Aktuelles Spiel speichern
+    exit_to_menu: Zum Hauptmenü beenden
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: Der ausgewählte Bildschirm kann derzeit nicht geöffnet werden
+    blocking_attention: Sie haben {count} wichtige Nachricht(en), die Ihre Aufmerksamkeit erfordern.
+    advance_day_failed: Es konnte nicht zum nächsten Tag vorgespult werden. Bitte wenden Sie sich an den Support im FC Tycoon Discord-Kanal.
+    load_success: Spiel erfolgreich geladen
+    save_success: Spiel in {filename}.db gespeichert
+    loaded_most_recent_save: 'Neuesten Spielstand geladen: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Spiel konnte nicht geladen werden
+    save_failed: Spiel konnte nicht gespeichert werden
+    save_failed_with_error: 'Spiel konnte nicht gespeichert werden: {error}'
+    exit_failed: Anwendung konnte nicht beendet werden
+    open_folder_dialog_failed: Ordnerauswahldialog konnte nicht geöffnet werden
+    locate_save_folder_failed: Speicherordner konnte nicht gefunden werden
+    open_save_dialog_failed: Speicher-Dialog konnte nicht geöffnet werden
+    load_most_recent_failed: Neuesten Spielstand konnte nicht geladen werden
+    ui_init_after_load_failed: Spiel geladen, aber die Benutzeroberfläche konnte nicht initialisiert werden
+    loaded_save_no_active_manager: Der geladene Spielstand hat keinen aktiven Manager. Möglicherweise müssen Sie ein neues Spiel starten oder diesen Spielstand reparieren.
+    connection_lost: Verbindung verloren
+    unexpected_error: Ein unerwarteter Fehler ist aufgetreten
+    invalid_input: Ungültige Eingabe
+    permission_denied: Zugriff verweigert
+    file_not_found: Datei nicht gefunden
+    database_error: Datenbankfehler
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: Sind Sie sicher, dass Sie beenden möchten?
+    exit_title: Spiel beenden
+    exit_unsaved: Sie haben ungespeicherte Änderungen. Trotzdem beenden?
+    delete: Sind Sie sicher, dass Sie dies löschen möchten?
+    reset: Sind Sie sicher, dass Sie auf Standard zurücksetzen möchten?
+    overwrite: Ein Spielstand mit diesem Namen existiert bereits. Überschreiben?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: Abbrechen
+    save: Speichern
+    not_now: Nicht jetzt
+    close: Schließen
+    continue: Weiter
+    back: Zurück
+    next: Weiter
+    yes: Ja
+    no: Nein
+    confirm: Bestätigen
+    delete: Löschen
+    edit: Bearbeiten
+    create: Erstellen
+    add: Hinzufügen
+    remove: Entfernen
+    reset: Zurücksetzen
+    apply: Anwenden
+    browse: Durchsuchen...
+    exit: Beenden

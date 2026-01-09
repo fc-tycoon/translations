@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: Aguarde enquanto preparamos seu império do futebol
+  loading_titles:
+    building: Construindo seu mundo do futebol...
+    crafting: Criando seu império do futebol...
+    preparing: Preparando sua jornada como técnico...
+    assembling: Montando seu universo do futebol...
+    constructing: Construindo sua dinastia do futebol...
+    establishing: Estabelecendo seu reino do futebol...
+  error_copy: Copiar erro
+  error_discord: Obter ajuda no Discord
+  error_back: Voltar ao menu principal
+  error_support: Se o problema persistir, entre em contato com o suporte no nosso servidor do Discord.
+
+  errors:
+    no_database_selected: Nenhum banco de dados selecionado. Inicie um novo jogo.

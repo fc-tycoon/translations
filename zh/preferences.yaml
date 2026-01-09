@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: 偏好设置
+  save: 保存偏好设置
+  reset: 重置为默认值
+  cancel: 取消
+
+  tabs:
+    saved_games: 存档
+    display: 显示
+    languages: 语言
+    gameplay: 游戏玩法
+    ui: UI
+    colors: 颜色
+    shortcuts: 快捷键
+
+  saved_games:
+    title: 存档设置
+    default_location: 默认保存位置
+    browse_btn: 浏览...
+    placeholder: /saved-games/
+    autosave_freq: 自动保存频率
+    autosave_freq_options:
+      disabled: 已禁用
+      every_7_days: 每 7 天
+      every_14_days: 每 14 天
+      every_30_days: 每 30 天
+    keep_autosaves: 保留自动存档
+    keep_autosaves_hint: 在删除最旧存档前要保留的自动存档数量
+    confirm_overwrite: 确认覆盖
+
+  display:
+    title: 显示设置
+    theme: 主题
+    theme_options:
+      dark: 深色（默认）
+      light: 浅色
+      auto: 自动（系统）
+    ui_scale: UI 缩放
+    show_tooltips: 显示工具提示
+    animations: 动画
+
+  languages:
+    title: 语言设置
+    game_language: 游戏语言
+    game_language_hint: 更改游戏内所有文本的语言（部分 UI 需要重启）
+    date_format: 日期格式
+    number_format: 数字格式
+    reload_translations: 重新加载翻译
+    reload_btn: 重新加载
+    reload_hint: 从磁盘重新加载所有翻译文件（对开发有用）
+
+  gameplay:
+    title: 游戏玩法设置
+    pause_on_events: 事件时暂停
+    pause_on_events_hint: 发生重要事件时暂停游戏
+    show_tutorials: 显示教程
+    confirm_actions: 确认操作
+    confirm_actions_options:
+      transfers: 转会报价
+      contracts: 合同报价
+      tactics: 战术变更
+    quick_continue: 快速继续
+    quick_continue_hint: 继续游戏时跳过确认
+
+  ui_tab:
+    title: UI 设置
+    pitch_map_footedness: 球场地图左右脚位置标记
+    pitch_map_footedness_preview: 预览
+    pitch_map_footedness_hint: 切换额外的左右标记（LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM）
+
+  colors:
+    title: 颜色
+    colors_group_title: 位置单位颜色
+    reset_colors_btn: 重置颜色
+    goalkeepers: 守门员
+    defenders: 后卫
+    midfielders: 中场
+    attackers: 前锋
+    reset_btn: 重置
+
+  shortcuts:
+    title: 键盘快捷键
+    column_action: 操作
+    column_shortcut: 快捷键
+    actions:
+      quick_save: 快速保存
+      continue_game: 继续游戏
+      open_dashboard: 打开仪表板
+      open_squad: 打开阵容
+      open_tactics: 打开战术
+      open_transfers: 打开转会
+
+  messages:
+    reset_dialog_title: 重置偏好设置
+    reset_dialog_message: 这将把所有偏好设置重置为默认值。继续吗？
+    reset_dialog_confirm: 重置
+    reset_dialog_cancel: 取消
+    reset_success: 偏好设置已重置为默认值
+    save_success: 偏好设置已保存
+    save_error: "保存偏好设置失败: {error}"
+    language_changed: "语言已更改为 {language}"
+    language_change_error: "更改语言失败: {error}"
+    reload_success: 翻译已重新加载
+    reload_error: "重新加载翻译失败: {error}"
+    folder_error: "无法打开文件夹选择对话框"

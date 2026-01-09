@@ -1,0 +1,22 @@
+welcome:
+  title: Willkommen bei {clubName}
+  continue: Weiter
+  skip_tour: Tour überspringen
+  club_snapshot: Vereinsübersicht
+  leadership: Führung
+  facilities: Einrichtungen
+  season_outlook: Saisonausblick
+  key_people: Wichtige Personen zum Treffen
+  introductions: Der Direktor wird in Ihrer ersten Woche Vorstellungen planen
+  owner: Eigentümer
+  director: Sportdirektor
+  head_coach: Cheftrainer
+  stadium_capacity: Stadionkapazität
+  training: Training
+  youth: Jugend
+  competition: Wettbewerb
+  board_expectation: Vorstandserwartung
+  transfer_budget: Transferbudget
+  message: "Ich freue mich, Sie bei {clubName} begrüßen zu dürfen. Ich werde Ihr Hauptansprechpartner sein, während wir uns den Verein, die Einrichtungen und die Erwartungen ansehen."
+  confirm_save_new_game: "Möchtest du dein neues Spiel speichern?"
+  manager_fallback: Manager

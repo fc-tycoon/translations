@@ -1,0 +1,29 @@
+inbox:
+  title: 收件箱
+  no_messages: 没有消息
+  empty_state: 没有消息
+  empty_selection: 选择一条消息阅读
+  starred: 已加星标
+  important: 重要
+  required: 必需
+  requires_response: 需要回复
+  star: 加星标
+  unstar: 取消星标
+  starred_label: 已加星标
+  star_label: 星标
+  mark_read: 标记为已读
+  mark_unread: 标记为未读
+  delete: 删除
+  archive: 归档
+  from: 发件人
+  sender:
+    system: 系统
+  fallback_subject: 消息
+  subject: 主题
+  date: 日期
+  priority: 优先级
+  priority_high: 高优先级
+  priority_normal: 普通
+  priority_low: 低优先级
+  blocking: 需要关注
+  blocking_count: "{count}条重要消息需要您的关注"

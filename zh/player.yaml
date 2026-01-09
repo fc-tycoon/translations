@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # 通用
+  preferred_foot: 惯用脚
+  other_foot: 另一只脚
+  left: 左
+  right: 右
+  unknown: 未知
+  na: 无
+
+  # 球员资料
+  profile:
+    tabs:
+      attributes: 属性
+      training: 训练
+      information: 信息
+      contract_info: 合同信息
+      transfer_status: 转会状态
+      medical_report: 医疗报告
+      history: 历史
+      statistics: 数据
+      talents: 天赋
+      positions_roles: 位置与角色
+
+    stats:
+      age: 年龄
+      height: 身高
+      club: 俱乐部
+      foot: 脚
+      team: 球队
+      wage: 薪资
+      value: 身价
+      talent: 天赋
+
+    cards:
+      attribute_overview: 属性概览
+      key_attributes: 关键属性
+      average_rating: 平均评分
+      overall: 总体
+      strengths: 优势
+      weaknesses: 劣势
+      current_focus: 当前重点
+      weekly_schedule: 每周计划
+      development_progress: 成长进度
+      personal_details: 个人信息
+      personality: 性格
+      contract_details: 合同细节
+      release_clauses: 条款
+      performance_bonuses: 绩效奖金
+      transfer_availability: 转会可行性
+      interested_clubs: 感兴趣的俱乐部
+      current_status: 当前状态
+      injury_history: 伤病历史
+      career_timeline: 生涯时间线
+      season_stats: 赛季数据
+      career_stats: 生涯数据
+      position_familiarity: 位置熟练度
+      best_roles: 最佳角色
+
+    hints:
+      positions_colored_by_familiarity: 位置会按熟练度评分着色。主位置会以紫色高亮显示。
+
+    messages:
+      training_focus_coming_soon: 训练重点选择即将推出
+      training_schedule_coming_soon: 训练计划展示即将推出
+      development_tracking_coming_soon: 成长追踪即将推出
+      contract_details_coming_soon: 合同细节即将推出
+      transfer_availability_coming_soon: 转会信息即将推出
+      interested_clubs_coming_soon: 感兴趣俱乐部列表即将推出
+      medical_status_coming_soon: 医疗信息即将推出
+      injury_history_coming_soon: 伤病历史细节即将推出
+      career_history_coming_soon: 俱乐部历史与生涯里程碑即将推出
+      season_stats_coming_soon: 出场、进球、助攻即将推出
+      career_stats_coming_soon: 生涯总计与纪录即将推出
+      no_role_ratings: 暂无角色评分
+      loading_player: 正在加载球员...
+
+  # 天赋
+  talents:
+    description: 天赋是训练倍率，会影响球员技能成长的速度。天赋越高 = 相关领域成长越快。
+
+  # 技能分类
+  skill_categories:
+    technical: 技术
+    aerial: 空中能力
+    shooting: 射门
+    passing: 传球
+    set_pieces: 定位球
+    defending: 防守
+    physical: 身体
+    mental: 心理
+    attacking_mentality: 进攻心态
+    defensive_mentality: 防守心态
+    goalkeeping: 守门
+
+  # 技能
+  skills:
+    # 技术
+    first_touch: 第一脚触球
+    ball_control: 控球
+    tight_control: 小范围控球
+    dribbling: 盘带
+    technique: 技术
+    chip_technique: 挑射技术
+    high_ball_control: 高空球控制
+    press_resistance: 抗压能力
+
+    # 空中能力
+    heading_accuracy: 头球精度
+    jumping_reach: 弹跳高度
+    aerial_duels: 空中对抗
+
+    # 射门
+    finishing: 终结能力
+    one_touch_finishing: 一脚终结
+    shot_power: 射门力量
+    long_shots: 远射
+    volleys: 凌空抽射
+    curve: 弧线
+
+    # 传球
+    short_passing: 短传
+    long_passing: 长传
+    lofted_passing: 挑传
+    through_ball_passing: 直塞
+    crossing: 传中
+    one_touch_passing: 一脚传球
+
+    # 定位球
+    free_kicks: 任意球
+    corner_kicks: 角球
+    penalties: 点球
+
+    # 防守
+    marking: 盯人
+    standing_tackles: 站立抢断
+    sliding_tackles: 滑铲
+    interceptions: 拦截
+    jockeying: 卡位
+    pressing_technique: 逼抢技巧
+    blocking: 封堵
+    defensive_screening: 防守掩护
+
+    # 身体
+    acceleration: 加速
+    sprint_speed: 冲刺速度
+    strength: 力量
+    stamina: 体能
+    physical_contact: 身体对抗
+    agility: 灵活性
+    balance: 平衡
+    ball_shielding: 护球
+
+    # 心理
+    vision: 视野
+    flair: 灵感
+    composure: 镇定
+    concentration: 专注
+    aggression: 侵略性
+    bravery: 勇敢
+    reactions: 反应
+    scanning: 观察
+    leadership: 领导力
+    determination: 决心
+
+    # 进攻心态
+    attacking_awareness: 意识
+    attacking_off_the_ball: 无球跑动
+    attacking_work_rate: 工作率
+    attacking_decisions: 决策
+    attacking_anticipation: 预判
+    attacking_teamwork: 团队合作
+
+    # 防守心态
+    defensive_awareness: 意识
+    defensive_positioning: 站位
+    defensive_work_rate: 工作率
+    defensive_decisions: 决策
+    defensive_anticipation: 预判
+    defensive_teamwork: 团队合作
+
+    # 守门
+    gk_positioning: 站位
+    gk_handling: 手型处理
+    gk_shot_stopping: 扑救
+    gk_decisions: 决策
+    gk_awareness: 意识
+    gk_composure: 镇定
+    gk_reflexes: 反射
+    gk_diving: 扑救动作
+    gk_one_on_one: 一对一
+    gk_kicking: 开球
+    gk_catching: 接球
+    gk_aerial_ability: 高空球能力
+    gk_command_of_area: 指挥禁区
+    gk_communication: 沟通
+    gk_throwing: 手抛球
+    gk_sweeper_actions: 清道夫动作

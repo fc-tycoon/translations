@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # Algemeen
+  preferred_foot: Voorkeursvoet
+  other_foot: Andere voet
+  left: Links
+  right: Rechts
+  unknown: Onbekend
+  na: n.v.t.
+
+  # Spelersprofiel
+  profile:
+    tabs:
+      attributes: Attributen
+      training: Training
+      information: Informatie
+      contract_info: Contractinfo
+      transfer_status: Transferstatus
+      medical_report: Medisch rapport
+      history: Historie
+      statistics: Statistieken
+      talents: Talenten
+      positions_roles: Posities en rollen
+
+    stats:
+      age: Leeftijd
+      height: Lengte
+      club: Club
+      foot: Voet
+      team: Team
+      wage: Loon
+      value: Waarde
+      talent: Talent
+
+    cards:
+      attribute_overview: Overzicht attributen
+      key_attributes: Belangrijke attributen
+      average_rating: Gemiddelde beoordeling
+      overall: Algemeen
+      strengths: Sterktes
+      weaknesses: Zwaktes
+      current_focus: Huidige focus
+      weekly_schedule: Weekschema
+      development_progress: Ontwikkeling
+      personal_details: Persoonlijke gegevens
+      personality: Persoonlijkheid
+      contract_details: Contractdetails
+      release_clauses: Afkoopclausules
+      performance_bonuses: Prestatiebonussen
+      transfer_availability: Transferbeschikbaarheid
+      interested_clubs: Geïnteresseerde clubs
+      current_status: Huidige status
+      injury_history: Blessuregeschiedenis
+      career_timeline: Carrièretijdlijn
+      season_stats: Seizoensstatistieken
+      career_stats: Carrièrestatistieken
+      position_familiarity: Positiebekendheid
+      best_roles: Beste rollen
+
+    hints:
+      positions_colored_by_familiarity: Posities zijn ingekleurd op basis van bekendheid. De primaire positie is paars gemarkeerd.
+
+    messages:
+      training_focus_coming_soon: Trainingsfocusselectie komt binnenkort
+      training_schedule_coming_soon: Weergave van trainingsschema komt binnenkort
+      development_tracking_coming_soon: Ontwikkelingstracking komt binnenkort
+      contract_details_coming_soon: Contractdetails komen binnenkort
+      transfer_availability_coming_soon: Transferinformatie komt binnenkort
+      interested_clubs_coming_soon: Lijst met geïnteresseerde clubs komt binnenkort
+      medical_status_coming_soon: Medische informatie komt binnenkort
+      injury_history_coming_soon: Blessurehistorie komt binnenkort
+      career_history_coming_soon: Clubhistorie en carrière-mijlpalen komen binnenkort
+      season_stats_coming_soon: Wedstrijden, goals en assists komen binnenkort
+      career_stats_coming_soon: Carrière-totalen en records komen binnenkort
+      no_role_ratings: Geen rolbeoordelingen beschikbaar
+      loading_player: Speler laden...
+
+  # Talenten
+  talents:
+    description: Talenten zijn trainingsvermenigvuldigers die bepalen hoe snel spelers vaardigheden ontwikkelen. Hoger talent = snellere groei in gerelateerde gebieden.
+
+  # Vaardigheidscategorieën
+  skill_categories:
+    technical: Techniek
+    aerial: Luchtspel
+    shooting: Afwerken
+    passing: Passing
+    set_pieces: Spelhervattingen
+    defending: Verdedigen
+    physical: Fysiek
+    mental: Mentaal
+    attacking_mentality: Aanvallende mentaliteit
+    defensive_mentality: Verdedigende mentaliteit
+    goalkeeping: Keepen
+
+  # Vaardigheden
+  skills:
+    # Techniek
+    first_touch: Eerste aanname
+    ball_control: Balcontrole
+    tight_control: Nauwe balcontrole
+    dribbling: Dribbelen
+    technique: Techniek
+    chip_technique: Lobtechniek
+    high_ball_control: Hoge balcontrole
+    press_resistance: Pressingbestendigheid
+
+    # Luchtspel
+    heading_accuracy: Kopnauwkeurigheid
+    jumping_reach: Sprongkracht
+    aerial_duels: Luchtduels
+
+    # Afwerken
+    finishing: Afwerken
+    one_touch_finishing: Afwerken in één keer
+    shot_power: Schotkracht
+    long_shots: Afstandsschoten
+    volleys: Volleys
+    curve: Effect
+
+    # Passing
+    short_passing: Korte pass
+    long_passing: Lange pass
+    lofted_passing: Lobpass
+    through_ball_passing: Steekpass
+    crossing: Voorzetten
+    one_touch_passing: Pass in één keer
+
+    # Spelhervattingen
+    free_kicks: Vrije trappen
+    corner_kicks: Corners
+    penalties: Strafschoppen
+
+    # Verdedigen
+    marking: Dekking
+    standing_tackles: Staande tackles
+    sliding_tackles: Glijdende tackles
+    interceptions: Onderscheppingen
+    jockeying: Jockeyen
+    pressing_technique: Pressingtechniek
+    blocking: Blokkeren
+    defensive_screening: Defensief afschermen
+
+    # Fysiek
+    acceleration: Acceleratie
+    sprint_speed: Sprintsnelheid
+    strength: Kracht
+    stamina: Uithoudingsvermogen
+    physical_contact: Lichamelijk contact
+    agility: Wendbaarheid
+    balance: Balans
+    ball_shielding: Bal afschermen
+
+    # Mentaal
+    vision: Inzicht
+    flair: Flair
+    composure: Kalmte
+    concentration: Concentratie
+    aggression: Agressie
+    bravery: Moed
+    reactions: Reacties
+    scanning: Scannen
+    leadership: Leiderschap
+    determination: Vastberadenheid
+
+    # Aanvallende mentaliteit
+    attacking_awareness: Bewustzijn
+    attacking_off_the_ball: Zonder bal lopen
+    attacking_work_rate: Werktempo
+    attacking_decisions: Beslissingen
+    attacking_anticipation: Anticipatie
+    attacking_teamwork: Teamwork
+
+    # Verdedigende mentaliteit
+    defensive_awareness: Bewustzijn
+    defensive_positioning: Positionering
+    defensive_work_rate: Werktempo
+    defensive_decisions: Beslissingen
+    defensive_anticipation: Anticipatie
+    defensive_teamwork: Teamwork
+
+    # Keepen
+    gk_positioning: Positionering
+    gk_handling: Vangen
+    gk_shot_stopping: Schotstoppen
+    gk_decisions: Beslissingen
+    gk_awareness: Bewustzijn
+    gk_composure: Kalmte
+    gk_reflexes: Reflexen
+    gk_diving: Duiken
+    gk_one_on_one: Eén tegen één
+    gk_kicking: Uittrappen
+    gk_catching: Klemmen
+    gk_aerial_ability: Luchtmacht
+    gk_command_of_area: Strafschopgebied beheersen
+    gk_communication: Communicatie
+    gk_throwing: Uitgooien
+    gk_sweeper_actions: Meevoetballen

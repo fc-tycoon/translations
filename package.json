@@ -1,0 +1,25 @@
+{
+	"name": "@fc-tycoon/translations",
+	"version": "27.0.0-alpha.1",
+	"description": "FC Tycoon translation files + validation tools",
+	"private": true,
+	"license": "SEE LICENSE IN LICENSE.md",
+	"type": "module",
+	"copyright": "Copyright © 2026 Darkwave Studios LLC. All rights reserved.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fc-tycoon/translations.git"
+	},
+	"bugs": {
+		"url": "https://github.com/fc-tycoon/translations/issues"
+	},
+	"scripts": {
+		"validate:yaml": "node validate-yaml.mjs",
+		"validate:python": "python validate-yaml.py",
+		"validate:python:install": "python -m pip install -r requirements.txt",
+		"validate": "npm run validate:yaml"
+	},
+	"dependencies": {
+		"yaml": "^2.8.1"
+	}
+}

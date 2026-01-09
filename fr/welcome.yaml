@@ -1,0 +1,22 @@
+welcome:
+  title: Bienvenue à {clubName}
+  continue: Continuer
+  skip_tour: Passer la Visite
+  club_snapshot: Aperçu du Club
+  leadership: Direction
+  facilities: Installations
+  season_outlook: Perspectives de Saison
+  key_people: Personnes Clés à Rencontrer
+  introductions: Le directeur planifiera les présentations durant votre première semaine
+  owner: Propriétaire
+  director: Directeur Sportif
+  head_coach: Entraîneur Principal
+  stadium_capacity: Capacité du Stade
+  training: Entraînement
+  youth: Jeunes
+  competition: Compétition
+  board_expectation: Attente du Conseil
+  transfer_budget: Budget Transferts
+
+  confirm_save_new_game: "Voulez-vous sauvegarder votre nouvelle partie ?"
+  manager_fallback: Manager

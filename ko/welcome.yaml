@@ -1,0 +1,22 @@
+welcome:
+  title: "{clubName}에 오신 것을 환영합니다"
+  continue: 계속
+  skip_tour: 투어 건너뛰기
+  club_snapshot: 클럽 스냅샷
+  leadership: 리더십
+  facilities: 시설
+  season_outlook: 시즌 전망
+  key_people: 만나야 할 주요 인물
+  introductions: 첫 주에 감독이 소개 일정을 잡을 것입니다
+  owner: 구단주
+  director: 단장
+  head_coach: 감독
+  stadium_capacity: 경기장 수용인원
+  training: 훈련
+  youth: 유소년
+  competition: 대회
+  board_expectation: 이사회 기대
+  transfer_budget: 이적 예산
+
+  confirm_save_new_game: "새 게임을 저장하시겠습니까?"
+  manager_fallback: 감독

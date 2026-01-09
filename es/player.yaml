@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # General
+  preferred_foot: Pie preferido
+  other_foot: Pie menos hábil
+  left: Izquierdo
+  right: Derecho
+  unknown: Desconocido
+  na: N/D
+
+  # Perfil del jugador
+  profile:
+    tabs:
+      attributes: Atributos
+      training: Entrenamiento
+      information: Información
+      contract_info: Info del contrato
+      transfer_status: Estado de transferencia
+      medical_report: Informe médico
+      history: Historial
+      statistics: Estadísticas
+      talents: Talentos
+      positions_roles: Posiciones y roles
+
+    stats:
+      age: Edad
+      height: Altura
+      club: Club
+      foot: Pie
+      team: Equipo
+      wage: Salario
+      value: Valor
+      talent: Talento
+
+    cards:
+      attribute_overview: Resumen de atributos
+      key_attributes: Atributos clave
+      average_rating: Valoración media
+      overall: General
+      strengths: Fortalezas
+      weaknesses: Debilidades
+      current_focus: Enfoque actual
+      weekly_schedule: Plan semanal
+      development_progress: Progreso de desarrollo
+      personal_details: Datos personales
+      personality: Personalidad
+      contract_details: Detalles del contrato
+      release_clauses: Cláusulas de rescisión
+      performance_bonuses: Bonificaciones por rendimiento
+      transfer_availability: Disponibilidad de transferencia
+      interested_clubs: Clubes interesados
+      current_status: Estado actual
+      injury_history: Historial de lesiones
+      career_timeline: Línea de carrera
+      season_stats: Estadísticas de la temporada
+      career_stats: Estadísticas de carrera
+      position_familiarity: Familiaridad de posición
+      best_roles: Mejores roles
+
+    hints:
+      positions_colored_by_familiarity: Las posiciones se colorean según la familiaridad. La posición principal se resalta en morado.
+
+    messages:
+      training_focus_coming_soon: La selección del enfoque de entrenamiento llegará pronto
+      training_schedule_coming_soon: La vista del plan de entrenamiento llegará pronto
+      development_tracking_coming_soon: El seguimiento de desarrollo llegará pronto
+      contract_details_coming_soon: Los detalles del contrato llegarán pronto
+      transfer_availability_coming_soon: La información de transferencias llegará pronto
+      interested_clubs_coming_soon: La lista de clubes interesados llegará pronto
+      medical_status_coming_soon: La información médica llegará pronto
+      injury_history_coming_soon: Los detalles de lesiones llegarán pronto
+      career_history_coming_soon: Historial del club y hitos de carrera llegarán pronto
+      season_stats_coming_soon: Partidos, goles y asistencias llegarán pronto
+      career_stats_coming_soon: Totales y récords de carrera llegarán pronto
+      no_role_ratings: No hay valoraciones de rol disponibles
+      loading_player: Cargando jugador...
+
+  # Talentos
+  talents:
+    description: Los talentos son multiplicadores de entrenamiento que influyen en la rapidez con la que los jugadores desarrollan habilidades. Mayor talento = crecimiento más rápido en áreas relacionadas.
+
+  # Categorías de habilidades
+  skill_categories:
+    technical: Técnica
+    aerial: Juego aéreo
+    shooting: Tiro
+    passing: Pase
+    set_pieces: Balón parado
+    defending: Defensa
+    physical: Físico
+    mental: Mental
+    attacking_mentality: Mentalidad ofensiva
+    defensive_mentality: Mentalidad defensiva
+    goalkeeping: Portería
+
+  # Habilidades
+  skills:
+    # Técnica
+    first_touch: Primer toque
+    ball_control: Control del balón
+    tight_control: Control en espacios reducidos
+    dribbling: Regate
+    technique: Técnica
+    chip_technique: Técnica de vaselina
+    high_ball_control: Control de balón alto
+    press_resistance: Resistencia a la presión
+
+    # Juego aéreo
+    heading_accuracy: Precisión de cabeceo
+    jumping_reach: Alcance de salto
+    aerial_duels: Duelos aéreos
+
+    # Tiro
+    finishing: Definición
+    one_touch_finishing: Definición a un toque
+    shot_power: Potencia de tiro
+    long_shots: Tiros lejanos
+    volleys: Voleas
+    curve: Efecto
+
+    # Pase
+    short_passing: Pase corto
+    long_passing: Pase largo
+    lofted_passing: Pase bombeado
+    through_ball_passing: Pase al hueco
+    crossing: Centros
+    one_touch_passing: Pase a un toque
+
+    # Balón parado
+    free_kicks: Tiros libres
+    corner_kicks: Saques de esquina
+    penalties: Penaltis
+
+    # Defensa
+    marking: Marcaje
+    standing_tackles: Entradas de pie
+    sliding_tackles: Entradas deslizantes
+    interceptions: Intercepciones
+    jockeying: Contención
+    pressing_technique: Técnica de presión
+    blocking: Bloqueo
+    defensive_screening: Pantalla defensiva
+
+    # Físico
+    acceleration: Aceleración
+    sprint_speed: Velocidad
+    strength: Fuerza
+    stamina: Resistencia
+    physical_contact: Contacto físico
+    agility: Agilidad
+    balance: Equilibrio
+    ball_shielding: Protección del balón
+
+    # Mental
+    vision: Visión
+    flair: Fantasía
+    composure: Compostura
+    concentration: Concentración
+    aggression: Agresividad
+    bravery: Valentía
+    reactions: Reacciones
+    scanning: Exploración
+    leadership: Liderazgo
+    determination: Determinación
+
+    # Mentalidad ofensiva
+    attacking_awareness: Conciencia
+    attacking_off_the_ball: Desmarques
+    attacking_work_rate: Trabajo
+    attacking_decisions: Decisiones
+    attacking_anticipation: Anticipación
+    attacking_teamwork: Trabajo en equipo
+
+    # Mentalidad defensiva
+    defensive_awareness: Conciencia
+    defensive_positioning: Posicionamiento
+    defensive_work_rate: Trabajo
+    defensive_decisions: Decisiones
+    defensive_anticipation: Anticipación
+    defensive_teamwork: Trabajo en equipo
+
+    # Portería
+    gk_positioning: Posicionamiento
+    gk_handling: Seguridad de manos
+    gk_shot_stopping: Paradas
+    gk_decisions: Decisiones
+    gk_awareness: Conciencia
+    gk_composure: Compostura
+    gk_reflexes: Reflejos
+    gk_diving: Estirada
+    gk_one_on_one: Uno contra uno
+    gk_kicking: Golpeo
+    gk_catching: Atrapada
+    gk_aerial_ability: Dominio aéreo
+    gk_command_of_area: Mando del área
+    gk_communication: Comunicación
+    gk_throwing: Saque de mano
+    gk_sweeper_actions: Acciones de líbero

@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: Por favor espera mientras preparamos tu imperio futbolístico
+  loading_titles:
+    building: Construyendo tu mundo de fútbol...
+    crafting: Forjando tu imperio futbolístico...
+    preparing: Preparando tu aventura como mánager...
+    assembling: Armando tu universo futbolístico...
+    constructing: Construyendo tu dinastía futbolística...
+    establishing: Fundando tu reino futbolístico...
+  error_copy: Copiar error
+  error_discord: Obtener ayuda en Discord
+  error_back: Volver al menú principal
+  error_support: Si este problema persiste, contacta con soporte en nuestro servidor de Discord.
+
+  errors:
+    no_database_selected: No se seleccionó ninguna base de datos. Inicia una partida nueva.

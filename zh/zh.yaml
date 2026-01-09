@@ -1,0 +1,20 @@
+# Chinese (Simplified) Language Meta
+meta:
+  lang: zh
+  dir: ltr
+  name: 中文
+
+lang:
+  en: 英语
+  de: 德语
+  fr: 法语
+  es: 西班牙语
+  it: 意大利语
+  pt: 葡萄牙语
+  ru: 俄语
+  zh: 中文
+  ja: 日语
+  ko: 韩语
+  ar: 阿拉伯语
+  nl: 荷兰语
+  pl: 波兰语

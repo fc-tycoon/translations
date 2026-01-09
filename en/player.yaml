@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # General
+  preferred_foot: Preferred foot
+  other_foot: Other foot
+  left: Left
+  right: Right
+  unknown: Unknown
+  na: N/A
+
+  # Player Profile
+  profile:
+    tabs:
+      attributes: Attributes
+      training: Training
+      information: Information
+      contract_info: Contract Info
+      transfer_status: Transfer Status
+      medical_report: Medical Report
+      history: History
+      statistics: Statistics
+      talents: Talents
+      positions_roles: Positions & Roles
+
+    stats:
+      age: Age
+      height: Height
+      club: Club
+      foot: Foot
+      team: Team
+      wage: Wage
+      value: Value
+      talent: Talent
+
+    cards:
+      attribute_overview: Attribute Overview
+      key_attributes: Key Attributes
+      average_rating: Average Rating
+      overall: Overall
+      strengths: Strengths
+      weaknesses: Weaknesses
+      current_focus: Current Focus
+      weekly_schedule: Weekly Schedule
+      development_progress: Development Progress
+      personal_details: Personal Details
+      personality: Personality
+      contract_details: Contract Details
+      release_clauses: Release Clauses
+      performance_bonuses: Performance Bonuses
+      transfer_availability: Transfer Availability
+      interested_clubs: Interested Clubs
+      current_status: Current Status
+      injury_history: Injury History
+      career_timeline: Career Timeline
+      season_stats: Season Stats
+      career_stats: Career Stats
+      position_familiarity: Position Familiarity
+      best_roles: Best Roles
+
+    hints:
+      positions_colored_by_familiarity: Positions are colored by familiarity rating. Primary position is highlighted in purple.
+
+    messages:
+      training_focus_coming_soon: Training focus selection coming soon
+      training_schedule_coming_soon: Training schedule display coming soon
+      development_tracking_coming_soon: Skill development tracking coming soon
+      contract_details_coming_soon: Contract details coming soon
+      transfer_availability_coming_soon: Transfer availability info coming soon
+      interested_clubs_coming_soon: Interested clubs list coming soon
+      medical_status_coming_soon: Medical status information coming soon
+      injury_history_coming_soon: Injury history details coming soon
+      career_history_coming_soon: Club history and career milestones coming soon
+      season_stats_coming_soon: Appearances, goals, assists coming soon
+      career_stats_coming_soon: Career totals and records coming soon
+      no_role_ratings: No role ratings available
+      loading_player: Loading player...
+
+  # Talents
+  talents:
+    description: Talents are training multipliers that influence how quickly players develop skills. Higher talent = faster skill growth in related areas.
+
+  # Skill Categories
+  skill_categories:
+    technical: Technical
+    aerial: Aerial
+    shooting: Shooting
+    passing: Passing
+    set_pieces: Set Pieces
+    defending: Defending
+    physical: Physical
+    mental: Mental
+    attacking_mentality: Attacking Mentality
+    defensive_mentality: Defensive Mentality
+    goalkeeping: Goalkeeping
+
+  # Skills
+  skills:
+    # Technical
+    first_touch: First Touch
+    ball_control: Ball Control
+    tight_control: Tight Control
+    dribbling: Dribbling
+    technique: Technique
+    chip_technique: Chip Technique
+    high_ball_control: High Ball Control
+    press_resistance: Press Resistance
+
+    # Aerial
+    heading_accuracy: Heading Accuracy
+    jumping_reach: Jumping Reach
+    aerial_duels: Aerial Duels
+
+    # Shooting
+    finishing: Finishing
+    one_touch_finishing: One Touch Finishing
+    shot_power: Shot Power
+    long_shots: Long Shots
+    volleys: Volleys
+    curve: Curve
+
+    # Passing
+    short_passing: Short Passing
+    long_passing: Long Passing
+    lofted_passing: Lofted Passing
+    through_ball_passing: Through Ball
+    crossing: Crossing
+    one_touch_passing: One Touch Passing
+
+    # Set Pieces
+    free_kicks: Free Kicks
+    corner_kicks: Corner Kicks
+    penalties: Penalties
+
+    # Defending
+    marking: Marking
+    standing_tackles: Standing Tackles
+    sliding_tackles: Sliding Tackles
+    interceptions: Interceptions
+    jockeying: Jockeying
+    pressing_technique: Pressing Technique
+    blocking: Blocking
+    defensive_screening: Defensive Screening
+
+    # Physical
+    acceleration: Acceleration
+    sprint_speed: Sprint Speed
+    strength: Strength
+    stamina: Stamina
+    physical_contact: Physical Contact
+    agility: Agility
+    balance: Balance
+    ball_shielding: Ball Shielding
+
+    # Mental
+    vision: Vision
+    flair: Flair
+    composure: Composure
+    concentration: Concentration
+    aggression: Aggression
+    bravery: Bravery
+    reactions: Reactions
+    scanning: Scanning
+    leadership: Leadership
+    determination: Determination
+
+    # Attacking Mentality
+    attacking_awareness: Awareness
+    attacking_off_the_ball: Off the Ball
+    attacking_work_rate: Work Rate
+    attacking_decisions: Decisions
+    attacking_anticipation: Anticipation
+    attacking_teamwork: Teamwork
+
+    # Defensive Mentality
+    defensive_awareness: Awareness
+    defensive_positioning: Positioning
+    defensive_work_rate: Work Rate
+    defensive_decisions: Decisions
+    defensive_anticipation: Anticipation
+    defensive_teamwork: Teamwork
+
+    # Goalkeeping
+    gk_positioning: Positioning
+    gk_handling: Handling
+    gk_shot_stopping: Shot Stopping
+    gk_decisions: Decisions
+    gk_awareness: Awareness
+    gk_composure: Composure
+    gk_reflexes: Reflexes
+    gk_diving: Diving
+    gk_one_on_one: One on One
+    gk_kicking: Kicking
+    gk_catching: Catching
+    gk_aerial_ability: Aerial Ability
+    gk_command_of_area: Command of Area
+    gk_communication: Communication
+    gk_throwing: Throwing
+    gk_sweeper_actions: Sweeper Actions

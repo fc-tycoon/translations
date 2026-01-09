@@ -1,0 +1,20 @@
+# German Language Meta
+meta:
+  lang: de
+  dir: ltr
+  name: Deutsch
+
+lang:
+  en: Englisch
+  de: Deutsch
+  fr: Französisch
+  es: Spanisch
+  it: Italienisch
+  pt: Portugiesisch
+  ru: Russisch
+  zh: Chinesisch
+  ja: Japanisch
+  ko: Koreanisch
+  ar: Arabisch
+  nl: Niederländisch
+  pl: Polnisch

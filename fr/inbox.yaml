@@ -1,0 +1,29 @@
+inbox:
+  title: Boîte de Réception
+  no_messages: Aucun message
+  empty_state: Aucun message
+  empty_selection: Sélectionnez un message à lire
+  starred: Étoilé
+  important: Important
+  required: Requis
+  requires_response: Réponse requise
+  star: Ajouter une étoile
+  unstar: Retirer l’étoile
+  starred_label: Étoilé
+  star_label: Étoile
+  mark_read: Marquer comme lu
+  mark_unread: Marquer comme non lu
+  delete: Supprimer
+  archive: Archiver
+  from: De
+  sender:
+    system: Système
+  fallback_subject: Message
+  subject: Sujet
+  date: Date
+  priority: Priorité
+  priority_high: Haute Priorité
+  priority_normal: Normal
+  priority_low: Basse Priorité
+  blocking: Nécessite une Attention
+  blocking_count: "{count} message(s) important(s) nécessitent votre attention"

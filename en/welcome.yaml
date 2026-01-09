@@ -1,0 +1,27 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Welcome/First Time User
+# ══════════════════════════════════════════════════════════════════════
+welcome:
+  title: Welcome to {clubName}
+  continue: Continue
+  skip_tour: Skip Tour
+  club_snapshot: Club Snapshot
+  leadership: Leadership
+  facilities: Facilities
+  season_outlook: Season Outlook
+  key_people: Key People to Meet
+  introductions: Director will schedule introductions during your first week
+  owner: Owner
+  director: Director of Football
+  head_coach: Head Coach
+  stadium_capacity: Stadium Capacity
+  training: Training
+  youth: Youth
+  competition: Competition
+  board_expectation: Board Expectation
+  transfer_budget: Transfer Budget
+  message: "I am delighted to welcome you to {clubName}. I will be your main point of contact as we walk through the club, facilities, and expectations."
+
+  confirm_save_new_game: Would you like to save your new game?
+  manager_fallback: Manager

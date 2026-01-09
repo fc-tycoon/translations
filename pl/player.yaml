@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # Ogólne
+  preferred_foot: Preferowana noga
+  other_foot: Druga noga
+  left: Lewa
+  right: Prawa
+  unknown: Nieznane
+  na: Brak
+
+  # Profil zawodnika
+  profile:
+    tabs:
+      attributes: Atrybuty
+      training: Trening
+      information: Informacje
+      contract_info: Informacje o kontrakcie
+      transfer_status: Status transferu
+      medical_report: Raport medyczny
+      history: Historia
+      statistics: Statystyki
+      talents: Talenty
+      positions_roles: Pozycje i role
+
+    stats:
+      age: Wiek
+      height: Wzrost
+      club: Klub
+      foot: Noga
+      team: Zespół
+      wage: Pensja
+      value: Wartość
+      talent: Talent
+
+    cards:
+      attribute_overview: Przegląd atrybutów
+      key_attributes: Kluczowe atrybuty
+      average_rating: Średnia ocena
+      overall: Ogólna
+      strengths: Mocne strony
+      weaknesses: Słabe strony
+      current_focus: Aktualny fokus
+      weekly_schedule: Harmonogram tygodniowy
+      development_progress: Postęp rozwoju
+      personal_details: Dane osobowe
+      personality: Osobowość
+      contract_details: Szczegóły kontraktu
+      release_clauses: Klauzule
+      performance_bonuses: Bonusy za występy
+      transfer_availability: Dostępność transferowa
+      interested_clubs: Zainteresowane kluby
+      current_status: Aktualny status
+      injury_history: Historia kontuzji
+      career_timeline: Przebieg kariery
+      season_stats: Statystyki sezonu
+      career_stats: Statystyki kariery
+      position_familiarity: Obycie z pozycją
+      best_roles: Najlepsze role
+
+    hints:
+      positions_colored_by_familiarity: Pozycje są kolorowane według oceny obycia. Pozycja podstawowa jest wyróżniona na fioletowo.
+
+    messages:
+      training_focus_coming_soon: Wybór fokusu treningowego wkrótce
+      training_schedule_coming_soon: Podgląd planu treningów wkrótce
+      development_tracking_coming_soon: Śledzenie rozwoju wkrótce
+      contract_details_coming_soon: Szczegóły kontraktu wkrótce
+      transfer_availability_coming_soon: Informacje transferowe wkrótce
+      interested_clubs_coming_soon: Lista zainteresowanych klubów wkrótce
+      medical_status_coming_soon: Informacje medyczne wkrótce
+      injury_history_coming_soon: Szczegóły historii kontuzji wkrótce
+      career_history_coming_soon: Historia klubu i kamienie milowe kariery wkrótce
+      season_stats_coming_soon: Występy, gole, asysty wkrótce
+      career_stats_coming_soon: Sumy i rekordy kariery wkrótce
+      no_role_ratings: Brak ocen ról
+      loading_player: Ładowanie zawodnika...
+
+  # Talenty
+  talents:
+    description: Talenty to mnożniki treningowe, które wpływają na szybkość rozwoju umiejętności. Wyższy talent = szybszy rozwój w powiązanych obszarach.
+
+  # Kategorie umiejętności
+  skill_categories:
+    technical: Technika
+    aerial: Gra w powietrzu
+    shooting: Strzały
+    passing: Podania
+    set_pieces: Stałe fragmenty
+    defending: Obrona
+    physical: Fizyczne
+    mental: Mentalne
+    attacking_mentality: Mentalność ofensywna
+    defensive_mentality: Mentalność defensywna
+    goalkeeping: Bramkarz
+
+  # Umiejętności
+  skills:
+    # Technika
+    first_touch: Pierwszy kontakt
+    ball_control: Kontrola piłki
+    tight_control: Ścisła kontrola
+    dribbling: Drybling
+    technique: Technika
+    chip_technique: Technika podcinki
+    high_ball_control: Kontrola wysokiej piłki
+    press_resistance: Odporność na pressing
+
+    # Gra w powietrzu
+    heading_accuracy: Celność główek
+    jumping_reach: Wyskok
+    aerial_duels: Pojedynki w powietrzu
+
+    # Strzały
+    finishing: Wykończenie
+    one_touch_finishing: Wykończenie z pierwszej piłki
+    shot_power: Siła strzału
+    long_shots: Strzały z dystansu
+    volleys: Woleje
+    curve: Rotacja
+
+    # Podania
+    short_passing: Krótkie podania
+    long_passing: Długie podania
+    lofted_passing: Podania górą
+    through_ball_passing: Prostopadłe podania
+    crossing: Dośrodkowania
+    one_touch_passing: Podania z pierwszej piłki
+
+    # Stałe fragmenty
+    free_kicks: Rzuty wolne
+    corner_kicks: Rzuty rożne
+    penalties: Rzuty karne
+
+    # Obrona
+    marking: Krycie
+    standing_tackles: Odbiory na stojąco
+    sliding_tackles: Wślizgi
+    interceptions: Przechwyty
+    jockeying: Utrzymywanie pozycji
+    pressing_technique: Technika pressingu
+    blocking: Blokowanie
+    defensive_screening: Zasłona defensywna
+
+    # Fizyczne
+    acceleration: Przyspieszenie
+    sprint_speed: Szybkość
+    strength: Siła
+    stamina: Wytrzymałość
+    physical_contact: Kontakt fizyczny
+    agility: Zwinność
+    balance: Równowaga
+    ball_shielding: Osłona piłki
+
+    # Mentalne
+    vision: Wizja
+    flair: Fantazja
+    composure: Opanowanie
+    concentration: Koncentracja
+    aggression: Agresja
+    bravery: Odwaga
+    reactions: Reakcje
+    scanning: Skanowanie
+    leadership: Przywództwo
+    determination: Determinacja
+
+    # Mentalność ofensywna
+    attacking_awareness: Świadomość
+    attacking_off_the_ball: Gra bez piłki
+    attacking_work_rate: Pracowitość
+    attacking_decisions: Decyzje
+    attacking_anticipation: Antycypacja
+    attacking_teamwork: Współpraca
+
+    # Mentalność defensywna
+    defensive_awareness: Świadomość
+    defensive_positioning: Ustawianie się
+    defensive_work_rate: Pracowitość
+    defensive_decisions: Decyzje
+    defensive_anticipation: Antycypacja
+    defensive_teamwork: Współpraca
+
+    # Bramkarz
+    gk_positioning: Ustawienie
+    gk_handling: Chwyt
+    gk_shot_stopping: Zatrzymywanie strzałów
+    gk_decisions: Decyzje
+    gk_awareness: Świadomość
+    gk_composure: Opanowanie
+    gk_reflexes: Refleks
+    gk_diving: Rzuty w bok
+    gk_one_on_one: Jeden na jednego
+    gk_kicking: Wykop
+    gk_catching: Łapanie
+    gk_aerial_ability: Gra w powietrzu
+    gk_command_of_area: Dowodzenie polem karnym
+    gk_communication: Komunikacja
+    gk_throwing: Wyrzut
+    gk_sweeper_actions: Działania libero

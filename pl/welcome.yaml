@@ -1,0 +1,22 @@
+welcome:
+  title: Witamy w {clubName}
+  continue: Kontynuuj
+  skip_tour: Pomiń Tour
+  club_snapshot: Przegląd Klubu
+  leadership: Kierownictwo
+  facilities: Obiekty
+  season_outlook: Perspektywa Sezonu
+  key_people: Kluczowe Osoby do Poznania
+  introductions: Dyrektor zaplanuje przedstawienia w pierwszym tygodniu
+  owner: Właściciel
+  director: Dyrektor Sportowy
+  head_coach: Główny Trener
+  stadium_capacity: Pojemność Stadionu
+  training: Trening
+  youth: Młodzież
+  competition: Rozgrywki
+  board_expectation: Oczekiwania Zarządu
+  transfer_budget: Budżet Transferowy
+
+  confirm_save_new_game: "Czy chcesz zapisać nową grę?"
+  manager_fallback: Menedżer

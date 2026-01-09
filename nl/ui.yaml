@@ -1,0 +1,276 @@
+# UI Vertalingen (Nederlands)
+#
+# Bevat gelokaliseerde strings voor gebruikersinterface-elementen
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Doorgaan
+    new_game: Nieuw Spel
+    load_game: Spel Laden
+    preferences: Voorkeuren
+    credits: Credits
+    licenses: Licenties
+    exit: Afsluiten
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Terug
+    forward: Vooruit
+    history: Geschiedenis
+    no_history: Geen vorige schermen
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: Mijn Kantoor
+    team_management: Teambeheer
+    training: Training
+    staff: Personeel
+    medical: Medisch
+    finances: Financiën
+    my_competitions: Mijn Competities
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Dashboard
+    inbox: Inbox
+    calendar: Kalender
+    competitions: Competities
+    club_overview: Cluboverzicht
+    squad_overview: Selectieoverzicht
+    squad_stats: Selectiestatistieken
+    selection_advice: Opstellingsadvies
+    squad_dynamics: Selectiedynamiek
+    squad_hierarchy: Selectiehiërarchie
+    tactics_board: Tactiekbord
+    schedule: Schema
+    coaches: Coaches
+    teams: Teams
+    development: Ontwikkeling
+    individual_training: Individuele Training
+    staff_overview: Personeelsoverzicht
+    staff_contracts: Personeelscontracten
+    staff_responsibilities: Personeelsverantwoordelijkheden
+    injury_report: Blessurerapport
+    rehab_plans: Revalidatieplannen
+    budgets: Budgetten
+    sponsorships: Sponsoring
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Afspelen
+    pause: Pauzeren
+    speed: Snelheid
+    fast_forward: Vooruitspoelen
+    next_day: Volgende Dag
+    advance_tomorrow: Ga naar 9:00 morgen
+    cycle_speed: Spelsnelheid wijzigen (klik om te wijzigen)
+    processing: Verwerken...
+    advancing: Naar volgende dag gaan
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Spel Opslaan
+    load_game: Spel Laden
+    quick_save: Snel Opslaan
+    save_as: Opslaan Als
+    overwrite: Overschrijven
+    delete_save: Opgeslagen Spel Verwijderen
+    confirm_delete: Weet u zeker dat u dit opgeslagen spel wilt verwijderen?
+    no_saves: Geen opgeslagen spellen gevonden
+    save_name: Naam Opslag
+    save_date: Datum Opslag
+    last_played: Laatst Gespeeld
+    club: Club
+    manager: Manager
+    season: Seizoen
+    game_date: Speldatum
+    managers_heading: Managers ({count})
+    reading_save_file: Opslagbestand lezen...
+    select_save_to_see_details: Selecteer een opslagbestand om details te zien
+    save_location: Opslaglocatie
+    filename: Bestandsnaam
+    filename_placeholder: mijn-opslag
+    description: Beschrijving
+    description_placeholder: Optionele beschrijving van de opslag...
+    notes: Notities
+    notes_placeholder: Optionele gedetailleerde notities (kan erg lang zijn)...
+    notes_hint: Voeg gedetailleerde notities toe over deze opslag. Dit veld kan veel tekst bevatten.
+    password: Wachtwoord
+    password_placeholder: Optioneel wachtwoord voor netwerklocaties
+    password_hint: Stel een wachtwoord in om deze opslag te beschermen bij het laden vanaf netwerklocaties.
+    quick_save_naming_hint: 'Snel opslaan gebruikt automatische naamgeving (bijv.: quick-save-YYYY-MM-DD-HHMMSS.db)'
+    quick_save_description: Snel opgeslagen op {date}
+    file_exists_title: Bestand bestaat al
+    file_exists_message: Het bestand "{filename}.db" bestaat al. Opslaan zal het overschrijven.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Laden...
+    error: Fout
+    warning: Waarschuwing
+    success: Succes
+    info: Informatie
+    search: Zoeken
+    search_messages: Berichten zoeken
+    filter: Filteren
+    sort: Sorteren
+    refresh: Vernieuwen
+    export: Exporteren
+    import: Importeren
+    settings: Instellingen
+    stadium: Stadion
+    language: Taal
+    help: Help
+    about: Over
+    version: Versie
+    name: Naam
+    club: Club
+    league: Competitie
+    country: Land
+    founded: Opgericht
+    reputation: Reputatie
+    player: Speler
+    position: Positie
+    rating: Beoordeling
+    role: Rol
+    age: Leeftijd
+    type: Type
+    status: Status
+    date: Datum
+    time: Tijd
+    actions: Acties
+    details: Details
+    overview: Overzicht
+    summary: Samenvatting
+    total: Totaal
+    average: Gemiddelde
+    minimum: Minimum
+    maximum: Maximum
+    none: Geen
+    all: Alles
+    selected: Geselecteerd
+    clear: Wissen
+    copy: Kopiëren
+    paste: Plakken
+    undo: Ongedaan maken
+    redo: Opnieuw doen
+    unknown: Onbekend
+    failed_to_load: Laden mislukt
+    unknown_error: Onbekende fout
+    vacant: Vacant
+    not_available: n.v.t.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Licentiemap openen
+    third_party_notices: Meldingen van derden
+    fc_tycoon_license: FC Tycoon-licentie
+    load_failed: Licenties laden mislukt
+    load_file_failed: Licentiebestand laden mislukt
+    load_file_failed_inline: Dit licentiebestand kon niet worden geladen.
+    open_folder_failed: Licentiemap openen mislukt
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: Credits laden mislukt
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Doorgaan vanaf uw laatste opslag
+    new_game: Een nieuwe carrière starten
+    load_game: Een opgeslagen spel laden
+    open_preferences: Voorkeuren openen
+    view_credits: Spelcredits bekijken
+    view_licenses: Open source licenties bekijken
+    exit_game: Afsluiten naar bureaublad
+    save_game: Huidige spel opslaan
+    exit_to_menu: Terug naar hoofdmenu
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: Kan het geselecteerde scherm nu niet openen
+    blocking_attention: U heeft {count} belangrijk(e) bericht(en) die uw aandacht vereisen.
+    advance_day_failed: Kon niet doorgaan naar de volgende dag. Neem contact op met support via het FC Tycoon Discord-kanaal.
+    load_success: Spel geladen
+    save_success: Spel opgeslagen naar {filename}.db
+    loaded_most_recent_save: 'Meest recente opslag geladen: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Spel laden mislukt
+    save_failed: Spel opslaan mislukt
+    save_failed_with_error: 'Spel opslaan mislukt: {error}'
+    exit_failed: Afsluiten van de applicatie mislukt
+    open_folder_dialog_failed: Mapselectiedialoog openen mislukt
+    locate_save_folder_failed: Kon de opslagmap niet vinden
+    open_save_dialog_failed: Kon het opslagvenster niet openen
+    load_most_recent_failed: Meest recente opslag laden mislukt
+    ui_init_after_load_failed: Spel geladen, maar de interface kon niet worden geïnitialiseerd
+    loaded_save_no_active_manager: De geladen opslag heeft geen actieve manager. Mogelijk moet u een nieuw spel starten of deze opslag herstellen.
+    connection_lost: Verbinding verloren
+    unexpected_error: Er is een onverwachte fout opgetreden
+    invalid_input: Ongeldige invoer
+    permission_denied: Toestemming geweigerd
+    file_not_found: Bestand niet gevonden
+    database_error: Databasefout
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: Weet u zeker dat u wilt afsluiten?
+    exit_title: Spel afsluiten
+    exit_unsaved: U heeft niet-opgeslagen wijzigingen. Toch afsluiten?
+    delete: Weet u zeker dat u dit wilt verwijderen?
+    reset: Weet u zeker dat u standaardwaarden wilt herstellen?
+    overwrite: Er bestaat al een opslag met deze naam. Overschrijven?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: Annuleren
+    save: Opslaan
+    not_now: Niet nu
+    close: Sluiten
+    continue: Doorgaan
+    back: Terug
+    next: Volgende
+    yes: Ja
+    no: Nee
+    confirm: Bevestigen
+    delete: Verwijderen
+    edit: Bewerken
+    create: Maken
+    add: Toevoegen
+    remove: Verwijderen
+    reset: Reset
+    apply: Toepassen
+    browse: Bladeren...
+    exit: Afsluiten

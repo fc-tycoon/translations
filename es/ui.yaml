@@ -1,0 +1,276 @@
+# Traducciones de UI (Español)
+#
+# Contiene cadenas localizadas para elementos de la interfaz de usuario
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Continuar
+    new_game: Nuevo Juego
+    load_game: Cargar Juego
+    preferences: Preferencias
+    credits: Créditos
+    licenses: Licencias
+    exit: Salir
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Atrás
+    forward: Adelante
+    history: Historial
+    no_history: Sin pantallas anteriores
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: Mi Oficina
+    team_management: Gestión del Equipo
+    training: Entrenamiento
+    staff: Personal
+    medical: Médico
+    finances: Finanzas
+    my_competitions: Mis Competiciones
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Panel de Control
+    inbox: Bandeja de Entrada
+    calendar: Calendario
+    competitions: Competiciones
+    club_overview: Resumen del Club
+    squad_overview: Resumen de Plantilla
+    squad_stats: Estadísticas de Plantilla
+    selection_advice: Consejo de Selección
+    squad_dynamics: Dinámica de Plantilla
+    squad_hierarchy: Jerarquía de Plantilla
+    tactics_board: Pizarra Táctica
+    schedule: Horario
+    coaches: Entrenadores
+    teams: Equipos
+    development: Desarrollo
+    individual_training: Entrenamiento Individual
+    staff_overview: Resumen de Personal
+    staff_contracts: Contratos de Personal
+    staff_responsibilities: Responsabilidades del Personal
+    injury_report: Informe de Lesiones
+    rehab_plans: Planes de Rehabilitación
+    budgets: Presupuestos
+    sponsorships: Patrocinios
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Reproducir
+    pause: Pausar
+    speed: Velocidad
+    fast_forward: Avance Rápido
+    next_day: Día Siguiente
+    advance_tomorrow: Avanzar a las 9:00 AM de mañana
+    cycle_speed: Cambiar velocidad del juego (clic para cambiar)
+    processing: Procesando...
+    advancing: Avanzando al día siguiente
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Guardar Juego
+    load_game: Cargar Juego
+    quick_save: Guardado Rápido
+    save_as: Guardar Como
+    overwrite: Sobrescribir
+    delete_save: Eliminar Partida
+    confirm_delete: ¿Está seguro de que desea eliminar esta partida?
+    no_saves: No se encontraron partidas guardadas
+    save_name: Nombre de Partida
+    save_date: Fecha de Guardado
+    last_played: Última vez jugado
+    club: Club
+    manager: Mánager
+    season: Temporada
+    game_date: Fecha del juego
+    managers_heading: Mánagers ({count})
+    reading_save_file: Leyendo archivo de guardado...
+    select_save_to_see_details: Selecciona un archivo de guardado para ver detalles
+    save_location: Ubicación de guardado
+    filename: Nombre de archivo
+    filename_placeholder: mi-guardado
+    description: Descripción
+    description_placeholder: Descripción opcional de la partida...
+    notes: Notas
+    notes_placeholder: Notas detalladas opcionales (pueden ser muy largas)...
+    notes_hint: Añade notas detalladas sobre esta partida. Este campo puede contener grandes cantidades de texto.
+    password: Contraseña
+    password_placeholder: Contraseña opcional para guardados en red
+    password_hint: Establece una contraseña para proteger esta partida al cargarla desde ubicaciones de red.
+    quick_save_naming_hint: 'Los guardados rápidos usan un nombre automático (por ejemplo: quick-save-YYYY-MM-DD-HHMMSS.db)'
+    quick_save_description: Guardado rápido creado el {date}
+    file_exists_title: El archivo ya existe
+    file_exists_message: El archivo "{filename}.db" ya existe. Al guardar se sobrescribirá.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Cargando...
+    error: Error
+    warning: Advertencia
+    success: Éxito
+    info: Información
+    search: Buscar
+    search_messages: Buscar mensajes
+    filter: Filtrar
+    sort: Ordenar
+    refresh: Actualizar
+    export: Exportar
+    import: Importar
+    settings: Configuración
+    stadium: Estadio
+    language: Idioma
+    help: Ayuda
+    about: Acerca de
+    version: Versión
+    name: Nombre
+    club: Club
+    league: Liga
+    country: País
+    founded: Fundado
+    reputation: Reputación
+    player: Jugador
+    position: Posición
+    rating: Valoración
+    role: Rol
+    age: Edad
+    type: Tipo
+    status: Estado
+    date: Fecha
+    time: Hora
+    actions: Acciones
+    details: Detalles
+    overview: Resumen
+    summary: Resumen
+    total: Total
+    average: Promedio
+    minimum: Mínimo
+    maximum: Máximo
+    none: Ninguno
+    all: Todos
+    selected: Seleccionado
+    clear: Limpiar
+    copy: Copiar
+    paste: Pegar
+    undo: Deshacer
+    redo: Rehacer
+    unknown: Desconocido
+    failed_to_load: No se pudo cargar
+    unknown_error: Error desconocido
+    vacant: Vacante
+    not_available: N/D
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Abrir carpeta de licencias
+    third_party_notices: Avisos de terceros
+    fc_tycoon_license: Licencia de FC Tycoon
+    load_failed: No se pudieron cargar las licencias
+    load_file_failed: No se pudo cargar el archivo de licencia
+    load_file_failed_inline: No se pudo cargar este archivo de licencia.
+    open_folder_failed: No se pudo abrir la carpeta de licencias
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: No se pudieron cargar los créditos
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Continuar desde tu última partida
+    new_game: Comenzar una nueva carrera
+    load_game: Cargar una partida guardada
+    open_preferences: Abrir preferencias
+    view_credits: Ver créditos del juego
+    view_licenses: Ver licencias de código abierto
+    exit_game: Salir al escritorio
+    save_game: Guardar tu juego actual
+    exit_to_menu: Salir al menú principal
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Error al cargar el juego
+    save_failed: Error al guardar el juego
+    save_failed_with_error: 'Error al guardar el juego: {error}'
+    exit_failed: No se pudo salir de la aplicación
+    open_folder_dialog_failed: No se pudo abrir el cuadro de diálogo de selección de carpeta
+    locate_save_folder_failed: No se pudo localizar la carpeta de guardado
+    open_save_dialog_failed: No se pudo abrir el cuadro de diálogo de guardado
+    load_most_recent_failed: No se pudo cargar el guardado más reciente
+    ui_init_after_load_failed: El juego se cargó, pero no se pudo inicializar la interfaz
+    loaded_save_no_active_manager: El guardado cargado no tiene un mánager activo. Es posible que debas iniciar un nuevo juego o reparar este guardado.
+    connection_lost: Conexión perdida
+    unexpected_error: Ocurrió un error inesperado
+    invalid_input: Entrada no válida
+    permission_denied: Permiso denegado
+    file_not_found: Archivo no encontrado
+    database_error: Error de base de datos
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: ¿Está seguro de que desea salir?
+    exit_title: Salir del juego
+    exit_unsaved: Tiene cambios sin guardar. ¿Salir de todos modos?
+    delete: ¿Está seguro de que desea eliminar esto?
+    reset: ¿Está seguro de que desea restablecer los valores predeterminados?
+    overwrite: Ya existe una partida con este nombre. ¿Sobrescribir?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: Aceptar
+    cancel: Cancelar
+    save: Guardar
+    not_now: Ahora no
+    close: Cerrar
+    continue: Continuar
+    back: Atrás
+    next: Siguiente
+    yes: Sí
+    no: No
+    confirm: Confirmar
+    delete: Eliminar
+    edit: Editar
+    create: Crear
+    add: Añadir
+    remove: Quitar
+    reset: Restablecer
+    apply: Aplicar
+    browse: Buscar...
+    exit: Salir
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: No se puede abrir la pantalla seleccionada en este momento
+    blocking_attention: Tienes {count} mensaje(s) importante(s) que requieren tu atención.
+    advance_day_failed: No se pudo avanzar al siguiente día. Ponte en contacto con soporte en el canal de Discord de FC Tycoon.
+    load_success: Juego cargado correctamente
+    save_success: Juego guardado en {filename}.db
+    loaded_most_recent_save: 'Se cargó el guardado más reciente: {name}'

@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # Allgemein
+  preferred_foot: Starker Fuß
+  other_foot: Schwacher Fuß
+  left: Links
+  right: Rechts
+  unknown: Unbekannt
+  na: k. A.
+
+  # Spielerprofil
+  profile:
+    tabs:
+      attributes: Attribute
+      training: Training
+      information: Informationen
+      contract_info: Vertragsinfo
+      transfer_status: Transferstatus
+      medical_report: Medizinischer Bericht
+      history: Historie
+      statistics: Statistiken
+      talents: Talente
+      positions_roles: Positionen & Rollen
+
+    stats:
+      age: Alter
+      height: Größe
+      club: Verein
+      foot: Fuß
+      team: Team
+      wage: Gehalt
+      value: Wert
+      talent: Talent
+
+    cards:
+      attribute_overview: Attributübersicht
+      key_attributes: Schlüsselattribute
+      average_rating: Durchschnittsbewertung
+      overall: Gesamt
+      strengths: Stärken
+      weaknesses: Schwächen
+      current_focus: Aktueller Fokus
+      weekly_schedule: Wochenplan
+      development_progress: Entwicklung
+      personal_details: Persönliche Daten
+      personality: Persönlichkeit
+      contract_details: Vertragsdetails
+      release_clauses: Ausstiegsklauseln
+      performance_bonuses: Leistungsboni
+      transfer_availability: Transferverfügbarkeit
+      interested_clubs: Interessierte Vereine
+      current_status: Aktueller Status
+      injury_history: Verletzungshistorie
+      career_timeline: Karriereverlauf
+      season_stats: Saisonstatistik
+      career_stats: Karrierestatistik
+      position_familiarity: Positionsvertrautheit
+      best_roles: Beste Rollen
+
+    hints:
+      positions_colored_by_familiarity: Positionen sind nach Vertrautheitswertung eingefärbt. Die Primärposition ist lila hervorgehoben.
+
+    messages:
+      training_focus_coming_soon: Trainingsfokus-Auswahl folgt
+      training_schedule_coming_soon: Trainingsplan-Anzeige folgt
+      development_tracking_coming_soon: Entwicklungstracking folgt
+      contract_details_coming_soon: Vertragsdetails folgen
+      transfer_availability_coming_soon: Transferverfügbarkeit folgt
+      interested_clubs_coming_soon: Liste interessierter Vereine folgt
+      medical_status_coming_soon: Medizinische Informationen folgen
+      injury_history_coming_soon: Verletzungsverlauf folgt
+      career_history_coming_soon: Vereinshistorie und Karriere-Meilensteine folgen
+      season_stats_coming_soon: Einsätze, Tore, Assists folgen
+      career_stats_coming_soon: Karrieresummen und Rekorde folgen
+      no_role_ratings: Keine Rollenbewertungen verfügbar
+      loading_player: Spieler wird geladen...
+
+  # Talente
+  talents:
+    description: Talente sind Trainingsmultiplikatoren, die beeinflussen, wie schnell Spieler Fähigkeiten entwickeln. Höheres Talent = schnelleres Wachstum in verwandten Bereichen.
+
+  # Fähigkeitskategorien
+  skill_categories:
+    technical: Technik
+    aerial: Luft
+    shooting: Abschluss
+    passing: Passspiel
+    set_pieces: Standards
+    defending: Verteidigung
+    physical: Physis
+    mental: Mental
+    attacking_mentality: Offensivmentalität
+    defensive_mentality: Defensivmentalität
+    goalkeeping: Torwart
+
+  # Fähigkeiten
+  skills:
+    # Technik
+    first_touch: Erster Kontakt
+    ball_control: Ballkontrolle
+    tight_control: Enge Ballführung
+    dribbling: Dribbling
+    technique: Technik
+    chip_technique: Lupfertechnik
+    high_ball_control: Hohe Ballkontrolle
+    press_resistance: Pressingresistenz
+
+    # Luft
+    heading_accuracy: Kopfballgenauigkeit
+    jumping_reach: Sprungkraft
+    aerial_duels: Luftduelle
+
+    # Abschluss
+    finishing: Abschluss
+    one_touch_finishing: Direktabschluss
+    shot_power: Schusskraft
+    long_shots: Weitschüsse
+    volleys: Volleys
+    curve: Effet
+
+    # Passspiel
+    short_passing: Kurzpass
+    long_passing: Langpass
+    lofted_passing: Hoher Pass
+    through_ball_passing: Steilpass
+    crossing: Flanken
+    one_touch_passing: Direktpass
+
+    # Standards
+    free_kicks: Freistöße
+    corner_kicks: Eckbälle
+    penalties: Elfmeter
+
+    # Verteidigung
+    marking: Deckung
+    standing_tackles: Standtackling
+    sliding_tackles: Grätschen
+    interceptions: Abfangen
+    jockeying: Stellen
+    pressing_technique: Pressingtechnik
+    blocking: Blocken
+    defensive_screening: Defensives Abschirmen
+
+    # Physis
+    acceleration: Antritt
+    sprint_speed: Schnelligkeit
+    strength: Kraft
+    stamina: Ausdauer
+    physical_contact: Physis
+    agility: Beweglichkeit
+    balance: Balance
+    ball_shielding: Ballabschirmung
+
+    # Mental
+    vision: Übersicht
+    flair: Flair
+    composure: Ruhe
+    concentration: Konzentration
+    aggression: Aggressivität
+    bravery: Mut
+    reactions: Reaktionen
+    scanning: Scannen
+    leadership: Führungsqualitäten
+    determination: Entschlossenheit
+
+    # Offensivmentalität
+    attacking_awareness: Bewusstsein
+    attacking_off_the_ball: Laufwege ohne Ball
+    attacking_work_rate: Arbeitsrate
+    attacking_decisions: Entscheidungen
+    attacking_anticipation: Antizipation
+    attacking_teamwork: Teamwork
+
+    # Defensivmentalität
+    defensive_awareness: Bewusstsein
+    defensive_positioning: Positionierung
+    defensive_work_rate: Arbeitsrate
+    defensive_decisions: Entscheidungen
+    defensive_anticipation: Antizipation
+    defensive_teamwork: Teamwork
+
+    # Torwart
+    gk_positioning: Positionierung
+    gk_handling: Fangsicherheit
+    gk_shot_stopping: Paraden
+    gk_decisions: Entscheidungen
+    gk_awareness: Antizipation
+    gk_composure: Ruhe
+    gk_reflexes: Reflexe
+    gk_diving: Hechten
+    gk_one_on_one: 1-gegen-1
+    gk_kicking: Abschläge
+    gk_catching: Fangen
+    gk_aerial_ability: Lufthoheit
+    gk_command_of_area: Strafraumbeherrschung
+    gk_communication: Kommunikation
+    gk_throwing: Abwürfe
+    gk_sweeper_actions: Mitspielen

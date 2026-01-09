@@ -1,0 +1,57 @@
+# Locale Translations (Portuguese)
+#
+# Contains localized strings for date/time formatting, button labels,
+# and other locale-specific UI text.
+
+locale:
+  months:
+    short:
+      0: Jan
+      1: Fev
+      2: Mar
+      3: Abr
+      4: Mai
+      5: Jun
+      6: Jul
+      7: Ago
+      8: Set
+      9: Out
+      10: Nov
+      11: Dez
+    long:
+      0: Janeiro
+      1: Fevereiro
+      2: Março
+      3: Abril
+      4: Maio
+      5: Junho
+      6: Julho
+      7: Agosto
+      8: Setembro
+      9: Outubro
+      10: Novembro
+      11: Dezembro
+  days:
+    short:
+      0: Dom
+      1: Seg
+      2: Ter
+      3: Qua
+      4: Qui
+      5: Sex
+      6: Sáb
+    long:
+      0: Domingo
+      1: Segunda-feira
+      2: Terça-feira
+      3: Quarta-feira
+      4: Quinta-feira
+      5: Sexta-feira
+      6: Sábado
+  time:
+    am: AM
+    pm: PM
+    morning: Manhã
+    afternoon: Tarde
+    evening: Noite
+    night: Noite

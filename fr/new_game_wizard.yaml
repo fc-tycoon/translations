@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: Base de données
+  step_database_desc: Sélectionnez la base de données et les mods
+  step_leagues_title: Ligues
+  step_leagues_desc: Choisissez les ligues à activer
+  step_club_title: Club
+  step_club_desc: Choisissez votre club
+  step_settings_title: Paramètres de jeu
+  step_settings_desc: Configurez la partie
+  step_manager_title: Manager
+  step_manager_desc: Créez votre profil
+  step_skills_title: Compétences
+  step_skills_desc: Attribuez des points de compétence
+  step_review_title: Récapitulatif
+  step_review_desc: Confirmez et démarrez la partie
+
+  navigation:
+    next_to_step: 'Suivant : {step}'
+
+  pages:
+    club_selection:
+      title: Choisissez votre club
+      description: Sélectionnez un club existant, créez-en un nouveau ou commencez en tant qu'entraîneur sans club
+      modes:
+        existing:
+          title: Club existant
+          description: Prenez les rênes d'un club établi dans l'une des ligues activées
+        create:
+          title: Créer un club
+          description: Repartez de zéro avec un nouveau club qui remplace une équipe existante
+        journeyman:
+          title: Entraîneur itinérant
+          description: Commencez sans emploi et recherchez votre première opportunité d'entraîneur
+      filters:
+        search_placeholder: Rechercher des clubs...
+        all_countries: Tous les pays
+        all_leagues: Toutes les ligues
+      badges:
+        promoted: Promu
+        relegated: Relégué
+      details:
+        first_team_squad: Équipe première
+        no_first_team_players: Aucun joueur affecté à l'équipe première
+        current_manager: Entraîneur actuel
+        key_staff: Staff clé
+        no_staff: Aucun membre du staff affecté
+      empty:
+        select_club_details: Sélectionnez un club pour voir les détails
+      create:
+        sections:
+          club_identity: Identité du club
+          league_placement: Placement en ligue
+          starting_attributes: Attributs de départ
+        fields:
+          club_name: Nom du club
+          short_name: Nom court
+          code: Code
+          reserve_team: Équipe réserve
+          club_colors: Couleurs du club
+          color_background: Arrière-plan
+          color_text: Texte
+          join_league: Rejoindre une ligue
+          replace_team: Remplacer l'équipe
+          national_rep: Réputation nationale
+          international_rep: Réputation internationale
+          elo_rating: Classement ELO
+        placeholders:
+          club_name: ex. FC Phoenix
+          short_name: ex. Phoenix
+          code: PHX
+          reserve_team: ex. FC Phoenix B
+          select_league: Sélectionner une ligue
+          select_team_to_replace: Sélectionner l'équipe à remplacer
+        hints:
+          code_abbreviation: Abréviation de 3 lettres
+          replaced_team_relegated: L'équipe remplacée sera reléguée dans une division inférieure
+        replace_team_auto: '🎲 Auto (Réputation la plus basse)'
+      journeyman:
+        title: Commencez votre aventure
+        description: Vous commencerez la partie sans club. Consultez les offres, postulez ou laissez le jeu simuler jusqu'à ce qu'une opportunité se présente.
+        features:
+          search_vacancies: Rechercher des postes vacants d'entraîneur
+          apply_to_clubs: Postuler à des clubs correspondant à votre profil
+          build_reputation: Construire votre réputation à partir de zéro
+          interview_offers: Accepter ou refuser des invitations à un entretien
+
+  # Toasts / validation
+  messages:
+    applied_preset: "Préréglage \"{name}\" appliqué ({points} points)"
+    skills_reset: Compétences réinitialisées
+  warnings:
+    select_at_least_one_league: Veuillez sélectionner au moins une ligue
+    complete_required_fields: Veuillez remplir tous les champs obligatoires
+    not_enough_points_remaining: Pas assez de points restants
+    allocate_all_skill_points: Veuillez attribuer tous les points de compétence
+    drop_mod_files_only: Déposez uniquement des fichiers .mod
+    select_a_database: Veuillez sélectionner une base de données
+    no_leagues_selected_go_back: Aucune ligue sélectionnée. Revenez en arrière et sélectionnez des ligues.
+    complete_club_selection: Veuillez terminer la sélection du club
+  errors:
+    load_seasons_failed: Échec du chargement des saisons disponibles
+    open_file_dialog_failed: Échec de l'ouverture de la boîte de sélection de fichiers
+    load_clubs_failed_with_error: "Échec du chargement des clubs : {error}"
+  mod_import:
+    select_mod_files_title: Sélectionner des fichiers de mod

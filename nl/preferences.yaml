@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: Voorkeuren
+  save: Voorkeuren opslaan
+  reset: Standaard herstellen
+  cancel: Annuleren
+
+  tabs:
+    saved_games: Opgeslagen spellen
+    display: Weergave
+    languages: Talen
+    gameplay: Gameplay
+    ui: UI
+    colors: Kleuren
+    shortcuts: Sneltoetsen
+
+  saved_games:
+    title: Instellingen voor opgeslagen spellen
+    default_location: Standaard opslaglocatie
+    browse_btn: Bladeren...
+    placeholder: /saved-games/
+    autosave_freq: Frequentie automatisch opslaan
+    autosave_freq_options:
+      disabled: Uitgeschakeld
+      every_7_days: Elke 7 dagen
+      every_14_days: Elke 14 dagen
+      every_30_days: Elke 30 dagen
+    keep_autosaves: Automatische saves bewaren
+    keep_autosaves_hint: Aantal automatische saves om te bewaren voordat de oudste worden verwijderd
+    confirm_overwrite: Overschrijven bevestigen
+
+  display:
+    title: Weergave-instellingen
+    theme: Thema
+    theme_options:
+      dark: Donker (Standaard)
+      light: Licht
+      auto: Automatisch (Systeem)
+    ui_scale: UI-schaal
+    show_tooltips: Tooltips tonen
+    animations: Animaties
+
+  languages:
+    title: Taalinstellingen
+    game_language: Speltaal
+    game_language_hint: Wijzigt de taal voor alle spelteksten (herstart vereist voor sommige UI)
+    date_format: Datumindeling
+    number_format: Getalnotatie
+    reload_translations: Vertalingen opnieuw laden
+    reload_btn: Opnieuw laden
+    reload_hint: Alle vertaalbestanden opnieuw laden van schijf (handig voor ontwikkeling)
+
+  gameplay:
+    title: Gameplay-instellingen
+    pause_on_events: Pauzeren bij gebeurtenissen
+    pause_on_events_hint: Pauzeer het spel wanneer belangrijke gebeurtenissen plaatsvinden
+    show_tutorials: Tutorials tonen
+    confirm_actions: Acties bevestigen
+    confirm_actions_options:
+      transfers: Transferbiedingen
+      contracts: Contractaanbiedingen
+      tactics: Tactiekwijzigingen
+    quick_continue: Snel doorgaan
+    quick_continue_hint: Bevestiging overslaan bij doorgaan met het spel
+
+  ui_tab:
+    title: UI-instellingen
+    pitch_map_footedness: Voorkeursvoet-posities op veldkaart
+    pitch_map_footedness_preview: Voorbeeld
+    pitch_map_footedness_hint: Extra links/rechts-markeringen toggelen (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)
+
+  colors:
+    title: Kleuren
+    colors_group_title: Kleuren per positie-eenheid
+    reset_colors_btn: Kleuren resetten
+    goalkeepers: Keepers
+    defenders: Verdedigers
+    midfielders: Middenvelders
+    attackers: Aanvallers
+    reset_btn: resetten
+
+  shortcuts:
+    title: Toetsenbord-sneltoetsen
+    column_action: Actie
+    column_shortcut: Sneltoets
+    actions:
+      quick_save: Snelsave
+      continue_game: Spel voortzetten
+      open_dashboard: Dashboard openen
+      open_squad: Selectie openen
+      open_tactics: Tactiek openen
+      open_transfers: Transfers openen
+
+  messages:
+    reset_dialog_title: Voorkeuren resetten
+    reset_dialog_message: Dit zet alle voorkeuren terug naar de standaardwaarden. Doorgaan?
+    reset_dialog_confirm: Resetten
+    reset_dialog_cancel: Annuleren
+    reset_success: Voorkeuren teruggezet naar standaardwaarden
+    save_success: Voorkeuren opgeslagen
+    save_error: "Opslaan van voorkeuren mislukt: {error}"
+    language_changed: "Taal gewijzigd naar {language}"
+    language_change_error: "Wijzigen van taal mislukt: {error}"
+    reload_success: Vertalingen opnieuw geladen
+    reload_error: "Opnieuw laden van vertalingen mislukt: {error}"
+    folder_error: "Kan het mapselectiedialoogvenster niet openen"

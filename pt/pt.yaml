@@ -1,0 +1,20 @@
+# Portuguese Language Meta
+meta:
+  lang: pt
+  dir: ltr
+  name: Português
+
+lang:
+  en: Inglês
+  de: Alemão
+  fr: Francês
+  es: Espanhol
+  it: Italiano
+  pt: Português
+  ru: Russo
+  zh: Chinês
+  ja: Japonês
+  ko: Coreano
+  ar: Árabe
+  nl: Holandês
+  pl: Polonês

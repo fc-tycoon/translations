@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: Preferences
+  save: Save Preferences
+  reset: Reset to Defaults
+  cancel: Cancel
+
+  tabs:
+    saved_games: Saved Games
+    display: Display
+    languages: Languages
+    gameplay: Gameplay
+    ui: UI
+    colors: Colors
+    shortcuts: Shortcuts
+
+  saved_games:
+    title: Saved Games Settings
+    default_location: Default Save Location
+    browse_btn: Browse...
+    placeholder: /saved-games/
+    autosave_freq: Autosave Frequency
+    autosave_freq_options:
+      disabled: Disabled
+      every_7_days: Every 7 days
+      every_14_days: Every 14 days
+      every_30_days: Every 30 days
+    keep_autosaves: Keep Autosaves
+    keep_autosaves_hint: Number of autosaves to keep before deleting oldest
+    confirm_overwrite: Confirm Overwrite
+
+  display:
+    title: Display Settings
+    theme: Theme
+    theme_options:
+      dark: Dark (Default)
+      light: Light
+      auto: Auto (System)
+    ui_scale: UI Scale
+    show_tooltips: Show Tooltips
+    animations: Animations
+
+  languages:
+    title: Language Settings
+    game_language: Game Language
+    game_language_hint: Changes the language for all in-game text (requires restart for some UI)
+    date_format: Date Format
+    number_format: Number Format
+    reload_translations: Reload Translations
+    reload_btn: Reload
+    reload_hint: Reload all translation files from disk (useful for development)
+
+  gameplay:
+    title: Gameplay Settings
+    pause_on_events: Pause on Events
+    pause_on_events_hint: Pause game when important events occur
+    show_tutorials: Show Tutorials
+    confirm_actions: Confirm Actions
+    confirm_actions_options:
+      transfers: Transfer Bids
+      contracts: Contract Offers
+      tactics: Tactic Changes
+    quick_continue: Quick Continue
+    quick_continue_hint: Skip confirmation when continuing game
+
+  ui_tab:
+    title: UI Settings
+    pitch_map_footedness: Pitch Map Footedness Positions
+    pitch_map_footedness_preview: Preview
+    pitch_map_footedness_hint: Toggle extra left/right markers (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)
+
+  colors:
+    title: Colors
+    colors_group_title: Position Unit Colors
+    reset_colors_btn: Reset Colors
+    goalkeepers: Goalkeepers
+    defenders: Defenders
+    midfielders: Midfielders
+    attackers: Attackers
+    reset_btn: reset
+
+  shortcuts:
+    title: Keyboard Shortcuts
+    column_action: Action
+    column_shortcut: Shortcut
+    actions:
+      quick_save: Quick Save
+      continue_game: Continue Game
+      open_dashboard: Open Dashboard
+      open_squad: Open Squad
+      open_tactics: Open Tactics
+      open_transfers: Open Transfers
+
+  messages:
+    reset_dialog_title: Reset Preferences
+    reset_dialog_message: This will reset all preferences to their default values. Continue?
+    reset_dialog_confirm: Reset
+    reset_dialog_cancel: Cancel
+    reset_success: Preferences reset to defaults
+    save_success: Preferences saved
+    save_error: "Failed to save preferences: {error}"
+    language_changed: "Language changed to {language}"
+    language_change_error: "Failed to change language: {error}"
+    reload_success: Translations reloaded
+    reload_error: "Failed to reload translations: {error}"
+    folder_error: "Failed to open folder selection dialog"

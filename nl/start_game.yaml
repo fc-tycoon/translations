@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: Even geduld terwijl we je voetbalimperium voorbereiden
+  loading_titles:
+    building: Je voetbalwereld opbouwen...
+    crafting: Je voetbalimperium smeden...
+    preparing: Je managersreis voorbereiden...
+    assembling: Je voetbaluniversum samenstellen...
+    constructing: Je voetbaldynastie bouwen...
+    establishing: Je voetbalkoninkrijk stichten...
+  error_copy: Fout kopiëren
+  error_discord: Hulp via Discord
+  error_back: Terug naar hoofdmenu
+  error_support: Als dit probleem blijft bestaan, neem dan contact op met support via onze Discord-server.
+
+  errors:
+    no_database_selected: Geen database geselecteerd. Start een nieuw spel.

@@ -1,0 +1,57 @@
+# Locale Translations (Polish)
+#
+# Contains localized strings for date/time formatting, button labels,
+# and other locale-specific UI text.
+
+locale:
+  months:
+    short:
+      0: Sty
+      1: Lut
+      2: Mar
+      3: Kwi
+      4: Maj
+      5: Cze
+      6: Lip
+      7: Sie
+      8: Wrz
+      9: Paź
+      10: Lis
+      11: Gru
+    long:
+      0: Styczeń
+      1: Luty
+      2: Marzec
+      3: Kwiecień
+      4: Maj
+      5: Czerwiec
+      6: Lipiec
+      7: Sierpień
+      8: Wrzesień
+      9: Październik
+      10: Listopad
+      11: Grudzień
+  days:
+    short:
+      0: Nd
+      1: Pn
+      2: Wt
+      3: Śr
+      4: Cz
+      5: Pt
+      6: So
+    long:
+      0: Niedziela
+      1: Poniedziałek
+      2: Wtorek
+      3: Środa
+      4: Czwartek
+      5: Piątek
+      6: Sobota
+  time:
+    am: AM
+    pm: PM
+    morning: Rano
+    afternoon: Popołudnie
+    evening: Wieczór
+    night: Noc

@@ -1,0 +1,29 @@
+inbox:
+  title: Postvak IN
+  no_messages: Geen berichten
+  empty_state: Geen berichten
+  empty_selection: Selecteer een bericht om te lezen
+  starred: Met ster
+  important: Belangrijk
+  required: Vereist
+  requires_response: Reactie vereist
+  star: Ster geven
+  unstar: Ster verwijderen
+  starred_label: Met ster
+  star_label: Ster
+  mark_read: Markeren als gelezen
+  mark_unread: Markeren als ongelezen
+  delete: Verwijderen
+  archive: Archiveren
+  from: Van
+  sender:
+    system: Systeem
+  fallback_subject: Bericht
+  subject: Onderwerp
+  date: Datum
+  priority: Prioriteit
+  priority_high: Hoge Prioriteit
+  priority_normal: Normaal
+  priority_low: Lage Prioriteit
+  blocking: Vereist Aandacht
+  blocking_count: "{count} belangrijke bericht(en) vereisen uw aandacht"

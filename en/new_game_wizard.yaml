@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: Database
+  step_database_desc: Select database & mods
+  step_leagues_title: Leagues
+  step_leagues_desc: Choose leagues to activate
+  step_club_title: Club
+  step_club_desc: Choose your club
+  step_settings_title: Game Settings
+  step_settings_desc: Configure game settings
+  step_manager_title: Manager
+  step_manager_desc: Create your profile
+  step_skills_title: Skills
+  step_skills_desc: Allocate skill points
+  step_review_title: Review
+  step_review_desc: Confirm & start game
+
+  navigation:
+    next_to_step: 'Next: {step}'
+
+  pages:
+    club_selection:
+      title: Choose Your Club
+      description: Select an existing club, create a new one, or start as a journeyman manager
+      modes:
+        existing:
+          title: Existing Club
+          description: Take charge of an established club from one of the activated leagues
+        create:
+          title: Create Club
+          description: Start fresh with a brand new club that replaces an existing team
+        journeyman:
+          title: Journeyman
+          description: Begin unemployed and search for your first managerial opportunity
+      filters:
+        search_placeholder: Search clubs...
+        all_countries: All Countries
+        all_leagues: All Leagues
+      badges:
+        promoted: Promoted
+        relegated: Relegated
+      details:
+        first_team_squad: First Team Squad
+        no_first_team_players: No players assigned to first team
+        current_manager: Current Manager
+        key_staff: Key Staff
+        no_staff: No staff assigned
+      empty:
+        select_club_details: Select a club to view details
+      create:
+        sections:
+          club_identity: Club Identity
+          league_placement: League Placement
+          starting_attributes: Starting Attributes
+        fields:
+          club_name: Club Name
+          short_name: Short Name
+          code: Code
+          reserve_team: Reserve Team
+          club_colors: Club Colors
+          color_background: Background
+          color_text: Text
+          join_league: Join League
+          replace_team: Replace Team
+          national_rep: National Rep.
+          international_rep: International Rep.
+          elo_rating: ELO Rating
+        placeholders:
+          club_name: e.g. FC Phoenix
+          short_name: e.g. Phoenix
+          code: PHX
+          reserve_team: e.g. FC Phoenix B
+          select_league: Select league
+          select_team_to_replace: Select team to replace
+        hints:
+          code_abbreviation: 3-letter abbreviation
+          replaced_team_relegated: The replaced team will be relegated to a lower division
+        replace_team_auto: '🎲 Auto (Lowest Reputation)'
+      journeyman:
+        title: Start Your Journey
+        description: You'll begin the game without a club. Browse job listings, apply for positions, or let the game simulate until an opportunity arises.
+        features:
+          search_vacancies: Search for managerial vacancies
+          apply_to_clubs: Apply to clubs matching your profile
+          build_reputation: Build your reputation from the ground up
+          interview_offers: Accept or decline interview offers
+
+  # Toasts / validation
+  messages:
+    applied_preset: "Applied \"{name}\" preset ({points} points)"
+    skills_reset: Skills reset
+  warnings:
+    select_at_least_one_league: Please select at least one league
+    complete_required_fields: Please complete all required fields
+    not_enough_points_remaining: Not enough points remaining
+    allocate_all_skill_points: Please allocate all skill points
+    drop_mod_files_only: Please drop .mod files only
+    select_a_database: Please select a database
+    no_leagues_selected_go_back: No leagues selected. Please go back and select leagues.
+    complete_club_selection: Please complete the club selection
+  errors:
+    load_seasons_failed: Failed to load available seasons
+    open_file_dialog_failed: Failed to open file selection dialog
+    load_clubs_failed_with_error: "Failed to load clubs: {error}"
+  mod_import:
+    select_mod_files_title: Select Mod Files

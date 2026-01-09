@@ -1,0 +1,276 @@
+# Traduções UI (Português)
+#
+# Contém strings localizadas para elementos da interface do usuário
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Continuar
+    new_game: Novo Jogo
+    load_game: Carregar Jogo
+    preferences: Preferências
+    credits: Créditos
+    licenses: Licenças
+    exit: Sair
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Voltar
+    forward: Avançar
+    history: Histórico
+    no_history: Nenhuma tela anterior
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: Meu Escritório
+    team_management: Gestão de Equipe
+    training: Treino
+    staff: Equipe Técnica
+    medical: Médico
+    finances: Finanças
+    my_competitions: Minhas Competições
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Painel
+    inbox: Caixa de Entrada
+    calendar: Calendário
+    competitions: Competições
+    club_overview: Visão Geral do Clube
+    squad_overview: Visão Geral do Elenco
+    squad_stats: Estatísticas do Elenco
+    selection_advice: Conselho de Escalação
+    squad_dynamics: Dinâmica do Elenco
+    squad_hierarchy: Hierarquia do Elenco
+    tactics_board: Prancheta Tática
+    schedule: Cronograma
+    coaches: Treinadores
+    teams: Times
+    development: Desenvolvimento
+    individual_training: Treino Individual
+    staff_overview: Visão Geral da Equipe
+    staff_contracts: Contratos da Equipe
+    staff_responsibilities: Responsabilidades da Equipe
+    injury_report: Relatório de Lesões
+    rehab_plans: Planos de Reabilitação
+    budgets: Orçamentos
+    sponsorships: Patrocínios
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Reproduzir
+    pause: Pausar
+    speed: Velocidade
+    fast_forward: Avançar Rápido
+    next_day: Próximo Dia
+    advance_tomorrow: Avançar para 9h de amanhã
+    cycle_speed: Alterar velocidade do jogo (clique para mudar)
+    processing: Processando...
+    advancing: Avançando para o próximo dia
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Salvar Jogo
+    load_game: Carregar Jogo
+    quick_save: Salvamento Rápido
+    save_as: Salvar Como
+    overwrite: Sobrescrever
+    delete_save: Excluir salvamento
+    confirm_delete: Tem certeza que deseja excluir este salvamento?
+    no_saves: Nenhum jogo salvo encontrado
+    save_name: Nome do salvamento
+    save_date: Data do salvamento
+    last_played: Último Jogo
+    club: Clube
+    manager: Técnico
+    season: Temporada
+    game_date: Data do jogo
+    managers_heading: Técnicos ({count})
+    reading_save_file: Lendo arquivo de salvamento...
+    select_save_to_see_details: Selecione um arquivo de salvamento para ver detalhes
+    save_location: Local do salvamento
+    filename: Nome do arquivo
+    filename_placeholder: meu-salvamento
+    description: Descrição
+    description_placeholder: Descrição opcional do jogo salvo...
+    notes: Notas
+    notes_placeholder: Notas detalhadas opcionais (podem ser muito longas)...
+    notes_hint: Adicione notas detalhadas sobre este salvamento. Este campo pode conter grandes quantidades de texto.
+    password: Senha
+    password_placeholder: Senha opcional para salvamentos em rede
+    password_hint: Defina uma senha para proteger este salvamento ao carregar de locais de rede.
+    quick_save_naming_hint: 'Salvamentos rápidos usam nome automático (ex.: quick-save-YYYY-MM-DD-HHMMSS.db)'
+    quick_save_description: Salvamento rápido criado em {date}
+    file_exists_title: O arquivo já existe
+    file_exists_message: O arquivo "{filename}.db" já existe. Salvar irá sobrescrevê-lo.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Carregando...
+    error: Erro
+    warning: Aviso
+    success: Sucesso
+    info: Informação
+    search: Buscar
+    search_messages: Pesquisar mensagens
+    filter: Filtrar
+    sort: Ordenar
+    refresh: Atualizar
+    export: Exportar
+    import: Importar
+    settings: Configurações
+    stadium: Estádio
+    language: Idioma
+    help: Ajuda
+    about: Sobre
+    version: Versão
+    name: Nome
+    club: Clube
+    league: Liga
+    country: País
+    founded: Fundado em
+    reputation: Reputação
+    player: Jogador
+    position: Posição
+    rating: Avaliação
+    role: Função
+    age: Idade
+    type: Tipo
+    status: Status
+    date: Data
+    time: Hora
+    actions: Ações
+    details: Detalhes
+    overview: Visão Geral
+    summary: Resumo
+    total: Total
+    average: Média
+    minimum: Mínimo
+    maximum: Máximo
+    none: Nenhum
+    all: Todos
+    selected: Selecionado
+    clear: Limpar
+    copy: Copiar
+    paste: Colar
+    undo: Desfazer
+    redo: Refazer
+    unknown: Desconhecido
+    failed_to_load: Falha ao carregar
+    unknown_error: Erro desconhecido
+    vacant: Vago
+    not_available: N/D
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Continuar do último salvamento
+    new_game: Iniciar nova carreira
+    load_game: Carregar jogo salvo
+    open_preferences: Abrir preferências
+    view_credits: Ver créditos do jogo
+    view_licenses: Ver licenças de código aberto
+    exit_game: Sair para a área de trabalho
+    save_game: Salvar jogo atual
+    exit_to_menu: Voltar ao menu principal
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Falha ao carregar jogo
+    save_failed: Falha ao salvar jogo
+    save_failed_with_error: 'Falha ao salvar jogo: {error}'
+    exit_failed: Falha ao sair do aplicativo
+    open_folder_dialog_failed: Falha ao abrir a caixa de seleção de pasta
+    locate_save_folder_failed: Não foi possível localizar a pasta de salvamentos
+    open_save_dialog_failed: Não foi possível abrir a caixa de diálogo de salvamento
+    load_most_recent_failed: Falha ao carregar o salvamento mais recente
+    ui_init_after_load_failed: O jogo foi carregado, mas a interface não pôde ser inicializada
+    loaded_save_no_active_manager: O salvamento carregado não tem um técnico ativo. Talvez seja necessário iniciar um novo jogo ou reparar este salvamento.
+    connection_lost: Conexão perdida
+    unexpected_error: Ocorreu um erro inesperado
+    invalid_input: Entrada inválida
+    permission_denied: Permissão negada
+    file_not_found: Arquivo não encontrado
+    database_error: Erro de banco de dados
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: Tem certeza que deseja sair?
+    exit_title: Sair do jogo
+    exit_unsaved: Você tem alterações não salvas. Sair mesmo assim?
+    delete: Tem certeza que deseja excluir?
+    reset: Tem certeza que deseja redefinir os padrões?
+    overwrite: Já existe um save com este nome. Sobrescrever?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: Cancelar
+    save: Salvar
+    not_now: Agora não
+    close: Fechar
+    continue: Continuar
+    back: Voltar
+    next: Avançar
+    yes: Sim
+    no: Não
+    confirm: Confirmar
+    delete: Excluir
+    edit: Editar
+    create: Criar
+    add: Adicionar
+    remove: Remover
+    reset: Redefinir
+    apply: Aplicar
+    browse: Procurar...
+    exit: Sair
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: Não é possível abrir a tela selecionada agora
+    blocking_attention: Você tem {count} mensagem(ns) importante(s) que exigem sua atenção.
+    advance_day_failed: Não foi possível avançar para o próximo dia. Entre em contato com o suporte no canal Discord do FC Tycoon.
+    load_success: Jogo carregado com sucesso
+    save_success: Jogo salvo em {filename}.db
+    loaded_most_recent_save: 'Carregado o salvamento mais recente: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Abrir pasta de licenças
+    third_party_notices: Avisos de terceiros
+    fc_tycoon_license: Licença do FC Tycoon
+    load_failed: Falha ao carregar licenças
+    load_file_failed: Falha ao carregar arquivo de licença
+    load_file_failed_inline: Falha ao carregar este arquivo de licença.
+    open_folder_failed: Falha ao abrir a pasta de licenças
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: Falha ao carregar créditos

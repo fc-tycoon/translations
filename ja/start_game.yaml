@@ -1,0 +1,20 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Start Game
+# ══════════════════════════════════════════════════════════════════════
+start_game:
+  subtitle: サッカー帝国を準備しています。しばらくお待ちください
+  loading_titles:
+    building: サッカー世界を構築中...
+    crafting: サッカー帝国を創造中...
+    preparing: 監督としての旅を準備中...
+    assembling: サッカーの宇宙を組み立て中...
+    constructing: サッカー王朝を築いています...
+    establishing: サッカー王国を創設中...
+  error_copy: エラーをコピー
+  error_discord: Discordでサポートを受ける
+  error_back: メインメニューに戻る
+  error_support: 問題が解消しない場合は、Discordサーバーでサポートへご連絡ください。
+
+  errors:
+    no_database_selected: データベースが選択されていません。新しいゲームを開始してください。

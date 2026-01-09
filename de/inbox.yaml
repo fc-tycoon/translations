@@ -1,0 +1,28 @@
+inbox:
+  title: Posteingang
+  empty_state: Keine Nachrichten
+  empty_selection: Nachricht zum Lesen auswählen
+  starred: Markiert
+  important: Wichtig
+  required: Erforderlich
+  requires_response: Antwort erforderlich
+  star: Markieren
+  unstar: Markierung entfernen
+  starred_label: Markiert
+  star_label: Markieren
+  from: Von
+  sender:
+    system: System
+  fallback_subject: Nachricht
+  date: Datum
+  subject: Betreff
+  mark_read: Als gelesen markieren
+  mark_unread: Als ungelesen markieren
+  delete: Löschen
+  archive: Archivieren
+  priority: Priorität
+  priority_high: Hoch
+  priority_normal: Normal
+  priority_low: Niedrig
+  blocking: Erfordert Aufmerksamkeit
+  blocking_count: "{count} wichtige Nachricht(en)"

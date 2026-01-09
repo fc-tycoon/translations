@@ -1,0 +1,276 @@
+# UI翻訳 (日本語)
+#
+# ユーザーインターフェース要素のローカライズされた文字列を含む
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: 続ける
+    new_game: 新しいゲーム
+    load_game: ゲームを読み込む
+    preferences: 設定
+    credits: クレジット
+    licenses: ライセンス
+    exit: 終了
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: 戻る
+    forward: 進む
+    history: 履歴
+    no_history: 以前の画面はありません
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: マイオフィス
+    team_management: チーム管理
+    training: トレーニング
+    staff: スタッフ
+    medical: メディカル
+    finances: 財務
+    my_competitions: 私の大会
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: ダッシュボード
+    inbox: 受信トレイ
+    calendar: カレンダー
+    competitions: 大会
+    club_overview: クラブ概要
+    squad_overview: スカッド概要
+    squad_stats: スカッド統計
+    selection_advice: 選手起用アドバイス
+    squad_dynamics: スカッドダイナミクス
+    squad_hierarchy: スカッド階層
+    tactics_board: 戦術ボード
+    schedule: スケジュール
+    coaches: コーチ陣
+    teams: チーム
+    development: 育成
+    individual_training: 個人トレーニング
+    staff_overview: スタッフ概要
+    staff_contracts: スタッフ契約
+    staff_responsibilities: スタッフ責任
+    injury_report: 怪我レポート
+    rehab_plans: リハビリ計画
+    budgets: 予算
+    sponsorships: スポンサーシップ
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: 再生
+    pause: 一時停止
+    speed: 速度
+    fast_forward: 早送り
+    next_day: 翌日
+    advance_tomorrow: 明日の午前9時に進む
+    cycle_speed: ゲーム速度を変更（クリックで変更）
+    processing: 処理中...
+    advancing: 翌日に進行中
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: ゲームを保存
+    load_game: ゲームを読み込む
+    quick_save: クイックセーブ
+    save_as: 名前を付けて保存
+    overwrite: 上書き
+    delete_save: セーブを削除
+    confirm_delete: このセーブを削除してもよろしいですか？
+    no_saves: セーブデータが見つかりません
+    save_name: セーブ名
+    save_date: 保存日
+    last_played: 最終プレイ
+    club: クラブ
+    manager: 監督
+    season: シーズン
+    game_date: ゲーム日付
+    managers_heading: 監督（{count}）
+    reading_save_file: セーブファイルを読み込み中...
+    select_save_to_see_details: 詳細を見るにはセーブファイルを選択してください
+    save_location: 保存場所
+    filename: ファイル名
+    filename_placeholder: マイセーブ
+    description: 説明
+    description_placeholder: 任意のセーブ説明...
+    notes: メモ
+    notes_placeholder: 任意の詳細メモ（とても長くできます）...
+    notes_hint: このセーブについて詳細なメモを追加します。この欄には大量のテキストを入力できます。
+    password: パスワード
+    password_placeholder: ネットワークセーブ用の任意パスワード
+    password_hint: ネットワーク上の場所から読み込む際にこのセーブを保護するためのパスワードを設定します。
+    quick_save_naming_hint: 'クイックセーブは自動命名されます（例: quick-save-YYYY-MM-DD-HHMMSS.db）'
+    quick_save_description: '{date} に作成されたクイックセーブ'
+    file_exists_title: ファイルは既に存在します
+    file_exists_message: ファイル"{filename}.db"は既に存在します。保存すると上書きされます。
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: 読み込み中...
+    error: エラー
+    warning: 警告
+    success: 成功
+    info: 情報
+    search: 検索
+    search_messages: メッセージを検索
+    filter: フィルター
+    sort: 並べ替え
+    refresh: 更新
+    export: エクスポート
+    import: インポート
+    settings: 設定
+    stadium: スタジアム
+    language: 言語
+    help: ヘルプ
+    about: について
+    version: バージョン
+    name: 名前
+    club: クラブ
+    league: リーグ
+    country: 国
+    founded: 創設
+    reputation: 評判
+    player: 選手
+    position: ポジション
+    rating: 評価
+    role: 役割
+    age: 年齢
+    type: タイプ
+    status: ステータス
+    date: 日付
+    time: 時間
+    actions: アクション
+    details: 詳細
+    overview: 概要
+    summary: サマリー
+    total: 合計
+    average: 平均
+    minimum: 最小
+    maximum: 最大
+    none: なし
+    all: すべて
+    selected: 選択済み
+    clear: クリア
+    copy: コピー
+    paste: 貼り付け
+    undo: 元に戻す
+    redo: やり直し
+    unknown: 不明
+    failed_to_load: 読み込みに失敗しました
+    unknown_error: 不明なエラー
+    vacant: 空席
+    not_available: 該当なし
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: 選択した画面を現在開けません
+    blocking_attention: 注意が必要な重要メッセージが {count} 件あります。
+    advance_day_failed: 次の日に進めませんでした。FC Tycoon の Discord チャンネルでサポートに連絡してください。
+    load_success: ゲームを読み込みました
+    save_success: '{filename}.db にゲームを保存しました'
+    loaded_most_recent_save: '最新のセーブを読み込みました: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: ライセンスフォルダーを開く
+    third_party_notices: サードパーティー通知
+    fc_tycoon_license: FC Tycoon ライセンス
+    load_failed: ライセンスの読み込みに失敗しました
+    load_file_failed: ライセンスファイルの読み込みに失敗しました
+    load_file_failed_inline: このライセンスファイルを読み込めませんでした。
+    open_folder_failed: ライセンスフォルダーを開けませんでした
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: クレジットの読み込みに失敗しました
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: 最後のセーブから続ける
+    new_game: 新しいキャリアを開始
+    load_game: 保存したゲームを読み込む
+    open_preferences: 設定を開く
+    view_credits: ゲームクレジットを見る
+    view_licenses: オープンソースライセンスを見る
+    exit_game: デスクトップに終了
+    save_game: 現在のゲームを保存
+    exit_to_menu: メインメニューに戻る
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: ゲームの読み込みに失敗しました
+    save_failed: ゲームの保存に失敗しました
+    connection_lost: 接続が失われました
+    unexpected_error: 予期しないエラーが発生しました
+    invalid_input: 無効な入力
+    permission_denied: 権限が拒否されました
+    file_not_found: ファイルが見つかりません
+    database_error: データベースエラー
+    exit_failed: アプリケーションを終了できませんでした
+    save_failed_with_error: 'ゲームの保存に失敗しました: {error}'
+    open_folder_dialog_failed: フォルダー選択ダイアログを開けませんでした
+    locate_save_folder_failed: セーブフォルダーを見つけられませんでした
+    open_save_dialog_failed: 保存ダイアログを開けませんでした
+    load_most_recent_failed: 最新のセーブを読み込めませんでした
+    ui_init_after_load_failed: ゲームは読み込まれましたが、UI の初期化に失敗しました
+    loaded_save_no_active_manager: 読み込んだセーブに有効な監督がいません。新しいゲームを開始するか、このセーブを修復する必要があるかもしれません。
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: 終了してもよろしいですか？
+    exit_unsaved: 保存されていない変更があります。それでも終了しますか？
+    delete: 削除してもよろしいですか？
+    reset: デフォルトに戻してもよろしいですか？
+    overwrite: この名前のセーブが既に存在します。上書きしますか？
+    exit_title: ゲームを終了
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: キャンセル
+    save: 保存
+    not_now: 後で
+    close: 閉じる
+    continue: 続ける
+    back: 戻る
+    next: 次へ
+    yes: はい
+    no: いいえ
+    confirm: 確認
+    delete: 削除
+    edit: 編集
+    create: 作成
+    add: 追加
+    remove: 削除
+    reset: リセット
+    apply: 適用
+    browse: 参照...
+    exit: 終了

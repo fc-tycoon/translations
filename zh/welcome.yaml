@@ -1,0 +1,22 @@
+welcome:
+  title: 欢迎来到{clubName}
+  continue: 继续
+  skip_tour: 跳过导览
+  club_snapshot: 俱乐部快照
+  leadership: 领导层
+  facilities: 设施
+  season_outlook: 赛季展望
+  key_people: 需要会见的重要人物
+  introductions: 主管将在您的第一周安排介绍会
+  owner: 老板
+  director: 体育总监
+  head_coach: 主教练
+  stadium_capacity: 球场容量
+  training: 训练
+  youth: 青年队
+  competition: 赛事
+  board_expectation: 董事会期望
+  transfer_budget: 转会预算
+
+  confirm_save_new_game: "是否要保存新游戏？"
+  manager_fallback: 主教练

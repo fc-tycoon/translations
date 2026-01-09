@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: 데이터베이스
+  step_database_desc: 데이터베이스 및 모드 선택
+  step_leagues_title: 리그
+  step_leagues_desc: 활성화할 리그 선택
+  step_club_title: 클럽
+  step_club_desc: 클럽 선택
+  step_settings_title: 게임 설정
+  step_settings_desc: 게임 설정 구성
+  step_manager_title: 감독
+  step_manager_desc: 프로필 생성
+  step_skills_title: 능력치
+  step_skills_desc: 스킬 포인트 배분
+  step_review_title: 검토
+  step_review_desc: 확인 후 게임 시작
+
+  navigation:
+    next_to_step: '다음: {step}'
+
+  pages:
+    club_selection:
+      title: 클럽 선택
+      description: 기존 클럽을 선택하거나 새 클럽을 만들거나 무소속 감독으로 시작하세요
+      modes:
+        existing:
+          title: 기존 클럽
+          description: 활성화된 리그 중 하나의 기존 클럽을 맡습니다
+        create:
+          title: 클럽 만들기
+          description: 기존 팀을 대체하는 완전히 새로운 클럽으로 시작합니다
+        journeyman:
+          title: 무소속 감독
+          description: 무직으로 시작해 첫 감독 기회를 찾아보세요
+      filters:
+        search_placeholder: 클럽 검색...
+        all_countries: 모든 국가
+        all_leagues: 모든 리그
+      badges:
+        promoted: 승격
+        relegated: 강등
+      details:
+        first_team_squad: 1군 스쿼드
+        no_first_team_players: 1군에 배정된 선수가 없습니다
+        current_manager: 현재 감독
+        key_staff: 핵심 스태프
+        no_staff: 배정된 스태프가 없습니다
+      empty:
+        select_club_details: 세부 정보를 보려면 클럽을 선택하세요
+      create:
+        sections:
+          club_identity: 클럽 정체성
+          league_placement: 리그 배치
+          starting_attributes: 시작 능력치
+        fields:
+          club_name: 클럽 이름
+          short_name: 약칭
+          code: 코드
+          reserve_team: 리저브 팀
+          club_colors: 클럽 색상
+          color_background: 배경
+          color_text: 텍스트
+          join_league: 참가 리그
+          replace_team: 팀 교체
+          national_rep: 국내 평판
+          international_rep: 국제 평판
+          elo_rating: ELO 레이팅
+        placeholders:
+          club_name: '예: FC Phoenix'
+          short_name: '예: Phoenix'
+          code: PHX
+          reserve_team: '예: FC Phoenix B'
+          select_league: 리그 선택
+          select_team_to_replace: 교체할 팀 선택
+        hints:
+          code_abbreviation: 3글자 약어
+          replaced_team_relegated: 교체된 팀은 하위 디비전으로 강등됩니다
+        replace_team_auto: '🎲 자동(최저 평판)'
+      journeyman:
+        title: 여정을 시작하세요
+        description: 클럽 없이 게임을 시작합니다. 구인 공고를 찾아 지원하거나, 기회가 생길 때까지 게임을 진행하게 할 수 있습니다.
+        features:
+          search_vacancies: 감독 공석 검색
+          apply_to_clubs: 프로필에 맞는 클럽에 지원
+          build_reputation: 바닥부터 평판 쌓기
+          interview_offers: 면접 제안을 수락하거나 거절
+
+  # 토스트 / 검증
+  messages:
+    applied_preset: "프리셋 \"{name}\" 적용됨 ({points} 포인트)"
+    skills_reset: 기술이 초기화되었습니다
+  warnings:
+    select_at_least_one_league: 최소 한 개의 리그를 선택하세요
+    complete_required_fields: 필수 항목을 모두 입력하세요
+    not_enough_points_remaining: 남은 포인트가 부족합니다
+    allocate_all_skill_points: 모든 기술 포인트를 배분하세요
+    drop_mod_files_only: .mod 파일만 드롭하세요
+    select_a_database: 데이터베이스를 선택하세요
+    no_leagues_selected_go_back: 선택된 리그가 없습니다. 뒤로 가서 리그를 선택하세요.
+    complete_club_selection: 클럽 선택을 완료하세요
+  errors:
+    load_seasons_failed: 사용 가능한 시즌을 불러오지 못했습니다
+    open_file_dialog_failed: 파일 선택 대화 상자를 열지 못했습니다
+    load_clubs_failed_with_error: "클럽을 불러오지 못했습니다: {error}"
+  mod_import:
+    select_mod_files_title: 모드 파일 선택

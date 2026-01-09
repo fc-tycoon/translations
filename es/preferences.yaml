@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: Preferencias
+  save: Guardar preferencias
+  reset: Restablecer valores
+  cancel: Cancelar
+
+  tabs:
+    saved_games: Partidas guardadas
+    display: Pantalla
+    languages: Idiomas
+    gameplay: Jugabilidad
+    ui: IU
+    colors: Colores
+    shortcuts: Atajos
+
+  saved_games:
+    title: Configuración de partidas guardadas
+    default_location: Ubicación predeterminada de guardado
+    browse_btn: Buscar...
+    placeholder: /saved-games/
+    autosave_freq: Frecuencia de autoguardado
+    autosave_freq_options:
+      disabled: Desactivado
+      every_7_days: Cada 7 días
+      every_14_days: Cada 14 días
+      every_30_days: Cada 30 días
+    keep_autosaves: Conservar autoguardados
+    keep_autosaves_hint: Número de autoguardados a conservar antes de eliminar los más antiguos
+    confirm_overwrite: Confirmar sobrescritura
+
+  display:
+    title: Configuración de pantalla
+    theme: Tema
+    theme_options:
+      dark: Oscuro (Predeterminado)
+      light: Claro
+      auto: Automático (Sistema)
+    ui_scale: Escala de la IU
+    show_tooltips: Mostrar ayudas emergentes
+    animations: Animaciones
+
+  languages:
+    title: Configuración de idioma
+    game_language: Idioma del juego
+    game_language_hint: Cambia el idioma de todo el texto del juego (requiere reinicio para parte de la IU)
+    date_format: Formato de fecha
+    number_format: Formato de número
+    reload_translations: Recargar traducciones
+    reload_btn: Recargar
+    reload_hint: Recargar todos los archivos de traducción desde el disco (útil para desarrollo)
+
+  gameplay:
+    title: Configuración de jugabilidad
+    pause_on_events: Pausar en eventos
+    pause_on_events_hint: Pausar el juego cuando ocurran eventos importantes
+    show_tutorials: Mostrar tutoriales
+    confirm_actions: Confirmar acciones
+    confirm_actions_options:
+      transfers: Ofertas de traspaso
+      contracts: Ofertas de contrato
+      tactics: Cambios tácticos
+    quick_continue: Continuación rápida
+    quick_continue_hint: Omitir confirmación al continuar la partida
+
+  ui_tab:
+    title: Configuración de IU
+    pitch_map_footedness: Marcadores zurdo/derecho en el mapa del campo
+    pitch_map_footedness_preview: Vista previa
+    pitch_map_footedness_hint: Alternar marcadores adicionales izquierda/derecha (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)
+
+  colors:
+    title: Colores
+    colors_group_title: Colores por unidad de posición
+    reset_colors_btn: Restablecer colores
+    goalkeepers: Porteros
+    defenders: Defensas
+    midfielders: Centrocampistas
+    attackers: Delanteros
+    reset_btn: restablecer
+
+  shortcuts:
+    title: Atajos de teclado
+    column_action: Acción
+    column_shortcut: Atajo
+    actions:
+      quick_save: Guardado rápido
+      continue_game: Continuar partida
+      open_dashboard: Abrir panel
+      open_squad: Abrir plantilla
+      open_tactics: Abrir táctica
+      open_transfers: Abrir fichajes
+
+  messages:
+    reset_dialog_title: Restablecer preferencias
+    reset_dialog_message: Esto restablecerá todas las preferencias a sus valores predeterminados. ¿Continuar?
+    reset_dialog_confirm: Restablecer
+    reset_dialog_cancel: Cancelar
+    reset_success: Preferencias restablecidas a valores predeterminados
+    save_success: Preferencias guardadas
+    save_error: "Error al guardar las preferencias: {error}"
+    language_changed: "Idioma cambiado a {language}"
+    language_change_error: "Error al cambiar el idioma: {error}"
+    reload_success: Traducciones recargadas
+    reload_error: "Error al recargar las traducciones: {error}"
+    folder_error: "Error al abrir el diálogo de selección de carpeta"

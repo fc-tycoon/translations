@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: データベース
+  step_database_desc: データベースとMODを選択
+  step_leagues_title: リーグ
+  step_leagues_desc: 有効にするリーグを選択
+  step_club_title: クラブ
+  step_club_desc: クラブを選択
+  step_settings_title: ゲーム設定
+  step_settings_desc: ゲーム設定を構成
+  step_manager_title: 監督
+  step_manager_desc: プロフィールを作成
+  step_skills_title: スキル
+  step_skills_desc: スキルポイントを割り振る
+  step_review_title: 確認
+  step_review_desc: 確認してゲーム開始
+
+  navigation:
+    next_to_step: '次へ: {step}'
+
+  pages:
+    club_selection:
+      title: クラブを選択
+      description: 既存のクラブを選ぶ、新しいクラブを作る、または無所属の監督として開始します
+      modes:
+        existing:
+          title: 既存クラブ
+          description: 有効化したリーグの中から、実在のクラブを率います
+        create:
+          title: クラブを作成
+          description: 既存チームを置き換える新しいクラブで最初から始めます
+        journeyman:
+          title: 無所属監督
+          description: 無職から始めて、最初の指揮官のチャンスを探します
+      filters:
+        search_placeholder: クラブを検索...
+        all_countries: すべての国
+        all_leagues: すべてのリーグ
+      badges:
+        promoted: 昇格
+        relegated: 降格
+      details:
+        first_team_squad: トップチーム
+        no_first_team_players: トップチームに割り当てられた選手がいません
+        current_manager: 現在の監督
+        key_staff: 主要スタッフ
+        no_staff: スタッフが割り当てられていません
+      empty:
+        select_club_details: 詳細を見るにはクラブを選択してください
+      create:
+        sections:
+          club_identity: クラブ情報
+          league_placement: リーグ配置
+          starting_attributes: 初期能力
+        fields:
+          club_name: クラブ名
+          short_name: 略称
+          code: コード
+          reserve_team: リザーブチーム
+          club_colors: クラブカラー
+          color_background: 背景
+          color_text: テキスト
+          join_league: 参加リーグ
+          replace_team: 置き換えチーム
+          national_rep: 国内評判
+          international_rep: 国際評判
+          elo_rating: ELOレーティング
+        placeholders:
+          club_name: '例: FC Phoenix'
+          short_name: '例: Phoenix'
+          code: PHX
+          reserve_team: '例: FC Phoenix B'
+          select_league: リーグを選択
+          select_team_to_replace: 置き換えるチームを選択
+        hints:
+          code_abbreviation: 3文字の略称
+          replaced_team_relegated: 置き換えられたチームは下位ディビジョンに降格します
+        replace_team_auto: '🎲 自動（最低の評判）'
+      journeyman:
+        title: 旅を始めよう
+        description: クラブなしでゲームを開始します。求人を閲覧して応募するか、チャンスが来るまでゲームに進行させます。
+        features:
+          search_vacancies: 監督の空席を探す
+          apply_to_clubs: 自分のプロフィールに合うクラブに応募する
+          build_reputation: 評判を一から築く
+          interview_offers: 面接オファーを承諾または辞退する
+
+  # トースト / 検証
+  messages:
+    applied_preset: "プリセット「{name}」を適用しました（{points}ポイント）"
+    skills_reset: スキルをリセットしました
+  warnings:
+    select_at_least_one_league: 少なくとも1つのリーグを選択してください
+    complete_required_fields: 必須項目をすべて入力してください
+    not_enough_points_remaining: 残りポイントが不足しています
+    allocate_all_skill_points: すべてのスキルポイントを割り振ってください
+    drop_mod_files_only: .mod ファイルのみドロップしてください
+    select_a_database: データベースを選択してください
+    no_leagues_selected_go_back: リーグが選択されていません。戻ってリーグを選択してください。
+    complete_club_selection: クラブ選択を完了してください
+  errors:
+    load_seasons_failed: 利用可能なシーズンの読み込みに失敗しました
+    open_file_dialog_failed: ファイル選択ダイアログを開けませんでした
+    load_clubs_failed_with_error: "クラブの読み込みに失敗しました: {error}"
+  mod_import:
+    select_mod_files_title: MODファイルを選択

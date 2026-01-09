@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: 設定
+  save: 設定を保存
+  reset: デフォルトに戻す
+  cancel: キャンセル
+
+  tabs:
+    saved_games: セーブデータ
+    display: 表示
+    languages: 言語
+    gameplay: ゲームプレイ
+    ui: UI
+    colors: 色
+    shortcuts: ショートカット
+
+  saved_games:
+    title: セーブ設定
+    default_location: 既定の保存場所
+    browse_btn: 参照...
+    placeholder: /saved-games/
+    autosave_freq: 自動保存の頻度
+    autosave_freq_options:
+      disabled: 無効
+      every_7_days: 7日ごと
+      every_14_days: 14日ごと
+      every_30_days: 30日ごと
+    keep_autosaves: 自動保存を保持
+    keep_autosaves_hint: 古いものを削除する前に保持する自動保存数
+    confirm_overwrite: 上書きを確認
+
+  display:
+    title: 表示設定
+    theme: テーマ
+    theme_options:
+      dark: ダーク（既定）
+      light: ライト
+      auto: 自動（システム）
+    ui_scale: UIスケール
+    show_tooltips: ツールチップを表示
+    animations: アニメーション
+
+  languages:
+    title: 言語設定
+    game_language: ゲーム言語
+    game_language_hint: ゲーム内テキストの言語を変更します（UIの一部は再起動が必要）
+    date_format: 日付形式
+    number_format: 数値形式
+    reload_translations: 翻訳を再読み込み
+    reload_btn: 再読み込み
+    reload_hint: すべての翻訳ファイルをディスクから再読み込みします（開発向け）
+
+  gameplay:
+    title: ゲームプレイ設定
+    pause_on_events: イベントで一時停止
+    pause_on_events_hint: 重要なイベント発生時にゲームを一時停止します
+    show_tutorials: チュートリアルを表示
+    confirm_actions: 操作の確認
+    confirm_actions_options:
+      transfers: 移籍オファー
+      contracts: 契約オファー
+      tactics: 戦術変更
+    quick_continue: クイック継続
+    quick_continue_hint: 継続時の確認を省略します
+
+  ui_tab:
+    title: UI設定
+    pitch_map_footedness: ピッチマップの利き足表示
+    pitch_map_footedness_preview: プレビュー
+    pitch_map_footedness_hint: 追加の左右マーカーを切り替え（LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM）
+
+  colors:
+    title: 色
+    colors_group_title: ポジションユニットの色
+    reset_colors_btn: 色をリセット
+    goalkeepers: ゴールキーパー
+    defenders: ディフェンダー
+    midfielders: ミッドフィルダー
+    attackers: フォワード
+    reset_btn: リセット
+
+  shortcuts:
+    title: キーボードショートカット
+    column_action: 操作
+    column_shortcut: ショートカット
+    actions:
+      quick_save: クイックセーブ
+      continue_game: ゲームを続ける
+      open_dashboard: ダッシュボードを開く
+      open_squad: スカッドを開く
+      open_tactics: 戦術を開く
+      open_transfers: 移籍を開く
+
+  messages:
+    reset_dialog_title: 設定をリセット
+    reset_dialog_message: すべての設定を既定値に戻します。続行しますか？
+    reset_dialog_confirm: リセット
+    reset_dialog_cancel: キャンセル
+    reset_success: 設定を既定値に戻しました
+    save_success: 設定を保存しました
+    save_error: "設定の保存に失敗しました: {error}"
+    language_changed: "言語を{language}に変更しました"
+    language_change_error: "言語の変更に失敗しました: {error}"
+    reload_success: 翻訳を再読み込みしました
+    reload_error: "翻訳の再読み込みに失敗しました: {error}"
+    folder_error: "フォルダー選択ダイアログを開けませんでした"

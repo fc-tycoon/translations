@@ -1,0 +1,29 @@
+inbox:
+  title: 受信トレイ
+  no_messages: メッセージはありません
+  empty_state: メッセージはありません
+  empty_selection: 読むメッセージを選択してください
+  starred: スター付き
+  important: 重要
+  required: 必須
+  requires_response: 返信が必要
+  star: スターを付ける
+  unstar: スターを外す
+  starred_label: スター付き
+  star_label: スター
+  mark_read: 既読にする
+  mark_unread: 未読にする
+  delete: 削除
+  archive: アーカイブ
+  from: 送信者
+  sender:
+    system: システム
+  fallback_subject: メッセージ
+  subject: 件名
+  date: 日付
+  priority: 優先度
+  priority_high: 高優先度
+  priority_normal: 通常
+  priority_low: 低優先度
+  blocking: 対応が必要
+  blocking_count: "{count}件の重要なメッセージが対応を必要としています"

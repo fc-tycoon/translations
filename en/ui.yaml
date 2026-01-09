@@ -1,0 +1,283 @@
+# UI Translations (English)
+#
+# Contains localized strings for user interface elements:
+# - Navigation menus
+# - Tooltips
+# - Dialog titles and content
+# - Preferences sections
+# - Time controls
+# - Common labels
+
+ui:
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu (Landing Page)
+  # ══════════════════════════════════════════════════════════════════════
+  menu:
+    continue: Continue
+    new_game: New Game
+    load_game: Load Game
+    preferences: Preferences
+    credits: Credits
+    licenses: Licenses
+    exit: Exit
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Game Shell Navigation
+  # ══════════════════════════════════════════════════════════════════════
+  nav:
+    back: Back
+    forward: Forward
+    history: History
+    no_history: No previous screens
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Side Menu Sections
+  # ══════════════════════════════════════════════════════════════════════
+  sections:
+    my_office: My Office
+    team_management: Team Management
+    training: Training
+    staff: Staff
+    medical: Medical
+    finances: Finances
+    my_competitions: My Competitions
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Menu Items
+  # ══════════════════════════════════════════════════════════════════════
+  menu_items:
+    dashboard: Dashboard
+    inbox: Inbox
+    calendar: Calendar
+    competitions: Competitions
+    club_overview: Club Overview
+    squad_overview: Squad Overview
+    squad_stats: Squad Stats
+    selection_advice: Selection Advice
+    squad_dynamics: Squad Dynamics
+    squad_hierarchy: Squad Hierarchy
+    tactics_board: Tactics Board
+    schedule: Schedule
+    coaches: Coaches
+    teams: Teams
+    development: Development
+    individual_training: Individual Training
+    staff_overview: Staff Overview
+    staff_contracts: Staff Contracts
+    staff_responsibilities: Staff Responsibilities
+    injury_report: Injury Report
+    rehab_plans: Rehab Plans
+    budgets: Budgets
+    sponsorships: Sponsorships
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Time Controls
+  # ══════════════════════════════════════════════════════════════════════
+  time:
+    play: Play
+    pause: Pause
+    speed: Speed
+    fast_forward: Fast Forward
+    cancel_fast_forward: Click to cancel fast-forward
+    next_day: Next Day
+    advance_tomorrow: Advance to 9:00 AM tomorrow
+    cycle_speed: Cycle game speed (click to change)
+    processing: Processing...
+    advancing: Advancing to next day
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Save/Load Game
+  # ══════════════════════════════════════════════════════════════════════
+  save_load:
+    save_game: Save Game
+    load_game: Load Game
+    quick_save: Quick Save
+    save_as: Save As
+    overwrite: Overwrite
+    delete_save: Delete Save
+    confirm_delete: Are you sure you want to delete this save?
+    no_saves: No saved games found
+    save_name: Save Name
+    save_date: Date Saved
+    last_played: Last Played
+    club: Club
+    manager: Manager
+    season: Season
+    game_date: Game Date
+    managers_heading: Managers ({count})
+    reading_save_file: Reading save file...
+    select_save_to_see_details: Select a save file to see details
+    save_location: Save Location
+    filename: Filename
+    filename_placeholder: my-save
+    description: Description
+    description_placeholder: Optional save game description...
+    notes: Notes
+    notes_placeholder: Optional detailed notes (can be very long)...
+    notes_hint: Add detailed notes about this save. This field can hold large amounts of text.
+    password: Password
+    password_placeholder: Optional password for network saves
+    password_hint: Set a password to protect this save when loading from network locations.
+    quick_save_naming_hint: 'Quick saves use automatic naming: quick-save-YYYY-MM-DD-HHMMSS.db'
+    quick_save_description: Quick save created on {date}
+    file_exists_title: File Already Exists
+    file_exists_message: The file "{filename}.db" already exists. Saving will overwrite it.
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Common Labels
+  # ══════════════════════════════════════════════════════════════════════
+  common:
+    loading: Loading...
+    error: Error
+    warning: Warning
+    success: Success
+    info: Information
+    search: Search
+    search_messages: Search messages
+    filter: Filter
+    sort: Sort
+    refresh: Refresh
+    export: Export
+    import: Import
+    settings: Settings
+    stadium: Stadium
+    language: Language
+    help: Help
+    about: About
+    version: Version
+    name: Name
+    club: Club
+    league: League
+    country: Country
+    founded: Founded
+    reputation: Reputation
+    player: Player
+    position: Position
+    rating: Rating
+    role: Role
+    age: Age
+    type: Type
+    status: Status
+    date: Date
+    time: Time
+    actions: Actions
+    details: Details
+    overview: Overview
+    summary: Summary
+    total: Total
+    average: Average
+    minimum: Minimum
+    maximum: Maximum
+    none: None
+    all: All
+    selected: Selected
+    clear: Clear
+    copy: Copy
+    paste: Paste
+    undo: Undo
+    redo: Redo
+    unknown: Unknown
+    failed_to_load: Failed to load
+    unknown_error: Unknown error
+    vacant: Vacant
+    not_available: N/A
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Licenses Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  licenses:
+    open_folder: Open licenses folder
+    third_party_notices: Third-Party Notices
+    fc_tycoon_license: FC Tycoon License
+    load_failed: Failed to load licenses
+    load_file_failed: Failed to load license file
+    load_file_failed_inline: Failed to load this license file.
+    open_folder_failed: Failed to open licenses folder
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Credits Dialog
+  # ══════════════════════════════════════════════════════════════════════
+  credits:
+    load_failed: Failed to load credits
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Tooltips
+  # ══════════════════════════════════════════════════════════════════════
+  tooltips:
+    continue_game: Continue from your last save
+    new_game: Start a new career
+    load_game: Load a saved game
+    open_preferences: Open preferences
+    view_credits: View game credits
+    view_licenses: View open source licenses
+    exit_game: Exit to desktop
+    save_game: Save your current game
+    exit_to_menu: Exit to main menu
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Toast Messages
+  # ══════════════════════════════════════════════════════════════════════
+  messages:
+    unable_open_screen: Unable to open the selected screen right now
+    blocking_attention: You have {count} important message(s) that require your attention.
+    advance_day_failed: Failed to advance to next day. Please contact support on the FC Tycoon Discord channel.
+    load_success: Game loaded successfully
+    save_success: Game saved to {filename}.db
+    loaded_most_recent_save: 'Loaded most recent save: {name}'
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Error Messages
+  # ══════════════════════════════════════════════════════════════════════
+  errors:
+    load_failed: Failed to load game
+    save_failed: Failed to save game
+    save_failed_with_error: 'Failed to save game: {error}'
+    exit_failed: Failed to exit application
+    open_folder_dialog_failed: Failed to open folder selection dialog
+    locate_save_folder_failed: Failed to locate save folder
+    open_save_dialog_failed: Failed to open save dialog
+    load_most_recent_failed: Failed to load most recent save
+    ui_init_after_load_failed: Game loaded, but failed to initialize the UI
+    loaded_save_no_active_manager: Loaded save has no active manager. You may need to start a new game or repair this save.
+    connection_lost: Connection lost
+    unexpected_error: An unexpected error occurred
+    invalid_input: Invalid input
+    permission_denied: Permission denied
+    file_not_found: File not found
+    database_error: Database error
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Confirmation Dialogs
+  # ══════════════════════════════════════════════════════════════════════
+  confirm:
+    exit: Are you sure you want to exit?
+    exit_title: Exit Game
+    exit_unsaved: You have unsaved changes. Exit anyway?
+    delete: Are you sure you want to delete this?
+    reset: Are you sure you want to reset to defaults?
+    overwrite: A save with this name already exists. Overwrite?
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Buttons
+  # ══════════════════════════════════════════════════════════════════════
+  buttons:
+    ok: OK
+    cancel: Cancel
+    save: Save
+    not_now: Not Now
+    close: Close
+    continue: Continue
+    back: Back
+    next: Next
+    yes: 'Yes'
+    no: 'No'
+    confirm: Confirm
+    delete: Delete
+    edit: Edit
+    create: Create
+    add: Add
+    remove: Remove
+    reset: Reset
+    apply: Apply
+    browse: Browse...
+    exit: Exit

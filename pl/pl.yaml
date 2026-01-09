@@ -1,0 +1,20 @@
+# Polish Language Meta
+meta:
+  lang: pl
+  dir: ltr
+  name: Polski
+
+lang:
+  en: Angielski
+  de: Niemiecki
+  fr: Francuski
+  es: Hiszpański
+  it: Włoski
+  pt: Portugalski
+  ru: Rosyjski
+  zh: Chiński
+  ja: Japoński
+  ko: Koreański
+  ar: Arabski
+  nl: Holenderski
+  pl: Polski

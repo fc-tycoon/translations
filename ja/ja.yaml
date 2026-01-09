@@ -1,0 +1,20 @@
+# Japanese Language Meta
+meta:
+  lang: ja
+  dir: ltr
+  name: 日本語
+
+lang:
+  en: 英語
+  de: ドイツ語
+  fr: フランス語
+  es: スペイン語
+  it: イタリア語
+  pt: ポルトガル語
+  ru: ロシア語
+  zh: 中国語
+  ja: 日本語
+  ko: 韓国語
+  ar: アラビア語
+  nl: オランダ語
+  pl: ポーランド語

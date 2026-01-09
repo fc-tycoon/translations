@@ -1,0 +1,12 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Footer
+# ══════════════════════════════════════════════════════════════════════
+footer:
+  copyright: "© 2025 Darkwave Studios LLC. Alle rechten voorbehouden."
+  game: Spel
+  electron: Electron
+  chrome: Chrome
+  node: Node
+  renderer: Renderprogramma
+  gpu: GPU

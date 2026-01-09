@@ -1,0 +1,20 @@
+# Spanish Language Meta
+meta:
+  lang: es
+  dir: ltr
+  name: Español
+
+lang:
+  en: Inglés
+  de: Alemán
+  fr: Francés
+  es: Español
+  it: Italiano
+  pt: Portugués
+  ru: Ruso
+  zh: Chino
+  ja: Japonés
+  ko: Coreano
+  ar: Árabe
+  nl: Neerlandés
+  pl: Polaco

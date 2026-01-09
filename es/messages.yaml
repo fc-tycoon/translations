@@ -1,0 +1,12 @@
+# ══════════════════════════════════════════════════════════════════════
+# Mensajes / Plantillas de Bandeja de Entrada
+# ══════════════════════════════════════════════════════════════════════
+
+messages:
+  templates:
+    WELCOME:
+      subject: Bienvenido a {club_name}
+      body: |
+        Bienvenido a {club_name}.
+
+        Tu viaje comienza hoy.

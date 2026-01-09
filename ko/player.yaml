@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # 일반
+  preferred_foot: 주발
+  other_foot: 다른 발
+  left: 왼발
+  right: 오른발
+  unknown: 알 수 없음
+  na: 없음
+
+  # 선수 프로필
+  profile:
+    tabs:
+      attributes: 능력치
+      training: 훈련
+      information: 정보
+      contract_info: 계약 정보
+      transfer_status: 이적 상태
+      medical_report: 메디컬 리포트
+      history: 이력
+      statistics: 통계
+      talents: 재능
+      positions_roles: 포지션과 역할
+
+    stats:
+      age: 나이
+      height: 키
+      club: 클럽
+      foot: 발
+      team: 팀
+      wage: 급여
+      value: 가치
+      talent: 재능
+
+    cards:
+      attribute_overview: 능력치 개요
+      key_attributes: 핵심 능력치
+      average_rating: 평균 평점
+      overall: 종합
+      strengths: 강점
+      weaknesses: 약점
+      current_focus: 현재 집중
+      weekly_schedule: 주간 일정
+      development_progress: 성장 진행
+      personal_details: 개인 정보
+      personality: 성격
+      contract_details: 계약 세부사항
+      release_clauses: 조항
+      performance_bonuses: 성과 보너스
+      transfer_availability: 이적 가능 여부
+      interested_clubs: 관심 클럽
+      current_status: 현재 상태
+      injury_history: 부상 이력
+      career_timeline: 커리어 타임라인
+      season_stats: 시즌 기록
+      career_stats: 통산 기록
+      position_familiarity: 포지션 숙련도
+      best_roles: 최적 역할
+
+    hints:
+      positions_colored_by_familiarity: 포지션은 숙련도에 따라 색이 표시됩니다. 주 포지션은 보라색으로 강조됩니다.
+
+    messages:
+      training_focus_coming_soon: 훈련 집중 선택은 곧 추가됩니다
+      training_schedule_coming_soon: 훈련 일정 표시는 곧 추가됩니다
+      development_tracking_coming_soon: 성장 추적은 곧 추가됩니다
+      contract_details_coming_soon: 계약 세부사항은 곧 추가됩니다
+      transfer_availability_coming_soon: 이적 정보는 곧 추가됩니다
+      interested_clubs_coming_soon: 관심 클럽 목록은 곧 추가됩니다
+      medical_status_coming_soon: 메디컬 정보는 곧 추가됩니다
+      injury_history_coming_soon: 부상 이력은 곧 추가됩니다
+      career_history_coming_soon: 클럽 이력과 커리어 주요 기록은 곧 추가됩니다
+      season_stats_coming_soon: 출전, 득점, 도움은 곧 추가됩니다
+      career_stats_coming_soon: 통산 합계와 기록은 곧 추가됩니다
+      no_role_ratings: 역할 평점이 없습니다
+      loading_player: 선수 로딩 중...
+
+  # 재능
+  talents:
+    description: 재능은 훈련 배수로, 선수가 기술을 얼마나 빠르게 성장시키는지에 영향을 줍니다. 재능이 높을수록 관련 영역의 성장이 더 빠릅니다.
+
+  # 기술 카테고리
+  skill_categories:
+    technical: 테크닉
+    aerial: 공중전
+    shooting: 슈팅
+    passing: 패스
+    set_pieces: 세트피스
+    defending: 수비
+    physical: 피지컬
+    mental: 멘탈
+    attacking_mentality: 공격 멘탈
+    defensive_mentality: 수비 멘탈
+    goalkeeping: 골키핑
+
+  # 기술
+  skills:
+    # 테크닉
+    first_touch: 퍼스트 터치
+    ball_control: 볼 컨트롤
+    tight_control: 좁은 공간 컨트롤
+    dribbling: 드리블
+    technique: 테크닉
+    chip_technique: 칩 테크닉
+    high_ball_control: 하이볼 컨트롤
+    press_resistance: 압박 저항
+
+    # 공중전
+    heading_accuracy: 헤딩 정확도
+    jumping_reach: 점프력
+    aerial_duels: 공중 경합
+
+    # 슈팅
+    finishing: 결정력
+    one_touch_finishing: 원터치 결정력
+    shot_power: 슛 파워
+    long_shots: 중거리 슛
+    volleys: 발리
+    curve: 커브
+
+    # 패스
+    short_passing: 짧은 패스
+    long_passing: 긴 패스
+    lofted_passing: 로브 패스
+    through_ball_passing: 스루 패스
+    crossing: 크로스
+    one_touch_passing: 원터치 패스
+
+    # 세트피스
+    free_kicks: 프리킥
+    corner_kicks: 코너킥
+    penalties: 페널티킥
+
+    # 수비
+    marking: 마크
+    standing_tackles: 스탠딩 태클
+    sliding_tackles: 슬라이딩 태클
+    interceptions: 가로채기
+    jockeying: 조키잉
+    pressing_technique: 압박 기술
+    blocking: 블로킹
+    defensive_screening: 수비 스크리닝
+
+    # 피지컬
+    acceleration: 가속
+    sprint_speed: 스프린트 속도
+    strength: 힘
+    stamina: 스태미나
+    physical_contact: 몸싸움
+    agility: 민첩성
+    balance: 균형
+    ball_shielding: 볼 보호
+
+    # 멘탈
+    vision: 시야
+    flair: 창의성
+    composure: 침착함
+    concentration: 집중력
+    aggression: 공격성
+    bravery: 용기
+    reactions: 반응
+    scanning: 스캐닝
+    leadership: 리더십
+    determination: 결단력
+
+    # 공격 멘탈
+    attacking_awareness: 공격 인지
+    attacking_off_the_ball: 오프 더 볼
+    attacking_work_rate: 활동량
+    attacking_decisions: 판단
+    attacking_anticipation: 예측
+    attacking_teamwork: 팀워크
+
+    # 수비 멘탈
+    defensive_awareness: 수비 인지
+    defensive_positioning: 포지셔닝
+    defensive_work_rate: 활동량
+    defensive_decisions: 판단
+    defensive_anticipation: 예측
+    defensive_teamwork: 팀워크
+
+    # 골키핑
+    gk_positioning: 포지셔닝
+    gk_handling: 핸들링
+    gk_shot_stopping: 선방
+    gk_decisions: 판단
+    gk_awareness: 인지
+    gk_composure: 침착함
+    gk_reflexes: 반사신경
+    gk_diving: 다이빙
+    gk_one_on_one: 일대일
+    gk_kicking: 킥
+    gk_catching: 캐칭
+    gk_aerial_ability: 공중 대응
+    gk_command_of_area: 지역 장악
+    gk_communication: 소통
+    gk_throwing: 스로잉
+    gk_sweeper_actions: 스위퍼 행동

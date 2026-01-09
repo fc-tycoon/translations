@@ -1,0 +1,34 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Misc
+*.log
+
+# backups/copies
+_*.yaml
+*copy.yaml
+*Copy.yaml
+*backup.yaml
+*-old.yaml
+*_old.yaml
+* old.yaml
+*-OLD.yaml
+*_OLD.yaml
+* OLD.yaml

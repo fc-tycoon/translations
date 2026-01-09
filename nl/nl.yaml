@@ -1,0 +1,20 @@
+# Dutch Language Meta
+meta:
+  lang: nl
+  dir: ltr
+  name: Nederlands
+
+lang:
+  en: Engels
+  de: Duits
+  fr: Frans
+  es: Spaans
+  it: Italiaans
+  pt: Portugees
+  ru: Russisch
+  zh: Chinees
+  ja: Japans
+  ko: Koreaans
+  ar: Arabisch
+  nl: Nederlands
+  pl: Pools

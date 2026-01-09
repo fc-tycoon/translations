@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # Général
+  preferred_foot: Pied préféré
+  other_foot: Autre pied
+  left: Gauche
+  right: Droit
+  unknown: Inconnu
+  na: N/A
+
+  # Profil du joueur
+  profile:
+    tabs:
+      attributes: Attributs
+      training: Entraînement
+      information: Informations
+      contract_info: Contrat
+      transfer_status: Statut de transfert
+      medical_report: Rapport médical
+      history: Historique
+      statistics: Statistiques
+      talents: Talents
+      positions_roles: Postes et rôles
+
+    stats:
+      age: Âge
+      height: Taille
+      club: Club
+      foot: Pied
+      team: Équipe
+      wage: Salaire
+      value: Valeur
+      talent: Talent
+
+    cards:
+      attribute_overview: Vue d'ensemble des attributs
+      key_attributes: Attributs clés
+      average_rating: Note moyenne
+      overall: Global
+      strengths: Points forts
+      weaknesses: Points faibles
+      current_focus: Focus actuel
+      weekly_schedule: Planning hebdomadaire
+      development_progress: Progression
+      personal_details: Détails personnels
+      personality: Personnalité
+      contract_details: Détails du contrat
+      release_clauses: Clauses libératoires
+      performance_bonuses: Primes de performance
+      transfer_availability: Disponibilité au transfert
+      interested_clubs: Clubs intéressés
+      current_status: Statut actuel
+      injury_history: Historique des blessures
+      career_timeline: Chronologie de carrière
+      season_stats: Stats de saison
+      career_stats: Stats de carrière
+      position_familiarity: Familiarité des postes
+      best_roles: Meilleurs rôles
+
+    hints:
+      positions_colored_by_familiarity: Les postes sont colorés selon la note de familiarité. Le poste principal est mis en évidence en violet.
+
+    messages:
+      training_focus_coming_soon: La sélection du focus d'entraînement arrive bientôt
+      training_schedule_coming_soon: L'affichage du planning d'entraînement arrive bientôt
+      development_tracking_coming_soon: Le suivi de progression arrive bientôt
+      contract_details_coming_soon: Les détails du contrat arrivent bientôt
+      transfer_availability_coming_soon: Les infos de transfert arrivent bientôt
+      interested_clubs_coming_soon: La liste des clubs intéressés arrive bientôt
+      medical_status_coming_soon: Les informations médicales arrivent bientôt
+      injury_history_coming_soon: L'historique des blessures arrive bientôt
+      career_history_coming_soon: Historique du club et jalons de carrière arrivent bientôt
+      season_stats_coming_soon: Matchs, buts, passes arrivent bientôt
+      career_stats_coming_soon: Totaux et records de carrière arrivent bientôt
+      no_role_ratings: Aucune note de rôle disponible
+      loading_player: Chargement du joueur...
+
+  # Talents
+  talents:
+    description: Les talents sont des multiplicateurs d'entraînement qui influencent la vitesse de progression des joueurs. Talent plus élevé = progression plus rapide dans les domaines liés.
+
+  # Catégories de compétences
+  skill_categories:
+    technical: Technique
+    aerial: Jeu aérien
+    shooting: Frappe
+    passing: Passe
+    set_pieces: Coups de pied arrêtés
+    defending: Défense
+    physical: Physique
+    mental: Mental
+    attacking_mentality: Mentalité offensive
+    defensive_mentality: Mentalité défensive
+    goalkeeping: Gardien
+
+  # Compétences
+  skills:
+    # Technique
+    first_touch: Première touche
+    ball_control: Contrôle de balle
+    tight_control: Contrôle serré
+    dribbling: Dribble
+    technique: Technique
+    chip_technique: Technique de lob
+    high_ball_control: Contrôle des ballons aériens
+    press_resistance: Résistance au pressing
+
+    # Jeu aérien
+    heading_accuracy: Précision de la tête
+    jumping_reach: Détente
+    aerial_duels: Duels aériens
+
+    # Frappe
+    finishing: Finition
+    one_touch_finishing: Finition en une touche
+    shot_power: Puissance de tir
+    long_shots: Tirs de loin
+    volleys: Volées
+    curve: Effet
+
+    # Passe
+    short_passing: Passes courtes
+    long_passing: Passes longues
+    lofted_passing: Passes lobées
+    through_ball_passing: Passe dans la profondeur
+    crossing: Centres
+    one_touch_passing: Passe en une touche
+
+    # Coups de pied arrêtés
+    free_kicks: Coups francs
+    corner_kicks: Corners
+    penalties: Penaltys
+
+    # Défense
+    marking: Marquage
+    standing_tackles: Tacles debout
+    sliding_tackles: Tacles glissés
+    interceptions: Interceptions
+    jockeying: Contention
+    pressing_technique: Technique de pressing
+    blocking: Contres
+    defensive_screening: Écrans défensifs
+
+    # Physique
+    acceleration: Accélération
+    sprint_speed: Vitesse
+    strength: Force
+    stamina: Endurance
+    physical_contact: Contact physique
+    agility: Agilité
+    balance: Équilibre
+    ball_shielding: Protection de balle
+
+    # Mental
+    vision: Vision
+    flair: Créativité
+    composure: Sang-froid
+    concentration: Concentration
+    aggression: Agressivité
+    bravery: Courage
+    reactions: Réactions
+    scanning: Scan du jeu
+    leadership: Leadership
+    determination: Détermination
+
+    # Mentalité offensive
+    attacking_awareness: Conscience
+    attacking_off_the_ball: Appels sans ballon
+    attacking_work_rate: Volume de jeu
+    attacking_decisions: Décisions
+    attacking_anticipation: Anticipation
+    attacking_teamwork: Esprit d'équipe
+
+    # Mentalité défensive
+    defensive_awareness: Conscience
+    defensive_positioning: Placement
+    defensive_work_rate: Volume de jeu
+    defensive_decisions: Décisions
+    defensive_anticipation: Anticipation
+    defensive_teamwork: Esprit d'équipe
+
+    # Gardien
+    gk_positioning: Placement
+    gk_handling: Prise de balle
+    gk_shot_stopping: Arrêts
+    gk_decisions: Décisions
+    gk_awareness: Lecture du jeu
+    gk_composure: Sang-froid
+    gk_reflexes: Réflexes
+    gk_diving: Plongeons
+    gk_one_on_one: Un contre un
+    gk_kicking: Jeu au pied
+    gk_catching: Captation
+    gk_aerial_ability: Autorité aérienne
+    gk_command_of_area: Commandement de la surface
+    gk_communication: Communication
+    gk_throwing: Relances à la main
+    gk_sweeper_actions: Actions de libéro

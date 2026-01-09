@@ -1,0 +1,9 @@
+competitions:
+  8716:
+    name: Premier Division
+    short_name: Premier Division
+    code: EPL
+  24538:
+    name: Championship Division
+    code: CH
+    short_name: Championship Division

@@ -1,0 +1,200 @@
+# ══════════════════════════════════════════════════════════════════════
+# Player
+# ══════════════════════════════════════════════════════════════════════
+player:
+  # 一般
+  preferred_foot: 利き足
+  other_foot: 逆足
+  left: 左
+  right: 右
+  unknown: 不明
+  na: 該当なし
+
+  # 選手プロフィール
+  profile:
+    tabs:
+      attributes: 能力
+      training: トレーニング
+      information: 情報
+      contract_info: 契約情報
+      transfer_status: 移籍状況
+      medical_report: メディカル
+      history: 履歴
+      statistics: 成績
+      talents: タレント
+      positions_roles: ポジションと役割
+
+    stats:
+      age: 年齢
+      height: 身長
+      club: クラブ
+      foot: 利き足
+      team: チーム
+      wage: 給与
+      value: 市場価値
+      talent: タレント
+
+    cards:
+      attribute_overview: 能力の概要
+      key_attributes: 主要能力
+      average_rating: 平均評価
+      overall: 総合
+      strengths: 強み
+      weaknesses: 弱み
+      current_focus: 現在の重点
+      weekly_schedule: 週間スケジュール
+      development_progress: 成長の進捗
+      personal_details: 個人情報
+      personality: 性格
+      contract_details: 契約詳細
+      release_clauses: 契約条項
+      performance_bonuses: 成績ボーナス
+      transfer_availability: 移籍可否
+      interested_clubs: 関心のあるクラブ
+      current_status: 現在の状態
+      injury_history: 怪我の履歴
+      career_timeline: キャリア年表
+      season_stats: シーズン成績
+      career_stats: 通算成績
+      position_familiarity: ポジション適性
+      best_roles: 最適な役割
+
+    hints:
+      positions_colored_by_familiarity: ポジションは適性評価で色分けされます。主ポジションは紫で強調表示されます。
+
+    messages:
+      training_focus_coming_soon: トレーニング重点の選択は近日追加予定です
+      training_schedule_coming_soon: トレーニングスケジュール表示は近日追加予定です
+      development_tracking_coming_soon: 成長トラッキングは近日追加予定です
+      contract_details_coming_soon: 契約詳細は近日追加予定です
+      transfer_availability_coming_soon: 移籍情報は近日追加予定です
+      interested_clubs_coming_soon: 関心クラブ一覧は近日追加予定です
+      medical_status_coming_soon: メディカル情報は近日追加予定です
+      injury_history_coming_soon: 怪我の履歴は近日追加予定です
+      career_history_coming_soon: クラブ履歴とキャリアの節目は近日追加予定です
+      season_stats_coming_soon: 出場数・ゴール・アシストは近日追加予定です
+      career_stats_coming_soon: 通算合計と記録は近日追加予定です
+      no_role_ratings: 役割評価はありません
+      loading_player: 選手を読み込み中...
+
+  # タレント
+  talents:
+    description: タレントはトレーニング倍率で、スキルの成長速度に影響します。タレントが高いほど、関連分野の成長が速くなります。
+
+  # スキルカテゴリ
+  skill_categories:
+    technical: テクニック
+    aerial: 空中戦
+    shooting: シュート
+    passing: パス
+    set_pieces: セットプレー
+    defending: 守備
+    physical: フィジカル
+    mental: メンタル
+    attacking_mentality: 攻撃メンタル
+    defensive_mentality: 守備メンタル
+    goalkeeping: ゴールキーパー
+
+  # スキル
+  skills:
+    # テクニック
+    first_touch: ファーストタッチ
+    ball_control: ボールコントロール
+    tight_control: 密集地コントロール
+    dribbling: ドリブル
+    technique: テクニック
+    chip_technique: チップ技術
+    high_ball_control: ハイボールコントロール
+    press_resistance: プレス耐性
+
+    # 空中戦
+    heading_accuracy: ヘディング精度
+    jumping_reach: ジャンプ到達点
+    aerial_duels: 空中戦
+
+    # シュート
+    finishing: 決定力
+    one_touch_finishing: ワンタッチ決定力
+    shot_power: シュート力
+    long_shots: ロングシュート
+    volleys: ボレー
+    curve: カーブ
+
+    # パス
+    short_passing: ショートパス
+    long_passing: ロングパス
+    lofted_passing: ロブパス
+    through_ball_passing: スルーパス
+    crossing: クロス
+    one_touch_passing: ワンタッチパス
+
+    # セットプレー
+    free_kicks: フリーキック
+    corner_kicks: コーナーキック
+    penalties: PK
+
+    # 守備
+    marking: マーク
+    standing_tackles: タックル
+    sliding_tackles: スライディング
+    interceptions: インターセプト
+    jockeying: ジョッキー
+    pressing_technique: プレス技術
+    blocking: ブロック
+    defensive_screening: 守備のスクリーン
+
+    # フィジカル
+    acceleration: 加速
+    sprint_speed: スプリント速度
+    strength: フィジカル
+    stamina: スタミナ
+    physical_contact: フィジカルコンタクト
+    agility: 敏捷性
+    balance: バランス
+    ball_shielding: ボールキープ
+
+    # メンタル
+    vision: ビジョン
+    flair: ひらめき
+    composure: 冷静さ
+    concentration: 集中力
+    aggression: 闘争心
+    bravery: 勇敢さ
+    reactions: 反応
+    scanning: スキャン
+    leadership: リーダーシップ
+    determination: 決意
+
+    # 攻撃メンタル
+    attacking_awareness: 攻撃意識
+    attacking_off_the_ball: オフザボール
+    attacking_work_rate: 運動量
+    attacking_decisions: 判断力
+    attacking_anticipation: 予測
+    attacking_teamwork: チームワーク
+
+    # 守備メンタル
+    defensive_awareness: 守備意識
+    defensive_positioning: ポジショニング
+    defensive_work_rate: 運動量
+    defensive_decisions: 判断力
+    defensive_anticipation: 予測
+    defensive_teamwork: チームワーク
+
+    # ゴールキーパー
+    gk_positioning: ポジショニング
+    gk_handling: ハンドリング
+    gk_shot_stopping: シュートストップ
+    gk_decisions: 判断力
+    gk_awareness: 状況認識
+    gk_composure: 冷静さ
+    gk_reflexes: 反射神経
+    gk_diving: ダイビング
+    gk_one_on_one: 1対1
+    gk_kicking: キック
+    gk_catching: キャッチング
+    gk_aerial_ability: ハイボール対応
+    gk_command_of_area: エリア支配
+    gk_communication: コミュニケーション
+    gk_throwing: スロー
+    gk_sweeper_actions: スイーパー行動

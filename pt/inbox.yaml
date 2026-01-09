@@ -1,0 +1,29 @@
+inbox:
+  title: Caixa de Entrada
+  no_messages: Sem mensagens
+  empty_state: Sem mensagens
+  empty_selection: Selecione uma mensagem para ler
+  starred: Com estrela
+  important: Importante
+  required: Obrigatório
+  requires_response: Requer resposta
+  star: Adicionar estrela
+  unstar: Remover estrela
+  starred_label: Com estrela
+  star_label: Estrela
+  mark_read: Marcar como lida
+  mark_unread: Marcar como não lida
+  delete: Excluir
+  archive: Arquivar
+  from: De
+  sender:
+    system: Sistema
+  fallback_subject: Mensagem
+  subject: Assunto
+  date: Data
+  priority: Prioridade
+  priority_high: Alta Prioridade
+  priority_normal: Normal
+  priority_low: Baixa Prioridade
+  blocking: Requer Atenção
+  blocking_count: "{count} mensagem(ns) importante(s) requer(em) sua atenção"

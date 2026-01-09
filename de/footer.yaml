@@ -1,0 +1,12 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Footer
+# ══════════════════════════════════════════════════════════════════════
+footer:
+  copyright: "© 2025 Darkwave Studios LLC. Alle Rechte vorbehalten."
+  game: Spiel
+  electron: Electron
+  chrome: Chrome
+  node: Node
+  renderer: Renderer
+  gpu: GPU

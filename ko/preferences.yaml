@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════
+# Preferences Dialog
+# ══════════════════════════════════════════════════════════════════════
+preferences:
+  title: 환경설정
+  save: 환경설정 저장
+  reset: 기본값으로 재설정
+  cancel: 취소
+
+  tabs:
+    saved_games: 저장된 게임
+    display: 표시
+    languages: 언어
+    gameplay: 게임플레이
+    ui: UI
+    colors: 색상
+    shortcuts: 단축키
+
+  saved_games:
+    title: 저장된 게임 설정
+    default_location: 기본 저장 위치
+    browse_btn: 찾아보기...
+    placeholder: /saved-games/
+    autosave_freq: 자동 저장 빈도
+    autosave_freq_options:
+      disabled: 비활성화
+      every_7_days: 7일마다
+      every_14_days: 14일마다
+      every_30_days: 30일마다
+    keep_autosaves: 자동 저장 보관
+    keep_autosaves_hint: 가장 오래된 항목을 삭제하기 전에 보관할 자동 저장 수
+    confirm_overwrite: 덮어쓰기 확인
+
+  display:
+    title: 표시 설정
+    theme: 테마
+    theme_options:
+      dark: 다크 (기본)
+      light: 라이트
+      auto: 자동 (시스템)
+    ui_scale: UI 크기
+    show_tooltips: 툴팁 표시
+    animations: 애니메이션
+
+  languages:
+    title: 언어 설정
+    game_language: 게임 언어
+    game_language_hint: 게임 내 모든 텍스트의 언어를 변경합니다 (일부 UI는 재시작 필요)
+    date_format: 날짜 형식
+    number_format: 숫자 형식
+    reload_translations: 번역 다시 불러오기
+    reload_btn: 다시 불러오기
+    reload_hint: 디스크의 모든 번역 파일을 다시 불러옵니다 (개발에 유용)
+
+  gameplay:
+    title: 게임플레이 설정
+    pause_on_events: 이벤트 시 일시정지
+    pause_on_events_hint: 중요한 이벤트가 발생하면 게임을 일시정지합니다
+    show_tutorials: 튜토리얼 표시
+    confirm_actions: 작업 확인
+    confirm_actions_options:
+      transfers: 이적 제안
+      contracts: 계약 제안
+      tactics: 전술 변경
+    quick_continue: 빠른 계속
+    quick_continue_hint: 게임을 계속할 때 확인을 건너뜁니다
+
+  ui_tab:
+    title: UI 설정
+    pitch_map_footedness: 피치 맵 왼발/오른발 표시
+    pitch_map_footedness_preview: 미리보기
+    pitch_map_footedness_hint: 추가 좌/우 마커 토글 (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)
+
+  colors:
+    title: 색상
+    colors_group_title: 포지션 유닛 색상
+    reset_colors_btn: 색상 재설정
+    goalkeepers: 골키퍼
+    defenders: 수비수
+    midfielders: 미드필더
+    attackers: 공격수
+    reset_btn: 재설정
+
+  shortcuts:
+    title: 키보드 단축키
+    column_action: 작업
+    column_shortcut: 단축키
+    actions:
+      quick_save: 빠른 저장
+      continue_game: 게임 계속
+      open_dashboard: 대시보드 열기
+      open_squad: 스쿼드 열기
+      open_tactics: 전술 열기
+      open_transfers: 이적 열기
+
+  messages:
+    reset_dialog_title: 환경설정 재설정
+    reset_dialog_message: 모든 환경설정을 기본값으로 재설정합니다. 계속하시겠습니까?
+    reset_dialog_confirm: 재설정
+    reset_dialog_cancel: 취소
+    reset_success: 환경설정이 기본값으로 재설정되었습니다
+    save_success: 환경설정이 저장되었습니다
+    save_error: "환경설정 저장 실패: {error}"
+    language_changed: "언어가 {language}(으)로 변경되었습니다"
+    language_change_error: "언어 변경 실패: {error}"
+    reload_success: 번역이 다시 불러와졌습니다
+    reload_error: "번역 다시 불러오기 실패: {error}"
+    folder_error: "폴더 선택 대화상자를 열지 못했습니다"

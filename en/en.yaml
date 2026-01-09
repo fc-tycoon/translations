@@ -1,0 +1,20 @@
+# English Language Meta
+meta:
+  lang: en
+  dir: ltr
+  name: English
+
+lang:
+  en: English
+  de: German
+  fr: French
+  es: Spanish
+  it: Italian
+  pt: Portuguese
+  ru: Russian
+  zh: Chinese
+  ja: Japanese
+  ko: Korean
+  ar: Arabic
+  nl: Dutch
+  pl: Polish

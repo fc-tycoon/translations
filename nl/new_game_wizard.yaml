@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: Database
+  step_database_desc: Kies database en mods
+  step_leagues_title: Competities
+  step_leagues_desc: Kies competities om te activeren
+  step_club_title: Club
+  step_club_desc: Kies je club
+  step_settings_title: Spelinstellingen
+  step_settings_desc: Stel de game in
+  step_manager_title: Manager
+  step_manager_desc: Maak je profiel
+  step_skills_title: Vaardigheden
+  step_skills_desc: Verdeel vaardigheidspunten
+  step_review_title: Overzicht
+  step_review_desc: Bevestigen en starten
+
+  navigation:
+    next_to_step: 'Volgende: {step}'
+
+  pages:
+    club_selection:
+      title: Kies je club
+      description: Kies een bestaande club, maak een nieuwe of begin als rondtrekkende manager
+      modes:
+        existing:
+          title: Bestaande club
+          description: Neem de leiding over een gevestigde club uit een van de geactiveerde competities
+        create:
+          title: Club maken
+          description: Begin opnieuw met een gloednieuwe club die een bestaand team vervangt
+        journeyman:
+          title: Rondtrekkende manager
+          description: Begin werkloos en zoek je eerste kans als manager
+      filters:
+        search_placeholder: Clubs zoeken...
+        all_countries: Alle landen
+        all_leagues: Alle competities
+      badges:
+        promoted: Gepromoveerd
+        relegated: Gedegradeerd
+      details:
+        first_team_squad: Eerste elftal
+        no_first_team_players: Geen spelers toegewezen aan het eerste elftal
+        current_manager: Huidige manager
+        key_staff: Belangrijke staf
+        no_staff: Geen staf toegewezen
+      empty:
+        select_club_details: Selecteer een club om details te bekijken
+      create:
+        sections:
+          club_identity: Clubidentiteit
+          league_placement: Competitie-indeling
+          starting_attributes: Startattributen
+        fields:
+          club_name: Clubnaam
+          short_name: Korte naam
+          code: Code
+          reserve_team: Reserveteam
+          club_colors: Clubkleuren
+          color_background: Achtergrond
+          color_text: Tekst
+          join_league: Competitie kiezen
+          replace_team: Team vervangen
+          national_rep: Nationale reputatie
+          international_rep: Internationale reputatie
+          elo_rating: ELO-rating
+        placeholders:
+          club_name: bijv. FC Phoenix
+          short_name: bijv. Phoenix
+          code: PHX
+          reserve_team: bijv. FC Phoenix B
+          select_league: Selecteer competitie
+          select_team_to_replace: Selecteer team om te vervangen
+        hints:
+          code_abbreviation: Afkorting van 3 letters
+          replaced_team_relegated: Het vervangen team degradeert naar een lagere divisie
+        replace_team_auto: '🎲 Auto (Laagste reputatie)'
+      journeyman:
+        title: Begin je reis
+        description: Je begint het spel zonder club. Bekijk vacatures, solliciteer of laat het spel simuleren tot er een kans ontstaat.
+        features:
+          search_vacancies: Zoeken naar openstaande managersposities
+          apply_to_clubs: Solliciteren bij clubs die bij je profiel passen
+          build_reputation: Bouw je reputatie vanaf nul op
+          interview_offers: Interviewaanbiedingen accepteren of afwijzen
+
+  # Toasts / validatie
+  messages:
+    applied_preset: "Preset \"{name}\" toegepast ({points} punten)"
+    skills_reset: Vaardigheden gereset
+  warnings:
+    select_at_least_one_league: Selecteer ten minste één competitie
+    complete_required_fields: Vul alle verplichte velden in
+    not_enough_points_remaining: Niet genoeg punten over
+    allocate_all_skill_points: Wijs alle vaardigheidspunten toe
+    drop_mod_files_only: Sleep alleen .mod-bestanden
+    select_a_database: Selecteer een database
+    no_leagues_selected_go_back: Geen competities geselecteerd. Ga terug en selecteer competities.
+    complete_club_selection: Rond de clubselectie af
+  errors:
+    load_seasons_failed: Kon beschikbare seizoenen niet laden
+    open_file_dialog_failed: Kon het bestandskeuzescherm niet openen
+    load_clubs_failed_with_error: "Kon clubs niet laden: {error}"
+  mod_import:
+    select_mod_files_title: Modbestanden selecteren

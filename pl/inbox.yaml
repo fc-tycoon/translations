@@ -1,0 +1,29 @@
+inbox:
+  title: Skrzynka Odbiorcza
+  no_messages: Brak wiadomości
+  empty_state: Brak wiadomości
+  empty_selection: Wybierz wiadomość do przeczytania
+  starred: Oznaczone gwiazdką
+  important: Ważne
+  required: Wymagane
+  requires_response: Wymaga odpowiedzi
+  star: Oznacz gwiazdką
+  unstar: Usuń gwiazdkę
+  starred_label: Oznaczone gwiazdką
+  star_label: Gwiazdka
+  mark_read: Oznacz jako przeczytane
+  mark_unread: Oznacz jako nieprzeczytane
+  delete: Usuń
+  archive: Archiwizuj
+  from: Od
+  sender:
+    system: System
+  fallback_subject: Wiadomość
+  subject: Temat
+  date: Data
+  priority: Priorytet
+  priority_high: Wysoki Priorytet
+  priority_normal: Normalny
+  priority_low: Niski Priorytet
+  blocking: Wymaga Uwagi
+  blocking_count: "{count} ważna(e) wiadomość(ci) wymaga(ją) Twojej uwagi"

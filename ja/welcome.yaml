@@ -1,0 +1,22 @@
+welcome:
+  title: "{clubName}へようこそ"
+  continue: 続ける
+  skip_tour: ツアーをスキップ
+  club_snapshot: クラブスナップショット
+  leadership: リーダーシップ
+  facilities: 施設
+  season_outlook: シーズン展望
+  key_people: 紹介すべき主要人物
+  introductions: ディレクターが最初の週に紹介を手配します
+  owner: オーナー
+  director: スポーツディレクター
+  head_coach: ヘッドコーチ
+  stadium_capacity: スタジアム収容人数
+  training: トレーニング
+  youth: ユース
+  competition: 大会
+  board_expectation: 取締役会の期待
+  transfer_budget: 移籍予算
+
+  confirm_save_new_game: "新しいゲームを保存しますか？"
+  manager_fallback: マネージャー

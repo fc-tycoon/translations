@@ -1,0 +1,109 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# New Game Wizard
+# ══════════════════════════════════════════════════════════════════════
+new_game_wizard:
+  step_database_title: 数据库
+  step_database_desc: 选择数据库与模组
+  step_leagues_title: 联赛
+  step_leagues_desc: 选择要启用的联赛
+  step_club_title: 俱乐部
+  step_club_desc: 选择你的俱乐部
+  step_settings_title: 游戏设置
+  step_settings_desc: 配置游戏设置
+  step_manager_title: 主教练
+  step_manager_desc: 创建你的资料
+  step_skills_title: 能力
+  step_skills_desc: 分配技能点
+  step_review_title: 确认
+  step_review_desc: 确认并开始游戏
+
+  navigation:
+    next_to_step: '下一步：{step}'
+
+  pages:
+    club_selection:
+      title: 选择你的俱乐部
+      description: 选择现有俱乐部、创建新俱乐部，或以自由教练身份开始
+      modes:
+        existing:
+          title: 现有俱乐部
+          description: 选择一支已建立的俱乐部，来自已启用的联赛之一
+        create:
+          title: 创建俱乐部
+          description: 用一支全新的俱乐部开始，并替换一个现有球队
+        journeyman:
+          title: 自由教练
+          description: 从失业开始，寻找你的第一份执教机会
+      filters:
+        search_placeholder: 搜索俱乐部...
+        all_countries: 所有国家
+        all_leagues: 所有联赛
+      badges:
+        promoted: 升级
+        relegated: 降级
+      details:
+        first_team_squad: 一线队阵容
+        no_first_team_players: 一线队没有分配球员
+        current_manager: 现任主教练
+        key_staff: 关键工作人员
+        no_staff: 未分配工作人员
+      empty:
+        select_club_details: 选择俱乐部以查看详情
+      create:
+        sections:
+          club_identity: 俱乐部信息
+          league_placement: 联赛归属
+          starting_attributes: 初始属性
+        fields:
+          club_name: 俱乐部名称
+          short_name: 简称
+          code: 代码
+          reserve_team: 预备队
+          club_colors: 俱乐部颜色
+          color_background: 背景
+          color_text: 文本
+          join_league: 加入联赛
+          replace_team: 替换球队
+          national_rep: 国内声望
+          international_rep: 国际声望
+          elo_rating: ELO 评分
+        placeholders:
+          club_name: 例如：FC Phoenix
+          short_name: 例如：Phoenix
+          code: PHX
+          reserve_team: 例如：FC Phoenix B
+          select_league: 选择联赛
+          select_team_to_replace: 选择要替换的球队
+        hints:
+          code_abbreviation: 3字母缩写
+          replaced_team_relegated: 被替换的球队将降级到更低级别联赛
+        replace_team_auto: '🎲 自动（最低声望）'
+      journeyman:
+        title: 开启你的旅程
+        description: 你将从没有俱乐部开始游戏。浏览职位、投递申请，或让游戏模拟直到出现机会。
+        features:
+          search_vacancies: 寻找主教练空缺
+          apply_to_clubs: 申请与你的资料匹配的俱乐部
+          build_reputation: 从零开始建立你的声望
+          interview_offers: 接受或拒绝面试邀约
+
+  # 提示 / 校验
+  messages:
+    applied_preset: "已应用预设“{name}”（{points} 点数）"
+    skills_reset: 技能已重置
+  warnings:
+    select_at_least_one_league: 请至少选择一个联赛
+    complete_required_fields: 请填写所有必填字段
+    not_enough_points_remaining: 剩余点数不足
+    allocate_all_skill_points: 请分配完所有技能点
+    drop_mod_files_only: 请仅拖放 .mod 文件
+    select_a_database: 请选择一个数据库
+    no_leagues_selected_go_back: 未选择联赛。请返回并选择联赛。
+    complete_club_selection: 请完成俱乐部选择
+  errors:
+    load_seasons_failed: 无法加载可用赛季
+    open_file_dialog_failed: 无法打开文件选择对话框
+    load_clubs_failed_with_error: "无法加载俱乐部：{error}"
+  mod_import:
+    select_mod_files_title: 选择 Mod 文件
