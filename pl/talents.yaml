@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# Talenty
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: Podstawa techniczna
+        description: Naturalna umiejętność gry z piłką.
+        talents:
+          ball_mastery:
+            label: Panowanie nad piłką
+            description: Naturalna kontrola w tłoku i przy dużej prędkości.
+            tooltip: "Wpływa na: pierwszy kontakt, kontrolę piłki, prowadzenie w ciasnych przestrzeniach, drybling, osłanianie piłki, odporność na pressing."
+          ball_distribution:
+            label: Dystrybucja piłki
+            description: Wyczucie siły podania i kątów.
+            tooltip: "Wpływa na: krótkie podania, długie podania, podania górą, dośrodkowania, wizję, stałe fragmenty."
+          ball_finesse:
+            label: Finezja
+            description: Delikatny dotyk i precyzja.
+            tooltip: "Wpływa na: rotację, podcinki, finezję, prostopadłe podania, strzały z rotacją, strzały techniczne, precyzyjny drybling, dokładne podania."
+          set_pieces:
+            label: Stałe fragmenty
+            description: Uderzenie przy stałych fragmentach gry.
+            tooltip: "Wpływa na: rzuty wolne, rzuty rożne, karne."
+
+      defensive:
+        label: Podstawa defensywna
+        description: Umiejętności w fazie obrony.
+        talents:
+          def_duels:
+            label: Pojedynki defensywne
+            description: Naturalne wyczucie czasu w 1 na 1.
+            tooltip: "Wpływa na: wślizgi, odbiory na stojąco, bloki, pojedynki w powietrzu, kontakt fizyczny."
+          def_reading:
+            label: Czytanie gry w obronie
+            description: Czytanie zamiarów rywali.
+            tooltip: "Wpływa na: krycie, przechwyty, zasłanianie, świadomość defensywną."
+          def_movement:
+            label: Ruch w obronie
+            description: Praca nóg w obronie.
+            tooltip: "Wpływa na: doskok, pressing, ustawienie, pracowitość."
+
+      attacking:
+        label: Podstawa ofensywna
+        description: Umiejętności w ataku.
+        talents:
+          ball_striking:
+            label: Uderzenie
+            description: Czysty kontakt i timing.
+            tooltip: "Wpływa na: wykończenie, strzały, woleje, rotację, celność główki."
+          att_reading:
+            label: Czytanie gry w ataku
+            description: Czytanie obrony i schematów.
+            tooltip: "Wpływa na: wykończenie, przewidywanie, kreatywność, wizję."
+          att_movement:
+            label: Ruch w ataku
+            description: Znajdowanie przestrzeni i timing wbiegnięć.
+            tooltip: "Wpływa na: gra bez piłki, świadomość ofensywną, pracowitość w ataku."
+
+      physical:
+        label: Podstawa fizyczna
+        description: Atletyka i kontrola ciała.
+        talents:
+          physical_power:
+            label: Siła i moc
+            description: Potencjał eksplozywności.
+            tooltip: "Wpływa na: przyspieszenie, szybkość, siłę, wyskok, siłę strzału."
+          endurance:
+            label: Wytrzymałość
+            description: Silnik i ekonomia ruchu.
+            tooltip: "Wpływa na: wytrzymałość, intensywność pracy, powtarzalne sprinty, wytrzymałość pressingu."
+          coordination:
+            label: Koordynacja
+            description: Kontrola ciała i mikro-korekty.
+            tooltip: "Wpływa na: zwinność, równowagę, kontrolę ciała, doskok, refleks."
+          aerial:
+            label: Gra w powietrzu
+            description: Ocena lotu piłki i timing wyskoku.
+            tooltip: "Wpływa na: celność główki, wyskok, pojedynki powietrzne, kontrolę wysokich piłek."
+
+      mental:
+        label: Podstawa mentalna
+        description: Przetwarzanie informacji i kontrola emocji.
+        talents:
+          game_intelligence:
+            label: Inteligencja boiskowa
+            description: Szybkość analizy i wybór opcji.
+            tooltip: "Wpływa na: decyzje, przewidywanie, opanowanie, reakcje."
+          temperament:
+            label: Temperament
+            description: Stabilność emocjonalna i prezencja.
+            tooltip: "Wpływa na: przywództwo, gra o wysoką stawkę, komunikację, odwagę."
+          spatial_awareness:
+            label: Świadomość przestrzeni
+            description: Czytanie przestrzeni i kątów.
+            tooltip: "Wpływa na: ustawienie, czytanie przestrzeni, znajdowanie wolnych stref."
+          focus:
+            label: Skupienie
+            description: Wykonywanie pod presją.
+            tooltip: "Wpływa na: koncentrację, opanowanie, reakcje, powtarzalność."
+          creativity:
+            label: Kreatywność
+            description: Nieszablonowe rozwiązania i odwaga.
+            tooltip: "Wpływa na: drybling, wykończenie, dośrodkowania, prostopadłe podania."
+          competitive_drive:
+            label: Zacięcie rywalizacyjne
+            description: Wewnętrzny ogień i ambicja.
+            tooltip: "Wpływa na: determinację, przywództwo, pewność siebie, regularność."
+          mental_resilience:
+            label: Odporność mentalna
+            description: Radzenie sobie z niepowodzeniami.
+            tooltip: "Wpływa na: radzenie sobie z presją, gra o wysoką stawkę, koncentrację."
+          social_influence:
+            label: Wpływ społeczny
+            description: Charyzma i wpływ na szatnię.
+            tooltip: "Wpływa na: przywództwo, komunikację, prezencję kapitana."
+
+      goalkeeping:
+        label: Podstawa bramkarska
+        description: Talenty specyficzne dla bramkarza.
+        talents:
+          gk_shot_stopping:
+            label: Interwencje
+            description: Refleks i rzuty.
+            tooltip: "Wpływa na: refleks, parady, sytuacje 1 na 1."
+          gk_handling:
+            label: Chwyt
+            description: Łapanie i utrzymanie piłki.
+            tooltip: "Wpływa na: chwyt, łapanie, gra w powietrzu."
+          gk_distribution:
+            label: Rozgrywanie (BR)
+            description: Dokładność wykopów i wyrzutów.
+            tooltip: "Wpływa na: wykopy, wyrzuty, decyzje w posiadaniu."
+          gk_movement:
+            label: Ruch (BR)
+            description: Praca nóg i zamykanie kątów.
+            tooltip: "Wpływa na: ustawienie, gra jako libero, mikro-korekty."
+
+      tactical:
+        label: Podstawa taktyczna
+        description: Zrozumienie systemów i schematów.
+        talents:
+          tactical_attacking:
+            label: Taktyka (atak)
+            description: Zrozumienie systemów ofensywnych.
+            tooltip: "Wpływa na: współpracę w ataku, gra na jeden kontakt, świadomość ofensywną."
+          tactical_defending:
+            label: Taktyka (obrona)
+            description: Zrozumienie systemów defensywnych.
+            tooltip: "Wpływa na: współpracę w obronie, dyscyplinę taktyczną, zasłanianie."
+          tactical_goalkeeping:
+            label: Taktyka (BR)
+            description: Czytanie gry i dowodzenie polem karnym.
+            tooltip: "Wpływa na: decyzje, dowodzenie polem karnym, komunikację."

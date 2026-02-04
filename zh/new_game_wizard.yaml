@@ -40,6 +40,8 @@ new_game_wizard:
         all_countries: 所有国家
         all_leagues: 所有联赛
       badges:
+        champion: 冠军
+        champion_short: 冠
         promoted: 升级
         relegated: 降级
       details:
@@ -61,7 +63,9 @@ new_game_wizard:
           code: 代码
           reserve_team: 预备队
           club_colors: 俱乐部颜色
+          promoted_short: (▲)
           color_background: 背景
+          relegated_short: (▼)
           color_text: 文本
           join_league: 加入联赛
           replace_team: 替换球队
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: 从零开始建立你的声望
           interview_offers: 接受或拒绝面试邀约
 
+    database_selection:
+      title: 选择数据库和模组
+      description: 选择基础数据库和可选的模组文件以应用
+      sections:
+        database: 数据库
+        mods: 模组
+      empty:
+        no_databases: 未找到数据库
+      mod_metadata:
+        description: 描述
+        author: 作者
+        version: 版本
+        date: 日期
+        credits: 致谢
+        url: URL
+      dropzone:
+        title: 将 .mod 文件拖到这里
+        subtitle: 或点击选择文件
+      summary:
+        selected_database: 已选择数据库
+        none_selected: 未选择
+        selected_mods: '已选择的模组（{count}）'
+        mod_order_info: 模组将按下方顺序应用。拖动行以重新排序，或使用箭头。
+      mod_order:
+        drag_to_reorder: 拖动以重新排序
+        move_up: 上移
+        move_down: 下移
+        moving: 正在移动…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - 当前赛季数据库'
+      dialogs:
+        mod_failure:
+          title: 模组应用失败
+          warning_label: 警告
+          warning_summary: '共有 {total} 条模组查询，其中 {failed} 条失败。'
+          affected_mods_label: 受影响的模组
+          proceed_question: 数据库可能处于不稳定状态。是否继续？
+          table:
+            mod: Mod
+            sql_statement: SQL 语句
+            parameters: 参数
+            error: 错误
+          actions:
+            proceed_anyway: 仍要继续
+        mod_import:
+          title: 导入模组文件
+          labels:
+            mod_file: 模组文件
+            name: 名称
+            description: 描述
+            author: 作者
+            version: 版本
+            changelog_entries: 变更日志条目
+          prompt: '是否要将此文件复制或移动到你的模组文件夹？'
+          actions:
+            copy: 复制
+            move: 移动
+
+    game_configuration:
+      title: 游戏配置
+      description: 配置新存档的游戏设置
+      sections:
+        dates: 日期
+        manager_sacking: 主教练下课概率
+        injury_probabilities: 伤病概率
+        economy: 经济
+      fields:
+        start_date: 开始日期
+        current_datetime: 当前日期与时间
+        player_sacking: 玩家（你）下课
+        npc_sacking: NPC 教练下课
+        training_injuries: 训练伤病
+        match_injuries: 比赛伤病
+        long_term_injuries: 长期伤病
+        travel_costs: 差旅费用
+      placeholders:
+        pick_date: 选择日期
+        pick_date_time: 选择日期与时间
+        select_preset: 选择预设
+      presets:
+        none: 无 (0%)
+        extremely_low: 极低 (10%)
+        very_low: 很低 (25%)
+        low: 低 (50%)
+        slightly_reduced: 略微降低 (75%)
+        normal: 正常 (100%)
+      notes:
+        player_sacking: 你被解雇的概率（百分比）。低于 100% 会降低解雇频率。0% 将关闭你的解雇。
+        npc_sacking: AI/NPC 教练被解雇的概率（百分比）。低于 100% 会降低频率。
+        training_injuries: 训练期间的伤病概率（百分比）。低于 100% 会降低训练伤病。0% 将关闭训练伤病。
+        match_injuries: 比赛期间的伤病概率（百分比）。低于 100% 会降低比赛伤病。0% 将关闭比赛伤病。
+        long_term_injuries: 超过 2 个月的伤病发生概率降低。50% 表示伤病有 1/2 的概率被限制为 2 个月。0% 会将最大伤病时长限制为 2 个月。
+        travel_costs: 应用于差旅相关费用的倍数。低于 100% 会降低费用。0% 会关闭差旅费用。
+
+    league_selection:
+      title: 选择联赛
+      description: 选择在游戏中启用的联赛
+      labels:
+        starting_season: 起始赛季
+        presets: 预设
+        flag_alt: '{country} 国旗'
+      placeholders:
+        select_season: 选择赛季
+        select_lowest_level: 选择最低级别
+      presets:
+        recommended: 推荐联赛
+        extended: 扩展联赛
+        all: 全部联赛
+        clear_all: 全部清除
+      level_option: '级别 {level} - {name}'
+      division_fallback: '第 {level} 级联赛'
+      includes_leagues: '(包含 {count} 个联赛)'
+      loading: 正在加载联赛...
+      total_selected: 已选择联赛总数
+      total_selected_summary: '来自 {countries} 个国家的 {leagues} 个联赛'
+
+    manager_profile:
+      title: 创建你的经理档案
+      description: 这将是你在游戏中的身份
+      sections:
+        personal_information: 个人信息
+        origin_nationality: 出身与国籍
+        profile_preview: 档案预览
+      labels:
+        first_name: 名
+        last_name: 姓
+        known_as: 称呼
+        gender: 性别
+        date_of_birth: 出生日期
+        nationality: 国籍
+        birth_city: 出生城市
+        second_nationality: 第二国籍
+      placeholders:
+        first_name: 输入名
+        last_name: 输入姓
+        known_as: 昵称（可选）
+        date_of_birth: 选择日期（18岁以上）
+        nationality: 选择国籍
+        birth_city: 搜索全球城市
+        second_nationality: 选择第二国籍（可选）
+      gender:
+        man: 男
+        woman: 女
+      tips:
+        birth_date_navigation: '💡 提示：点击顶部的年/月可快速跳转到出生年份'
+      preview:
+        name: 姓名
+        age: 年龄
+        nationality: 国籍
+        birth_city: 出生城市
+
+    skill_allocation:
+      title: 分配技能点
+      description: 将 {points} 点分配到教练属性（每项1-99）
+      points_allocated: '已分配 {used} / {total}'
+      points_available: '{points} 点可用'
+      quick_presets: 快速预设
+      actions:
+        reset_all: 全部重置
+      presets:
+        balanced:
+          name: 均衡型
+          description: 各方面均衡发展的教练
+        tactical_genius:
+          name: 战术天才
+          description: 战术理解深、适应力强的教练
+        motivator:
+          name: 激励者
+          description: 擅长管理团队的激励型领袖
+
+    review:
+      title: 确认并开始
+      description: 请确认你的选择并开始新游戏
+      sections:
+        database_mods: 数据库与模组
+        active_leagues: 已启用的联赛
+        club_summary: 你的俱乐部
+        manager_profile: 经理简介
+        manager_skills: 经理技能
+      labels:
+        club: 俱乐部
+        club_name: 俱乐部名称
+        short_name: 简称
+        league: 联赛
+        database: 数据库
+        mods: 模组
+        total_leagues: 联赛总数
+        leagues: 联赛
+        full_name: 全名
+        known_as: 别名
+        date_of_birth: 出生日期
+        birth_city: 出生城市
+        age: 年龄
+        nationality: 国籍
+        second_nationality: 第二国籍
+      values:
+        none_selected: 未选择
+        no_mods_selected: 未选择模组
+        no_club_selected: 未选择俱乐部
+        all_leagues_active: 所有联赛已启用（默认）
+        new_club_created: 新俱乐部（将被创建）
+        level_plus: '等级 {level}+'
+        not_set: 未设置
+        country_id: '国家 {id}'
+        birth_city_with_population: '{city}，{country}（人口：{population}）'
+      navigation:
+        back: 返回
+      actions:
+        start_game: 开始游戏
+        starting_game: 正在开始游戏...
+
   # 提示 / 校验
   messages:
     applied_preset: "已应用预设“{name}”（{points} 点数）"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: 无法加载可用赛季
     open_file_dialog_failed: 无法打开文件选择对话框
     load_clubs_failed_with_error: "无法加载俱乐部：{error}"
+    load_databases_failed_with_error: "无法加载数据库：{error}"
+    load_leagues_failed_with_error: "加载联赛失败：{error}"
   mod_import:
     select_mod_files_title: 选择 Mod 文件

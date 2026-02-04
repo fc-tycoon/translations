@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════
+# Staff
+# ══════════════════════════════════════════════════════════════════════
+staff:
+  skills:
+    categories:
+      tactical: 战术
+      mental: 心理
+      people: 与人合作
+    labels:
+      attacking: 进攻
+      defending: 防守
+      tactical_knowledge: 战术知识
+      tactical_adaptability: 战术适应力
+      judging_player_ability: 球员能力评估
+      judging_player_potential: 潜力评估
+      man_marking: 盯人
+      zonal_marking: 区域防守
+      pressing: 压迫
+      determination: 决心
+      discipline: 纪律
+      integrity: 正直
+      fortitude: 坚韧
+      resilience: 韧性
+      ambition: 雄心
+      adaptability: 适应力
+      motivating: 激励
+      man_management: 人员管理
+      charisma: 魅力
+      professionalism: 职业精神
+    descriptions:
+      tactical_knowledge: 对战术和阵型的理解
+      tactical_adaptability: 比赛中调整战术的能力
+      judging_player_ability: 准确评估球员能力
+      judging_player_potential: 识别未来之星
+      determination: 追求成功的决心
+      discipline: 维持标准与纪律
+      ambition: 渴望成功与进步
+      adaptability: 适应新情况
+      motivating: 激励球员表现
+      man_management: 处理球员关系
+      charisma: 个人魅力与影响力
+      professionalism: 以行为树立榜样

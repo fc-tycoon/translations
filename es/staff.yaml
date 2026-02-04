@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════
+# Staff
+# ══════════════════════════════════════════════════════════════════════
+staff:
+  skills:
+    categories:
+      tactical: Táctica
+      mental: Mental
+      people: Trabajo con personas
+    labels:
+      attacking: Ataque
+      defending: Defensa
+      tactical_knowledge: Conocimiento táctico
+      tactical_adaptability: Adaptabilidad táctica
+      judging_player_ability: Evaluación de habilidad
+      judging_player_potential: Evaluación del potencial
+      man_marking: Marcaje al hombre
+      zonal_marking: Marcaje zonal
+      pressing: Presión
+      determination: Determinación
+      discipline: Disciplina
+      integrity: Integridad
+      fortitude: Fortaleza
+      resilience: Resiliencia
+      ambition: Ambición
+      adaptability: Adaptabilidad
+      motivating: Motivación
+      man_management: Gestión de personal
+      charisma: Carisma
+      professionalism: Profesionalismo
+    descriptions:
+      tactical_knowledge: Comprensión de tácticas y formaciones
+      tactical_adaptability: Capacidad de adaptar la táctica durante los partidos
+      judging_player_ability: Evaluar con precisión la habilidad del jugador
+      judging_player_potential: Identificar futuras estrellas
+      determination: Impulso por alcanzar el éxito
+      discipline: Mantener estándares y control
+      ambition: Deseo de éxito y progreso
+      adaptability: Adaptarse a nuevas situaciones
+      motivating: Inspirar a los jugadores para rendir
+      man_management: Gestionar relaciones con jugadores
+      charisma: Magnetismo personal e influencia
+      professionalism: Dar ejemplo con el comportamiento

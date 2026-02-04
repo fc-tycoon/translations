@@ -40,6 +40,8 @@ new_game_wizard:
         all_countries: Todos los países
         all_leagues: Todas las ligas
       badges:
+        champion: Campeón
+        champion_short: C
         promoted: Ascendido
         relegated: Descendido
       details:
@@ -61,7 +63,9 @@ new_game_wizard:
           code: Código
           reserve_team: Equipo reserva
           club_colors: Colores del club
+          promoted_short: (▲)
           color_background: Fondo
+          relegated_short: (▼)
           color_text: Texto
           join_league: Unirse a la liga
           replace_team: Reemplazar equipo
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: Construye tu reputación desde cero
           interview_offers: Acepta o rechaza ofertas de entrevista
 
+    database_selection:
+      title: Seleccionar base de datos y mods
+      description: Elige una base de datos y archivos de mod opcionales para aplicar
+      sections:
+        database: Base de datos
+        mods: Mods
+      empty:
+        no_databases: No se encontraron bases de datos
+      mod_metadata:
+        description: Descripción
+        author: Autor
+        version: Versión
+        date: Fecha
+        credits: Créditos
+        url: URL
+      dropzone:
+        title: Suelta archivos .mod aquí
+        subtitle: o haz clic para seleccionar archivos
+      summary:
+        selected_database: Base de datos seleccionada
+        none_selected: Ninguna seleccionada
+        selected_mods: 'Mods seleccionados ({count})'
+        mod_order_info: Los mods se aplican en el orden que se muestra abajo. Arrastra las filas para reordenar o usa las flechas.
+      mod_order:
+        drag_to_reorder: Arrastrar para reordenar
+        move_up: Mover arriba
+        move_down: Mover abajo
+        moving: Moviendo…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - Base de datos de la temporada actual'
+      dialogs:
+        mod_failure:
+          title: Fallo al aplicar mods
+          warning_label: Advertencia
+          warning_summary: '{failed} de {total} consultas de mods fallaron.'
+          affected_mods_label: Mods afectados
+          proceed_question: La base de datos puede estar inestable. ¿Quieres continuar?
+          table:
+            mod: Mod
+            sql_statement: Sentencia SQL
+            parameters: Parámetros
+            error: Error
+          actions:
+            proceed_anyway: Continuar de todos modos
+        mod_import:
+          title: Importar archivo de mod
+          labels:
+            mod_file: Archivo de mod
+            name: Nombre
+            description: Descripción
+            author: Autor
+            version: Versión
+            changelog_entries: Entradas del changelog
+          prompt: '¿Quieres copiar o mover este archivo a tu carpeta de mods?'
+          actions:
+            copy: Copiar
+            move: Mover
+
+    game_configuration:
+      title: Configuración del juego
+      description: Configura los ajustes de juego para tu nueva partida
+      sections:
+        dates: Fechas
+        manager_sacking: Probabilidad de despido de entrenadores
+        injury_probabilities: Probabilidades de lesiones
+        economy: Economía
+      fields:
+        start_date: Fecha de inicio
+        current_datetime: Fecha y hora actuales
+        player_sacking: Despido del jugador (TÚ)
+        npc_sacking: Despido de entrenadores NPC
+        training_injuries: Lesiones en entrenamiento
+        match_injuries: Lesiones en partido
+        long_term_injuries: Lesiones de larga duración
+        travel_costs: Costes de viaje
+      placeholders:
+        pick_date: Elige una fecha
+        pick_date_time: Elige fecha y hora
+        select_preset: Seleccionar preajuste
+      presets:
+        none: Ninguno (0%)
+        extremely_low: Extremadamente bajo (10%)
+        very_low: Muy bajo (25%)
+        low: Bajo (50%)
+        slightly_reduced: Ligeramente reducido (75%)
+        normal: Normal (100%)
+      notes:
+        player_sacking: Porcentaje de probabilidad de que TÚ seas despedido. Menos de 100% reduce la frecuencia. 0% desactiva tu despido.
+        npc_sacking: Porcentaje de probabilidad de que los entrenadores IA/NPC sean despedidos. Menos de 100% reduce la frecuencia.
+        training_injuries: Porcentaje de probabilidad de lesiones en entrenamiento. Menos de 100% reduce las lesiones. 0% las desactiva.
+        match_injuries: Porcentaje de probabilidad de lesiones en partidos. Menos de 100% reduce las lesiones. 0% las desactiva.
+        long_term_injuries: Las lesiones de más de 2 meses tienen una probabilidad reducida. 50% da una probabilidad de 1/2 de que la lesión se limite a 2 meses. 0% limita la duración máxima a 2 meses.
+        travel_costs: Multiplicador aplicado a los costes de viaje. Menos de 100% reduce los costes. 0% desactiva los costes de viaje.
+
+    league_selection:
+      title: Seleccionar ligas
+      description: Elige qué ligas activar en tu juego
+      labels:
+        starting_season: Temporada inicial
+        presets: Preajustes
+        flag_alt: 'bandera de {country}'
+      placeholders:
+        select_season: Seleccionar temporada
+        select_lowest_level: Seleccionar nivel más bajo
+      presets:
+        recommended: Ligas recomendadas
+        extended: Ligas ampliadas
+        all: Todas las ligas
+        clear_all: Limpiar todo
+      level_option: 'Nivel {level} - {name}'
+      division_fallback: 'División {level}'
+      includes_leagues: '(Incluye {count} ligas)'
+      loading: Cargando ligas...
+      total_selected: Total de ligas seleccionadas
+      total_selected_summary: '{leagues} de {countries} países'
+
+    manager_profile:
+      title: Crea tu perfil de entrenador
+      description: Esta será tu identidad en el juego
+      sections:
+        personal_information: Información personal
+        origin_nationality: Origen y nacionalidad
+        profile_preview: Vista previa del perfil
+      labels:
+        first_name: Nombre
+        last_name: Apellido
+        known_as: Conocido como
+        gender: Género
+        date_of_birth: Fecha de nacimiento
+        nationality: Nacionalidad
+        birth_city: Ciudad de nacimiento
+        second_nationality: Segunda nacionalidad
+      placeholders:
+        first_name: Introduce el nombre
+        last_name: Introduce el apellido
+        known_as: Apodo (opcional)
+        date_of_birth: Selecciona fecha (18+ años)
+        nationality: Selecciona nacionalidad
+        birth_city: Busca ciudades en todo el mundo
+        second_nationality: Selecciona segunda nacionalidad (opcional)
+      gender:
+        man: Hombre
+        woman: Mujer
+      tips:
+        birth_date_navigation: '💡 Consejo: haz clic en año/mes arriba para ir rápido al año de nacimiento'
+      preview:
+        name: Nombre
+        age: Edad
+        nationality: Nacionalidad
+        birth_city: Ciudad de nacimiento
+
+    skill_allocation:
+      title: Asignar puntos de habilidad
+      description: Distribuye {points} puntos entre los atributos del mánager (1-99 cada uno)
+      points_allocated: '{used} / {total} asignados'
+      points_available: '{points} puntos disponibles'
+      quick_presets: Presets rápidos
+      actions:
+        reset_all: Restablecer todo
+      presets:
+        balanced:
+          name: Equilibrado
+          description: Mánager equilibrado con enfoque igual en todas las áreas
+        tactical_genius:
+          name: Genio táctico
+          description: Maestro táctico con gran conocimiento y adaptabilidad
+        motivator:
+          name: Motivador
+          description: Líder inspirador que destaca en la gestión de personas
+
+    review:
+      title: Revisar y confirmar
+      description: Revisa tus selecciones y comienza tu nueva partida
+      sections:
+        database_mods: Base de datos y mods
+        active_leagues: Ligas activas
+        club_summary: Tu club
+        manager_profile: Perfil del mánager
+        manager_skills: Habilidades del mánager
+      labels:
+        club: Club
+        club_name: Nombre del club
+        short_name: Nombre corto
+        league: Liga
+        database: Base de datos
+        mods: Mods
+        total_leagues: Total de ligas
+        leagues: Ligas
+        full_name: Nombre completo
+        known_as: Conocido como
+        date_of_birth: Fecha de nacimiento
+        birth_city: Ciudad de nacimiento
+        age: Edad
+        nationality: Nacionalidad
+        second_nationality: Segunda nacionalidad
+      values:
+        none_selected: Ninguna seleccionada
+        no_mods_selected: No hay mods seleccionados
+        no_club_selected: Ningún club seleccionado
+        all_leagues_active: Todas las ligas activas (predeterminado)
+        new_club_created: Nuevo club (se creará)
+        level_plus: 'Nivel {level}+'
+        not_set: No establecido
+        country_id: 'País {id}'
+        birth_city_with_population: '{city}, {country} (pob.: {population})'
+      navigation:
+        back: Atrás
+      actions:
+        start_game: Iniciar juego
+        starting_game: Iniciando juego...
+
   # Toasts / validación
   messages:
     applied_preset: "Se aplicó el preset \"{name}\" ({points} puntos)"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: No se pudieron cargar las temporadas disponibles
     open_file_dialog_failed: No se pudo abrir el cuadro de selección de archivos
     load_clubs_failed_with_error: "No se pudieron cargar los clubes: {error}"
+    load_databases_failed_with_error: "No se pudieron cargar las bases de datos: {error}"
+    load_leagues_failed_with_error: "No se pudieron cargar las ligas: {error}"
   mod_import:
     select_mod_files_title: Seleccionar archivos de mod

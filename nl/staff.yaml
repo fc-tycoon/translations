@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════
+# Staff
+# ══════════════════════════════════════════════════════════════════════
+staff:
+  skills:
+    categories:
+      tactical: Tactisch
+      mental: Mentaal
+      people: Werken met mensen
+    labels:
+      attacking: Aanval
+      defending: Verdediging
+      tactical_knowledge: Tactische kennis
+      tactical_adaptability: Tactische aanpassingsvermogen
+      judging_player_ability: Beoordeling spelerskwaliteit
+      judging_player_potential: Beoordeling potentieel
+      man_marking: Man-dekking
+      zonal_marking: Zone-dekking
+      pressing: Pressing
+      determination: Doorzettingsvermogen
+      discipline: Discipline
+      integrity: Integriteit
+      fortitude: Standvastigheid
+      resilience: Veerkracht
+      ambition: Ambitie
+      adaptability: Aanpassingsvermogen
+      motivating: Motiveren
+      man_management: Personeelsmanagement
+      charisma: Charisma
+      professionalism: Professionaliteit
+    descriptions:
+      tactical_knowledge: Inzicht in tactiek en formaties
+      tactical_adaptability: Vermogen om tactiek tijdens wedstrijden aan te passen
+      judging_player_ability: Nauwkeurig spelerskwaliteit inschatten
+      judging_player_potential: Toekomstige sterren herkennen
+      determination: Drang om te slagen
+      discipline: Standaarden en controle handhaven
+      ambition: Verlangen naar succes en vooruitgang
+      adaptability: Aanpassen aan nieuwe situaties
+      motivating: Spelers motiveren om te presteren
+      man_management: Relaties met spelers beheren
+      charisma: Persoonlijke uitstraling en invloed
+      professionalism: Voorbeeldgedrag tonen

@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# タレント
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: 技術基礎
+        description: ボール扱いの自然な能力。
+        talents:
+          ball_mastery:
+            label: ボールマスタリー
+            description: 狭い局面やスピード下でのコントロール。
+            tooltip: "影響：ファーストタッチ、ボールコントロール、密集でのコントロール、ドリブル、ボールキープ、プレス耐性。"
+          ball_distribution:
+            label: 配球
+            description: パスの強弱と角度の感覚。
+            tooltip: "影響：ショートパス、ロングパス、ロブパス、クロス、視野、セットプレー配球。"
+          ball_finesse:
+            label: フィネス
+            description: 繊細なタッチと精度。
+            tooltip: "影響：カーブ、チップ、フレア、スルーパス、カーブシュート、フィネスシュート、繊細なドリブル、正確なパス。"
+          set_pieces:
+            label: セットプレー
+            description: 止まったボールでのキック精度。
+            tooltip: "影響：フリーキック、コーナー、PK。"
+
+      defensive:
+        label: 守備基礎
+        description: 守備局面の能力。
+        talents:
+          def_duels:
+            label: 守備デュエル
+            description: 1対1の守備タイミング。
+            tooltip: "影響：立ちタックル、スライディング、ブロック、空中戦、フィジカルコンタクト。"
+          def_reading:
+            label: 守備の読み
+            description: 相手の意図を読む。
+            tooltip: "影響：マーキング、インターセプト、コース遮断、守備意識。"
+          def_movement:
+            label: 守備の動き
+            description: 守備時のフットワーク。
+            tooltip: "影響：ジョッキー、プレス、守備ポジショニング、運動量。"
+
+      attacking:
+        label: 攻撃基礎
+        description: 攻撃局面の能力。
+        talents:
+          ball_striking:
+            label: シュート技術
+            description: クリーンな当て方とタイミング。
+            tooltip: "影響：決定力、シュート、ボレー、カーブ、ヘディング精度。"
+          att_reading:
+            label: 攻撃の読み
+            description: 守備の動きやパターンを読む。
+            tooltip: "影響：決定力、予測、創造性、視野。"
+          att_movement:
+            label: 攻撃の動き
+            description: スペースを見つけ走り出す。
+            tooltip: "影響：オフザボール、攻撃意識、攻撃の運動量。"
+
+      physical:
+        label: フィジカル基礎
+        description: 運動能力と身体操作。
+        talents:
+          physical_power:
+            label: パワー
+            description: 爆発力のポテンシャル。
+            tooltip: "影響：加速、スプリント速度、強さ、跳躍、キック力。"
+          endurance:
+            label: スタミナ
+            description: 走力と動きの効率。
+            tooltip: "影響：スタミナ、運動量、反復スプリント、プレス耐久。"
+          coordination:
+            label: 協調性
+            description: 身体コントロールと微調整。
+            tooltip: "影響：敏捷性、バランス、身体操作、ジョッキー、反射。"
+          aerial:
+            label: 空中戦
+            description: 落下地点判断とジャンプのタイミング。
+            tooltip: "影響：ヘディング精度、跳躍、空中デュエル、ハイボール処理。"
+
+      mental:
+        label: メンタル基礎
+        description: 認知処理と感情コントロール。
+        talents:
+          game_intelligence:
+            label: ゲームIQ
+            description: 処理速度と選択の質。
+            tooltip: "影響：判断、予測、落ち着き、反応。"
+          temperament:
+            label: メンタリティ
+            description: 情緒の安定と存在感。
+            tooltip: "影響：リーダーシップ、大舞台の強さ、コミュニケーション、勇敢さ。"
+          spatial_awareness:
+            label: 空間認知
+            description: スペースと角度を読む。
+            tooltip: "影響：ポジショニング、空間把握、スペース発見。"
+          focus:
+            label: 集中
+            description: プレッシャー下での実行。
+            tooltip: "影響：集中、落ち着き、反応、一貫性。"
+          creativity:
+            label: 創造性
+            description: 大胆で独創的な発想。
+            tooltip: "影響：ドリブル、決定力、クロス、スルーパス。"
+          competitive_drive:
+            label: 競争心
+            description: 勝ちへの執念と野心。
+            tooltip: "影響：闘争心、リーダーシップ、自信、安定性。"
+          mental_resilience:
+            label: メンタル耐性
+            description: 逆境に耐える力。
+            tooltip: "影響：プレッシャー耐性、大舞台の強さ、集中。"
+          social_influence:
+            label: 影響力
+            description: カリスマ性と更衣室での存在。
+            tooltip: "影響：リーダーシップ、コミュニケーション、主将としての存在感。"
+
+      goalkeeping:
+        label: GK基礎
+        description: GK特有のタレント。
+        talents:
+          gk_shot_stopping:
+            label: ショットストップ
+            description: 反射神経とダイビング。
+            tooltip: "影響：反射、ダイビング、1対1。"
+          gk_handling:
+            label: ハンドリング
+            description: キャッチと保持。
+            tooltip: "影響：キャッチ、保持、ハイボール処理。"
+          gk_distribution:
+            label: 配球（GK）
+            description: キック/スローの精度。
+            tooltip: "影響：キック、スロー、保持時の判断。"
+          gk_movement:
+            label: 動き（GK）
+            description: フットワークと角度の消し方。
+            tooltip: "影響：ポジショニング、スイーパー、微調整。"
+
+      tactical:
+        label: 戦術基礎
+        description: 戦術システムとパターン理解。
+        talents:
+          tactical_attacking:
+            label: 攻撃戦術
+            description: 攻撃システムの理解。
+            tooltip: "影響：攻撃の連携、ワンタッチ、攻撃意識。"
+          tactical_defending:
+            label: 守備戦術
+            description: 守備システムの理解。
+            tooltip: "影響：守備の連携、戦術規律、コース遮断。"
+          tactical_goalkeeping:
+            label: GK戦術
+            description: ゲームの読みとエリア統率。
+            tooltip: "影響：判断、エリア統率、コミュニケーション。"

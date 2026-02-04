@@ -8,8 +8,8 @@ ui:
   # ══════════════════════════════════════════════════════════════════════
   menu:
     continue: Continuar
-    new_game: Nuevo Juego
-    load_game: Cargar Juego
+    new_game: Nueva partida
+    load_game: Cargar partida
     preferences: Preferencias
     credits: Créditos
     licenses: Licencias
@@ -42,16 +42,17 @@ ui:
   menu_items:
     dashboard: Panel de Control
     inbox: Bandeja de Entrada
-    calendar: Calendario
+    calendar: Agenda
     competitions: Competiciones
     club_overview: Resumen del Club
     squad_overview: Resumen de Plantilla
+    squad_overview_2: Resumen de Plantilla 2
     squad_stats: Estadísticas de Plantilla
     selection_advice: Consejo de Selección
     squad_dynamics: Dinámica de Plantilla
     squad_hierarchy: Jerarquía de Plantilla
     tactics_board: Pizarra Táctica
-    schedule: Horario
+    schedule: Calendario
     coaches: Entrenadores
     teams: Equipos
     development: Desarrollo
@@ -82,8 +83,8 @@ ui:
   # Save/Load Game
   # ══════════════════════════════════════════════════════════════════════
   save_load:
-    save_game: Guardar Juego
-    load_game: Cargar Juego
+    save_game: Guardar partida
+    load_game: Cargar partida
     quick_save: Guardado Rápido
     save_as: Guardar Como
     overwrite: Sobrescribir
@@ -220,7 +221,7 @@ ui:
     open_save_dialog_failed: No se pudo abrir el cuadro de diálogo de guardado
     load_most_recent_failed: No se pudo cargar el guardado más reciente
     ui_init_after_load_failed: El juego se cargó, pero no se pudo inicializar la interfaz
-    loaded_save_no_active_manager: El guardado cargado no tiene un mánager activo. Es posible que debas iniciar un nuevo juego o reparar este guardado.
+    loaded_save_no_active_manager: El guardado cargado no tiene un mánager activo. Es posible que debas iniciar una nueva partida o reparar este guardado.
     connection_lost: Conexión perdida
     unexpected_error: Ocurrió un error inesperado
     invalid_input: Entrada no válida

@@ -29,6 +29,7 @@ player:
       height: Altura
       club: Club
       foot: Pie
+      both_feet: Ambos
       team: Equipo
       wage: Salario
       value: Valor
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Las posiciones se colorean según la familiaridad. La posición principal se resalta en morado.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Valoración
+
+    fallback_name: 'Jugador {id}'
+
     messages:
       training_focus_coming_soon: La selección del enfoque de entrenamiento llegará pronto
       training_schedule_coming_soon: La vista del plan de entrenamiento llegará pronto
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Totales y récords de carrera llegarán pronto
       no_role_ratings: No hay valoraciones de rol disponibles
       loading_player: Cargando jugador...
+
+    information:
+      labels:
+        full_name: Nombre completo
+        known_as: Conocido como
+        date_of_birth: Fecha de nacimiento
+        birthplace: Lugar de nacimiento
+        nationality: Nacionalidad
+        second_nationality: Segunda nacionalidad
+        language: Idioma
+        height: Altura
+        preferred_foot: Pie preferido
+
+    personality:
+      labels:
+        ambition: Ambición
+        determination: Determinación
+        discipline: Disciplina
+        leadership: Liderazgo
+        loyalty: Lealtad
+        pressure_handling: Manejo de la presión
+        professionalism: Profesionalidad
+        temperament: Temperamento
+
+    footedness:
+      aria_label: 'Pie: izquierdo {left}/100, derecho {right}/100'
 
   # Talentos
   talents:
@@ -114,7 +150,7 @@ player:
 
     # Tiro
     finishing: Definición
-    one_touch_finishing: Definición a un toque
+    one_touch_finishing: Definición al primer toque
     shot_power: Potencia de tiro
     long_shots: Tiros lejanos
     volleys: Voleas
@@ -126,7 +162,7 @@ player:
     lofted_passing: Pase bombeado
     through_ball_passing: Pase al hueco
     crossing: Centros
-    one_touch_passing: Pase a un toque
+    one_touch_passing: Pase al primer toque
 
     # Balón parado
     free_kicks: Tiros libres
@@ -155,7 +191,7 @@ player:
 
     # Mental
     vision: Visión
-    flair: Fantasía
+    flair: Descaro
     composure: Compostura
     concentration: Concentración
     aggression: Agresividad

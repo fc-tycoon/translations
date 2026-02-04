@@ -40,6 +40,8 @@ new_game_wizard:
         all_countries: Alle landen
         all_leagues: Alle competities
       badges:
+        champion: Kampioen
+        champion_short: K
         promoted: Gepromoveerd
         relegated: Gedegradeerd
       details:
@@ -61,7 +63,9 @@ new_game_wizard:
           code: Code
           reserve_team: Reserveteam
           club_colors: Clubkleuren
+          promoted_short: (▲)
           color_background: Achtergrond
+          relegated_short: (▼)
           color_text: Tekst
           join_league: Competitie kiezen
           replace_team: Team vervangen
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: Bouw je reputatie vanaf nul op
           interview_offers: Interviewaanbiedingen accepteren of afwijzen
 
+    database_selection:
+      title: Database en mods selecteren
+      description: Kies een basisdatabase en optionele modbestanden om toe te passen
+      sections:
+        database: Database
+        mods: Mods
+      empty:
+        no_databases: Geen databases gevonden
+      mod_metadata:
+        description: Beschrijving
+        author: Auteur
+        version: Versie
+        date: Datum
+        credits: Credits
+        url: URL
+      dropzone:
+        title: Sleep .mod-bestanden hierheen
+        subtitle: of klik om bestanden te selecteren
+      summary:
+        selected_database: Geselecteerde database
+        none_selected: Geen geselecteerd
+        selected_mods: 'Geselecteerde mods ({count})'
+        mod_order_info: Mods worden toegepast in de volgorde hieronder. Sleep rijen om te herordenen of gebruik de pijlen.
+      mod_order:
+        drag_to_reorder: Sleep om te herordenen
+        move_up: Omhoog
+        move_down: Omlaag
+        moving: Verplaatsen…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - Database van het huidige seizoen'
+      dialogs:
+        mod_failure:
+          title: Mod-toepassing mislukt
+          warning_label: Waarschuwing
+          warning_summary: '{failed} van {total} modquery''s mislukt.'
+          affected_mods_label: Getroffen mods
+          proceed_question: De database kan in een instabiele staat zijn. Wil je doorgaan?
+          table:
+            mod: Mod
+            sql_statement: SQL-statement
+            parameters: Parameters
+            error: Fout
+          actions:
+            proceed_anyway: Toch doorgaan
+        mod_import:
+          title: Modbestand importeren
+          labels:
+            mod_file: Modbestand
+            name: Naam
+            description: Beschrijving
+            author: Auteur
+            version: Versie
+            changelog_entries: Changelog-items
+          prompt: 'Wil je dit bestand naar je mods-map kopiëren of verplaatsen?'
+          actions:
+            copy: Kopiëren
+            move: Verplaatsen
+
+    game_configuration:
+      title: Spelconfiguratie
+      description: Configureer spelinstellingen voor je nieuwe save
+      sections:
+        dates: Datums
+        manager_sacking: Kans op managersontslag
+        injury_probabilities: Blessurekansen
+        economy: Economie
+      fields:
+        start_date: Startdatum
+        current_datetime: Huidige datum en tijd
+        player_sacking: Ontslag van speler (JIJ)
+        npc_sacking: Ontslag van NPC-manager
+        training_injuries: Trainingsblessures
+        match_injuries: Wedstrijdblessures
+        long_term_injuries: Langdurige blessures
+        travel_costs: Reiskosten
+      placeholders:
+        pick_date: Kies een datum
+        pick_date_time: Kies datum en tijd
+        select_preset: Selecteer preset
+      presets:
+        none: Geen (0%)
+        extremely_low: Extreem laag (10%)
+        very_low: Zeer laag (25%)
+        low: Laag (50%)
+        slightly_reduced: Licht verlaagd (75%)
+        normal: Normaal (100%)
+      notes:
+        player_sacking: Percentage kans dat JIJ wordt ontslagen. Lager dan 100% verlaagt de frequentie. 0% schakelt ontslag voor jou uit.
+        npc_sacking: Percentage kans dat AI/NPC-managers worden ontslagen. Lager dan 100% verlaagt de frequentie.
+        training_injuries: Percentage kans op blessures tijdens training. Lager dan 100% verlaagt trainingsblessures. 0% schakelt ze uit.
+        match_injuries: Percentage kans op blessures tijdens wedstrijden. Lager dan 100% verlaagt wedstrijdblessures. 0% schakelt ze uit.
+        long_term_injuries: Blessures langer dan 2 maanden hebben een lagere kans. 50% geeft 1/2 kans dat de blessure wordt beperkt tot 2 maanden. 0% beperkt de maximale duur tot 2 maanden.
+        travel_costs: Vermenigvuldiger voor reiskosten. Lager dan 100% verlaagt reiskosten. 0% schakelt reiskosten uit.
+
+    league_selection:
+      title: Competities selecteren
+      description: Kies welke competities je in het spel wilt activeren
+      labels:
+        starting_season: Startseizoen
+        presets: Presets
+        flag_alt: 'vlag van {country}'
+      placeholders:
+        select_season: Selecteer seizoen
+        select_lowest_level: Selecteer laagste niveau
+      presets:
+        recommended: Aanbevolen competities
+        extended: Uitgebreide competities
+        all: Alle competities
+        clear_all: Alles wissen
+      level_option: 'Niveau {level} - {name}'
+      division_fallback: 'Divisie {level}'
+      includes_leagues: '(Bevat {count} competities)'
+      loading: Competities laden...
+      total_selected: Totaal geselecteerde competities
+      total_selected_summary: '{leagues} uit {countries} landen'
+
+    manager_profile:
+      title: Maak je managerprofiel
+      description: Dit wordt je in-game persona
+      sections:
+        personal_information: Persoonlijke informatie
+        origin_nationality: Herkomst en nationaliteit
+        profile_preview: Profielvoorbeeld
+      labels:
+        first_name: Voornaam
+        last_name: Achternaam
+        known_as: Bekend als
+        gender: Geslacht
+        date_of_birth: Geboortedatum
+        nationality: Nationaliteit
+        birth_city: Geboorteplaats
+        second_nationality: Tweede nationaliteit
+      placeholders:
+        first_name: Voer voornaam in
+        last_name: Voer achternaam in
+        known_as: Bijnaam (optioneel)
+        date_of_birth: Selecteer datum (18+ jaar)
+        nationality: Selecteer nationaliteit
+        birth_city: Zoek wereldwijd naar steden
+        second_nationality: Selecteer tweede nationaliteit (optioneel)
+      gender:
+        man: Man
+        woman: Vrouw
+      tips:
+        birth_date_navigation: '💡 Tip: klik bovenaan op jaar/maand om snel naar het geboortejaar te gaan'
+      preview:
+        name: Naam
+        age: Leeftijd
+        nationality: Nationaliteit
+        birth_city: Geboorteplaats
+
+    skill_allocation:
+      title: Vaardigheidspunten verdelen
+      description: Verdeel {points} punten over je managerattributen (1-99 elk)
+      points_allocated: '{used} / {total} toegewezen'
+      points_available: '{points} punten beschikbaar'
+      quick_presets: Snelle presets
+      actions:
+        reset_all: Alles resetten
+      presets:
+        balanced:
+          name: Gebalanceerd
+          description: Evenwichtige manager met gelijke focus op alle gebieden
+        tactical_genius:
+          name: Tactisch genie
+          description: Meestertacticus met veel kennis en aanpassingsvermogen
+        motivator:
+          name: Motivator
+          description: Inspirerende leider die uitblinkt in mensenmanagement
+
+    review:
+      title: Controleren en bevestigen
+      description: Controleer je keuzes en start je nieuwe game
+      sections:
+        database_mods: Database en mods
+        active_leagues: Actieve competities
+        club_summary: Jouw club
+        manager_profile: Managerprofiel
+        manager_skills: Managervaardigheden
+      labels:
+        club: Club
+        club_name: Clubnaam
+        short_name: Korte naam
+        league: Competitie
+        database: Database
+        mods: Mods
+        total_leagues: Totaal competities
+        leagues: Competities
+        full_name: Volledige naam
+        known_as: Bekend als
+        date_of_birth: Geboortedatum
+        birth_city: Geboorteplaats
+        age: Leeftijd
+        nationality: Nationaliteit
+        second_nationality: Tweede nationaliteit
+      values:
+        none_selected: Niet geselecteerd
+        no_mods_selected: Geen mods geselecteerd
+        no_club_selected: Geen club geselecteerd
+        all_leagues_active: Alle competities actief (standaard)
+        new_club_created: Nieuwe club (wordt aangemaakt)
+        level_plus: 'Niveau {level}+'
+        not_set: Niet ingesteld
+        country_id: 'Land {id}'
+        birth_city_with_population: '{city}, {country} (inw.: {population})'
+      navigation:
+        back: Terug
+      actions:
+        start_game: Spel starten
+        starting_game: Spel wordt gestart...
+
   # Toasts / validatie
   messages:
     applied_preset: "Preset \"{name}\" toegepast ({points} punten)"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: Kon beschikbare seizoenen niet laden
     open_file_dialog_failed: Kon het bestandskeuzescherm niet openen
     load_clubs_failed_with_error: "Kon clubs niet laden: {error}"
+    load_databases_failed_with_error: "Kon databases niet laden: {error}"
+    load_leagues_failed_with_error: "Kon competities niet laden: {error}"
   mod_import:
     select_mod_files_title: Modbestanden selecteren

@@ -40,8 +40,12 @@ new_game_wizard:
         all_countries: 모든 국가
         all_leagues: 모든 리그
       badges:
+        champion: 챔피언
+        champion_short: 챔
         promoted: 승격
+        promoted_short: (▲)
         relegated: 강등
+        relegated_short: (▼)
       details:
         first_team_squad: 1군 스쿼드
         no_first_team_players: 1군에 배정된 선수가 없습니다
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: 바닥부터 평판 쌓기
           interview_offers: 면접 제안을 수락하거나 거절
 
+    database_selection:
+      title: 데이터베이스 및 모드 선택
+      description: 적용할 기본 데이터베이스와 선택적 모드 파일을 선택하세요
+      sections:
+        database: 데이터베이스
+        mods: 모드
+      empty:
+        no_databases: 데이터베이스를 찾을 수 없습니다
+      mod_metadata:
+        description: 설명
+        author: 작성자
+        version: 버전
+        date: 날짜
+        credits: 크레딧
+        url: URL
+      dropzone:
+        title: .mod 파일을 여기에 드롭하세요
+        subtitle: 또는 클릭해 파일 선택
+      summary:
+        selected_database: 선택된 데이터베이스
+        none_selected: 선택되지 않음
+        selected_mods: '선택된 모드({count})'
+        mod_order_info: 모드는 아래 순서대로 적용됩니다. 행을 드래그해 재정렬하거나 화살표를 사용하세요.
+      mod_order:
+        drag_to_reorder: 드래그하여 재정렬
+        move_up: 위로 이동
+        move_down: 아래로 이동
+        moving: 이동 중…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - 현재 시즌 데이터베이스'
+      dialogs:
+        mod_failure:
+          title: 모드 적용 실패
+          warning_label: 경고
+          warning_summary: '모드 쿼리 {total}개 중 {failed}개가 실패했습니다.'
+          affected_mods_label: 영향받는 모드
+          proceed_question: 데이터베이스가 불안정한 상태일 수 있습니다. 계속하시겠습니까?
+          table:
+            mod: Mod
+            sql_statement: SQL 문
+            parameters: 매개변수
+            error: 오류
+          actions:
+            proceed_anyway: 그래도 진행
+        mod_import:
+          title: 모드 파일 가져오기
+          labels:
+            mod_file: 모드 파일
+            name: 이름
+            description: 설명
+            author: 작성자
+            version: 버전
+            changelog_entries: 변경 로그 항목
+          prompt: '이 파일을 모드 폴더로 복사하거나 이동하시겠습니까?'
+          actions:
+            copy: 복사
+            move: 이동
+
+    game_configuration:
+      title: 게임 설정
+      description: 새 저장용 게임 설정을 구성하세요
+      sections:
+        dates: 날짜
+        manager_sacking: 감독 해고 확률
+        injury_probabilities: 부상 확률
+        economy: 경제
+      fields:
+        start_date: 시작 날짜
+        current_datetime: 현재 날짜 및 시간
+        player_sacking: 플레이어(당신) 해고
+        npc_sacking: NPC 감독 해고
+        training_injuries: 훈련 부상
+        match_injuries: 경기 부상
+        long_term_injuries: 장기 부상
+        travel_costs: 이동 비용
+      placeholders:
+        pick_date: 날짜 선택
+        pick_date_time: 날짜 및 시간 선택
+        select_preset: 프리셋 선택
+      presets:
+        none: 없음 (0%)
+        extremely_low: 매우 낮음 (10%)
+        very_low: 아주 낮음 (25%)
+        low: 낮음 (50%)
+        slightly_reduced: 약간 감소 (75%)
+        normal: 보통 (100%)
+      notes:
+        player_sacking: 당신이 해고될 확률입니다. 100% 미만은 빈도를 낮춥니다. 0%는 당신의 해고를 비활성화합니다.
+        npc_sacking: AI/NPC 감독이 해고될 확률입니다. 100% 미만은 빈도를 낮춥니다.
+        training_injuries: 훈련 중 부상 확률입니다. 100% 미만은 훈련 부상 빈도를 낮춥니다. 0%는 비활성화합니다.
+        match_injuries: 경기 중 부상 확률입니다. 100% 미만은 경기 부상 빈도를 낮춥니다. 0%는 비활성화합니다.
+        long_term_injuries: 2개월 이상 부상은 발생 확률이 낮아집니다. 50%는 부상이 2개월로 제한될 확률이 1/2입니다. 0%는 최대 부상 기간을 2개월로 제한합니다.
+        travel_costs: 이동 관련 비용에 적용되는 배수입니다. 100% 미만은 비용을 낮춥니다. 0%는 이동 비용을 비활성화합니다.
+
+    league_selection:
+      title: 리그 선택
+      description: 게임에서 활성화할 리그를 선택하세요
+      labels:
+        starting_season: 시작 시즌
+        presets: 프리셋
+        flag_alt: '{country} 국기'
+      placeholders:
+        select_season: 시즌 선택
+        select_lowest_level: 최하위 레벨 선택
+      presets:
+        recommended: 추천 리그
+        extended: 확장 리그
+        all: 모든 리그
+        clear_all: 모두 해제
+      level_option: '레벨 {level} - {name}'
+      division_fallback: '디비전 {level}'
+      includes_leagues: '(리그 {count}개 포함)'
+      loading: 리그를 불러오는 중...
+      total_selected: 선택된 리그 합계
+      total_selected_summary: '{countries}개 국가에서 {leagues}개'
+
+    manager_profile:
+      title: 감독 프로필 만들기
+      description: 게임 내 캐릭터가 됩니다
+      sections:
+        personal_information: 개인 정보
+        origin_nationality: 출신 및 국적
+        profile_preview: 프로필 미리보기
+      labels:
+        first_name: 이름
+        last_name: 성
+        known_as: 알려진 이름
+        gender: 성별
+        date_of_birth: 생년월일
+        nationality: 국적
+        birth_city: 출생 도시
+        second_nationality: 두 번째 국적
+      placeholders:
+        first_name: 이름 입력
+        last_name: 성 입력
+        known_as: 닉네임(선택)
+        date_of_birth: 날짜 선택(18세 이상)
+        nationality: 국적 선택
+        birth_city: 전 세계 도시 검색
+        second_nationality: 두 번째 국적 선택(선택)
+      gender:
+        man: 남성
+        woman: 여성
+      tips:
+        birth_date_navigation: '💡 팁: 상단의 연/월을 클릭해 출생 연도로 빠르게 이동하세요'
+      preview:
+        name: 이름
+        age: 나이
+        nationality: 국적
+        birth_city: 출생 도시
+
+    skill_allocation:
+      title: 스킬 포인트 배분
+      description: "{points}포인트를 감독 능력치에 배분하세요(각 1-99)"
+      points_allocated: '{used} / {total} 배분됨'
+      points_available: '{points} 포인트 남음'
+      quick_presets: 빠른 프리셋
+      actions:
+        reset_all: 모두 초기화
+      presets:
+        balanced:
+          name: 균형형
+          description: 모든 분야에 고르게 투자한 균형형 감독
+        tactical_genius:
+          name: 전술 천재
+          description: 깊은 지식과 적응력을 갖춘 전술 전문가
+        motivator:
+          name: 동기부여형
+          description: 사람 관리에 강한 영감형 리더
+
+    review:
+      title: 검토 및 확인
+      description: 선택 내용을 확인하고 새 게임을 시작하세요
+      sections:
+        database_mods: 데이터베이스 및 모드
+        active_leagues: 활성 리그
+        club_summary: 내 클럽
+        manager_profile: 감독 프로필
+        manager_skills: 감독 능력
+      labels:
+        club: 클럽
+        club_name: 클럽 이름
+        short_name: 약칭
+        league: 리그
+        database: 데이터베이스
+        mods: 모드
+        total_leagues: 리그 총계
+        leagues: 리그
+        full_name: 전체 이름
+        known_as: 알려진 이름
+        date_of_birth: 생년월일
+        birth_city: 출생 도시
+        age: 나이
+        nationality: 국적
+        second_nationality: 두 번째 국적
+      values:
+        none_selected: 선택되지 않음
+        no_mods_selected: 선택된 모드 없음
+        no_club_selected: 클럽이 선택되지 않았습니다
+        all_leagues_active: 모든 리그 활성화(기본값)
+        new_club_created: 새 클럽(생성됨)
+        level_plus: '레벨 {level}+'
+        not_set: 설정되지 않음
+        country_id: '국가 {id}'
+        birth_city_with_population: '{city}, {country} (인구: {population})'
+      navigation:
+        back: 뒤로
+      actions:
+        start_game: 게임 시작
+        starting_game: 게임 시작 중...
+
   # 토스트 / 검증
   messages:
     applied_preset: "프리셋 \"{name}\" 적용됨 ({points} 포인트)"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: 사용 가능한 시즌을 불러오지 못했습니다
     open_file_dialog_failed: 파일 선택 대화 상자를 열지 못했습니다
     load_clubs_failed_with_error: "클럽을 불러오지 못했습니다: {error}"
+    load_databases_failed_with_error: "데이터베이스를 불러오지 못했습니다: {error}"
+    load_leagues_failed_with_error: "리그를 불러오지 못했습니다: {error}"
   mod_import:
     select_mod_files_title: 모드 파일 선택

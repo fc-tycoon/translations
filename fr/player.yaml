@@ -29,6 +29,7 @@ player:
       height: Taille
       club: Club
       foot: Pied
+      both_feet: Les deux
       team: Équipe
       wage: Salaire
       value: Valeur
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Les postes sont colorés selon la note de familiarité. Le poste principal est mis en évidence en violet.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Note
+
+    fallback_name: 'Joueur {id}'
+
     messages:
       training_focus_coming_soon: La sélection du focus d'entraînement arrive bientôt
       training_schedule_coming_soon: L'affichage du planning d'entraînement arrive bientôt
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Totaux et records de carrière arrivent bientôt
       no_role_ratings: Aucune note de rôle disponible
       loading_player: Chargement du joueur...
+
+    information:
+      labels:
+        full_name: Nom complet
+        known_as: Nom connu
+        date_of_birth: Date de naissance
+        birthplace: Lieu de naissance
+        nationality: Nationalité
+        second_nationality: Deuxième nationalité
+        language: Langue
+        height: Taille
+        preferred_foot: Pied préféré
+
+    personality:
+      labels:
+        ambition: Ambition
+        determination: Détermination
+        discipline: Discipline
+        leadership: Leadership
+        loyalty: Loyauté
+        pressure_handling: Gestion de la pression
+        professionalism: Professionnalisme
+        temperament: Tempérament
+
+    footedness:
+      aria_label: 'Pied : gauche {left}/100, droit {right}/100'
 
   # Talents
   talents:

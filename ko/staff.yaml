@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════
+# Staff
+# ══════════════════════════════════════════════════════════════════════
+staff:
+  skills:
+    categories:
+      tactical: 전술
+      mental: 멘탈
+      people: 대인 관계
+    labels:
+      attacking: 공격
+      defending: 수비
+      tactical_knowledge: 전술 지식
+      tactical_adaptability: 전술 적응력
+      judging_player_ability: 선수 능력 평가
+      judging_player_potential: 잠재력 평가
+      man_marking: 대인 마크
+      zonal_marking: 지역 마크
+      pressing: 프레싱
+      determination: 결단력
+      discipline: 규율
+      integrity: 성실성
+      fortitude: 인내
+      resilience: 회복탄력성
+      ambition: 야망
+      adaptability: 적응력
+      motivating: 동기 부여
+      man_management: 인적 관리
+      charisma: 카리스마
+      professionalism: 프로 의식
+    descriptions:
+      tactical_knowledge: 전술과 포메이션에 대한 이해
+      tactical_adaptability: 경기 중 전술을 조정하는 능력
+      judging_player_ability: 선수 능력을 정확히 평가
+      judging_player_potential: 미래의 스타를 발굴
+      determination: 성공하려는 의지
+      discipline: 기준과 통제를 유지
+      ambition: 성공과 발전에 대한 욕구
+      adaptability: 새로운 상황에 적응
+      motivating: 선수들의 동기를 끌어올림
+      man_management: 선수 관계 관리
+      charisma: 개인적 매력과 영향력
+      professionalism: 행동으로 모범을 보임

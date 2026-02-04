@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# Contracten (gedeeld)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: Contractdetails
+    release_clauses: Afkoopclausules
+    buy_back_clause: Terugkoopclausule
+    performance_bonuses: Prestatiebonussen
+    special_clauses: Speciale clausules
+
+  labels:
+    status: Status
+    club: Club
+    start_date: Startdatum
+    end_date: Einddatum
+    remaining: Resterend
+    wage: Loon
+    annual_salary: Jaarsalaris
+
+  status:
+    active: Actief
+    expired: Verlopen
+    pending: In behandeling
+
+  units:
+    per_week: /wk
+    per_year: /jr
+
+  messages:
+    no_active_contract: Geen actief contract
+    no_release_clauses: Geen afkoopclausules
+    no_buy_back_clause: Geen terugkoopclausule
+    no_performance_bonuses: Geen prestatiebonussen
+    no_special_clauses: Geen speciale clausules
+
+  release_clauses:
+    general_release: Algemene afkoopclausule
+    higher_division: Hogere divisie
+    clubs_abroad: Clubs in het buitenland
+    non_promotion: Geen promotie
+    on_relegation: Bij degradatie
+    no_international: Geen internationals
+    clause_expires: Clausule vervalt
+
+  buy_back:
+    cost: Kosten
+    valid_until: Geldig tot
+
+  bonuses:
+    match_bonus: Wedstrijdbonus
+    league_match: Competitiewedstrijd
+    appearance_milestone: Optredensmijlpaal
+    per_goal: Per doelpunt
+    per_assist: Per assist
+    clean_sheet: Clean sheet
+    international_match: Interland
+    international_debut: Interlanddebuut
+    team_of_the_season: Team van het seizoen
+    top_goalscorer: Topscorer
+    avoid_relegation: Degradatie vermijden
+
+  special:
+    match_highest_earner: Meestverdiener evenaren
+    injury_release: Vrijgave bij blessure
+    no_extension: Geen verlenging
+    post_retirement_role: Rol na carrière
+    will_leave_after_contract: Vertrekt na contract
+    auto_extend_after_matches: Automatisch verlengen na {matches} wedstrijden
+
+  remaining:
+    years_months: '{years}j {months}m'
+    one_year: '{years} jaar'
+    many_years: '{years} jaar'
+    one_month: '{months} maand'
+    many_months: '{months} maanden'
+    one_day: '{days} dag'
+    many_days: '{days} dagen'

@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# 재능
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: 기술 기반
+        description: 발밑 기술과 볼 컨트롤 능력.
+        talents:
+          ball_mastery:
+            label: 볼 마스터리
+            description: 좁은 공간이나 고속에서의 자연스러운 컨트롤.
+            tooltip: "영향: 퍼스트 터치, 볼 컨트롤, 타이트 컨트롤, 드리블, 볼 보호, 압박 저항."
+          ball_distribution:
+            label: 볼 배급
+            description: 패스 강약과 각도 감각.
+            tooltip: "영향: 짧은 패스, 긴 패스, 로브 패스, 크로스, 시야, 세트피스 딜리버리."
+          ball_finesse:
+            label: 섬세함
+            description: 섬세한 터치와 정밀함.
+            tooltip: "영향: 커브, 칩 기술, 플레어, 스루패스, 감아차기, 피네스 슛, 섬세한 드리블, 정확한 패스."
+          set_pieces:
+            label: 세트피스
+            description: 정지 상황에서의 킥 능력.
+            tooltip: "영향: 프리킥, 코너킥, 페널티킥."
+
+      defensive:
+        label: 수비 기반
+        description: 수비 단계에서의 능력.
+        talents:
+          def_duels:
+            label: 수비 1대1
+            description: 1대1 수비 타이밍.
+            tooltip: "영향: 스탠딩 태클, 슬라이딩 태클, 블로킹, 공중 경합, 피지컬 접촉."
+          def_reading:
+            label: 수비 읽기
+            description: 상대 의도를 읽는 능력.
+            tooltip: "영향: 마킹, 인터셉트, 스크리닝, 수비 인지."
+          def_movement:
+            label: 수비 움직임
+            description: 수비 시 발놀림과 위치 선정.
+            tooltip: "영향: 조키, 압박, 수비 포지셔닝, 활동량."
+
+      attacking:
+        label: 공격 기반
+        description: 공격 단계에서의 능력.
+        talents:
+          ball_striking:
+            label: 슈팅 감각
+            description: 깔끔한 임팩트와 타이밍.
+            tooltip: "영향: 마무리, 슈팅, 발리, 커브, 헤딩 정확도."
+          att_reading:
+            label: 공격 읽기
+            description: 수비 패턴을 읽는 능력.
+            tooltip: "영향: 마무리, 예측, 창의성, 시야."
+          att_movement:
+            label: 공격 움직임
+            description: 공간을 찾고 침투 타이밍을 잡기.
+            tooltip: "영향: 오프더볼, 공격 인지, 공격 활동량."
+
+      physical:
+        label: 피지컬 기반
+        description: 운동 능력과 신체 제어.
+        talents:
+          physical_power:
+            label: 파워
+            description: 폭발력 잠재력.
+            tooltip: "영향: 가속, 스프린트 속도, 힘, 점프, 슛 파워."
+          endurance:
+            label: 지구력
+            description: 엔진과 움직임 효율.
+            tooltip: "영향: 스태미나, 활동량, 반복 스프린트, 압박 지속력."
+          coordination:
+            label: 코디네이션
+            description: 신체 제어와 미세 조정.
+            tooltip: "영향: 민첩, 밸런스, 신체 제어, 조키, 반사 신경."
+          aerial:
+            label: 공중 능력
+            description: 낙하지점 판단과 점프 타이밍.
+            tooltip: "영향: 헤딩 정확도, 점프, 공중 경합, 하이볼 컨트롤."
+
+      mental:
+        label: 멘탈 기반
+        description: 인지 처리와 감정 조절.
+        talents:
+          game_intelligence:
+            label: 경기 지능
+            description: 처리 속도와 선택의 질.
+            tooltip: "영향: 의사결정, 예측, 침착함, 반응."
+          temperament:
+            label: 기질
+            description: 감정 안정과 존재감.
+            tooltip: "영향: 리더십, 빅매치 기질, 커뮤니케이션, 용기."
+          spatial_awareness:
+            label: 공간 인지
+            description: 공간과 각도를 읽는 능력.
+            tooltip: "영향: 포지셔닝, 공간 감각, 빈 공간 찾기."
+          focus:
+            label: 집중력
+            description: 압박 속 실행력.
+            tooltip: "영향: 집중, 침착, 반응, 꾸준함."
+          creativity:
+            label: 창의성
+            description: 대담하고 독창적인 해결.
+            tooltip: "영향: 드리블, 마무리, 크로스, 스루패스."
+          competitive_drive:
+            label: 경쟁심
+            description: 내면의 불꽃과 야망.
+            tooltip: "영향: 결단력, 리더십, 기본 자신감, 꾸준함."
+          mental_resilience:
+            label: 정신적 회복력
+            description: 좌절을 견디는 힘.
+            tooltip: "영향: 압박 대처, 빅매치 기질, 집중."
+          social_influence:
+            label: 사회적 영향력
+            description: 카리스마와 라커룸 영향.
+            tooltip: "영향: 리더십, 커뮤니케이션, 주장 존재감."
+
+      goalkeeping:
+        label: 골키퍼 기반
+        description: 골키퍼 전용 재능.
+        talents:
+          gk_shot_stopping:
+            label: 선방
+            description: 반사 신경과 다이빙.
+            tooltip: "영향: 반사, 다이빙, 1대1."
+          gk_handling:
+            label: 캐칭
+            description: 잡아내고 안정적으로 유지.
+            tooltip: "영향: 핸들링, 캐칭, 공중 처리."
+          gk_distribution:
+            label: 빌드업(골키퍼)
+            description: 킥/던지기의 정확도.
+            tooltip: "영향: 킥, 던지기, 소유 시 의사결정."
+          gk_movement:
+            label: 움직임(골키퍼)
+            description: 발놀림과 각도 차단.
+            tooltip: "영향: 포지셔닝, 스위퍼 행동, 미세 조정."
+
+      tactical:
+        label: 전술 기반
+        description: 전술 시스템과 패턴 이해.
+        talents:
+          tactical_attacking:
+            label: 공격 전술
+            description: 공격 시스템 이해.
+            tooltip: "영향: 공격 팀워크, 원터치 패스, 공격 인지."
+          tactical_defending:
+            label: 수비 전술
+            description: 수비 시스템 이해.
+            tooltip: "영향: 수비 팀워크, 전술 규율, 스크리닝."
+          tactical_goalkeeping:
+            label: 골키퍼 전술
+            description: 경기 읽기와 구역 지휘.
+            tooltip: "영향: 의사결정, 페널티지역 장악, 커뮤니케이션."

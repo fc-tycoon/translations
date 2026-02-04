@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# 계약(공유)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: 계약 상세
+    release_clauses: 바이아웃 조항
+    buy_back_clause: 바이백 조항
+    performance_bonuses: 성과 보너스
+    special_clauses: 특별 조항
+
+  labels:
+    status: 상태
+    club: 클럽
+    start_date: 시작일
+    end_date: 종료일
+    remaining: 남은 기간
+    wage: 주급
+    annual_salary: 연봉
+
+  status:
+    active: 유효
+    expired: 만료
+    pending: 보류
+
+  units:
+    per_week: /주
+    per_year: /년
+
+  messages:
+    no_active_contract: 유효한 계약 없음
+    no_release_clauses: 바이아웃 조항 없음
+    no_buy_back_clause: 바이백 조항 없음
+    no_performance_bonuses: 성과 보너스 없음
+    no_special_clauses: 특별 조항 없음
+
+  release_clauses:
+    general_release: 일반 바이아웃
+    higher_division: 상위 디비전
+    clubs_abroad: 해외 클럽
+    non_promotion: 승격 실패
+    on_relegation: 강등 시
+    no_international: 국가대표 없음
+    clause_expires: 조항 만료
+
+  buy_back:
+    cost: 비용
+    valid_until: 유효 기간
+
+  bonuses:
+    match_bonus: 경기 보너스
+    league_match: 리그 경기
+    appearance_milestone: 출전 마일스톤
+    per_goal: 골당
+    per_assist: 어시스트당
+    clean_sheet: 클린시트
+    international_match: A매치
+    international_debut: 대표 데뷔
+    team_of_the_season: 시즌 베스트11
+    top_goalscorer: 득점왕
+    avoid_relegation: 강등 회피
+
+  special:
+    match_highest_earner: 최고 연봉자 맞추기
+    injury_release: 부상 시 방출
+    no_extension: 연장 없음
+    post_retirement_role: 은퇴 후 역할
+    will_leave_after_contract: 계약 후 이적
+    auto_extend_after_matches: "{matches}경기 후 자동 연장"
+
+  remaining:
+    years_months: '{years}년 {months}개월'
+    one_year: '{years}년'
+    many_years: '{years}년'
+    one_month: '{months}개월'
+    many_months: '{months}개월'
+    one_day: '{days}일'
+    many_days: '{days}일'

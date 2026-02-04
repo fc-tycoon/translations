@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# 合同（共享）
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: 合同详情
+    release_clauses: 解约条款
+    buy_back_clause: 回购条款
+    performance_bonuses: 绩效奖金
+    special_clauses: 特殊条款
+
+  labels:
+    status: 状态
+    club: 俱乐部
+    start_date: 开始日期
+    end_date: 结束日期
+    remaining: 剩余
+    wage: 周薪
+    annual_salary: 年薪
+
+  status:
+    active: 有效
+    expired: 已到期
+    pending: 待定
+
+  units:
+    per_week: /周
+    per_year: /年
+
+  messages:
+    no_active_contract: 无有效合同
+    no_release_clauses: 无解约条款
+    no_buy_back_clause: 无回购条款
+    no_performance_bonuses: 无绩效奖金
+    no_special_clauses: 无特殊条款
+
+  release_clauses:
+    general_release: 通用解约条款
+    higher_division: 更高联赛
+    clubs_abroad: 海外俱乐部
+    non_promotion: 未升级
+    on_relegation: 降级时
+    no_international: 无国家队
+    clause_expires: 条款到期
+
+  buy_back:
+    cost: 费用
+    valid_until: 有效期至
+
+  bonuses:
+    match_bonus: 比赛奖金
+    league_match: 联赛出场
+    appearance_milestone: 出场里程碑
+    per_goal: 每进球
+    per_assist: 每助攻
+    clean_sheet: 零封
+    international_match: 国家队出场
+    international_debut: 国家队首秀
+    team_of_the_season: 赛季最佳阵容
+    top_goalscorer: 最佳射手
+    avoid_relegation: 保级成功
+
+  special:
+    match_highest_earner: 匹配最高薪
+    injury_release: 伤病解约
+    no_extension: 不续约
+    post_retirement_role: 退役后岗位
+    will_leave_after_contract: 合同到期后离队
+    auto_extend_after_matches: 出场{matches}场后自动续约
+
+  remaining:
+    years_months: '{years}年{months}月'
+    one_year: '{years}年'
+    many_years: '{years}年'
+    one_month: '{months}月'
+    many_months: '{months}月'
+    one_day: '{days}天'
+    many_days: '{days}天'

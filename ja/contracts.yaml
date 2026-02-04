@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# 契約（共有）
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: 契約詳細
+    release_clauses: 違約金条項
+    buy_back_clause: 買い戻し条項
+    performance_bonuses: 成果ボーナス
+    special_clauses: 特別条項
+
+  labels:
+    status: 状態
+    club: クラブ
+    start_date: 開始日
+    end_date: 終了日
+    remaining: 残り
+    wage: 週給
+    annual_salary: 年俸
+
+  status:
+    active: 有効
+    expired: 期限切れ
+    pending: 保留
+
+  units:
+    per_week: /週
+    per_year: /年
+
+  messages:
+    no_active_contract: 有効な契約なし
+    no_release_clauses: 違約金条項なし
+    no_buy_back_clause: 買い戻し条項なし
+    no_performance_bonuses: 成果ボーナスなし
+    no_special_clauses: 特別条項なし
+
+  release_clauses:
+    general_release: 一般違約金
+    higher_division: 上位ディビジョン
+    clubs_abroad: 海外クラブ
+    non_promotion: 昇格なし
+    on_relegation: 降格時
+    no_international: 国際出場なし
+    clause_expires: 条項の期限
+
+  buy_back:
+    cost: 費用
+    valid_until: 有効期限
+
+  bonuses:
+    match_bonus: 試合ボーナス
+    league_match: リーグ戦
+    appearance_milestone: 出場節目
+    per_goal: 1ゴールごと
+    per_assist: 1アシストごと
+    clean_sheet: クリーンシート
+    international_match: 国際試合
+    international_debut: 代表デビュー
+    team_of_the_season: シーズンベスト11
+    top_goalscorer: 得点王
+    avoid_relegation: 残留ボーナス
+
+  special:
+    match_highest_earner: 最高年俸に合わせる
+    injury_release: 怪我で解除
+    no_extension: 延長なし
+    post_retirement_role: 引退後の役職
+    will_leave_after_contract: 契約満了で退団
+    auto_extend_after_matches: "{matches}試合後に自動延長"
+
+  remaining:
+    years_months: '{years}年{months}か月'
+    one_year: '{years}年'
+    many_years: '{years}年'
+    one_month: '{months}か月'
+    many_months: '{months}か月'
+    one_day: '{days}日'
+    many_days: '{days}日'

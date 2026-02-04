@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# Verträge (geteilt)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: Vertragsdetails
+    release_clauses: Ausstiegsklauseln
+    buy_back_clause: Rückkaufklausel
+    performance_bonuses: Leistungsboni
+    special_clauses: Sonderklauseln
+
+  labels:
+    status: Status
+    club: Verein
+    start_date: Startdatum
+    end_date: Enddatum
+    remaining: Restlaufzeit
+    wage: Gehalt
+    annual_salary: Jahresgehalt
+
+  status:
+    active: Aktiv
+    expired: Abgelaufen
+    pending: Ausstehend
+
+  units:
+    per_week: /Woche
+    per_year: /Jahr
+
+  messages:
+    no_active_contract: Kein aktiver Vertrag
+    no_release_clauses: Keine Ausstiegsklauseln
+    no_buy_back_clause: Keine Rückkaufklausel
+    no_performance_bonuses: Keine Leistungsboni
+    no_special_clauses: Keine Sonderklauseln
+
+  release_clauses:
+    general_release: Allgemeine Ausstiegsklausel
+    higher_division: Höhere Liga
+    clubs_abroad: Ausländische Vereine
+    non_promotion: Bei Nicht-Aufstieg
+    on_relegation: Bei Abstieg
+    no_international: Keine internationalen Einsätze
+    clause_expires: Klausel läuft ab
+
+  buy_back:
+    cost: Kosten
+    valid_until: Gültig bis
+
+  bonuses:
+    match_bonus: Spielprämie
+    league_match: Ligaspiel
+    appearance_milestone: Einsatz-Meilenstein
+    per_goal: Pro Tor
+    per_assist: Pro Assist
+    clean_sheet: Zu Null
+    international_match: Länderspiel
+    international_debut: Länderspiel-Debüt
+    team_of_the_season: Team der Saison
+    top_goalscorer: Torschützenkönig
+    avoid_relegation: Klassenerhalt
+
+  special:
+    match_highest_earner: Höchstverdiener angleichen
+    injury_release: Auflösung bei Verletzung
+    no_extension: Keine Verlängerung
+    post_retirement_role: Rolle nach Karriere
+    will_leave_after_contract: Verlässt den Verein nach Vertragsende
+    auto_extend_after_matches: Automatische Verlängerung nach {matches} Spielen
+
+  remaining:
+    years_months: '{years}J {months}M'
+    one_year: '{years} Jahr'
+    many_years: '{years} Jahre'
+    one_month: '{months} Monat'
+    many_months: '{months} Monate'
+    one_day: '{days} Tag'
+    many_days: '{days} Tage'

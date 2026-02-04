@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			{{ people_count === 1 ? 'Eén verjaardag vandaag' : people_count + ' verjaardagen vandaag' }}
+		</title>
+		<style>
+			.message-body { line-height: 1.4; }
+		</style>
+	</head>
+	<body>
+		<p>Er {{ people_count === 1 ? 'is' : 'zijn' }} {people_count} verjaardag{{ people_count > 1 ? 'en' : '' }} bij je club vandaag.</p>
+
+		<foreach each="(p, i) in people">
+			<p>
+				<if expr="p.is_player">
+					<player ref="p.person_id">{{ p.name || p.person_name }}</player>
+				</if>
+				<else>
+					<staff ref="p.person_id">{{ p.name || p.person_name }}</staff>
+				</else>
+			</p>
+		</foreach>
+	</body>
+</html>

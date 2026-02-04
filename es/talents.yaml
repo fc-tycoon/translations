@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# Talentos
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: Base técnica
+        description: Habilidad natural con el balón en los pies.
+        talents:
+          ball_mastery:
+            label: Dominio del balón
+            description: Control natural en espacios reducidos o a velocidad.
+            tooltip: "Influye en: primer toque, control de balón, control en corto, regate, proteger el balón, resistencia a la presión."
+          ball_distribution:
+            label: Distribución del balón
+            description: Sentido del peso y los ángulos de pase.
+            tooltip: "Influye en: pase corto, pase largo, pases elevados, centros, visión, entrega a balón parado."
+          ball_finesse:
+            label: Finesa con el balón
+            description: Toque delicado y precisión.
+            tooltip: "Influye en: efecto, picar el balón, flair, pases al hueco, tiros con efecto, tiros de colocación, regate fino, pases precisos."
+          set_pieces:
+            label: Balón parado
+            description: Golpeo en acciones a balón parado.
+            tooltip: "Influye en: faltas, córners, penaltis."
+
+      defensive:
+        label: Base defensiva
+        description: Capacidades en fase defensiva.
+        talents:
+          def_duels:
+            label: Duelos defensivos
+            description: Timing natural en el 1 contra 1.
+            tooltip: "Influye en: entradas, barridas, bloqueos, duelos aéreos, contacto físico."
+          def_reading:
+            label: Lectura defensiva
+            description: Leer las intenciones del atacante.
+            tooltip: "Influye en: marcaje, intercepciones, cubrir líneas, conciencia defensiva."
+          def_movement:
+            label: Movimiento defensivo
+            description: Calidad de pies al defender.
+            tooltip: "Influye en: temporizar, presión, posicionamiento defensivo, ritmo de trabajo."
+
+      attacking:
+        label: Base ofensiva
+        description: Capacidades en fase ofensiva.
+        talents:
+          ball_striking:
+            label: Golpeo
+            description: Contacto limpio y buen timing.
+            tooltip: "Influye en: definición, disparos, voleas, efecto, remate de cabeza."
+          att_reading:
+            label: Lectura ofensiva
+            description: Leer defensas y patrones.
+            tooltip: "Influye en: definición, anticipación, creatividad, visión."
+          att_movement:
+            label: Movimiento ofensivo
+            description: Encontrar espacios y temporizar desmarques.
+            tooltip: "Influye en: desmarque, conciencia ofensiva, ritmo de trabajo ofensivo."
+
+      physical:
+        label: Base física
+        description: Atributos atléticos y control corporal.
+        talents:
+          physical_power:
+            label: Potencia física
+            description: Potencial de explosividad.
+            tooltip: "Influye en: aceleración, velocidad, fuerza, salto, potencia de tiro."
+          endurance:
+            label: Resistencia
+            description: Motor y eficiencia de movimiento.
+            tooltip: "Influye en: resistencia, ritmos de trabajo, sprints repetidos, aguante en presión."
+          coordination:
+            label: Coordinación
+            description: Control corporal y microajustes.
+            tooltip: "Influye en: agilidad, equilibrio, control corporal, temporizar, reflejos."
+          aerial:
+            label: Juego aéreo
+            description: Juzgar trayectorias y sincronizar saltos.
+            tooltip: "Influye en: remate de cabeza, salto, duelos aéreos, control de balones altos."
+
+      mental:
+        label: Base mental
+        description: Procesamiento cognitivo y control emocional.
+        talents:
+          game_intelligence:
+            label: Inteligencia de juego
+            description: Velocidad de lectura y evaluación de opciones.
+            tooltip: "Influye en: decisiones, anticipación, compostura, reacciones."
+          temperament:
+            label: Temperamento
+            description: Regulación emocional y presencia.
+            tooltip: "Influye en: liderazgo, temple en grandes partidos, comunicación, valentía."
+          spatial_awareness:
+            label: Conciencia espacial
+            description: Leer el espacio, geometría y ángulos.
+            tooltip: "Influye en: posicionamiento, lectura de espacios, encontrar huecos."
+          focus:
+            label: Concentración
+            description: Ejecutar bajo presión.
+            tooltip: "Influye en: concentración, compostura, reacciones, regularidad."
+          creativity:
+            label: Creatividad
+            description: Soluciones inventivas y valentía.
+            tooltip: "Influye en: regate, definición, centros, pases al hueco."
+          competitive_drive:
+            label: Ambición competitiva
+            description: Fuego interno y hambre de dominar.
+            tooltip: "Influye en: determinación, liderazgo, confianza base y regularidad."
+          mental_resilience:
+            label: Resiliencia mental
+            description: Capacidad de absorber contratiempos.
+            tooltip: "Influye en: manejo de la presión, temple en grandes partidos, concentración."
+          social_influence:
+            label: Influencia social
+            description: Carisma e impacto en el vestuario.
+            tooltip: "Influye en: liderazgo, comunicación y presencia de capitán."
+
+      goalkeeping:
+        label: Base de portería
+        description: Talentos específicos de portero.
+        talents:
+          gk_shot_stopping:
+            label: Paradas
+            description: Reflejos y estirada.
+            tooltip: "Influye en: reflejos, estirada, 1 contra 1."
+          gk_handling:
+            label: Blocaje
+            description: Atrapar y asegurar el balón.
+            tooltip: "Influye en: blocaje, agarre, dominio del área."
+          gk_distribution:
+            label: Distribución (POR)
+            description: Precisión al sacar con el pie o la mano.
+            tooltip: "Influye en: saque con el pie, saque con la mano, decisiones en posesión."
+          gk_movement:
+            label: Movimiento (POR)
+            description: Pasos cortos y cerrar ángulos.
+            tooltip: "Influye en: colocación, acciones de líbero, microajustes."
+
+      tactical:
+        label: Base táctica
+        description: Comprender sistemas y patrones tácticos.
+        talents:
+          tactical_attacking:
+            label: Táctica ofensiva
+            description: Comprender sistemas de ataque.
+            tooltip: "Influye en: juego en equipo ofensivo, pases al primer toque, conciencia ofensiva."
+          tactical_defending:
+            label: Táctica defensiva
+            description: Comprender sistemas defensivos.
+            tooltip: "Influye en: juego en equipo defensivo, disciplina táctica, coberturas."
+          tactical_goalkeeping:
+            label: Táctica (POR)
+            description: Lectura del juego y mando del área.
+            tooltip: "Influye en: decisiones, mando del área, comunicación."

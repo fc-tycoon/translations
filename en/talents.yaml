@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# Talents
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: Technical Foundation
+        description: Natural ability with the ball at feet.
+        talents:
+          ball_mastery:
+            label: Ball Mastery
+            description: Natural control in tight areas or at speed.
+            tooltip: "Feeds: first touch, ball control, tight control, dribbling, ball shielding, press resistance."
+          ball_distribution:
+            label: Ball Distribution
+            description: Natural feel for passing weight and angles.
+            tooltip: "Feeds: short passing, long passing, lofted passing, crossing, vision, set piece delivery."
+          ball_finesse:
+            label: Ball Finesse
+            description: Delicate touch and precision with the ball.
+            tooltip: "Feeds: curve, chip technique, flair, through passing, curling shots, finesse shots, delicate dribbling, precise passing."
+          set_pieces:
+            label: Set Pieces
+            description: Ball striking in dead-ball situations.
+            tooltip: "Feeds: free kicks, corners, penalties."
+
+      defensive:
+        label: Defensive Foundation
+        description: Defensive phase capabilities.
+        talents:
+          def_duels:
+            label: Defensive Duels
+            description: Natural timing in 1v1 defending.
+            tooltip: "Feeds: standing tackles, sliding tackles, blocking, aerial duels, physical contact."
+          def_reading:
+            label: Defensive Reading
+            description: "Reading attackers' intentions."
+            tooltip: "Feeds: marking, interceptions, screening, defensive awareness."
+          def_movement:
+            label: Defensive Movement
+            description: Footwork quality while defending.
+            tooltip: "Feeds: jockeying, pressing, defensive positioning, work rate."
+
+      attacking:
+        label: Attacking Foundation
+        description: Attacking phase capabilities.
+        talents:
+          ball_striking:
+            label: Ball Striking
+            description: Clean striking and timing of contact.
+            tooltip: "Feeds: finishing, shooting, volleys, curve, heading accuracy."
+          att_reading:
+            label: Attacking Reading
+            description: Reading defenders and patterns.
+            tooltip: "Feeds: finishing, anticipation, creativity, vision."
+          att_movement:
+            label: Attacking Movement
+            description: Finding pockets and timing runs.
+            tooltip: "Feeds: attacking off-the-ball, attacking awareness, attacking work rate."
+
+      physical:
+        label: Physical Foundation
+        description: Athletic attributes and body control.
+        talents:
+          physical_power:
+            label: Physical Power
+            description: Raw explosiveness potential.
+            tooltip: "Feeds: acceleration, sprint speed, strength, jumping reach, shot power."
+          endurance:
+            label: Endurance
+            description: Engine and movement efficiency.
+            tooltip: "Feeds: stamina, work rates, repeat sprint ability, pressing endurance."
+          coordination:
+            label: Coordination
+            description: Body control and micro-adjustments.
+            tooltip: "Feeds: agility, balance, body control, jockeying, reflexes."
+          aerial:
+            label: Aerial
+            description: Judging flight and timing jumps.
+            tooltip: "Feeds: heading accuracy, jumping reach, aerial duels, high-ball control."
+
+      mental:
+        label: Mental Foundation
+        description: Cognitive processing and emotional regulation.
+        talents:
+          game_intelligence:
+            label: Game Intelligence
+            description: Processing speed and option evaluation.
+            tooltip: "Feeds: decisions, anticipation, composure, reactions."
+          temperament:
+            label: Temperament
+            description: Emotional regulation and presence.
+            tooltip: "Feeds: leadership, big-game temperament, communication, bravery."
+          spatial_awareness:
+            label: Spatial Awareness
+            description: Reading space, geometry, angles.
+            tooltip: "Feeds: positioning, awareness skills, finding space."
+          focus:
+            label: Focus
+            description: Executing under pressure.
+            tooltip: "Feeds: concentration, composure, reactions, consistency."
+          creativity:
+            label: Creativity
+            description: Inventive solutions and boldness.
+            tooltip: "Feeds: dribbling, finishing, crossing, through-ball passing."
+          competitive_drive:
+            label: Competitive Drive
+            description: Inner fire and ambition to dominate.
+            tooltip: "Feeds: determination, leadership, base confidence, and consistency."
+          mental_resilience:
+            label: Mental Resilience
+            description: Ability to absorb setbacks.
+            tooltip: "Feeds: pressure handling, big-match temperament, concentration."
+          social_influence:
+            label: Social Influence
+            description: Charisma and locker-room sway.
+            tooltip: "Feeds: leadership, communication, and captaincy presence."
+
+      goalkeeping:
+        label: Goalkeeping Foundation
+        description: GK-specific talents (separate motor patterns from outfield).
+        talents:
+          gk_shot_stopping:
+            label: GK Shot Stopping
+            description: Reflexes and diving ability.
+            tooltip: "Feeds: gk_reflexes, gk_diving, gk_one_on_one."
+          gk_handling:
+            label: GK Handling
+            description: Catching and holding shots.
+            tooltip: "Feeds: gk_handling, gk_catching, gk_aerial_ability."
+          gk_distribution:
+            label: GK Distribution
+            description: Kicking and throwing accuracy.
+            tooltip: "Feeds: gk_kicking, gk_throwing, in-possession decisions."
+          gk_movement:
+            label: GK Movement
+            description: Footwork and angle closing.
+            tooltip: "Feeds: gk positioning, gk sweeper actions, micro-adjustments."
+
+      tactical:
+        label: Tactical Foundation
+        description: Understanding systems and tactical patterns.
+        talents:
+          tactical_attacking:
+            label: Tactical Attacking
+            description: Understanding attacking systems.
+            tooltip: "Feeds: attacking teamwork, one-touch passing, attacking awareness."
+          tactical_defending:
+            label: Tactical Defending
+            description: Understanding defensive systems.
+            tooltip: "Feeds: defensive teamwork, tactical discipline, defensive screening."
+          tactical_goalkeeping:
+            label: Tactical Goalkeeping
+            description: GK game reading and area command.
+            tooltip: "Feeds: gk_decisions, gk_command_of_area, gk_communication."

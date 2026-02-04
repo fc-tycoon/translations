@@ -29,6 +29,7 @@ player:
       height: Größe
       club: Verein
       foot: Fuß
+      both_feet: Beidfüßig
       team: Team
       wage: Gehalt
       value: Wert
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Positionen sind nach Vertrautheitswertung eingefärbt. Die Primärposition ist lila hervorgehoben.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Bewertung
+
+    fallback_name: 'Spieler {id}'
+
     messages:
       training_focus_coming_soon: Trainingsfokus-Auswahl folgt
       training_schedule_coming_soon: Trainingsplan-Anzeige folgt
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Karrieresummen und Rekorde folgen
       no_role_ratings: Keine Rollenbewertungen verfügbar
       loading_player: Spieler wird geladen...
+
+    information:
+      labels:
+        full_name: Vollständiger Name
+        known_as: Bekannt als
+        date_of_birth: Geburtsdatum
+        birthplace: Geburtsort
+        nationality: Nationalität
+        second_nationality: Zweite Nationalität
+        language: Sprache
+        height: Größe
+        preferred_foot: Bevorzugter Fuß
+
+    personality:
+      labels:
+        ambition: Ehrgeiz
+        determination: Entschlossenheit
+        discipline: Disziplin
+        leadership: Führungsqualitäten
+        loyalty: Loyalität
+        pressure_handling: Umgang mit Druck
+        professionalism: Professionalität
+        temperament: Temperament
+
+    footedness:
+      aria_label: 'Fuß: links {left}/100, rechts {right}/100'
 
   # Talente
   talents:

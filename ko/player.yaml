@@ -29,6 +29,7 @@ player:
       height: 키
       club: 클럽
       foot: 발
+      both_feet: 양발
       team: 팀
       wage: 급여
       value: 가치
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: 포지션은 숙련도에 따라 색이 표시됩니다. 주 포지션은 보라색으로 강조됩니다.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: 평점
+
+    fallback_name: '선수 {id}'
+
     messages:
       training_focus_coming_soon: 훈련 집중 선택은 곧 추가됩니다
       training_schedule_coming_soon: 훈련 일정 표시는 곧 추가됩니다
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: 통산 합계와 기록은 곧 추가됩니다
       no_role_ratings: 역할 평점이 없습니다
       loading_player: 선수 로딩 중...
+
+    information:
+      labels:
+        full_name: 전체 이름
+        known_as: 알려진 이름
+        date_of_birth: 생년월일
+        birthplace: 출생지
+        nationality: 국적
+        second_nationality: 제2 국적
+        language: 언어
+        height: 키
+        preferred_foot: 주발
+
+    personality:
+      labels:
+        ambition: 야망
+        determination: 투지
+        discipline: 규율
+        leadership: 리더십
+        loyalty: 충성심
+        pressure_handling: 압박 대처
+        professionalism: 프로 의식
+        temperament: 기질
+
+    footedness:
+      aria_label: '주발: 왼발 {left}/100, 오른발 {right}/100'
 
   # 재능
   talents:

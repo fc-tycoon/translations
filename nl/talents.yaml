@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# Talenten
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: Technische basis
+        description: Natuurlijke vaardigheid met de bal.
+        talents:
+          ball_mastery:
+            label: Balbeheersing
+            description: Natuurlijke controle in kleine ruimtes of op snelheid.
+            tooltip: "Beïnvloedt: eerste aanname, balcontrole, korte controle, dribbelen, afschermen, weerstand tegen druk."
+          ball_distribution:
+            label: Balverdeling
+            description: Gevoel voor passgewicht en hoeken.
+            tooltip: "Beïnvloedt: korte pass, lange pass, lobpass, voorzet, visie, standaardsituaties."
+          ball_finesse:
+            label: Bal-finesse
+            description: Fijne touch en precisie.
+            tooltip: "Beïnvloedt: effect, chiptechniek, flair, steekpass, krulschot, geplaatst schot, fijn dribbelen, precieze passes."
+          set_pieces:
+            label: Standaardsituaties
+            description: Traptechniek bij dode spelmomenten.
+            tooltip: "Beïnvloedt: vrije trappen, corners, penalty's."
+
+      defensive:
+        label: Defensieve basis
+        description: Capaciteiten in de verdedigende fase.
+        talents:
+          def_duels:
+            label: Defensieve duels
+            description: Natuurlijke timing in 1-tegen-1.
+            tooltip: "Beïnvloedt: staande tackles, slidings, blocks, luchtduels, fysiek contact."
+          def_reading:
+            label: Defensief lezen
+            description: Aanvallers en intenties lezen.
+            tooltip: "Beïnvloedt: mandekking, intercepties, afschermen, defensief inzicht."
+          def_movement:
+            label: Defensieve beweging
+            description: Voetwerk tijdens verdedigen.
+            tooltip: "Beïnvloedt: jockeyen, druk zetten, positionering, werklust."
+
+      attacking:
+        label: Aanvallende basis
+        description: Capaciteiten in de aanvallende fase.
+        talents:
+          ball_striking:
+            label: Afwerking
+            description: Zuivere trap en timing.
+            tooltip: "Beïnvloedt: afwerken, schoten, volleys, effect, kopnauwkeurigheid."
+          att_reading:
+            label: Aanvallend lezen
+            description: Verdedigers en patronen lezen.
+            tooltip: "Beïnvloedt: afwerken, anticipatie, creativiteit, visie."
+          att_movement:
+            label: Aanvallende beweging
+            description: Ruimte vinden en loopacties timen.
+            tooltip: "Beïnvloedt: bewegen zonder bal, aanvallend inzicht, aanvallende werklust."
+
+      physical:
+        label: Fysieke basis
+        description: Atletische eigenschappen en lichaamscontrole.
+        talents:
+          physical_power:
+            label: Kracht
+            description: Ruw explosief potentieel.
+            tooltip: "Beïnvloedt: acceleratie, sprintsnelheid, kracht, sprongkracht, schotkracht."
+          endurance:
+            label: Uithoudingsvermogen
+            description: Motor en bewegings-efficiëntie.
+            tooltip: "Beïnvloedt: stamina, werkrates, herhaalde sprints, pressing-uithouding."
+          coordination:
+            label: Coördinatie
+            description: Lichaamscontrole en micro-aanpassingen.
+            tooltip: "Beïnvloedt: wendbaarheid, balans, lichaamscontrole, jockeyen, reflexen."
+          aerial:
+            label: Luchtspel
+            description: Vlucht inschatten en sprongen timen.
+            tooltip: "Beïnvloedt: kopnauwkeurigheid, sprongkracht, luchtduels, controle van hoge ballen."
+
+      mental:
+        label: Mentale basis
+        description: Cognitie en emotionele regulatie.
+        talents:
+          game_intelligence:
+            label: Spelintelligentie
+            description: Verwerkingssnelheid en keuzes.
+            tooltip: "Beïnvloedt: beslissingen, anticipatie, kalmte, reacties."
+          temperament:
+            label: Temperament
+            description: Emotionele stabiliteit en aanwezigheid.
+            tooltip: "Beïnvloedt: leiderschap, grote-wedstrijd-mentaliteit, communicatie, bravoure."
+          spatial_awareness:
+            label: Ruimtebewustzijn
+            description: Ruimte, geometrie en hoeken lezen.
+            tooltip: "Beïnvloedt: positionering, ruimtegevoel, vrije ruimtes vinden."
+          focus:
+            label: Focus
+            description: Uitvoeren onder druk.
+            tooltip: "Beïnvloedt: concentratie, kalmte, reacties, consistentie."
+          creativity:
+            label: Creativiteit
+            description: Inventieve oplossingen en lef.
+            tooltip: "Beïnvloedt: dribbelen, afwerken, voorzetten, steekpasses."
+          competitive_drive:
+            label: Competitiedrang
+            description: Innerlijk vuur en ambitie.
+            tooltip: "Beïnvloedt: vastberadenheid, leiderschap, basiszelfvertrouwen, consistentie."
+          mental_resilience:
+            label: Mentale weerbaarheid
+            description: Tegenslagen verwerken.
+            tooltip: "Beïnvloedt: omgaan met druk, grote-wedstrijd-mentaliteit, concentratie."
+          social_influence:
+            label: Sociale invloed
+            description: Charisma en impact in de kleedkamer.
+            tooltip: "Beïnvloedt: leiderschap, communicatie, aanvoerderspresence."
+
+      goalkeeping:
+        label: Keepersbasis
+        description: Keeperspecifieke talenten.
+        talents:
+          gk_shot_stopping:
+            label: Schotstoppen
+            description: Reflexen en duiken.
+            tooltip: "Beïnvloedt: reflexen, duiken, 1-tegen-1."
+          gk_handling:
+            label: Balvastheid
+            description: Vangen en vasthouden.
+            tooltip: "Beïnvloedt: balvastheid, vangen, luchtduels."
+          gk_distribution:
+            label: Uittrappen (K)
+            description: Nauwkeurigheid bij uittrappen en uitgooien.
+            tooltip: "Beïnvloedt: trappen, gooien, keuzes in balbezit."
+          gk_movement:
+            label: Beweging (K)
+            description: Voetwerk en hoeken sluiten.
+            tooltip: "Beïnvloedt: positionering, sweeper-acties, micro-aanpassingen."
+
+      tactical:
+        label: Tactische basis
+        description: Inzicht in systemen en patronen.
+        talents:
+          tactical_attacking:
+            label: Tactiek (aanval)
+            description: Aanvallende systemen begrijpen.
+            tooltip: "Beïnvloedt: aanvallend samenspel, one-touch, aanvallend inzicht."
+          tactical_defending:
+            label: Tactiek (verdediging)
+            description: Defensieve systemen begrijpen.
+            tooltip: "Beïnvloedt: defensief samenspel, tactische discipline, afschermen."
+          tactical_goalkeeping:
+            label: Tactiek (keeper)
+            description: Spel lezen en gebied beheersen.
+            tooltip: "Beïnvloedt: beslissingen, gebied beheersen, communicatie."

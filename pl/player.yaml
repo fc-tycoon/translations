@@ -29,6 +29,7 @@ player:
       height: Wzrost
       club: Klub
       foot: Noga
+      both_feet: Obie
       team: Zespół
       wage: Pensja
       value: Wartość
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Pozycje są kolorowane według oceny obycia. Pozycja podstawowa jest wyróżniona na fioletowo.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Ocena
+
+    fallback_name: 'Zawodnik {id}'
+
     messages:
       training_focus_coming_soon: Wybór fokusu treningowego wkrótce
       training_schedule_coming_soon: Podgląd planu treningów wkrótce
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Sumy i rekordy kariery wkrótce
       no_role_ratings: Brak ocen ról
       loading_player: Ładowanie zawodnika...
+
+    information:
+      labels:
+        full_name: Pełne imię i nazwisko
+        known_as: Znany jako
+        date_of_birth: Data urodzenia
+        birthplace: Miejsce urodzenia
+        nationality: Narodowość
+        second_nationality: Druga narodowość
+        language: Język
+        height: Wzrost
+        preferred_foot: Preferowana noga
+
+    personality:
+      labels:
+        ambition: Ambicja
+        determination: Determinacja
+        discipline: Dyscyplina
+        leadership: Przywództwo
+        loyalty: Lojalność
+        pressure_handling: Radzenie sobie z presją
+        professionalism: Profesjonalizm
+        temperament: Temperament
+
+    footedness:
+      aria_label: 'Stopa: lewa {left}/100, prawa {right}/100'
 
   # Talenty
   talents:

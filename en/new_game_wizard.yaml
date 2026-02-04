@@ -40,8 +40,12 @@ new_game_wizard:
         all_countries: All Countries
         all_leagues: All Leagues
       badges:
+        champion: Champion
+        champion_short: Ch
         promoted: Promoted
+        promoted_short: (▲)
         relegated: Relegated
+        relegated_short: (▼)
       details:
         first_team_squad: First Team Squad
         no_first_team_players: No players assigned to first team
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: Build your reputation from the ground up
           interview_offers: Accept or decline interview offers
 
+    database_selection:
+      title: Select Database & Mods
+      description: Choose a base database and optional mod files to apply
+      sections:
+        database: Database
+        mods: Mods
+      empty:
+        no_databases: No databases found
+      mod_metadata:
+        description: Description
+        author: Author
+        version: Version
+        date: Date
+        credits: Credits
+        url: URL
+      dropzone:
+        title: Drop .mod files here
+        subtitle: or click to select files
+      summary:
+        selected_database: Selected Database
+        none_selected: None selected
+        selected_mods: 'Selected Mods ({count})'
+        mod_order_info: Mods are applied in the order shown below. Drag rows to reorder, or use the arrows.
+      mod_order:
+        drag_to_reorder: Drag to reorder
+        move_up: Move up
+        move_down: Move down
+        moving: Moving…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - Current season database'
+      dialogs:
+        mod_failure:
+          title: Mod Application Failed
+          warning_label: Warning
+          warning_summary: '{failed} of {total} mod queries failed.'
+          affected_mods_label: Affected mods
+          proceed_question: The database may be in an unstable state. Do you want to proceed?
+          table:
+            mod: Mod
+            sql_statement: SQL Statement
+            parameters: Parameters
+            error: Error
+          actions:
+            proceed_anyway: Proceed Anyway
+        mod_import:
+          title: Import Mod File
+          labels:
+            mod_file: Mod File
+            name: Name
+            description: Description
+            author: Author
+            version: Version
+            changelog_entries: Changelog Entries
+          prompt: 'Would you like to copy or move this file to your mods folder?'
+          actions:
+            copy: Copy
+            move: Move
+
+    game_configuration:
+      title: Game Configuration
+      description: Configure game settings for your new save
+      sections:
+        dates: Dates
+        manager_sacking: Manager Sacking Probability
+        injury_probabilities: Injury Probabilities
+        economy: Economy
+      fields:
+        start_date: Start Date
+        current_datetime: Current Date & Time
+        player_sacking: Player (YOU) Sacking
+        npc_sacking: NPC Manager Sacking
+        training_injuries: Training Injuries
+        match_injuries: Match Injuries
+        long_term_injuries: Long Term Injuries
+        travel_costs: Travel Costs
+      placeholders:
+        pick_date: Pick a date
+        pick_date_time: Pick date & time
+        select_preset: Select preset
+      presets:
+        none: None (0%)
+        extremely_low: Extremely Low (10%)
+        very_low: Very Low (25%)
+        low: Low (50%)
+        slightly_reduced: Slightly Reduced (75%)
+        normal: Normal (100%)
+      notes:
+        player_sacking: Percentage chance of YOU getting sacked. Lower than 100% reduces sacking frequency. 0% disables sacking for you.
+        npc_sacking: Percentage chance of AI/NPC (Non-player) managers being sacked. Lower than 100% reduces sacking frequency.
+        training_injuries: Percentage chance of injuries during training. Lower than 100% reduces training injuries. 0% disables training injuries.
+        match_injuries: Percentage chance of injuries during matches. Lower than 100% reduces match injuries. 0% disables match injuries.
+        long_term_injuries: Injuries over 2 months have a reduced chance of occurring. 50% gives a 1/2 chance the injury will be capped to 2 months. 0% will cap maximum injury duration to 2 months.
+        travel_costs: Multiplier applied to travel-related costs. Lower than 100% reduces travel costs. 0% disables travel costs.
+
+    league_selection:
+      title: Select Leagues
+      description: Choose which leagues to activate in your game
+      labels:
+        starting_season: Starting Season
+        presets: Presets
+        flag_alt: '{country} flag'
+      placeholders:
+        select_season: Select season
+        select_lowest_level: Select lowest level
+      presets:
+        recommended: Recommended Leagues
+        extended: Extended Leagues
+        all: All Leagues
+        clear_all: Clear All
+      level_option: 'Level {level} - {name}'
+      division_fallback: 'Division {level}'
+      includes_leagues: '(Includes {count} leagues)'
+      loading: Loading leagues...
+      total_selected: Total Selected Leagues
+      total_selected_summary: '{leagues} from {countries} countries'
+
+    manager_profile:
+      title: Create Your Manager Profile
+      description: This will be your in-game persona
+      sections:
+        personal_information: Personal Information
+        origin_nationality: Origin & Nationality
+        profile_preview: Profile Preview
+      labels:
+        first_name: First Name
+        last_name: Last Name
+        known_as: Known As
+        gender: Gender
+        date_of_birth: Date of Birth
+        nationality: Nationality
+        birth_city: Birth City
+        second_nationality: Second Nationality
+      placeholders:
+        first_name: Enter first name
+        last_name: Enter last name
+        known_as: Nickname (optional)
+        date_of_birth: Select date (18+ years old)
+        nationality: Select nationality
+        birth_city: Type to search cities worldwide
+        second_nationality: Select second nationality (optional)
+      gender:
+        man: Man
+        woman: Woman
+      tips:
+        birth_date_navigation: '💡 Tip: Click year/month at top to quickly navigate to birth year'
+      preview:
+        name: Name
+        age: Age
+        nationality: Nationality
+        birth_city: Birth City
+
+    skill_allocation:
+      title: Allocate Skill Points
+      description: Distribute {points} points across your manager attributes (1-99 each)
+      points_allocated: '{used} / {total} allocated'
+      points_available: '{points} points available'
+      quick_presets: Quick Presets
+      actions:
+        reset_all: Reset All
+      presets:
+        balanced:
+          name: Balanced
+          description: Well-rounded manager with equal focus across all areas
+        tactical_genius:
+          name: Tactical Genius
+          description: Master tactician with deep knowledge and adaptability
+        motivator:
+          name: Motivator
+          description: Inspirational leader who excels at managing people
+
+    review:
+      title: Review & Confirm
+      description: Review your selections and start your new game
+      sections:
+        database_mods: Database & Mods
+        active_leagues: Active Leagues
+        club_summary: Your Club
+        manager_profile: Manager Profile
+        manager_skills: Manager Skills
+      labels:
+        club: Club
+        club_name: Club Name
+        short_name: Short Name
+        league: League
+        database: Database
+        mods: Mods
+        total_leagues: Total Leagues
+        leagues: Leagues
+        full_name: Full Name
+        known_as: Known As
+        date_of_birth: Date of Birth
+        birth_city: Birth City
+        age: Age
+        nationality: Nationality
+        second_nationality: Second Nationality
+      values:
+        none_selected: None selected
+        no_mods_selected: No mods selected
+        no_club_selected: No club selected
+        all_leagues_active: All leagues active (default)
+        new_club_created: New Club (Will be created)
+        level_plus: 'Level {level}+'
+        not_set: Not set
+        country_id: 'Country {id}'
+        birth_city_with_population: '{city}, {country} (pop: {population})'
+      navigation:
+        back: Back
+      actions:
+        start_game: Start Game
+        starting_game: Starting Game...
+
   # Toasts / validation
   messages:
     applied_preset: "Applied \"{name}\" preset ({points} points)"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: Failed to load available seasons
     open_file_dialog_failed: Failed to open file selection dialog
     load_clubs_failed_with_error: "Failed to load clubs: {error}"
+    load_databases_failed_with_error: "Failed to load databases: {error}"
+    load_leagues_failed_with_error: "Failed to load leagues: {error}"
   mod_import:
     select_mod_files_title: Select Mod Files

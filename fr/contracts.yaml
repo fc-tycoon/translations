@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# Contrats (partagé)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: Détails du contrat
+    release_clauses: Clauses libératoires
+    buy_back_clause: Clause de rachat
+    performance_bonuses: Primes de performance
+    special_clauses: Clauses spéciales
+
+  labels:
+    status: Statut
+    club: Club
+    start_date: Date de début
+    end_date: Date de fin
+    remaining: Restant
+    wage: Salaire
+    annual_salary: Salaire annuel
+
+  status:
+    active: Actif
+    expired: Expiré
+    pending: En attente
+
+  units:
+    per_week: /sem
+    per_year: /an
+
+  messages:
+    no_active_contract: Aucun contrat actif
+    no_release_clauses: Aucune clause libératoire
+    no_buy_back_clause: Aucune clause de rachat
+    no_performance_bonuses: Aucune prime de performance
+    no_special_clauses: Aucune clause spéciale
+
+  release_clauses:
+    general_release: Clause générale
+    higher_division: Division supérieure
+    clubs_abroad: Clubs à l'étranger
+    non_promotion: Non-promotion
+    on_relegation: En cas de relégation
+    no_international: Pas d'international
+    clause_expires: La clause expire
+
+  buy_back:
+    cost: Coût
+    valid_until: Valable jusqu'au
+
+  bonuses:
+    match_bonus: Prime de match
+    league_match: Match de championnat
+    appearance_milestone: Palier d'apparitions
+    per_goal: Par but
+    per_assist: Par passe décisive
+    clean_sheet: Match sans but encaissé
+    international_match: Match international
+    international_debut: Début international
+    team_of_the_season: Équipe de la saison
+    top_goalscorer: Meilleur buteur
+    avoid_relegation: Éviter la relégation
+
+  special:
+    match_highest_earner: S'aligner sur le mieux payé
+    injury_release: Résiliation en cas de blessure
+    no_extension: Pas de prolongation
+    post_retirement_role: Rôle après la retraite
+    will_leave_after_contract: Partira après le contrat
+    auto_extend_after_matches: Prolongation auto après {matches} matchs
+
+  remaining:
+    years_months: '{years}a {months}m'
+    one_year: '{years} an'
+    many_years: '{years} ans'
+    one_month: '{months} mois'
+    many_months: '{months} mois'
+    one_day: '{days} jour'
+    many_days: '{days} jours'

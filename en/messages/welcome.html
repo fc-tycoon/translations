@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Welcome to {club_name}</title>
+	<style>
+		.message-body {
+			line-height: 1.5;
+		}
+
+		.message-body p {
+			margin: 0 0 10px;
+		}
+
+		.message-body p:last-child {
+			margin-bottom: 0;
+		}
+
+		.msg-demo {
+			margin-top: 14px;
+			padding-top: 12px;
+			border-top: 1px solid currentColor;
+		}
+
+		.msg-field {
+			margin: 10px 0;
+		}
+
+		.msg-field-label {
+			display: block;
+			font-weight: 600;
+			margin: 0 0 4px;
+		}
+
+		.msg-field-control {
+			font: inherit;
+			padding: 6px 8px;
+			border: 1px solid currentColor;
+			border-radius: 4px;
+			background: transparent;
+			color: inherit;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.msg-radio-group {
+			display: grid;
+			gap: 6px;
+		}
+
+		.msg-radio,
+		.msg-checkbox {
+			display: flex;
+			gap: 8px;
+			align-items: center;
+		}
+
+		.msg-actions {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin: 10px 0;
+		}
+
+		.msg-action-button {
+			font: inherit;
+			padding: 6px 10px;
+			border: 1px solid currentColor;
+			border-radius: 4px;
+			background: transparent;
+			color: inherit;
+			cursor: pointer;
+		}
+
+		.msg-action-button:disabled {
+			cursor: not-allowed;
+			opacity: 0.6;
+		}
+
+		.msg-mono {
+			font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+			white-space: pre-wrap;
+			border: 1px solid currentColor;
+			border-radius: 4px;
+			padding: 8px;
+		}
+
+		.msg-inline-popup {
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid currentColor;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+<body>
+	<p>Manager,</p>
+	<p>
+		Welcome to <strong>{club_name}</strong>.
+	</p>
+	<p>
+		Your club is: <club ref="club_id">{club_name}</club>
+	</p>
+	<p>
+		The captain of the club is: <player ref="captain_id">{captain_name}</player>
+	</p>
+
+	<div class="msg-demo">
+		<p><strong>Tech demo: Interactive message controls</strong></p>
+
+		<if expr="!$message.response_sent">
+			<p>
+				This message requires a single response. After you submit, the controls will lock.
+			</p>
+
+			<input
+				name="nickname"
+				label="Manager nickname"
+				placeholder="e.g. The Gaffer"
+			/>
+
+			<select name="difficulty" label="Difficulty">
+				<option value="easy">Easy</option>
+				<option value="normal">Normal</option>
+				<option value="hard">Hard</option>
+			</select>
+
+			<input type="checkbox" name="acceptTerms" label="I understand this is a demo" />
+
+			<radio name="preferredOption" label="Pick an option">
+				<opt value="a">Option A</opt>
+				<opt value="b">Option B</opt>
+				<opt value="c">Option C</opt>
+			</radio>
+
+			<div class="msg-actions">
+				<button action="inline_popup">Toggle inline popup</button>
+				<button
+					action="messagebox"
+					title="Outside popup"
+					message="This popup is rendered outside the message body using ElMessageBox."
+				>
+					Open outside popup
+				</button>
+				<button action="backend" action-id="create_demo_message">Trigger backend DB write</button>
+				<a action="navigate_player" ref="captain_id">Open captain profile</a>
+				<a action="navigate_club" ref="club_id">Open club page</a>
+				<button action="submit">Submit response</button>
+			</div>
+
+			<if expr="$ui.inlinePopupOpen">
+				<div class="msg-inline-popup">
+					<p><strong>Inline popup</strong></p>
+					<p>This is rendered inside the message body (shadow root).</p>
+					<div class="msg-actions">
+						<button action="inline_popup">Close</button>
+					</div>
+				</div>
+			</if>
+
+			<p><strong>Draft JSON</strong></p>
+			<div class="msg-mono">{{ JSON.stringify($draft, null, 2) }}</div>
+		</if>
+		<else>
+			<p><strong>Response sent.</strong> Controls are now locked.</p>
+			<p><strong>Stored response JSON</strong></p>
+			<div class="msg-mono">{{ JSON.stringify($message.response, null, 2) }}</div>
+		</else>
+	</div>
+</body>
+</html>

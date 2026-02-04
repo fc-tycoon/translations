@@ -29,6 +29,7 @@ player:
       height: Height
       club: Club
       foot: Foot
+      both_feet: Both
       team: Team
       wage: Wage
       value: Value
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Positions are colored by familiarity rating. Primary position is highlighted in purple.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Rating
+
+    fallback_name: 'Player {id}'
+
     messages:
       training_focus_coming_soon: Training focus selection coming soon
       training_schedule_coming_soon: Training schedule display coming soon
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Career totals and records coming soon
       no_role_ratings: No role ratings available
       loading_player: Loading player...
+
+    information:
+      labels:
+        full_name: Full Name
+        known_as: Known As
+        date_of_birth: Date of Birth
+        birthplace: Birthplace
+        nationality: Nationality
+        second_nationality: Second Nationality
+        language: Language
+        height: Height
+        preferred_foot: Preferred Foot
+
+    personality:
+      labels:
+        ambition: Ambition
+        determination: Determination
+        discipline: Discipline
+        leadership: Leadership
+        loyalty: Loyalty
+        pressure_handling: Pressure Handling
+        professionalism: Professionalism
+        temperament: Temperament
+
+    footedness:
+      aria_label: 'Footedness: left {left}/100, right {right}/100'
 
   # Talents
   talents:

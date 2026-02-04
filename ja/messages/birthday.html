@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			{{ people_count === 1 ? '今日は誕生日が1件あります' : '今日は誕生日が' + people_count + '件あります' }}
+		</title>
+		<style>
+			.message-body { line-height: 1.4; }
+		</style>
+	</head>
+	<body>
+		<p>今日はクラブで {people_count} 人の誕生日です。</p>
+
+		<foreach each="(p, i) in people">
+			<p>
+				<if expr="p.is_player">
+					<player ref="p.person_id">{{ p.name || p.person_name }}</player>
+				</if>
+				<else>
+					<staff ref="p.person_id">{{ p.name || p.person_name }}</staff>
+				</else>
+			</p>
+		</foreach>
+	</body>
+</html>

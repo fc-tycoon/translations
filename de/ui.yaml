@@ -46,6 +46,7 @@ ui:
     competitions: Wettbewerbe
     club_overview: Vereinsübersicht
     squad_overview: Kaderübersicht
+    squad_overview_2: Kaderübersicht 2
     squad_stats: Kaderstatistiken
     selection_advice: Aufstellungsberatung
     squad_dynamics: Kaderdynamik

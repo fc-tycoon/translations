@@ -29,6 +29,7 @@ player:
       height: Lengte
       club: Club
       foot: Voet
+      both_feet: Beide
       team: Team
       wage: Loon
       value: Waarde
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: Posities zijn ingekleurd op basis van bekendheid. De primaire positie is paars gemarkeerd.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Beoordeling
+
+    fallback_name: 'Speler {id}'
+
     messages:
       training_focus_coming_soon: Trainingsfocusselectie komt binnenkort
       training_schedule_coming_soon: Weergave van trainingsschema komt binnenkort
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Carrière-totalen en records komen binnenkort
       no_role_ratings: Geen rolbeoordelingen beschikbaar
       loading_player: Speler laden...
+
+    information:
+      labels:
+        full_name: Volledige naam
+        known_as: Bekend als
+        date_of_birth: Geboortedatum
+        birthplace: Geboorteplaats
+        nationality: Nationaliteit
+        second_nationality: Tweede nationaliteit
+        language: Taal
+        height: Lengte
+        preferred_foot: Voorkeursvoet
+
+    personality:
+      labels:
+        ambition: Ambitie
+        determination: Vastberadenheid
+        discipline: Discipline
+        leadership: Leiderschap
+        loyalty: Loyaliteit
+        pressure_handling: Omgaan met druk
+        professionalism: Professionaliteit
+        temperament: Temperament
+
+    footedness:
+      aria_label: 'Voet: links {left}/100, rechts {right}/100'
 
   # Talenten
   talents:

@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# Contracts (Shared)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: Contract Details
+    release_clauses: Release Clauses
+    buy_back_clause: Buy-Back Clause
+    performance_bonuses: Performance Bonuses
+    special_clauses: Special Clauses
+
+  labels:
+    status: Status
+    club: Club
+    start_date: Start Date
+    end_date: End Date
+    remaining: Remaining
+    wage: Wage
+    annual_salary: Annual Salary
+
+  status:
+    active: Active
+    expired: Expired
+    pending: Pending
+
+  units:
+    per_week: /wk
+    per_year: /yr
+
+  messages:
+    no_active_contract: No active contract
+    no_release_clauses: No release clauses
+    no_buy_back_clause: No buy-back clause
+    no_performance_bonuses: No performance bonuses
+    no_special_clauses: No special clauses
+
+  release_clauses:
+    general_release: General Release
+    higher_division: Higher Division
+    clubs_abroad: Clubs Abroad
+    non_promotion: Non-Promotion
+    on_relegation: On Relegation
+    no_international: No International
+    clause_expires: Clause Expires
+
+  buy_back:
+    cost: Cost
+    valid_until: Valid Until
+
+  bonuses:
+    match_bonus: Match Bonus
+    league_match: League Match
+    appearance_milestone: Appearance Milestone
+    per_goal: Per Goal
+    per_assist: Per Assist
+    clean_sheet: Clean Sheet
+    international_match: International Match
+    international_debut: International Debut
+    team_of_the_season: Team of Season
+    top_goalscorer: Top Goalscorer
+    avoid_relegation: Avoid Relegation
+
+  special:
+    match_highest_earner: Match Highest Earner
+    injury_release: Injury Release
+    no_extension: No Extension
+    post_retirement_role: Post-Retirement Role
+    will_leave_after_contract: Will Leave After Contract
+    auto_extend_after_matches: Auto-Extend After {matches} Matches
+
+  remaining:
+    years_months: '{years}y {months}m'
+    one_year: '{years} year'
+    many_years: '{years} years'
+    one_month: '{months} month'
+    many_months: '{months} months'
+    one_day: '{days} day'
+    many_days: '{days} days'

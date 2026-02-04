@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════
+# Staff
+# ══════════════════════════════════════════════════════════════════════
+staff:
+  skills:
+    categories:
+      tactical: 戦術
+      mental: メンタル
+      people: 対人スキル
+    labels:
+      attacking: 攻撃
+      defending: 守備
+      tactical_knowledge: 戦術知識
+      tactical_adaptability: 戦術適応力
+      judging_player_ability: 選手能力の評価
+      judging_player_potential: ポテンシャルの評価
+      man_marking: マンマーク
+      zonal_marking: ゾーンマーク
+      pressing: プレッシング
+      determination: 決意
+      discipline: 規律
+      integrity: 誠実
+      fortitude: 剛胆
+      resilience: レジリエンス
+      ambition: 野心
+      adaptability: 適応力
+      motivating: モチベーション
+      man_management: マネジメント
+      charisma: カリスマ
+      professionalism: プロ意識
+    descriptions:
+      tactical_knowledge: 戦術とフォーメーションの理解
+      tactical_adaptability: 試合中に戦術を調整する能力
+      judging_player_ability: 選手の能力を正確に評価する
+      judging_player_potential: 将来のスターを見極める
+      determination: 成功への意志
+      discipline: 規律と統制を保つ
+      ambition: 成功と成長への欲求
+      adaptability: 新しい状況への適応
+      motivating: 選手を鼓舞して力を引き出す
+      man_management: 選手との関係を管理する
+      charisma: 個人的な魅力と影響力
+      professionalism: 行動で模範を示す

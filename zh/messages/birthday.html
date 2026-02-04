@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			{{ people_count === 1 ? '今天有1个生日' : '今天有' + people_count + '个生日' }}
+		</title>
+		<style>
+			.message-body { line-height: 1.4; }
+		</style>
+	</head>
+	<body>
+		<p>今天你的俱乐部有 {people_count} 个生日。</p>
+
+		<foreach each="(p, i) in people">
+			<p>
+				<if expr="p.is_player">
+					<player ref="p.person_id">{{ p.name || p.person_name }}</player>
+				</if>
+				<else>
+					<staff ref="p.person_id">{{ p.name || p.person_name }}</staff>
+				</else>
+			</p>
+		</foreach>
+	</body>
+</html>

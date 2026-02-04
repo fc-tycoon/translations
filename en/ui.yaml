@@ -52,6 +52,7 @@ ui:
     competitions: Competitions
     club_overview: Club Overview
     squad_overview: Squad Overview
+    squad_overview_2: Squad Overview 2
     squad_stats: Squad Stats
     selection_advice: Selection Advice
     squad_dynamics: Squad Dynamics

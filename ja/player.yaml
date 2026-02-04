@@ -29,6 +29,7 @@ player:
       height: 身長
       club: クラブ
       foot: 利き足
+      both_feet: 両利き
       team: チーム
       wage: 給与
       value: 市場価値
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: ポジションは適性評価で色分けされます。主ポジションは紫で強調表示されます。
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: 評価
+
+    fallback_name: '選手 {id}'
+
     messages:
       training_focus_coming_soon: トレーニング重点の選択は近日追加予定です
       training_schedule_coming_soon: トレーニングスケジュール表示は近日追加予定です
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: 通算合計と記録は近日追加予定です
       no_role_ratings: 役割評価はありません
       loading_player: 選手を読み込み中...
+
+    information:
+      labels:
+        full_name: フルネーム
+        known_as: 呼び名
+        date_of_birth: 生年月日
+        birthplace: 出身地
+        nationality: 国籍
+        second_nationality: 第2国籍
+        language: 言語
+        height: 身長
+        preferred_foot: 利き足
+
+    personality:
+      labels:
+        ambition: 野心
+        determination: 決意
+        discipline: 規律
+        leadership: リーダーシップ
+        loyalty: 忠誠心
+        pressure_handling: プレッシャー耐性
+        professionalism: プロ意識
+        temperament: 気質
+
+    footedness:
+      aria_label: '利き足：左 {left}/100、右 {right}/100'
 
   # タレント
   talents:

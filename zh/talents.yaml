@@ -1,0 +1,156 @@
+# ══════════════════════════════════════════════════════════════════════
+# 天赋
+# ══════════════════════════════════════════════════════════════════════
+player:
+  talents:
+    groups:
+      technical:
+        label: 技术基础
+        description: 脚下控球与处理球的天赋。
+        talents:
+          ball_mastery:
+            label: 控球能力
+            description: 在狭小空间或高速下的自然控球。
+            tooltip: "影响：第一脚触球、控球、近距离控球、盘带、护球、抗压。"
+          ball_distribution:
+            label: 传球分配
+            description: 对传球力度与角度的感觉。
+            tooltip: "影响：短传、长传、挑传、传中、视野、定位球传球。"
+          ball_finesse:
+            label: 细腻技术
+            description: 触球细腻与精度。
+            tooltip: "影响：弧线、挑射技术、花式、直塞、弧线射门、搓射、细腻盘带、精准传球。"
+          set_pieces:
+            label: 定位球
+            description: 死球情况下的脚法。
+            tooltip: "影响：任意球、角球、点球。"
+
+      defensive:
+        label: 防守基础
+        description: 防守阶段的能力。
+        talents:
+          def_duels:
+            label: 防守对抗
+            description: 1 对 1 防守时机把握。
+            tooltip: "影响：站立抢断、铲断、封堵、空中对抗、身体对抗。"
+          def_reading:
+            label: 防守阅读
+            description: 预判对手意图。
+            tooltip: "影响：盯人、防守拦截、站位屏障、防守意识。"
+          def_movement:
+            label: 防守移动
+            description: 防守时的脚步与移动质量。
+            tooltip: "影响：卡位、逼抢、防守站位、工作投入。"
+
+      attacking:
+        label: 进攻基础
+        description: 进攻阶段的能力。
+        talents:
+          ball_striking:
+            label: 射门脚法
+            description: 触球干净、击球时机好。
+            tooltip: "影响：终结、射门、凌空、弧线、头球精度。"
+          att_reading:
+            label: 进攻阅读
+            description: 阅读防线与进攻套路。
+            tooltip: "影响：终结、预判、创造力、视野。"
+          att_movement:
+            label: 进攻跑位
+            description: 找到空当并把握插上时机。
+            tooltip: "影响：无球跑动、进攻意识、进攻工作率。"
+
+      physical:
+        label: 身体基础
+        description: 运动能力与身体控制。
+        talents:
+          physical_power:
+            label: 爆发力
+            description: 原始爆发潜力。
+            tooltip: "影响：加速、速度、力量、弹跳、射门力量。"
+          endurance:
+            label: 耐力
+            description: 体能与移动效率。
+            tooltip: "影响：耐力、工作率、重复冲刺能力、逼抢续航。"
+          coordination:
+            label: 协调性
+            description: 身体控制与微调能力。
+            tooltip: "影响：敏捷、平衡、身体控制、卡位、反应。"
+          aerial:
+            label: 空中能力
+            description: 判断落点并把握起跳时机。
+            tooltip: "影响：头球精度、弹跳、空中对抗、高球控制。"
+
+      mental:
+        label: 心理基础
+        description: 认知处理与情绪控制。
+        talents:
+          game_intelligence:
+            label: 比赛智商
+            description: 阅读速度与决策质量。
+            tooltip: "影响：决策、预判、沉着、反应。"
+          temperament:
+            label: 心态
+            description: 情绪稳定与气场。
+            tooltip: "影响：领导力、大赛气质、沟通、勇敢。"
+          spatial_awareness:
+            label: 空间感
+            description: 阅读空间、几何与角度。
+            tooltip: "影响：站位、空间判断、寻找空当。"
+          focus:
+            label: 专注
+            description: 压力下的执行力。
+            tooltip: "影响：专注、沉着、反应、稳定性。"
+          creativity:
+            label: 创造力
+            description: 大胆且有想象力的解决方案。
+            tooltip: "影响：盘带、终结、传中、直塞。"
+          competitive_drive:
+            label: 竞争欲
+            description: 内在斗志与求胜欲。
+            tooltip: "影响：决心、领导力、基础自信、稳定性。"
+          mental_resilience:
+            label: 心理韧性
+            description: 承受挫折的能力。
+            tooltip: "影响：抗压、大赛气质、专注。"
+          social_influence:
+            label: 影响力
+            description: 魅力与更衣室影响。
+            tooltip: "影响：领导力、沟通、队长气场。"
+
+      goalkeeping:
+        label: 门将基础
+        description: 门将专属天赋。
+        talents:
+          gk_shot_stopping:
+            label: 扑救
+            description: 反应与扑救能力。
+            tooltip: "影响：反应、扑救、1 对 1。"
+          gk_handling:
+            label: 接球
+            description: 接住并控制来球。
+            tooltip: "影响：接球、稳固持球、空中控制。"
+          gk_distribution:
+            label: 出球
+            description: 开球与传球精度。
+            tooltip: "影响：脚下开球、手抛球、控球决策。"
+          gk_movement:
+            label: 移动
+            description: 脚步与封堵角度。
+            tooltip: "影响：站位、清道夫式出击、微调移动。"
+
+      tactical:
+        label: 战术基础
+        description: 对战术体系与模式的理解。
+        talents:
+          tactical_attacking:
+            label: 进攻战术
+            description: 理解进攻体系。
+            tooltip: "影响：进攻配合、一脚出球、进攻意识。"
+          tactical_defending:
+            label: 防守战术
+            description: 理解防守体系。
+            tooltip: "影响：防守配合、战术纪律、防守屏障。"
+          tactical_goalkeeping:
+            label: 门将战术
+            description: 门将阅读比赛与指挥区域。
+            tooltip: "影响：决策、指挥禁区、沟通。"

@@ -40,6 +40,8 @@ new_game_wizard:
         all_countries: すべての国
         all_leagues: すべてのリーグ
       badges:
+        champion: 優勝
+        champion_short: 優
         promoted: 昇格
         relegated: 降格
       details:
@@ -61,7 +63,9 @@ new_game_wizard:
           code: コード
           reserve_team: リザーブチーム
           club_colors: クラブカラー
+          promoted_short: (▲)
           color_background: 背景
+          relegated_short: (▼)
           color_text: テキスト
           join_league: 参加リーグ
           replace_team: 置き換えチーム
@@ -88,6 +92,217 @@ new_game_wizard:
           build_reputation: 評判を一から築く
           interview_offers: 面接オファーを承諾または辞退する
 
+    database_selection:
+      title: データベースとモッドを選択
+      description: 適用するベースデータベースと任意のモッドファイルを選択
+      sections:
+        database: データベース
+        mods: モッド
+      empty:
+        no_databases: データベースが見つかりません
+      mod_metadata:
+        description: 説明
+        author: 作者
+        version: バージョン
+        date: 日付
+        credits: クレジット
+        url: URL
+      dropzone:
+        title: .modファイルをここにドロップ
+        subtitle: またはクリックしてファイルを選択
+      summary:
+        selected_database: 選択したデータベース
+        none_selected: 未選択
+        selected_mods: '選択したモッド（{count}）'
+        mod_order_info: モッドは以下の順序で適用されます。行をドラッグして並べ替えるか、矢印を使用してください。
+      mod_order:
+        drag_to_reorder: ドラッグして並べ替え
+        move_up: 上へ移動
+        move_down: 下へ移動
+        moving: 移動中…
+      databases:
+        fc_tycoon_season: 'FC Tycoon {year} - 現在シーズンのデータベース'
+      dialogs:
+        mod_failure:
+          title: モッドの適用に失敗しました
+          warning_label: 警告
+          warning_summary: 'モッドのクエリ{total}件中{failed}件が失敗しました。'
+          affected_mods_label: 影響を受けたモッド
+          proceed_question: データベースが不安定な状態の可能性があります。続行しますか？
+          table:
+            mod: Mod
+            sql_statement: SQL文
+            parameters: パラメータ
+            error: エラー
+          actions:
+            proceed_anyway: それでも続行
+        mod_import:
+          title: モッドファイルをインポート
+          labels:
+            mod_file: モッドファイル
+            name: 名前
+            description: 説明
+            author: 作者
+            version: バージョン
+            changelog_entries: 変更履歴エントリ
+          prompt: 'このファイルをモッドフォルダにコピーまたは移動しますか？'
+          actions:
+            copy: コピー
+            move: 移動
+
+    game_configuration:
+      title: ゲーム設定
+      description: 新しいセーブのゲーム設定を構成します
+      sections:
+        dates: 日付
+        manager_sacking: 監督解任確率
+        injury_probabilities: 負傷確率
+        economy: 経済
+      fields:
+        start_date: 開始日
+        current_datetime: 現在の日時
+        player_sacking: プレイヤー（あなた）解任
+        npc_sacking: NPC監督解任
+        training_injuries: トレーニング負傷
+        match_injuries: 試合の負傷
+        long_term_injuries: 長期負傷
+        travel_costs: 移動費
+      placeholders:
+        pick_date: 日付を選択
+        pick_date_time: 日付と時間を選択
+        select_preset: プリセットを選択
+      presets:
+        none: なし (0%)
+        extremely_low: 極めて低い (10%)
+        very_low: とても低い (25%)
+        low: 低い (50%)
+        slightly_reduced: やや低め (75%)
+        normal: 通常 (100%)
+      notes:
+        player_sacking: あなたが解任される確率（％）です。100％未満は頻度を下げます。0％はあなたの解任を無効化します。
+        npc_sacking: AI/NPC監督が解任される確率（％）です。100％未満は頻度を下げます。
+        training_injuries: トレーニング中に負傷する確率（％）です。100％未満は負傷頻度を下げます。0％は無効化します。
+        match_injuries: 試合中に負傷する確率（％）です。100％未満は負傷頻度を下げます。0％は無効化します。
+        long_term_injuries: 2か月以上の負傷は発生確率が下がります。50％では負傷が2か月に制限される確率が1/2になります。0％では最長期間が2か月に制限されます。
+        travel_costs: 移動関連コストに適用される乗数です。100％未満はコストを下げます。0％は移動費を無効化します。
+
+    league_selection:
+      title: リーグを選択
+      description: ゲームで有効にするリーグを選択します
+      labels:
+        starting_season: 開始シーズン
+        presets: プリセット
+        flag_alt: '{country}の旗'
+      placeholders:
+        select_season: シーズンを選択
+        select_lowest_level: 最下位レベルを選択
+      presets:
+        recommended: おすすめリーグ
+        extended: 拡張リーグ
+        all: すべてのリーグ
+        clear_all: すべて解除
+      level_option: 'レベル{level} - {name}'
+      division_fallback: 'ディビジョン {level}'
+      includes_leagues: '(計{count}リーグを含む)'
+      loading: リーグを読み込み中...
+      total_selected: 選択したリーグ合計
+      total_selected_summary: '{countries}か国から{leagues}リーグ'
+
+    manager_profile:
+      title: 監督プロフィールを作成
+      description: ゲーム内のあなたの人物像になります
+      sections:
+        personal_information: 個人情報
+        origin_nationality: 出身と国籍
+        profile_preview: プロフィールプレビュー
+      labels:
+        first_name: 名
+        last_name: 姓
+        known_as: 呼び名
+        gender: 性別
+        date_of_birth: 生年月日
+        nationality: 国籍
+        birth_city: 出生地
+        second_nationality: 第二国籍
+      placeholders:
+        first_name: 名を入力
+        last_name: 姓を入力
+        known_as: ニックネーム（任意）
+        date_of_birth: 日付を選択（18歳以上）
+        nationality: 国籍を選択
+        birth_city: 世界中の都市を検索
+        second_nationality: 第二国籍を選択（任意）
+      gender:
+        man: 男性
+        woman: 女性
+      tips:
+        birth_date_navigation: '💡 ヒント: 上部の年/月をクリックすると出生年へ素早く移動できます'
+      preview:
+        name: 名前
+        age: 年齢
+        nationality: 国籍
+        birth_city: 出生地
+
+    skill_allocation:
+      title: スキルポイントを配分
+      description: "{points}ポイントを監督の能力に配分します（各1-99）"
+      points_allocated: '{used} / {total} 割り当て済み'
+      points_available: '{points} ポイント残り'
+      quick_presets: クイックプリセット
+      actions:
+        reset_all: すべてリセット
+      presets:
+        balanced:
+          name: バランス型
+          description: 全分野に均等に配分されたバランス型の監督
+        tactical_genius:
+          name: 戦術の天才
+          description: 深い知識と適応力を持つ戦術の達人
+        motivator:
+          name: モチベーター
+          description: 人をまとめる力に優れたインスピレーション型リーダー
+
+    review:
+      title: 確認して開始
+      description: 選択内容を確認して新しいゲームを開始します
+      sections:
+        database_mods: データベースとMOD
+        active_leagues: アクティブなリーグ
+        club_summary: あなたのクラブ
+        manager_profile: マネージャープロフィール
+        manager_skills: マネージャースキル
+      labels:
+        club: クラブ
+        club_name: クラブ名
+        short_name: 略称
+        league: リーグ
+        database: データベース
+        mods: MOD
+        total_leagues: 総リーグ数
+        leagues: リーグ
+        full_name: フルネーム
+        known_as: 呼び名
+        date_of_birth: 生年月日
+        birth_city: 出生地
+        age: 年齢
+        nationality: 国籍
+        second_nationality: 第二国籍
+      values:
+        none_selected: 未選択
+        no_mods_selected: MOD未選択
+        no_club_selected: クラブ未選択
+        all_leagues_active: すべてのリーグが有効（既定）
+        new_club_created: 新しいクラブ（作成されます）
+        level_plus: 'レベル{level}+'
+        not_set: 未設定
+        country_id: '国 {id}'
+        birth_city_with_population: '{city}、{country}（人口: {population}）'
+      navigation:
+        back: 戻る
+      actions:
+        start_game: ゲーム開始
+        starting_game: ゲーム開始中...
+
   # トースト / 検証
   messages:
     applied_preset: "プリセット「{name}」を適用しました（{points}ポイント）"
@@ -105,5 +320,7 @@ new_game_wizard:
     load_seasons_failed: 利用可能なシーズンの読み込みに失敗しました
     open_file_dialog_failed: ファイル選択ダイアログを開けませんでした
     load_clubs_failed_with_error: "クラブの読み込みに失敗しました: {error}"
+    load_databases_failed_with_error: "データベースの読み込みに失敗しました: {error}"
+    load_leagues_failed_with_error: "リーグの読み込みに失敗しました: {error}"
   mod_import:
     select_mod_files_title: MODファイルを選択

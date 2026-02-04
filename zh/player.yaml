@@ -29,10 +29,37 @@ player:
       height: 身高
       club: 俱乐部
       foot: 脚
+      both_feet: 双足
       team: 球队
       wage: 薪资
       value: 身价
       talent: 天赋
+
+    information:
+      labels:
+        full_name: 全名
+        known_as: 常用名
+        date_of_birth: 出生日期
+        birthplace: 出生地
+        nationality: 国籍
+        second_nationality: 第二国籍
+        language: 语言
+        height: 身高
+        preferred_foot: 惯用脚
+
+    personality:
+      labels:
+        ambition: 野心
+        determination: 决心
+        discipline: 纪律
+        leadership: 领导力
+        loyalty: 忠诚
+        pressure_handling: 抗压
+        professionalism: 职业素养
+        temperament: 性情
+
+    footedness:
+      aria_label: '脚：左 {left}/100，右 {right}/100'
 
     cards:
       attribute_overview: 属性概览
@@ -61,6 +88,15 @@ player:
 
     hints:
       positions_colored_by_familiarity: 位置会按熟练度评分着色。主位置会以紫色高亮显示。
+
+    units:
+      height_cm: '{height} 厘米'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: 评分
+
+    fallback_name: '球员 {id}'
 
     messages:
       training_focus_coming_soon: 训练重点选择即将推出

@@ -46,6 +46,7 @@ ui:
     competitions: Competities
     club_overview: Cluboverzicht
     squad_overview: Selectieoverzicht
+    squad_overview_2: Selectieoverzicht 2
     squad_stats: Selectiestatistieken
     selection_advice: Opstellingsadvies
     squad_dynamics: Selectiedynamiek

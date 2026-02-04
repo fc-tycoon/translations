@@ -1,0 +1,78 @@
+# ══════════════════════════════════════════════════════════════════════
+# Kontrakty (wspólne)
+# ══════════════════════════════════════════════════════════════════════
+contracts:
+  sections:
+    contract_details: Szczegóły kontraktu
+    release_clauses: Klauzule odstępnego
+    buy_back_clause: Klauzula odkupu
+    performance_bonuses: Premie za wyniki
+    special_clauses: Klauzule specjalne
+
+  labels:
+    status: Status
+    club: Klub
+    start_date: Data rozpoczęcia
+    end_date: Data zakończenia
+    remaining: Pozostało
+    wage: Pensja
+    annual_salary: Roczna pensja
+
+  status:
+    active: Aktywny
+    expired: Wygasł
+    pending: Oczekujący
+
+  units:
+    per_week: /tydz
+    per_year: /rok
+
+  messages:
+    no_active_contract: Brak aktywnego kontraktu
+    no_release_clauses: Brak klauzul odstępnego
+    no_buy_back_clause: Brak klauzuli odkupu
+    no_performance_bonuses: Brak premii za wyniki
+    no_special_clauses: Brak klauzul specjalnych
+
+  release_clauses:
+    general_release: Ogólna klauzula odstępnego
+    higher_division: Wyższa liga
+    clubs_abroad: Kluby zagraniczne
+    non_promotion: Brak awansu
+    on_relegation: Przy spadku
+    no_international: Brak występów w reprezentacji
+    clause_expires: Klauzula wygasa
+
+  buy_back:
+    cost: Koszt
+    valid_until: Ważne do
+
+  bonuses:
+    match_bonus: Premia za mecz
+    league_match: Mecz ligowy
+    appearance_milestone: Kamień milowy występów
+    per_goal: Za gola
+    per_assist: Za asystę
+    clean_sheet: Czyste konto
+    international_match: Mecz reprezentacji
+    international_debut: Debiut w reprezentacji
+    team_of_the_season: Drużyna sezonu
+    top_goalscorer: Król strzelców
+    avoid_relegation: Uniknięcie spadku
+
+  special:
+    match_highest_earner: Dopasowanie do najlepiej zarabiającego
+    injury_release: Zwolnienie przy kontuzji
+    no_extension: Bez przedłużenia
+    post_retirement_role: Rola po karierze
+    will_leave_after_contract: Odejście po kontrakcie
+    auto_extend_after_matches: Automatyczne przedłużenie po {matches} meczach
+
+  remaining:
+    years_months: '{years}l {months}m'
+    one_year: '{years} rok'
+    many_years: '{years} lat'
+    one_month: '{months} miesiąc'
+    many_months: '{months} miesięcy'
+    one_day: '{days} dzień'
+    many_days: '{days} dni'

@@ -29,6 +29,7 @@ player:
       height: Altura
       club: Clube
       foot: Pé
+      both_feet: Ambos
       team: Time
       wage: Salário
       value: Valor
@@ -62,6 +63,15 @@ player:
     hints:
       positions_colored_by_familiarity: As posições são coloridas pela familiaridade. A posição principal é destacada em roxo.
 
+    units:
+      height_cm: '{height} cm'
+      rating_out_of_10_suffix: '/10'
+
+    charts:
+      rating: Nota
+
+    fallback_name: 'Jogador {id}'
+
     messages:
       training_focus_coming_soon: A seleção de foco de treino chega em breve
       training_schedule_coming_soon: A exibição do cronograma de treino chega em breve
@@ -76,6 +86,32 @@ player:
       career_stats_coming_soon: Totais e recordes de carreira chegam em breve
       no_role_ratings: Nenhuma avaliação de função disponível
       loading_player: Carregando jogador...
+
+    information:
+      labels:
+        full_name: Nome completo
+        known_as: Conhecido como
+        date_of_birth: Data de nascimento
+        birthplace: Local de nascimento
+        nationality: Nacionalidade
+        second_nationality: Segunda nacionalidade
+        language: Língua
+        height: Altura
+        preferred_foot: Pé preferido
+
+    personality:
+      labels:
+        ambition: Ambição
+        determination: Determinação
+        discipline: Disciplina
+        leadership: Liderança
+        loyalty: Lealdade
+        pressure_handling: Gestão da pressão
+        professionalism: Profissionalismo
+        temperament: Temperamento
+
+    footedness:
+      aria_label: 'Pé: esquerdo {left}/100, direito {right}/100'
 
   # Talentos
   talents:
