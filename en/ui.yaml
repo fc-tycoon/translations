@@ -282,3 +282,4 @@ ui:
     apply: Apply
     browse: Browse...
     exit: Exit
+test_webhook: Test Webhook
