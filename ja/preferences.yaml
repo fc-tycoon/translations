@@ -6,8 +6,28 @@ preferences:
   save: 設定を保存
   reset: デフォルトに戻す
   cancel: キャンセル
+  close: 閉じる
+
+  common:
+    available: 利用可能
+    default: 既定値
+    disabled: 無効
+    enabled: 有効
+    no: いいえ
+    none: なし
+    unknown: 不明
+    yes: はい
+
+  appearance:
+    theme_heading: テーマ
+    accent_heading: アクセントカラー
 
   tabs:
+    appearance: 外観
+    display_runtime: 表示
+    asr: 音声認識
+    llm: 言語モデル
+    facegen: 顔生成
     saved_games: セーブデータ
     display: 表示
     languages: 言語
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: 上書きを確認
 
   display:
+    heading: 表示
+    fullscreen_label: 全画面で起動
+    fullscreen_hint: 次回起動時にゲームウィンドウへ適用されます。
+    confirm_exit_label: 終了前に確認する
+    confirm_exit_hint: ゲームアプリを閉じる前に確認を求めます。
     title: 表示設定
     theme: テーマ
     theme_options:
@@ -93,13 +118,210 @@ preferences:
       open_tactics: 戦術を開く
       open_transfers: 移籍を開く
 
+  asr:
+    heading: 音声ディクテーション
+    copy: 音声ディクテーションはマイクの音声を取得し、ローカル環境で文字起こしします。以下で音声モデル、アクセラレーション先、ディクテーションモードを選択してください。
+    acceleration_label: アクセラレーション先
+    model_label: 音声モデル
+    mode_label: ディクテーションモード
+    preview_interval_label: ライブプレビュー間隔
+    recommendations_heading: 推奨設定
+    microphone_label: マイク
+    refresh_microphones: マイクを更新
+    runtime_heading: ランタイム状態
+    runtime_copy: バッファリングモードは発話全体を待ってからデコードします。ストリーミングモードは話している間に部分的な文字列を表示し、停止時に最終パスも実行します。
+    loading: ASR 設定を読み込み中...
+
+    runtime:
+      backend_runtime: バックエンドランタイム
+      kind: ランタイム種別
+      artifact: ランタイムアーティファクト
+      selected_model_artifact: 選択中のモデルアーティファクト
+      execution_backend: 実行バックエンド
+      requested_target: 要求ターゲット
+      compute_api: 計算 API
+      device: デバイス
+      worker_threads: ワーカースレッド
+      model_artifacts: モデルアーティファクト
+      model_size: インストール済みモデルサイズ
+      streaming_output: ストリーミング出力
+
+    preview:
+      heading: フィールド統合プレビュー
+      copy: このプレビューでは、テキスト入力と同じフィールド単位のディクテーション操作を使用します。マイク操作はテキストエリアの枠内に直接組み込まれています。
+      placeholder: ここに入力するか、ASR 転送の検証用にマイク音声を取得してください...
+      browser_capture: ブラウザー録音
+      last_state: 前回のディクテーション状態
+      audio_duration: 音声時間
+      encode_time: エンコード時間
+      decode_time: デコード時間
+      total_runtime: 合計実行時間
+      text_tokens: テキストトークン
+      model_load: モデル読み込み
+
+    hints:
+      choose_acceleration: 文字起こしに使用する計算ターゲットを選択してください。
+      choose_model: 文字起こしに使用する音声モデルを選択してください。
+      choose_mode: 収録したマイク音声をどのようにバックエンドへ送るかを選択してください。
+      embedded_dll_only: 組み込み DLL ランタイムのみを使用します。
+      device_npu: Intel NPU モードは OpenVINO を使用し、システムで選択された NPU デバイスを対象にします。現在のブリッジでは Whisper エンコーダーを NPU にオフロードし、デコーダー処理は CPU に残します。
+      device_non_cuda: 明示的な GPU デバイス選択は現在 CUDA のみ対応しています。Vulkan と HIP は whisper.cpp が公開するランタイム既定の GPU を使用します。
+      device_no_cuda_devices: ASR ランタイムから利用可能な CUDA 対応 GPU デバイスは現在公開されていません。
+      device_choose_cuda: ASR で使用する検出済み CUDA GPU を選択します。この選択は ASR 専用で、顔生成や LLM の負荷設定とは個別です。
+      device_use_cuda: CUDA ASR に {name} を使用します。この選択は音声ディクテーションのみに影響し、顔生成や LLM の GPU 配置とは自動同期されません。
+      npu_notice: Intel NPU モードは OpenVINO とシステム選択の NPU デバイスを使用します。まだデバイスごとの選択機能はなく、現在のブリッジでは Whisper デコーダー処理は引き続き CPU 上で動作します。
+      non_cuda_notice: 現在の Whisper ブリッジは Vulkan と HIP でランタイム既定の GPU を使用します。明示的なデバイス選択は現時点では CUDA のみ対応しています。
+      no_selectable_cuda: 組み込みランタイムは選択可能な CUDA デバイスを報告しませんでした。ASR はこの加速ターゲットでランタイム既定のデバイスを使用します。
+      single_cuda_device: '現在公開されている CUDA 対応 ASR デバイスは {name} のみです。個別の選択は不要です。'
+      multiple_cuda_devices: 複数の CUDA 対応 ASR デバイスが利用可能です。ディクテーションで使用する物理 GPU を選択してください。
+
+    status:
+      cpu: CPU
+      default_gpu: 既定の GPU
+      final_pass_only: 最終パスのみ
+      gpu_device: ASR GPU デバイス
+      host_cpu: ホスト CPU
+      missing: 未検出
+      model_file_plural: '{count} 個のモデルファイル'
+      model_file_singular: '{count} 個のモデルファイル'
+      native_c: native-c
+      no_model_files: モデルファイルが見つかりません
+      npu_device: ASR NPU デバイス
+      present: あり
+      ready: 準備完了
+      recommended_suffix: (推奨)
+      streaming_enabled: ライブ部分結果を有効化
+      unavailable: 利用不可
+
+    streaming:
+      base: 話している間、{chunkMs} ms ごとに音声の一部を文字起こしします。
+      ultra_fast: 応答性を最優先します。文字起こしはほぼ連続的に実行されます。高速なハードウェアで Tiny または Base モデルを使う場合にのみ推奨です。CPU 負荷は高くなります。
+      fast: 非常に高応答です。Tiny と Base モデルで良好に動作します。高速タイピングや低遅延のフィードバックが必要な場合に向いています。
+      recommended: 推奨のバランス設定です。応答性と CPU コストの釣り合いがよく、この間隔では部分更新が自然に感じられます。
+      standard: 標準。CPU を使い過ぎず、予測しやすい更新頻度です。どのモデルサイズにも無難な選択です。
+      slow: 低頻度プレビュー。発話ごとの更新回数が少なく、CPU 負荷も低くなります。テキストは単語ごとではなく大きめの塊で表示されます。
+
+    recommendations:
+      cpu_1: CPU 推論では Tiny または Tiny English から始めてください。Base は強めの CPU なら使えますが、Small は通常バッファードディクテーション向きです。
+      cpu_2: CPU のライブプレビューはまず試して確認してください。入力や UI の応答性が落ちるなら、モデル品質を疑う前に間隔を 500-1000 ms に広げてください。
+      cuda_1: 低遅延のライブプレビューや、UI を重くしすぎずに Base または Small を使うには、現状では CUDA が最良の選択です。
+      cuda_2: NVIDIA GPU が複数ある場合、メインのカードが LLM や facegen で忙しいときだけ ASR を軽いカードに割り当ててください。
+      openvino_1: Intel NPU モードでは、選択した Whisper モデルに対応する OpenVINO エンコーダー IR ファイルが必要です。ggml モデルだけでは不十分です。
+      openvino_2: OpenVINO NPU が現在オフロードするのは Whisper エンコーダー処理のみです。効果が大きいのは Tiny より Base や Small のことが多いです。
+      other_gpu: Vulkan と HIP は単純な GPU アクセラレーションモードとして使うのが最適です。現在のブリッジでは、これらのバックエンドに対して個別のデバイス選択ではなくランタイム既定 GPU を使用します。
+      streaming_1: ライブプレビューは 300-500 ms 前後から始めてください。より滑らかな部分結果が欲しい場合は 200 ms を試せますが、UI の応答性が維持できるときだけ採用してください。
+      streaming_2: 現在の間隔はかなり攻めています。プレビューが止まったりフィールドが固まる場合は、モデルサイズを変える前にバッファを長めにしてください。
+      buffered: 文の途中で文字が出ることより最終精度を重視するなら、バッファリングモードが依然として最も安全です。
+
+  llm:
+    heading: 言語モデル
+    copy: ゲームのランタイムでは、一度に 1 つのモデルと 1 つのライブコンテキストのみを使用します。GGUF アーティファクトを選び、Go バックエンドが解決した設定を確認してから、共有ランタイムへ明示的に読み込んでください。
+    model_label: モデルアーティファクト
+    load_button: 選択したモデルを読み込む
+    refresh_button: 状態を更新
+    metadata_heading: 選択中モデルのメタデータ
+    runtime_heading: ランタイム状態
+    notes_heading: 状態メモ
+    loading_status: LLM の状態を読み込み中...
+    loading_overlay_title: 言語モデルを読み込み中
+    loading_overlay_copy: バックエンドがモデルを読み込み、共有ランタイムコンテキストを準備している間、FC Tycoon はレンダラーを一時停止します。
+
+    metadata:
+      artifact: アーティファクト
+      file_size: ファイルサイズ
+      family: 系統
+      thinking_mode: 思考モード
+      configured: 設定済み
+      max_context: 最大コンテキスト
+      gpu_layers: GPU レイヤー
+      threads: スレッド
+      cpu_moe: CPU MoE
+      temperature: 温度
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: 存在ペナルティ
+      repeat_penalty: 反復ペナルティ
+      seed: シード
+
+    runtime:
+      runtime: ランタイム
+      loaded_model: 読み込み済みモデル
+      context_size: コンテキストサイズ
+      prompt_registry: プロンプトレジストリ
+      tool_definitions: ツール定義
+      active_sys_prompt: 有効なシステムプロンプト
+      runtime_threads: ランタイムスレッド
+      flash_attention: フラッシュアテンション
+
+    hints:
+      choose_model: ゲームが共有ランタイムに読み込む構成済み GGUF アーティファクトを選択してください。
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (設定の問題)
+      default_thinking_mode: 既定の思考モード
+      initialized: 初期化済み
+      loaded_fallback: 読み込み済み
+      loaded_success: '{name} を正常に読み込みました。'
+      loading_message: '{name} を共有言語モデルランタイムに読み込み中...'
+      no_model_loaded: 読み込まれたモデルはありません
+      not_initialized: 未初期化
+      runtime_default: ランタイム既定
+      token_count: '{count} トークン'
+      unmatched: 不一致
+      unmatched_family: 不一致の系統
+
+    errors:
+      load_failed: 選択した言語モデルの読み込みに失敗しました
+      refresh_failed: LLM の状態を読み取れませんでした
+      selected_model_missing: 選択したモデルは現在の LLM モデル一覧に見つかりませんでした。
+
+  facegen:
+    heading: 顔生成
+    copy: 顔生成は処理全体で共有ランタイムを使用します。キューイングと優先度は自動的に処理されます。
+    backend_label: 推論バックエンド
+    quality_label: ポートレート JPEG 品質
+    persist_heading: ポートレートをセーブに保存する
+    storage_heading: ポートレート保存
+    loading: Facegen 設定を読み込み中...
+
+    hints:
+      choose_backend: ポートレート生成に使用するバックエンド別 Facegen ランタイム DLL を選択してください。
+
+    status:
+      unknown_adapter: 不明なアダプター
+
+    notes:
+      current_setting: '現在の設定: {quality}% - {label}。'
+      detected_adapters: '検出されたアダプター: {adapters}。'
+      detected_gpu: '検出された GPU: {adapter}。検出された VRAM: {vram}。'
+      detection_unavailable: このシステムでは GPU VRAM の検出を利用できませんでした。それでも顔生成は共有ランタイムで実行されます。
+      persist_disabled: ポートレートは現在のセッション中のみメモリに保持され、再読み込み後は再生成されます。
+      persist_enabled: ポートレートはセーブデータベースに書き込まれ、再読み込み後に再利用されます。
+      storage_quality: JPEG 品質を高くすると忠実度は上がりますが、ポートレートをセーブに保存する場合はサイズも大きくなります。
+      storage_regenerate: 100% は最高品質です。セーブサイズを小さくしたい場合はセーブ保存を無効にし、再読み込みごとにポートレートが再生成されることを許容してください。
+
+    quality:
+      compact: コンパクト品質
+      high: 高品質
+      maximum: 最高品質
+      medium: 標準品質
+      small_file: 小さいファイルサイズ
+      very_high: 非常に高品質
+
+    errors:
+      quality_range: ポートレート JPEG 品質は 50 から 100 までの整数でなければなりません。
+
   messages:
+    load_error: 設定の読み込みに失敗しました
     reset_dialog_title: 設定をリセット
     reset_dialog_message: すべての設定を既定値に戻します。続行しますか？
     reset_dialog_confirm: リセット
     reset_dialog_cancel: キャンセル
     reset_success: 設定を既定値に戻しました
     save_success: 設定を保存しました
+    save_error_plain: 設定の保存に失敗しました
     save_error: "設定の保存に失敗しました: {error}"
     language_changed: "言語を{language}に変更しました"
     language_change_error: "言語の変更に失敗しました: {error}"

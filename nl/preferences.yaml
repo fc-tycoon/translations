@@ -6,12 +6,32 @@ preferences:
   save: Voorkeuren opslaan
   reset: Standaard herstellen
   cancel: Annuleren
+  close: Sluiten
+
+  common:
+    available: Beschikbaar
+    default: Standaard
+    disabled: Uitgeschakeld
+    enabled: Ingeschakeld
+    no: Nee
+    none: Geen
+    unknown: Onbekend
+    yes: Ja
+
+  appearance:
+    theme_heading: Thema
+    accent_heading: Accentkleur
 
   tabs:
+    appearance: Uiterlijk
+    display_runtime: Weergave
+    asr: Spraakherkenning
+    llm: Taalmodel
+    facegen: Gezichtsgeneratie
     saved_games: Opgeslagen spellen
     display: Weergave
     languages: Talen
-    gameplay: Gameplay
+    gameplay: Spelverloop
     ui: UI
     colors: Kleuren
     shortcuts: Sneltoetsen
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: Overschrijven bevestigen
 
   display:
+    heading: Weergave
+    fullscreen_label: In volledig scherm starten
+    fullscreen_hint: Wordt toegepast op het spelvenster bij de volgende start.
+    confirm_exit_label: Bevestigen voor afsluiten
+    confirm_exit_hint: Vraag om bevestiging voordat de spelapplicatie wordt gesloten.
     title: Weergave-instellingen
     theme: Thema
     theme_options:
@@ -53,7 +78,7 @@ preferences:
     reload_hint: Alle vertaalbestanden opnieuw laden van schijf (handig voor ontwikkeling)
 
   gameplay:
-    title: Gameplay-instellingen
+    title: Spelverloopinstellingen
     pause_on_events: Pauzeren bij gebeurtenissen
     pause_on_events_hint: Pauzeer het spel wanneer belangrijke gebeurtenissen plaatsvinden
     show_tutorials: Tutorials tonen
@@ -93,13 +118,210 @@ preferences:
       open_tactics: Tactiek openen
       open_transfers: Transfers openen
 
+  asr:
+    heading: Spraakdictatie
+    copy: Spraakdictatie neemt audio op van je microfoon en zet die lokaal op je apparaat om naar tekst. Kies hieronder een stemmodel, een versnellingsdoel en een dicteermodus.
+    acceleration_label: Versnellingsdoel
+    model_label: Stemmodel
+    mode_label: Dicteermodus
+    preview_interval_label: Interval voor livevoorbeeld
+    recommendations_heading: Aanbevelingen
+    microphone_label: Microfoon
+    refresh_microphones: Microfoons vernieuwen
+    runtime_heading: Runtime-status
+    runtime_copy: De gebufferde modus wacht op de volledige uitspraak voordat hij decodeert. De streamingmodus toont deeltekst terwijl je spreekt en voert bij het stoppen alsnog een laatste volledige pass uit.
+    loading: ASR-voorkeuren laden...
+
+    runtime:
+      backend_runtime: Backend-runtime
+      kind: Runtimetype
+      artifact: Runtime-artefact
+      selected_model_artifact: Geselecteerd modelartefact
+      execution_backend: Uitvoerbackend
+      requested_target: Aangevraagd doel
+      compute_api: Compute-API
+      device: Apparaat
+      worker_threads: Workerthreads
+      model_artifacts: Modelartefacten
+      model_size: Geïnstalleerde modelgrootte
+      streaming_output: Streaminguitvoer
+
+    preview:
+      heading: Veldintegratievoorbeeld
+      copy: Dit gebruikt dezelfde veldgebonden dictatiefunctie als tekstinvoer. De microfoonactie zit direct in het kader van het tekstvak.
+      placeholder: Typ hier of neem microfoonaudio op om het ASR-transport te valideren...
+      browser_capture: Browseropname
+      last_state: Laatste dictatiestatus
+      audio_duration: Audioduur
+      encode_time: Codeertijd
+      decode_time: Decodeertijd
+      total_runtime: Totale runtime
+      text_tokens: Teksttokens
+      model_load: Modellading
+
+    hints:
+      choose_acceleration: Kies het rekendoel voor transcriptie.
+      choose_model: Kies het stemmodel voor transcriptie.
+      choose_mode: Kies hoe opgenomen microfoonaudio naar de backend moet worden gestuurd.
+      embedded_dll_only: Gebruikt alleen de ingebouwde DLL-runtime.
+      device_npu: De Intel-NPU-modus gebruikt OpenVINO en richt zich op het door het systeem gekozen NPU-apparaat. De huidige bridge verplaatst de Whisper-encoder naar de NPU en laat het decoderwerk op de CPU.
+      device_non_cuda: Expliciete selectie van GPU-apparaten geldt momenteel alleen voor CUDA. Vulkan en HIP gebruiken het standaard GPU-apparaat van de runtime dat door whisper.cpp wordt blootgesteld.
+      device_no_cuda_devices: Er zijn momenteel geen CUDA-geschikte GPU-apparaten beschikbaar in de ASR-runtime.
+      device_choose_cuda: Kies welke gedetecteerde CUDA-GPU ASR moet gebruiken. Deze selector geldt alleen voor ASR; gezichtsgeneratie en LLM-belasting blijven apart geconfigureerd.
+      device_use_cuda: Gebruikt {name} voor CUDA-ASR. Deze selector heeft alleen invloed op spraakdictatie; GPU-toewijzing voor gezichtsgeneratie en LLM wordt niet automatisch gesynchroniseerd.
+      npu_notice: De Intel-NPU-modus gebruikt OpenVINO en het door het systeem gekozen NPU-apparaat. Er is nog geen apparaatkiezer per apparaat, en Whisper-decoderwerk draait in de huidige bridge nog steeds op de CPU.
+      non_cuda_notice: De huidige Whisper-bridge gebruikt voor Vulkan en HIP de standaard-GPU van de runtime. Expliciete apparaatsselectie wordt op dit moment alleen voor CUDA ondersteund.
+      no_selectable_cuda: De ingebouwde runtime meldde geen selecteerbare CUDA-apparaten. ASR gebruikt voor dit versnellingsdoel het standaardapparaat van de runtime.
+      single_cuda_device: 'Er is momenteel maar één CUDA-geschikt ASR-apparaat beschikbaar: {name}. Een aparte kiezer is niet nodig.'
+      multiple_cuda_devices: Er zijn meerdere CUDA-geschikte ASR-apparaten beschikbaar. Kies welke fysieke GPU voor dictatie gebruikt moet worden.
+
+    status:
+      cpu: CPU
+      default_gpu: de standaard-GPU
+      final_pass_only: Alleen eindpass
+      gpu_device: ASR-GPU-apparaat
+      host_cpu: Host-CPU
+      missing: Ontbreekt
+      model_file_plural: '{count} modelbestanden'
+      model_file_singular: '{count} modelbestand'
+      native_c: native-c
+      no_model_files: Geen modelbestanden gedetecteerd
+      npu_device: ASR-NPU-apparaat
+      present: Aanwezig
+      ready: Gereed
+      recommended_suffix: (Aanbevolen)
+      streaming_enabled: Live deelresultaten ingeschakeld
+      unavailable: Niet beschikbaar
+
+    streaming:
+      base: Elke {chunkMs} ms wordt een audiodeel getranscribeerd terwijl je spreekt.
+      ultra_fast: Maximale responsiviteit. Transcriptie draait bijna continu. Alleen aanbevolen op snelle hardware met een Tiny- of Base-model. Verwacht hoge CPU-belasting.
+      fast: Zeer responsief. Werkt goed met Tiny- en Base-modellen. Geschikt voor snelle typisten of wanneer feedback met lage latentie belangrijk is.
+      recommended: Aanbevolen middenweg. Goede balans tussen responsiviteit en CPU-kosten. Gedeeltelijke updates voelen bij dit interval natuurlijk aan.
+      standard: Standaard. Voorspelbare updates zonder overmatige CPU-activiteit. Een solide keuze voor elke modelgrootte.
+      slow: Voorbeeld met lage frequentie. Minder updates per uitspraak en minder CPU-belasting. Tekst verschijnt in grotere blokken in plaats van woord voor woord.
+
+    recommendations:
+      cpu_1: CPU-inferentie: begin met Tiny of Tiny English. Base kan op sterkere CPU's werken, maar Small is meestal beter voor gebufferde dictatie.
+      cpu_2: CPU-livevoorbeeld: test het eerst. Als typen of UI-responsiviteit achteruitgaat, verhoog het interval dan naar 500-1000 ms voordat je de modelkwaliteit de schuld geeft.
+      cuda_1: CUDA is momenteel de beste route voor livevoorbeeld met lage latentie en voor het draaien van Base- of Small-modellen zonder dat de UI traag aanvoelt.
+      cuda_2: Als je meerdere NVIDIA-GPU's hebt, zet ASR alleen op de lichtere kaart als de hoofdkaart al druk is met LLM- of facegen-werk.
+      openvino_1: De Intel-NPU-modus vereist de bijpassende OpenVINO-encoder-IR-bestanden voor je gekozen Whisper-model. Alleen het gewone ggml-model is niet genoeg.
+      openvino_2: OpenVINO NPU offloadt momenteel alleen Whisper-encoderwerk. Het grootste voordeel zie je meestal bij Base of Small, niet per se bij Tiny.
+      other_gpu: Vulkan en HIP werken het best als eenvoudige GPU-versnellingsmodi. De huidige bridge gebruikt voor deze backends de standaard-GPU van de runtime in plaats van een apparaatskiezer.
+      streaming_1: Livevoorbeeld: begin rond 300-500 ms. Als je vloeiendere deelresultaten wilt, kun je 200 ms testen, maar houd dat alleen aan als de UI op jouw machine responsief blijft.
+      streaming_2: Je huidige interval is erg agressief. Als het voorbeeld hapert of het veld vastloopt, gebruik dan eerst een langere buffer voordat je de modelgrootte verandert.
+      buffered: De gebufferde modus is nog steeds de veiligste keuze als je meer geeft om uiteindelijke nauwkeurigheid dan om tekst die halverwege een zin al verschijnt.
+
+  llm:
+    heading: Taalmodel
+    copy: De spelruntime gebruikt steeds één geladen model en één actieve context tegelijk. Kies een GGUF-artefact, controleer de door de Go-backend gevonden configuratie en laad het vervolgens expliciet in de gedeelde runtime.
+    model_label: Modelartefact
+    load_button: Geselecteerd model laden
+    refresh_button: Status vernieuwen
+    metadata_heading: Metadata van het geselecteerde model
+    runtime_heading: Runtime-status
+    notes_heading: Statusnotities
+    loading_status: LLM-status laden...
+    loading_overlay_title: Taalmodel laden
+    loading_overlay_copy: FC Tycoon pauzeert de renderer terwijl de backend het model laadt en de gedeelde runtimecontext voorbereidt.
+
+    metadata:
+      artifact: Artefact
+      file_size: Bestandsgrootte
+      family: Familie
+      thinking_mode: Denkmodus
+      configured: Geconfigureerd
+      max_context: Maximale context
+      gpu_layers: GPU-lagen
+      threads: Threads
+      cpu_moe: CPU-MoE
+      temperature: Temperatuur
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: Aanwezigheidsstraf
+      repeat_penalty: Herhaalstraf
+      seed: Seed
+
+    runtime:
+      runtime: Runtime
+      loaded_model: Geladen model
+      context_size: Contextgrootte
+      prompt_registry: Promptregister
+      tool_definitions: Tooldefinities
+      active_sys_prompt: Actieve systeemprompt
+      runtime_threads: Runtime-threads
+      flash_attention: Flash-attention
+
+    hints:
+      choose_model: Kies welk geconfigureerd GGUF-artefact het spel in de gedeelde runtime moet laden.
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (configuratieprobleem)
+      default_thinking_mode: standaard denkmodus
+      initialized: Geïnitialiseerd
+      loaded_fallback: Geladen
+      loaded_success: '{name} is succesvol geladen.'
+      loading_message: '{name} wordt geladen in de gedeelde taalmodelruntime...'
+      no_model_loaded: Geen model geladen
+      not_initialized: Niet geïnitialiseerd
+      runtime_default: Standaardruntime
+      token_count: '{count} tokens'
+      unmatched: Geen overeenkomst
+      unmatched_family: Niet-overeenkomende familie
+
+    errors:
+      load_failed: Het geselecteerde taalmodel kon niet worden geladen
+      refresh_failed: De LLM-status kon niet worden gelezen
+      selected_model_missing: Het geselecteerde model kon niet worden gevonden in de huidige lijst met LLM-modellen.
+
+  facegen:
+    heading: Gezichtsgeneratie
+    copy: Gezichtsgeneratie gebruikt één gedeelde runtime voor het hele proces. Wachtrij en prioriteit worden automatisch afgehandeld.
+    backend_label: Inferentie-backend
+    quality_label: JPEG-kwaliteit van portret
+    persist_heading: Portretten in de save opslaan
+    storage_heading: Portretopslag
+    loading: Facegen-voorkeuren laden...
+
+    hints:
+      choose_backend: Kies welke backendspecifieke Facegen-runtime-DLL voor portretgeneratie gebruikt moet worden.
+
+    status:
+      unknown_adapter: Onbekende adapter
+
+    notes:
+      current_setting: 'Huidige instelling: {quality}% - {label}.'
+      detected_adapters: 'Gedetecteerde adapters: {adapters}.'
+      detected_gpu: 'Gedetecteerde GPU: {adapter}. Gedetecteerd VRAM: {vram}.'
+      detection_unavailable: Detectie van GPU-VRAM was op dit systeem niet beschikbaar. Gezichtsgeneratie blijft wel draaien via de gedeelde runtime.
+      persist_disabled: Portretten blijven alleen tijdens de huidige sessie in het geheugen en worden na herladen opnieuw gegenereerd.
+      persist_enabled: Portretten worden in de save-database opgeslagen en na herladen opnieuw gebruikt.
+      storage_quality: Een hogere JPEG-kwaliteit verbetert de beeldgetrouwheid, maar vergroot ook de portretgrootte wanneer portretten in de save worden opgeslagen.
+      storage_regenerate: 100% is maximale kwaliteit. Schakel opslag in de save uit als je kleinere saves wilt en het accepteert dat portretten na elke herlaadbeurt opnieuw worden gegenereerd.
+
+    quality:
+      compact: Compacte kwaliteit
+      high: Hoge kwaliteit
+      maximum: Maximale kwaliteit
+      medium: Gemiddelde kwaliteit
+      small_file: Kleine bestandsgrootte
+      very_high: Zeer hoge kwaliteit
+
+    errors:
+      quality_range: Portret-JPEG-kwaliteit moet een heel getal tussen 50 en 100 zijn.
+
   messages:
+    load_error: Voorkeuren konden niet worden geladen
     reset_dialog_title: Voorkeuren resetten
     reset_dialog_message: Dit zet alle voorkeuren terug naar de standaardwaarden. Doorgaan?
     reset_dialog_confirm: Resetten
     reset_dialog_cancel: Annuleren
     reset_success: Voorkeuren teruggezet naar standaardwaarden
     save_success: Voorkeuren opgeslagen
+    save_error_plain: Voorkeuren konden niet worden opgeslagen
     save_error: "Opslaan van voorkeuren mislukt: {error}"
     language_changed: "Taal gewijzigd naar {language}"
     language_change_error: "Wijzigen van taal mislukt: {error}"

@@ -1,0 +1,56 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Persoonlijkheidssjablonen
+# ══════════════════════════════════════════════════════════════════════
+personalities:
+  pragmatic_winner:
+    label: Pragmatische Winnaar
+    text: Gedreven pragmaticus met een niet te stillen honger naar eremetaal. Gelooft in opbouw door discipline en tactische vernieuwing.
+  youth_developer:
+    label: Talentontwikkelaar
+    text: Geduldige mentor die waarde hecht aan langetermijnontwikkeling. Geeft de voorkeur aan het koesteren van jong talent boven dure aankopen.
+  defensive_mastermind:
+    label: Verdedigend Virtuoos
+    text: Nauwgezette organisator die bezeten is van defensieve compactheid. Elk tegendoelpunt is persoonlijk falen.
+  attacking_idealist:
+    label: Aanvallend Idealist
+    text: Eist expressief, aanvallend voetbal. Verliest liever met 4-3 dan wint met 1-0.
+  old_school_disciplinarian:
+    label: Traditionele Disciplinair
+    text: Harde traditionalist die totale inzet eist. Normen zijn niet onderhandelbaar.
+  media_darling:
+    label: Mediafavoriet
+    text: Charismatische aanwezigheid langs de zijlijn die gedijt in de schijnwerpers. Gebruikt persconferenties als wapen.
+  silent_operator:
+    label: Stille Kracht
+    text: Rustig, beheerst en intensief privé. Laat resultaten voor zich spreken en vermijdt drama.
+  tactical_innovator:
+    label: Tactisch Vernieuwer
+    text: Rusteloze denker die voortdurend formaties en systemen aanpast. Altijd op zoek naar het volgende voordeel.
+  assistant_loyal_lieutenant:
+    label: Loyale Luitenant
+    text: Zeer loyale rechterhand die de boodschap van de manager in het openbaar beschermt en binnenskamers versterkt. Houdt de kleedkamer op één lijn met de hoofdtrainer en ondermijnt diens gezag nooit.
+  assistant_tactical_brain:
+    label: Tactisch Brein
+    text: Scherpe voetbaldenker die grote ideeën omzet in trainingsdetails, plannen voor de tegenstander en zuivere aanpassingen tijdens de wedstrijd. Ziet patronen snel en geeft de manager bruikbare antwoorden in plaats van ruis.
+  assistant_training_ground_general:
+    label: Generaal op het Trainingsveld
+    text: Zet de toon op het trainingsveld met structuur, intensiteit en consequente opvolging. Zorgt ervoor dat de standaarden elke dag hoog blijven, niet alleen op wedstrijddagen.
+  assistant_player_whisperer:
+    label: Spelersfluisteraar
+    text: Leest stemmingen vroeg en voert moeilijke gesprekken met rustige autoriteit. Laat spelers zich gehoord voelen zonder de standaarden van de staf los te laten.
+  assistant_development_specialist:
+    label: Ontwikkelingsspecialist
+    text: Geobsedeerd door individuele groei, rolhelderheid en verbetering op lange termijn. Sterk in het begeleiden van talenten en selectiespelers naar concrete volgende stappen.
+  assistant_standards_enforcer:
+    label: Bewaker van de Standaard
+    text: Eist stiptheid, professionaliteit en consistentie in elke routine. Houdt de omgeving scherp wanneer de resultaten tegenvallen en maakt zelfgenoegzaamheid moeilijk te verdragen.
+  assistant_opposition_analyst:
+    label: Tegenstanderanalist
+    text: Leeft in wedstrijdclips, rapporten en details van duels. Komt voorbereid met duidelijke notities over waar de volgende tegenstander onder druk gezet, afgeschermd en gestraft kan worden.
+  assistant_calm_conduit:
+    label: Rustige Schakel
+    text: Stabiele communicator die staf en spelers kalm houdt tijdens mindere fases, drukke schema's en mediagedruis. Geeft boodschappen naar boven en beneden door zonder wrijving te veroorzaken.
+  assistant_culture_keeper:
+    label: Cultuurbewaker
+    text: Belichaamt de waarden van de club en bewaakt de toon op de werkvloer. Helpt nieuwe aanwinsten, jeugdspelers en bankzitters snel begrijpen wat er van hen wordt verwacht.

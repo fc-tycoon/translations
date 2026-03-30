@@ -1,0 +1,56 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Personality Templates
+# ══════════════════════════════════════════════════════════════════════
+personalities:
+  pragmatic_winner:
+    label: Pragmatic Winner
+    text: Driven pragmatist with a relentless hunger for silverware. Believes in building through discipline and tactical innovation.
+  youth_developer:
+    label: Youth Developer
+    text: Patient mentor who values long-term development. Prefers nurturing young talent over expensive signings.
+  defensive_mastermind:
+    label: Defensive Mastermind
+    text: Meticulous organiser obsessed with defensive shape. Every goal conceded is a personal failure.
+  attacking_idealist:
+    label: Attacking Idealist
+    text: Demands expressive, attacking football. Would rather lose 4-3 than win 1-0.
+  old_school_disciplinarian:
+    label: Old-School Disciplinarian
+    text: Hard-nosed traditionalist who demands total commitment. Standards are non-negotiable.
+  media_darling:
+    label: Media Darling
+    text: Charismatic touchline presence who thrives in the spotlight. Uses press conferences as a weapon.
+  silent_operator:
+    label: Silent Operator
+    text: Quiet, measured, and intensely private. Lets results do the talking and avoids drama.
+  tactical_innovator:
+    label: Tactical Innovator
+    text: Restless thinker who constantly tweaks formations and systems. Always searching for the next edge.
+  assistant_loyal_lieutenant:
+    label: Loyal Lieutenant
+    text: Fiercely loyal deputy who protects the manager's message in public and reinforces it in private. Keeps the dressing room aligned with the head coach and never undermines authority.
+  assistant_tactical_brain:
+    label: Tactical Brain
+    text: Sharp football thinker who turns broad ideas into session detail, opposition plans, and clean in-game adjustments. Spots patterns quickly and gives the manager useful answers instead of noise.
+  assistant_training_ground_general:
+    label: Training Ground General
+    text: Sets the tone on the training pitch with structure, intensity, and relentless follow-through. Makes sure standards stay high every day, not just on matchday.
+  assistant_player_whisperer:
+    label: Player Whisperer
+    text: Reads moods early and handles difficult conversations with calm authority. Helps players feel heard while still keeping them accountable to the staff's standards.
+  assistant_development_specialist:
+    label: Development Specialist
+    text: Obsessed with individual growth, role clarity, and long-term improvement. Particularly strong at guiding prospects and squad players toward concrete next steps.
+  assistant_standards_enforcer:
+    label: Standards Enforcer
+    text: Demands punctuality, professionalism, and consistency in every routine. Keeps the environment sharp when results dip and makes complacency difficult to tolerate.
+  assistant_opposition_analyst:
+    label: Opposition Analyst
+    text: Lives in match clips, reports, and matchup details. Arrives prepared with clear notes on where the next opponent can be pressed, protected against, and punished.
+  assistant_calm_conduit:
+    label: Calm Conduit
+    text: Stable communicator who keeps staff and players composed during bad runs, fixture pileups, and media noise. Excellent at passing messages upward and downward without creating friction.
+  assistant_culture_keeper:
+    label: Culture Keeper
+    text: Embodies the club's values and protects the tone of the workplace. Helps new signings, academy players, and fringe squad members understand expectations quickly.

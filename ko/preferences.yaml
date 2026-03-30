@@ -6,8 +6,28 @@ preferences:
   save: 환경설정 저장
   reset: 기본값으로 재설정
   cancel: 취소
+  close: 닫기
+
+  common:
+    available: 사용 가능
+    default: 기본값
+    disabled: 비활성화됨
+    enabled: 활성화됨
+    no: 아니요
+    none: 없음
+    unknown: 알 수 없음
+    yes: 예
+
+  appearance:
+    theme_heading: 테마
+    accent_heading: 강조 색상
 
   tabs:
+    appearance: 외형
+    display_runtime: 표시
+    asr: 음성 인식
+    llm: 언어 모델
+    facegen: 얼굴 생성
     saved_games: 저장된 게임
     display: 표시
     languages: 언어
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: 덮어쓰기 확인
 
   display:
+    heading: 표시
+    fullscreen_label: 전체 화면으로 시작
+    fullscreen_hint: 다음 실행 시 게임 창에 적용됩니다.
+    confirm_exit_label: 종료 전에 확인
+    confirm_exit_hint: 게임 애플리케이션을 닫기 전에 확인을 요청합니다.
     title: 표시 설정
     theme: 테마
     theme_options:
@@ -93,13 +118,210 @@ preferences:
       open_tactics: 전술 열기
       open_transfers: 이적 열기
 
+  asr:
+    heading: 음성 받아쓰기
+    copy: 음성 받아쓰기는 마이크 오디오를 캡처해 로컬 장치에서 텍스트로 변환합니다. 아래에서 음성 모델, 가속 대상, 받아쓰기 모드를 선택하세요.
+    acceleration_label: 가속 대상
+    model_label: 음성 모델
+    mode_label: 받아쓰기 모드
+    preview_interval_label: 실시간 미리보기 간격
+    recommendations_heading: 권장 사항
+    microphone_label: 마이크
+    refresh_microphones: 마이크 새로 고침
+    runtime_heading: 런타임 상태
+    runtime_copy: 버퍼링 모드는 전체 발화가 끝날 때까지 기다렸다가 디코딩합니다. 스트리밍 모드는 말하는 동안 부분 텍스트를 보여 주며, 녹음을 멈추면 최종 전체 패스도 수행합니다.
+    loading: ASR 환경설정을 불러오는 중...
+
+    runtime:
+      backend_runtime: 백엔드 런타임
+      kind: 런타임 종류
+      artifact: 런타임 아티팩트
+      selected_model_artifact: 선택된 모델 아티팩트
+      execution_backend: 실행 백엔드
+      requested_target: 요청된 대상
+      compute_api: 연산 API
+      device: 장치
+      worker_threads: 작업 스레드
+      model_artifacts: 모델 아티팩트
+      model_size: 설치된 모델 크기
+      streaming_output: 스트리밍 출력
+
+    preview:
+      heading: 필드 통합 미리보기
+      copy: 이 미리보기는 텍스트 입력에 쓰는 것과 같은 필드 단위 받아쓰기 제어를 사용합니다. 마이크 동작은 텍스트 영역 프레임 안에 직접 연결됩니다.
+      placeholder: 여기에 입력하거나 ASR 전송 검증을 위해 마이크 오디오를 캡처하세요...
+      browser_capture: 브라우저 캡처
+      last_state: 마지막 받아쓰기 상태
+      audio_duration: 오디오 길이
+      encode_time: 인코딩 시간
+      decode_time: 디코딩 시간
+      total_runtime: 총 실행 시간
+      text_tokens: 텍스트 토큰
+      model_load: 모델 로드
+
+    hints:
+      choose_acceleration: 전사에 사용할 연산 대상을 선택하세요.
+      choose_model: 전사에 사용할 음성 모델을 선택하세요.
+      choose_mode: 캡처한 마이크 오디오를 백엔드에 어떻게 보낼지 선택하세요.
+      embedded_dll_only: 내장 DLL 런타임만 사용합니다.
+      device_npu: Intel NPU 모드는 OpenVINO를 사용하며 시스템이 선택한 NPU 장치를 대상으로 합니다. 현재 브리지는 Whisper 인코더를 NPU로 오프로드하고 디코더 작업은 CPU에 남깁니다.
+      device_non_cuda: 명시적인 GPU 장치 선택은 현재 CUDA에만 적용됩니다. Vulkan과 HIP은 whisper.cpp가 노출하는 런타임 기본 GPU 장치를 사용합니다.
+      device_no_cuda_devices: ASR 런타임에서 현재 노출된 CUDA 지원 GPU 장치가 없습니다.
+      device_choose_cuda: ASR에 사용할 감지된 CUDA GPU를 선택합니다. 이 선택기는 ASR 전용이며 얼굴 생성과 LLM 작업 부하는 별도로 구성됩니다.
+      device_use_cuda: CUDA ASR 작업에 {name}을 사용합니다. 이 선택기는 음성 받아쓰기에만 영향을 주며 얼굴 생성과 LLM의 GPU 배치는 자동으로 동기화되지 않습니다.
+      npu_notice: Intel NPU 모드는 OpenVINO와 시스템이 선택한 NPU 장치를 사용합니다. 아직 장치별 선택기는 없으며, 현재 브리지에서는 Whisper 디코더 작업이 계속 CPU에서 실행됩니다.
+      non_cuda_notice: 현재 Whisper 브리지는 Vulkan과 HIP에 대해 런타임 기본 GPU를 사용합니다. 명시적인 장치 선택은 현재 CUDA에서만 지원됩니다.
+      no_selectable_cuda: 내장 런타임이 선택 가능한 CUDA 장치를 보고하지 않았습니다. ASR은 이 가속 대상에 대해 런타임 기본 장치를 사용합니다.
+      single_cuda_device: '현재 노출된 CUDA 지원 ASR 장치는 {name} 하나뿐입니다. 별도의 선택기는 필요하지 않습니다.'
+      multiple_cuda_devices: 사용 가능한 CUDA 지원 ASR 장치가 여러 개 있습니다. 받아쓰기에 사용할 물리 GPU를 선택하세요.
+
+    status:
+      cpu: CPU
+      default_gpu: 기본 GPU
+      final_pass_only: 최종 패스만
+      gpu_device: ASR GPU 장치
+      host_cpu: 호스트 CPU
+      missing: 없음
+      model_file_plural: '{count}개 모델 파일'
+      model_file_singular: '{count}개 모델 파일'
+      native_c: native-c
+      no_model_files: 감지된 모델 파일이 없습니다
+      npu_device: ASR NPU 장치
+      present: 있음
+      ready: 준비됨
+      recommended_suffix: (권장)
+      streaming_enabled: 실시간 부분 결과 사용
+      unavailable: 사용할 수 없음
+
+    streaming:
+      base: 말하는 동안 {chunkMs}ms마다 오디오 구간 하나를 전사합니다.
+      ultra_fast: 응답성을 최대로 끌어올립니다. 전사가 거의 연속으로 실행됩니다. 빠른 하드웨어에서 Tiny 또는 Base 모델을 사용할 때만 권장됩니다. CPU 부하가 높을 수 있습니다.
+      fast: 매우 빠르게 반응합니다. Tiny와 Base 모델에서 잘 동작합니다. 빠른 타이핑이나 낮은 지연 피드백이 필요한 경우에 적합합니다.
+      recommended: 권장 균형점입니다. 응답성과 CPU 비용의 균형이 좋고, 이 간격에서는 부분 업데이트가 자연스럽게 느껴집니다.
+      standard: 표준. CPU 활동이 과도하지 않으면서 예측 가능한 업데이트를 제공합니다. 어떤 모델 크기에도 무난한 선택입니다.
+      slow: 저빈도 미리보기. 발화당 업데이트 수가 줄고 CPU 부하도 낮아집니다. 텍스트는 단어별이 아니라 더 큰 덩어리로 표시됩니다.
+
+    recommendations:
+      cpu_1: CPU 추론은 Tiny 또는 Tiny English부터 시작하세요. Base는 더 강한 CPU에서 동작할 수 있지만, Small은 보통 버퍼형 받아쓰기에 더 적합합니다.
+      cpu_2: CPU 실시간 미리보기는 먼저 테스트하세요. 타이핑이나 UI 반응성이 떨어지면 모델 품질을 탓하기 전에 간격을 500-1000ms로 늘리세요.
+      cuda_1: 낮은 지연의 실시간 미리보기와 Base 또는 Small 모델을 UI를 답답하게 만들지 않고 실행하려면 현재는 CUDA가 가장 좋은 선택입니다.
+      cuda_2: NVIDIA GPU가 여러 개인 경우, 메인 카드가 LLM이나 facegen 작업으로 바쁠 때만 ASR을 더 가벼운 카드에 두세요.
+      openvino_1: Intel NPU 모드에는 선택한 Whisper 모델에 맞는 OpenVINO 인코더 IR 파일이 필요합니다. 단순 ggml 모델만으로는 충분하지 않습니다.
+      openvino_2: OpenVINO NPU는 현재 Whisper 인코더 작업만 오프로드합니다. Tiny보다는 Base나 Small에서 더 큰 이점을 기대할 수 있습니다.
+      other_gpu: Vulkan과 HIP은 단순 GPU 가속 모드로 사용하는 것이 가장 좋습니다. 현재 브리지는 이 백엔드들에 대해 장치 선택기 대신 런타임 기본 GPU를 사용합니다.
+      streaming_1: 실시간 미리보기는 300-500ms 정도에서 시작하세요. 더 부드러운 부분 결과를 원하면 200ms를 시험할 수 있지만, UI가 계속 반응할 때만 유지하세요.
+      streaming_2: 현재 간격은 매우 공격적입니다. 미리보기가 멈추거나 필드가 얼어붙으면 모델 크기를 바꾸기 전에 버퍼를 더 길게 잡으세요.
+      buffered: 문장 중간에 텍스트가 보이는 것보다 최종 정확도가 더 중요하다면, 버퍼형 모드가 여전히 가장 안전한 선택입니다.
+
+  llm:
+    heading: 언어 모델
+    copy: 게임 런타임은 한 번에 하나의 로드된 모델과 하나의 활성 컨텍스트만 사용합니다. GGUF 아티팩트를 선택하고, Go 백엔드가 해석한 구성을 확인한 뒤, 이를 공유 런타임에 명시적으로 불러오세요.
+    model_label: 모델 아티팩트
+    load_button: 선택한 모델 불러오기
+    refresh_button: 상태 새로 고침
+    metadata_heading: 선택한 모델 메타데이터
+    runtime_heading: 런타임 상태
+    notes_heading: 상태 메모
+    loading_status: LLM 상태를 불러오는 중...
+    loading_overlay_title: 언어 모델을 불러오는 중
+    loading_overlay_copy: 백엔드가 모델을 로드하고 공유 런타임 컨텍스트를 준비하는 동안 FC Tycoon은 렌더러를 일시 중지합니다.
+
+    metadata:
+      artifact: 아티팩트
+      file_size: 파일 크기
+      family: 계열
+      thinking_mode: 사고 모드
+      configured: 구성됨
+      max_context: 최대 컨텍스트
+      gpu_layers: GPU 레이어
+      threads: 스레드
+      cpu_moe: CPU MoE
+      temperature: 온도
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: 존재 패널티
+      repeat_penalty: 반복 패널티
+      seed: 시드
+
+    runtime:
+      runtime: 런타임
+      loaded_model: 로드된 모델
+      context_size: 컨텍스트 크기
+      prompt_registry: 프롬프트 레지스트리
+      tool_definitions: 도구 정의
+      active_sys_prompt: 활성 시스템 프롬프트
+      runtime_threads: 런타임 스레드
+      flash_attention: 플래시 어텐션
+
+    hints:
+      choose_model: 게임이 공유 런타임에 불러올 구성된 GGUF 아티팩트를 선택하세요.
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (구성 문제)
+      default_thinking_mode: 기본 사고 모드
+      initialized: 초기화됨
+      loaded_fallback: 로드됨
+      loaded_success: '{name}을(를) 성공적으로 불러왔습니다.'
+      loading_message: '{name}을(를) 공유 언어 모델 런타임에 불러오는 중...'
+      no_model_loaded: 로드된 모델이 없습니다
+      not_initialized: 초기화되지 않음
+      runtime_default: 런타임 기본값
+      token_count: '{count} 토큰'
+      unmatched: 불일치
+      unmatched_family: 불일치하는 계열
+
+    errors:
+      load_failed: 선택한 언어 모델을 불러오지 못했습니다
+      refresh_failed: LLM 상태를 읽지 못했습니다
+      selected_model_missing: 선택한 모델을 현재 LLM 모델 목록에서 찾을 수 없습니다.
+
+  facegen:
+    heading: 얼굴 생성
+    copy: 얼굴 생성은 전체 과정에서 하나의 공유 런타임을 사용합니다. 대기열과 우선순위는 자동으로 처리됩니다.
+    backend_label: 추론 백엔드
+    quality_label: 인물 JPEG 품질
+    persist_heading: 초상화를 세이브에 저장
+    storage_heading: 초상화 저장소
+    loading: Facegen 환경설정을 불러오는 중...
+
+    hints:
+      choose_backend: 초상화 생성에 사용할 백엔드 전용 Facegen 런타임 DLL을 선택하세요.
+
+    status:
+      unknown_adapter: 알 수 없는 어댑터
+
+    notes:
+      current_setting: '현재 설정: {quality}% - {label}.'
+      detected_adapters: '감지된 어댑터: {adapters}.'
+      detected_gpu: '감지된 GPU: {adapter}. 감지된 VRAM: {vram}.'
+      detection_unavailable: 이 시스템에서는 GPU VRAM 감지를 사용할 수 없습니다. 그래도 얼굴 생성은 공유 런타임으로 계속 실행됩니다.
+      persist_disabled: 초상화는 현재 세션 동안만 메모리에 유지되며 다시 불러오면 재생성됩니다.
+      persist_enabled: 초상화는 세이브 데이터베이스에 기록되며 다시 불러온 뒤 재사용됩니다.
+      storage_quality: JPEG 품질을 높이면 충실도는 좋아지지만, 초상화를 세이브에 저장할 때 용량도 커집니다.
+      storage_regenerate: 100%는 최고 품질입니다. 세이브 용량을 줄이고 싶다면 세이브 저장을 끄고, 다시 불러올 때마다 초상화가 재생성되는 점을 감수하세요.
+
+    quality:
+      compact: 압축 품질
+      high: 고품질
+      maximum: 최고 품질
+      medium: 중간 품질
+      small_file: 작은 파일 크기
+      very_high: 매우 높은 품질
+
+    errors:
+      quality_range: 초상화 JPEG 품질은 50에서 100 사이의 정수여야 합니다.
+
   messages:
+    load_error: 환경설정을 불러오지 못했습니다
     reset_dialog_title: 환경설정 재설정
     reset_dialog_message: 모든 환경설정을 기본값으로 재설정합니다. 계속하시겠습니까?
     reset_dialog_confirm: 재설정
     reset_dialog_cancel: 취소
     reset_success: 환경설정이 기본값으로 재설정되었습니다
     save_success: 환경설정이 저장되었습니다
+    save_error_plain: 환경설정을 저장하지 못했습니다
     save_error: "환경설정 저장 실패: {error}"
     language_changed: "언어가 {language}(으)로 변경되었습니다"
     language_change_error: "언어 변경 실패: {error}"

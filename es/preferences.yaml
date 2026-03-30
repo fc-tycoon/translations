@@ -6,8 +6,28 @@ preferences:
   save: Guardar preferencias
   reset: Restablecer valores
   cancel: Cancelar
+  close: Cerrar
+
+  common:
+    available: Disponible
+    default: Predeterminado
+    disabled: Desactivado
+    enabled: Activado
+    no: No
+    none: Ninguno
+    unknown: Desconocido
+    yes: Sí
+
+  appearance:
+    theme_heading: Tema
+    accent_heading: Color de acento
 
   tabs:
+    appearance: Apariencia
+    display_runtime: Pantalla
+    asr: Reconocimiento de voz
+    llm: Modelo de lenguaje
+    facegen: Generación facial
     saved_games: Partidas guardadas
     display: Pantalla
     languages: Idiomas
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: Confirmar sobrescritura
 
   display:
+    heading: Pantalla
+    fullscreen_label: Iniciar en pantalla completa
+    fullscreen_hint: Se aplica a la ventana del juego en el próximo inicio.
+    confirm_exit_label: Confirmar antes de salir
+    confirm_exit_hint: Solicita confirmación antes de cerrar la aplicación del juego.
     title: Configuración de pantalla
     theme: Tema
     theme_options:
@@ -93,13 +118,210 @@ preferences:
       open_tactics: Abrir táctica
       open_transfers: Abrir fichajes
 
+  asr:
+    heading: Dictado por voz
+    copy: El dictado por voz captura audio del micrófono y lo transcribe localmente en tu equipo. Elige a continuación un modelo de voz, un objetivo de aceleración y un modo de dictado.
+    acceleration_label: Objetivo de aceleración
+    model_label: Modelo de voz
+    mode_label: Modo de dictado
+    preview_interval_label: Intervalo de vista previa en vivo
+    recommendations_heading: Recomendaciones
+    microphone_label: Micrófono
+    refresh_microphones: Actualizar micrófonos
+    runtime_heading: Estado del runtime
+    runtime_copy: El modo en búfer espera la frase completa antes de decodificar. El modo en streaming muestra texto parcial mientras hablas y aun así ejecuta una pasada final completa al detener la grabación.
+    loading: Cargando preferencias de ASR...
+
+    runtime:
+      backend_runtime: Runtime del backend
+      kind: Tipo de runtime
+      artifact: Artefacto del runtime
+      selected_model_artifact: Artefacto del modelo seleccionado
+      execution_backend: Backend de ejecución
+      requested_target: Objetivo solicitado
+      compute_api: API de cómputo
+      device: Dispositivo
+      worker_threads: Hilos de trabajo
+      model_artifacts: Artefactos del modelo
+      model_size: Tamaño del modelo instalado
+      streaming_output: Salida en streaming
+
+    preview:
+      heading: Vista previa de integración en campos
+      copy: Esto usa el mismo control de dictado a nivel de campo que se utiliza en las entradas de texto. La acción del micrófono está conectada directamente dentro del marco del área de texto.
+      placeholder: Escribe aquí o captura audio del micrófono para validar el transporte ASR...
+      browser_capture: Captura del navegador
+      last_state: Último estado del dictado
+      audio_duration: Duración del audio
+      encode_time: Tiempo de codificación
+      decode_time: Tiempo de decodificación
+      total_runtime: Tiempo total de ejecución
+      text_tokens: Tokens de texto
+      model_load: Carga del modelo
+
+    hints:
+      choose_acceleration: Elige el objetivo de cómputo que se usará para la transcripción.
+      choose_model: Elige el modelo de voz que se usará para la transcripción.
+      choose_mode: Elige cómo debe enviarse al backend el audio capturado por el micrófono.
+      embedded_dll_only: Usa solo el runtime DLL integrado.
+      device_npu: El modo Intel NPU usa OpenVINO y apunta al dispositivo NPU seleccionado por el sistema. El puente actual descarga el codificador Whisper en la NPU y mantiene el trabajo del decodificador en la CPU.
+      device_non_cuda: La selección explícita de dispositivos GPU actualmente solo se aplica a CUDA. Vulkan e HIP usan la GPU predeterminada del runtime expuesta por whisper.cpp.
+      device_no_cuda_devices: El runtime de ASR no expone actualmente ninguna GPU compatible con CUDA.
+      device_choose_cuda: Elige qué GPU CUDA detectada debe usar ASR. Este selector solo afecta a ASR; la generación facial y las cargas de LLM siguen configurándose por separado.
+      device_use_cuda: Usa {name} para el trabajo ASR con CUDA. Este selector solo afecta al dictado por voz; la asignación de GPU para generación facial y LLM no se sincroniza automáticamente.
+      npu_notice: El modo Intel NPU usa OpenVINO y el dispositivo NPU seleccionado por el sistema. Todavía no hay selector por dispositivo, y el trabajo del decodificador Whisper sigue ejecutándose en la CPU en el puente actual.
+      non_cuda_notice: El puente actual de Whisper usa la GPU predeterminada del runtime para Vulkan e HIP. La selección explícita por dispositivo solo está disponible para CUDA por ahora.
+      no_selectable_cuda: El runtime integrado no informó de ningún dispositivo CUDA seleccionable. ASR usará el dispositivo predeterminado del runtime para este objetivo de aceleración.
+      single_cuda_device: 'Solo hay un dispositivo ASR compatible con CUDA expuesto actualmente: {name}. No hace falta un selector aparte.'
+      multiple_cuda_devices: Hay varios dispositivos ASR compatibles con CUDA disponibles. Elige qué GPU física debe usar el dictado.
+
+    status:
+      cpu: CPU
+      default_gpu: la GPU predeterminada
+      final_pass_only: Solo pasada final
+      gpu_device: Dispositivo GPU de ASR
+      host_cpu: CPU del host
+      missing: Falta
+      model_file_plural: '{count} archivos de modelo'
+      model_file_singular: '{count} archivo de modelo'
+      native_c: native-c
+      no_model_files: No se detectaron archivos de modelo
+      npu_device: Dispositivo NPU de ASR
+      present: Presente
+      ready: Listo
+      recommended_suffix: (Recomendado)
+      streaming_enabled: Parciales en vivo activados
+      unavailable: No disponible
+
+    streaming:
+      base: Se transcribe un fragmento de audio cada {chunkMs} ms mientras hablas.
+      ultra_fast: Máxima capacidad de respuesta. La transcripción se ejecuta casi de forma continua. Solo se recomienda en hardware rápido con un modelo Tiny o Base. Espera una carga alta de CPU.
+      fast: Muy sensible. Funciona bien con modelos Tiny y Base. Adecuado para mecanógrafos rápidos o para quienes necesitan retroalimentación de baja latencia.
+      recommended: Punto ideal recomendado. Equilibrio entre capacidad de respuesta y coste de CPU. Las actualizaciones parciales se sienten naturales con este intervalo.
+      standard: Estándar. Actualizaciones previsibles sin actividad excesiva de CPU. Una opción sólida para cualquier tamaño de modelo.
+      slow: Vista previa de baja frecuencia. Menos actualizaciones por frase y menor carga de CPU. El texto aparece en bloques más grandes en lugar de palabra por palabra.
+
+    recommendations:
+      cpu_1: Inferencia en CPU: empieza con Tiny o Tiny English. Base puede funcionar en CPUs más potentes, pero Small suele reservarse mejor para dictado en búfer.
+      cpu_2: Vista previa en vivo por CPU: pruébala primero. Si la escritura o la respuesta de la UI se degradan, aumenta el intervalo a 500-1000 ms antes de culpar a la calidad del modelo.
+      cuda_1: CUDA es actualmente la mejor opción para una vista previa en vivo con baja latencia y para ejecutar modelos Base o Small sin que la UI se sienta lenta.
+      cuda_2: Si tienes varias GPU NVIDIA, deja ASR en la tarjeta más ligera solo si la principal está ocupada con trabajo de LLM o facegen.
+      openvino_1: El modo Intel NPU requiere los archivos IR del codificador OpenVINO correspondientes al modelo Whisper seleccionado. El modelo ggml por sí solo no basta.
+      openvino_2: OpenVINO NPU actualmente solo descarga el trabajo del codificador Whisper. El mayor beneficio suele verse con Base o Small, no necesariamente con Tiny.
+      other_gpu: Vulkan e HIP funcionan mejor como modos sencillos de aceleración por GPU. El puente actual usa la GPU predeterminada del runtime en lugar de un selector por dispositivo para estos backends.
+      streaming_1: Vista previa en vivo: empieza alrededor de 300-500 ms. Si quieres parciales más suaves, prueba 200 ms, pero mantenlo solo si la UI sigue respondiendo bien en tu máquina.
+      streaming_2: Tu intervalo actual es muy agresivo. Si la vista previa se atasca o el campo se congela, usa un búfer más largo antes de cambiar el tamaño del modelo.
+      buffered: El modo en búfer sigue siendo la opción más segura cuando te importa más la precisión final que ver texto aparecer a mitad de frase.
+
+  llm:
+    heading: Modelo de lenguaje
+    copy: El runtime del juego usa un único modelo cargado y un único contexto activo a la vez. Elige un artefacto GGUF, revisa la configuración resuelta por el backend de Go y cárgalo explícitamente en el runtime compartido.
+    model_label: Artefacto del modelo
+    load_button: Cargar modelo seleccionado
+    refresh_button: Actualizar estado
+    metadata_heading: Metadatos del modelo seleccionado
+    runtime_heading: Estado del runtime
+    notes_heading: Notas de estado
+    loading_status: Cargando estado del LLM...
+    loading_overlay_title: Cargando modelo de lenguaje
+    loading_overlay_copy: FC Tycoon pausa el renderizado mientras el backend carga el modelo y prepara el contexto compartido del runtime.
+
+    metadata:
+      artifact: Artefacto
+      file_size: Tamaño del archivo
+      family: Familia
+      thinking_mode: Modo de razonamiento
+      configured: Configurado
+      max_context: Contexto máximo
+      gpu_layers: Capas de GPU
+      threads: Hilos
+      cpu_moe: MoE de CPU
+      temperature: Temperatura
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: Penalización de presencia
+      repeat_penalty: Penalización por repetición
+      seed: Semilla
+
+    runtime:
+      runtime: Runtime
+      loaded_model: Modelo cargado
+      context_size: Tamaño del contexto
+      prompt_registry: Registro de prompts
+      tool_definitions: Definiciones de herramientas
+      active_sys_prompt: Prompt del sistema activo
+      runtime_threads: Hilos del runtime
+      flash_attention: Flash Attention
+
+    hints:
+      choose_model: Elige qué artefacto GGUF configurado debe cargar el juego en el runtime compartido.
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (problema de configuración)
+      default_thinking_mode: modo de razonamiento predeterminado
+      initialized: Inicializado
+      loaded_fallback: Cargado
+      loaded_success: '{name} se cargó correctamente.'
+      loading_message: Cargando {name} en el runtime compartido del modelo de lenguaje...
+      no_model_loaded: No hay ningún modelo cargado
+      not_initialized: No inicializado
+      runtime_default: Predeterminado del runtime
+      token_count: '{count} tokens'
+      unmatched: Sin coincidencia
+      unmatched_family: Familia sin coincidencia
+
+    errors:
+      load_failed: No se pudo cargar el modelo de lenguaje seleccionado
+      refresh_failed: No se pudo leer el estado del LLM
+      selected_model_missing: No se pudo encontrar el modelo seleccionado en la lista actual de modelos LLM.
+
+  facegen:
+    heading: Generación facial
+    copy: La generación facial utiliza un único runtime compartido para todo el proceso. La cola y la prioridad se gestionan automáticamente.
+    backend_label: Backend de inferencia
+    quality_label: Calidad JPEG del retrato
+    persist_heading: Guardar retratos en la partida
+    storage_heading: Almacenamiento de retratos
+    loading: Cargando preferencias de Facegen...
+
+    hints:
+      choose_backend: Elige qué DLL de runtime de Facegen específica del backend debe usarse para generar retratos.
+
+    status:
+      unknown_adapter: Adaptador desconocido
+
+    notes:
+      current_setting: 'Ajuste actual: {quality}% - {label}.'
+      detected_adapters: 'Adaptadores detectados: {adapters}.'
+      detected_gpu: 'GPU detectada: {adapter}. VRAM detectada: {vram}.'
+      detection_unavailable: La detección de VRAM de la GPU no estuvo disponible en este sistema. La generación facial seguirá ejecutándose con el runtime compartido.
+      persist_disabled: Los retratos permanecen en memoria solo durante la sesión actual y se regeneran tras volver a cargar.
+      persist_enabled: Los retratos se escriben en la base de datos de la partida y se reutilizan después de volver a cargar.
+      storage_quality: Una calidad JPEG más alta mejora la fidelidad, pero aumenta el tamaño de los retratos cuando se almacenan en la partida.
+      storage_regenerate: El 100 % es calidad máxima. Desactiva el almacenamiento en la partida si quieres partidas más pequeñas y aceptas que los retratos se regeneren después de cada recarga.
+
+    quality:
+      compact: Calidad compacta
+      high: Alta calidad
+      maximum: Calidad máxima
+      medium: Calidad media
+      small_file: Tamaño de archivo pequeño
+      very_high: Calidad muy alta
+
+    errors:
+      quality_range: La calidad JPEG del retrato debe ser un número entero entre 50 y 100.
+
   messages:
+    load_error: No se pudieron cargar las preferencias
     reset_dialog_title: Restablecer preferencias
     reset_dialog_message: Esto restablecerá todas las preferencias a sus valores predeterminados. ¿Continuar?
     reset_dialog_confirm: Restablecer
     reset_dialog_cancel: Cancelar
     reset_success: Preferencias restablecidas a valores predeterminados
     save_success: Preferencias guardadas
+    save_error_plain: No se pudieron guardar las preferencias
     save_error: "Error al guardar las preferencias: {error}"
     language_changed: "Idioma cambiado a {language}"
     language_change_error: "Error al cambiar el idioma: {error}"

@@ -40,10 +40,12 @@ new_game_wizard:
         all_countries: すべての国
         all_leagues: すべてのリーグ
       badges:
-        champion: 優勝
-        champion_short: 優
-        promoted: 昇格
-        relegated: 降格
+        defendingChampion: 前季の王者
+        defendingChampion_short: 優
+        promotedFromBelow: 前季に昇格
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: 前季に降格
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: トップチーム
         no_first_team_players: トップチームに割り当てられた選手がいません
@@ -63,9 +65,7 @@ new_game_wizard:
           code: コード
           reserve_team: リザーブチーム
           club_colors: クラブカラー
-          promoted_short: (▲)
           color_background: 背景
-          relegated_short: (▼)
           color_text: テキスト
           join_league: 参加リーグ
           replace_team: 置き換えチーム
@@ -324,3 +324,325 @@ new_game_wizard:
     load_leagues_failed_with_error: "リーグの読み込みに失敗しました: {error}"
   mod_import:
     select_mod_files_title: MODファイルを選択
+
+  wizard_ui:
+    title: 新しいゲーム
+    cancel: キャンセル
+    back: 戻る
+    next: 次へ
+    start_game: ゲーム開始
+    loading: 読み込み中...
+    db_title: データベースとMOD
+    db_desc: データベースを選択し、インストール済みMODを有効にしてください。
+    db_col: データベース
+    mods_col: MOD
+    no_mods: MODがインストールされていません
+    mods_hint: MODファイルをmodsフォルダに配置して有効にしてください。
+    leagues_title: リーグを選択
+    leagues_desc: ゲーム世界に含めるリーグを選択してください。
+    league_presets: プリセット
+    league_season: 開始シーズン
+    league_recommended: おすすめ
+    league_extended: 拡張
+    league_all: すべて
+    league_clear: クリア
+    league_level: 'レベル {level} — {name}'
+    league_division: '第 {level} ディビジョン'
+    league_total: '{countries} カ国の {leagues} リーグ'
+    club_title: クラブを選択
+    club_desc: 監督を務めるクラブを選択してください。
+    club_select: クラブを選択
+    club_journeyman: 渡り鳥監督（無所属）
+    club_loading: クラブを読み込み中...
+    club_empty: クラブを表示するには、まずリーグを選択してください。
+    club_filter_country: 国
+    club_filter_league: リーグ
+    club_filter_search: 検索
+    club_filter_all_countries: すべての国
+    club_filter_all_leagues: すべてのリーグ
+    club_table_club: クラブ
+    club_table_league: リーグ
+    club_table_rep: 評判
+    club_table_founded: 創設
+    club_count: '{count} クラブ表示中'
+    club_champion: チャンピオン
+    club_promoted: 昇格
+    club_relegated: 降格
+    settings_title: ゲーム設定
+    settings_desc: 難易度とシミュレーション設定を調整してください。
+    settings_start_date: 開始日
+    manager_title: 監督プロフィール
+    manager_desc: 監督としてのアイデンティティを作成してください。
+    assistant_title: アシスタントコーチ
+    assistant_desc: 任意でアシスタントコーチを作成できます。スカウト、戦術分析、日常のアドバイスを補助します。性格とスキルが推薦内容に影響します。
+    enable_assistant: アシスタントコーチを有効にする
+    skills_title: スキル配分
+    skills_desc: 監督の属性に1000スキルポイントを配分してください。
+    skills_used: '使用済み: {used} / 1000'
+    skills_remaining: '{remaining} 残り'
+    skills_over: '予算超過: {over}'
+    skills_preset_balanced: バランス型 (720)
+    skills_preset_tactical: 戦術の天才 (740)
+    skills_preset_motivator: モチベーター (840)
+    skills_preset_reset: すべてリセット
+    skills_group_tactical: 戦術
+    skills_group_mental: 精神
+    skills_group_people: 人間関係
+    skills_tactical_knowledge: 戦術知識
+    skills_tactical_adaptability: 戦術適応力
+    skills_judging_ability: '選手評価（能力）'
+    skills_judging_potential: '選手評価（ポテンシャル）'
+    skills_determination: 決断力
+    skills_discipline: 規律
+    skills_ambition: 野心
+    skills_adaptability: 適応力
+    skills_motivating: 動機づけ
+    skills_man_management: 人材管理
+    skills_charisma: カリスマ
+    skills_professionalism: プロ意識
+    confirm_title: 確認して開始
+    confirm_desc: ゲーム世界を作成する前に選択内容を確認してください。
+    confirm_database: データベース
+    confirm_season: シーズン
+    confirm_leagues: リーグ
+    confirm_club: クラブ
+    confirm_manager: 監督
+    confirm_skills: スキル
+    confirm_start_date: 開始日
+    confirm_leagues_from: '{countries} カ国の {leagues}'
+    confirm_skills_alloc: '{used} / 1000 配分済み'
+    confirm_unemployed: 無所属
+    step_db: データベース
+    step_leagues: リーグ
+    step_club: クラブ
+    step_settings: 設定
+    step_manager: マネージャー
+    step_assistant: アシスタント
+    step_skills: スキル
+    step_confirm: 確認
+
+  manager_form:
+    fname: 名前（名）
+    lname: 名前（姓）
+    dob: 生年月日
+    known_as: 通称
+    nationality: 国籍
+    second_nationality: 第二国籍
+    gender: 性別
+    phenotype: 表現型
+    attire: 服装
+    expression: 表情
+    age_modifier: 年齢補正
+    hair_style: 髪型
+    facial_hair: 顔の毛
+    hair_color: 髪の色
+    skin_tone: 肌のトーン
+    shirt_color: シャツの色
+    eye_color: 目の色
+    facial_shape: 顔の形
+    personality: 性格
+    ph_fname: 名
+    ph_lname: 姓
+    ph_known_as: ニックネーム、一名、別名
+    ph_nationality: '選択...'
+    ph_phenotype: '表現型を選択...'
+    ph_none: なし
+    pers_add: 性格を追加
+    pers_edit: 性格を編集
+    pers_none: 未設定
+    pers_role_manager: 監督
+    pers_role_assistant: アシスタントコーチ
+    port_title_manager: 監督ポートレート
+    port_title_assistant: アシスタントポートレート
+    port_ai: AI生成
+    port_upload: 写真をアップロード
+    port_change: 写真を変更
+    port_remove: 写真を削除
+    port_generate: 候補を生成
+    port_reroll: 再生成
+    port_seed: シード
+    port_selected: '選択した顔: {label}'
+    port_seed_label: '(シード {seed})'
+    port_queued: 変更はキューに追加されました。現在の生成が完了するとポートレートが更新されます。
+    port_generating: 生成中...
+    port_no_portrait: ポートレートなし
+    port_upload_hint: 'AI生成の代わりに写真をアップロードできます。位置調整とトリミングが可能です。出力: 260 × 310 px (DF11フォーマット)。'
+    port_age_tooltip: Facegenはゲームの開始日を使用して年齢を計算します。実際の日付ではありません。
+    port_age_with: '生年月日: {dob}。ゲーム内開始日: {startDate}。ゲーム内年齢: {age}。'
+    port_age_without: '生年月日: {dob}。ゲーム内開始日: {startDate}。'
+
+  personality_editor:
+    title: 性格を編集
+    desc: '{role}の気質とアプローチについて簡単に説明してください。メディア、選手、NPCの認識に影響します。'
+    text: テキスト
+    preview: プレビュー
+    preview_empty: プレビューがここに表示されます…
+    hint: '**太字**、*斜体*、- リスト項目に対応しています。'
+    save: 性格を保存
+    cancel: キャンセル
+    error: 性格は必須です。
+
+  appearance:
+    gender:
+      male: 男性
+      female: 女性
+      non_binary: ノンバイナリー
+    phenotype:
+      western_european: 西ヨーロッパ
+      scandinavian: スカンジナビア
+      eastern_european: 東ヨーロッパ
+      mediterranean: 地中海
+      middle_eastern: 中東
+      african: アフリカ
+      afro_diaspora: アフロ・ディアスポラ
+      mixed: '混血 / マルチエスニック'
+      latino: 'ラテン系 / 混血'
+      native_american: 先住民族
+      asian: アジア
+      south_east_asian: 東南アジア
+      south_asian: 南アジア
+      central_asian: 中央アジア
+    attire:
+      kit_shirt: ユニフォーム
+      suit: スーツ
+      tracksuit: トラックスーツ
+      polo: ポロシャツ
+    expression:
+      neutral: 無表情
+      grin: 満面の笑み
+      smiling: 微笑み
+      happy: 幸せ
+      angry: 怒り
+      serious: 真剣
+      stern: 厳格
+      stoic: ストイック
+      joyful: 喜び
+      determined: 決意
+      relaxed: リラックス
+    age_modifier:
+      baby_faced: 童顔
+      fresh_faced: 爽やかな顔
+      youthful: 若々しい
+      mature: 成熟した
+      athletic: アスレチック
+      distinguished: 風格ある
+      weathered: 風雪に耐えた
+      early_20s: 20代前半
+      mid_20s: 20代半ば
+      late_20s: 20代後半
+      early_30s: 30代前半
+      mid_30s: 30代半ば
+      late_30s: 30代後半
+      early_40s: 40代前半
+      mid_40s: 40代半ば
+      late_40s: 40代後半
+      early_50s: 50代前半
+      mid_50s: 50代半ば
+      late_50s: 50代後半
+      early_60s: 60代前半
+      mid_60s: 60代半ば
+      late_60s: 60代後半
+      seventies: 70代
+      eighties: 80代
+    hair_style:
+      bald: 坊主
+      stubble: 超短髪
+      bun: お団子
+      short_afro: ショートアフロ
+      long_afro: ロングアフロ
+      afro: アフロ
+      braids: 編み込み
+      buzz_cut: バズカット
+      curly: カーリー
+      long: ロング
+      dreadlocks: ドレッドロック
+      mohawk: モヒカン
+      ponytail: ポニーテール
+      shaved: 剃り込み
+      short: ショート
+      straight: ストレート
+      wavy: ウェーブ
+      spikey: スパイキー
+      brushed_up: ブラッシュアップ
+      comb_over: コームオーバー
+      fade: フェード
+      tight_curls: タイトカール
+      flat_top: フラットトップ
+      brush_cut: ブラシカット
+      undercut: アンダーカット
+      crew_cut: クルーカット
+      caesar_cut: シーザーカット
+      faux_hawk: フォークホーク
+      short_curls: ショートカール
+      medium_curls: ミディアムカール
+      long_curls: ロングカール
+      curly_fringe: カーリーフリンジ
+      short_wavy: ショートウェーブ
+      medium_wavy: ミディアムウェーブ
+      long_wavy: ロングウェーブ
+      wavy_fringe: ウェーブフリンジ
+      side_part: サイドパート
+      quiff: クウィフ
+      shaggy: シャギー
+      taper: テーパー
+      fringe_up: 前髪アップ
+      side_fringe: サイドフリンジ
+    facial_hair:
+      none: なし
+      stubble: 無精ひげ
+      full_beard: フルビアード
+      beard: ひげ
+      circle_beard: サークルビアード
+      goatee: ヤギひげ
+      extended_goatee: エクステンデッドゴーティ
+      mustache: 口ひげ
+      sideburns: もみあげ
+      muttonchops: 広いもみあげ
+
+  photo_editor:
+    title: ポートレート写真を編集
+    dropzone: クリックして画像を選択するか、ドラッグ＆ドロップしてください。
+    hint: JPEGまたはPNG。サイズは問いません — ここでトリミングできます。
+    dims: '出力: 260 × 310 px (DF11)'
+    zoom: ズーム
+    reset: リセット
+    change_image: 画像を変更
+    cancel: キャンセル
+    save: ポートレートを保存
+    hair_color:
+      black: 黒
+      dark_brown: 濃い茶
+      brown: 茶
+      light_brown: 薄い茶
+      dark_blonde: 濃いブロンド
+      blonde: ブロンド
+      light_blonde: 薄いブロンド
+      platinum_blonde: プラチナブロンド
+      red_blonde: 赤みがかったブロンド
+      red: 赤
+      grey_black: グレーブラック
+      grey_brown: グレーブラウン
+      grey: グレー
+      white: 白
+      silver: シルバー
+      salt_and_pepper: 塩胡椒
+    skin_tone:
+      very_light: 非常に明るい
+      light: 明るい
+      medium_light: やや明るい
+      medium: 中間
+      medium_dark: やや暗い
+      dark: 暗い
+      very_dark: 非常に暗い
+      freckles: そばかす
+      pale: 青白い
+      fair: 白い
+      olive: オリーブ
+      tan: 日焼け
+      ruby: ルビー
+      light_brown: ライトブラウン
+      medium_brown: ミディアムブラウン
+      dark_brown: ダークブラウン
+      white: 白
+      medium_white: ミディアムホワイト
+      moderate_brown: モデレートブラウン

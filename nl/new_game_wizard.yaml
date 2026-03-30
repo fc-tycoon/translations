@@ -40,10 +40,12 @@ new_game_wizard:
         all_countries: Alle landen
         all_leagues: Alle competities
       badges:
-        champion: Kampioen
-        champion_short: K
-        promoted: Gepromoveerd
-        relegated: Gedegradeerd
+        defendingChampion: Kampioen
+        defendingChampion_short: K
+        promotedFromBelow: Gepromoveerd
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: Gedegradeerd
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: Eerste elftal
         no_first_team_players: Geen spelers toegewezen aan het eerste elftal
@@ -63,9 +65,7 @@ new_game_wizard:
           code: Code
           reserve_team: Reserveteam
           club_colors: Clubkleuren
-          promoted_short: (▲)
           color_background: Achtergrond
-          relegated_short: (▼)
           color_text: Tekst
           join_league: Competitie kiezen
           replace_team: Team vervangen
@@ -324,3 +324,325 @@ new_game_wizard:
     load_leagues_failed_with_error: "Kon competities niet laden: {error}"
   mod_import:
     select_mod_files_title: Modbestanden selecteren
+
+  wizard_ui:
+    title: Nieuw Spel
+    cancel: Annuleren
+    back: Terug
+    next: Volgende
+    start_game: Spel Starten
+    loading: Laden...
+    db_title: Database en Mods
+    db_desc: Kies een database en activeer geïnstalleerde mods.
+    db_col: Database
+    mods_col: Mods
+    no_mods: Geen mods geïnstalleerd
+    mods_hint: Plaats modbestanden in de modsmap om ze te activeren.
+    leagues_title: Competities Selecteren
+    leagues_desc: Kies welke competities je wilt opnemen in je spelwereld.
+    league_presets: Voorinstellingen
+    league_season: Startseizoen
+    league_recommended: Aanbevolen
+    league_extended: Uitgebreid
+    league_all: Alles
+    league_clear: Wissen
+    league_level: 'Niveau {level} — {name}'
+    league_division: 'Divisie {level}'
+    league_total: '{leagues} competities uit {countries} landen'
+    club_title: Kies Je Club
+    club_desc: Selecteer de club die je wilt trainen.
+    club_select: Club Selecteren
+    club_journeyman: Zwervende Trainer (Werkloos)
+    club_loading: Clubs laden...
+    club_empty: Selecteer eerst competities om beschikbare clubs te zien.
+    club_filter_country: Land
+    club_filter_league: Competitie
+    club_filter_search: Zoeken
+    club_filter_all_countries: Alle landen
+    club_filter_all_leagues: Alle competities
+    club_table_club: Club
+    club_table_league: Competitie
+    club_table_rep: Rep
+    club_table_founded: Opgericht
+    club_count: '{count} clubs weergegeven'
+    club_champion: Kampioen
+    club_promoted: Gepromoveerd
+    club_relegated: Gedegradeerd
+    settings_title: Spelinstellingen
+    settings_desc: Pas de moeilijkheidsgraad en simulatie-instellingen aan.
+    settings_start_date: Startdatum
+    manager_title: Trainersprofiel
+    manager_desc: Maak je trainersidentiteit aan.
+    assistant_title: Assistent-trainer
+    assistant_desc: Maak optioneel een assistent-trainer aan die helpt met scouting, tactische analyse en dagelijks advies. Zijn persoonlijkheid en vaardigheden beïnvloeden zijn aanbevelingen.
+    enable_assistant: Assistent-trainer Inschakelen
+    skills_title: Vaardigheidsverdeling
+    skills_desc: Verdeel 1000 vaardigheidspunten over je trainersattributen.
+    skills_used: 'Punten gebruikt: {used} / 1000'
+    skills_remaining: '{remaining} over'
+    skills_over: '{over} boven budget'
+    skills_preset_balanced: Gebalanceerd (720)
+    skills_preset_tactical: Tactisch Genie (740)
+    skills_preset_motivator: Motivator (840)
+    skills_preset_reset: Alles Resetten
+    skills_group_tactical: Tactisch
+    skills_group_mental: Mentaal
+    skills_group_people: Samenwerking
+    skills_tactical_knowledge: Tactische Kennis
+    skills_tactical_adaptability: Tactische Aanpassingsvermogen
+    skills_judging_ability: 'Spelersbeoordeling (Vermogen)'
+    skills_judging_potential: 'Spelersbeoordeling (Potentieel)'
+    skills_determination: Vastberadenheid
+    skills_discipline: Discipline
+    skills_ambition: Ambitie
+    skills_adaptability: Aanpassingsvermogen
+    skills_motivating: Motiveren
+    skills_man_management: Personeelsmanagement
+    skills_charisma: Charisma
+    skills_professionalism: Professionalisme
+    confirm_title: Bevestigen en Starten
+    confirm_desc: Controleer je selecties voordat je de spelwereld aanmaakt.
+    confirm_database: Database
+    confirm_season: Seizoen
+    confirm_leagues: Competities
+    confirm_club: Club
+    confirm_manager: Trainer
+    confirm_skills: Vaardigheden
+    confirm_start_date: Startdatum
+    confirm_leagues_from: '{leagues} uit {countries} landen'
+    confirm_skills_alloc: '{used} / 1000 verdeeld'
+    confirm_unemployed: Werkloos
+    step_db: Database
+    step_leagues: Competities
+    step_club: Club
+    step_settings: Instellingen
+    step_manager: Manager
+    step_assistant: Assistent
+    step_skills: Vaardigheden
+    step_confirm: Bevestigen
+
+  manager_form:
+    fname: Voornaam
+    lname: Achternaam
+    dob: Geboortedatum
+    known_as: Bekend Als
+    nationality: Nationaliteit
+    second_nationality: Tweede Nationaliteit
+    gender: Geslacht
+    phenotype: Fenotype
+    attire: Kleding
+    expression: Expressie
+    age_modifier: Leeftijdsmodificator
+    hair_style: Haarstijl
+    facial_hair: Gezichtshaar
+    hair_color: Haarkleur
+    skin_tone: Huidtint
+    shirt_color: Shirtkleur
+    eye_color: Oogkleur
+    facial_shape: Gezichtsvorm
+    personality: Persoonlijkheid
+    ph_fname: Voornaam
+    ph_lname: Achternaam
+    ph_known_as: 'Bijnaam, mononiem of alias'
+    ph_nationality: 'Selecteren...'
+    ph_phenotype: 'Selecteer een fenotype...'
+    ph_none: Geen
+    pers_add: Persoonlijkheid Toevoegen
+    pers_edit: Persoonlijkheid Bewerken
+    pers_none: Niet ingesteld
+    pers_role_manager: trainer
+    pers_role_assistant: assistent-trainer
+    port_title_manager: Trainersportret
+    port_title_assistant: Assistentportret
+    port_ai: AI Genereren
+    port_upload: Foto Uploaden
+    port_change: Foto Wijzigen
+    port_remove: Foto Verwijderen
+    port_generate: Keuzes Genereren
+    port_reroll: Nogmaals Genereren
+    port_seed: Seed
+    port_selected: 'Geselecteerd gezicht: {label}'
+    port_seed_label: '(seed {seed})'
+    port_queued: Wijzigingen in wachtrij. Portretten worden bijgewerkt zodra de huidige generatie is voltooid.
+    port_generating: Genereren...
+    port_no_portrait: Geen portret
+    port_upload_hint: 'Upload een foto in plaats van AI-generatie. Je kunt de positie en uitsnede aanpassen. Uitvoer: 260 × 310 px (DF11-formaat).'
+    port_age_tooltip: Facegen gebruikt de spelstartdatum om de leeftijd te berekenen, niet de werkelijke datum.
+    port_age_with: 'Geboren {dob}. Spelinterne startdatum {startDate}. Spelinterne leeftijd: {age}.'
+    port_age_without: 'Geboren {dob}. Spelinterne startdatum {startDate}.'
+
+  personality_editor:
+    title: Persoonlijkheid Bewerken
+    desc: 'Schrijf een korte beschrijving van het temperament en de aanpak van je {role}. Dit beïnvloedt hoe media, spelers en NPC''s hem/haar waarnemen.'
+    text: Tekst
+    preview: Voorbeeld
+    preview_empty: Voorbeeld verschijnt hier…
+    hint: 'Ondersteunt **vet**, *cursief* en - lijstitems.'
+    save: Persoonlijkheid Opslaan
+    cancel: Annuleren
+    error: Persoonlijkheid is verplicht.
+
+  appearance:
+    gender:
+      male: Mannelijk
+      female: Vrouwelijk
+      non_binary: Non-binair
+    phenotype:
+      western_european: West-Europees
+      scandinavian: Scandinavisch
+      eastern_european: Oost-Europees
+      mediterranean: Mediterraan
+      middle_eastern: Midden-Oosters
+      african: Afrikaans
+      afro_diaspora: Afro-diaspora
+      mixed: 'Gemengd / Multi-etnisch'
+      latino: 'Latino / Gemengd'
+      native_american: Inheems Amerikaans
+      asian: Aziatisch
+      south_east_asian: Zuidoost-Aziatisch
+      south_asian: Zuid-Aziatisch
+      central_asian: Centraal-Aziatisch
+    attire:
+      kit_shirt: Tenue
+      suit: Pak
+      tracksuit: Trainingspak
+      polo: Polo
+    expression:
+      neutral: Neutraal
+      grin: Brede glimlach
+      smiling: Glimlachend
+      happy: Gelukkig
+      angry: Boos
+      serious: Serieus
+      stern: Streng
+      stoic: Stoïcijns
+      joyful: Vreugdevol
+      determined: Vastberaden
+      relaxed: Ontspannen
+    age_modifier:
+      baby_faced: Babyface
+      fresh_faced: Fris voorkomen
+      youthful: Jeugdig
+      mature: Volwassen
+      athletic: Atletisch
+      distinguished: Onderscheiden
+      weathered: Verweerd
+      early_20s: Begin twintig
+      mid_20s: Midden twintig
+      late_20s: Eind twintig
+      early_30s: Begin dertig
+      mid_30s: Midden dertig
+      late_30s: Eind dertig
+      early_40s: Begin veertig
+      mid_40s: Midden veertig
+      late_40s: Eind veertig
+      early_50s: Begin vijftig
+      mid_50s: Midden vijftig
+      late_50s: Eind vijftig
+      early_60s: Begin zestig
+      mid_60s: Midden zestig
+      late_60s: Eind zestig
+      seventies: Zeventig
+      eighties: Tachtig
+    hair_style:
+      bald: Kaal
+      stubble: Heel kort
+      bun: Knot
+      short_afro: Korte afro
+      long_afro: Lange afro
+      afro: Afro
+      braids: Vlechten
+      buzz_cut: Buzzcut
+      curly: Krullend
+      long: Lang
+      dreadlocks: Dreadlocks
+      mohawk: Mohawk
+      ponytail: Paardenstaart
+      shaved: Geschoren
+      short: Kort
+      straight: Steil
+      wavy: Golvend
+      spikey: Stekelig
+      brushed_up: Omhoog gekamd
+      comb_over: Scheiding opzij
+      fade: Fade
+      tight_curls: Strakke krullen
+      flat_top: Flat top
+      brush_cut: Borstelkop
+      undercut: Undercut
+      crew_cut: Crewcut
+      caesar_cut: Caesarsnit
+      faux_hawk: Nepmowhawk
+      short_curls: Korte krullen
+      medium_curls: Middellange krullen
+      long_curls: Lange krullen
+      curly_fringe: Krullende pony
+      short_wavy: Kort golvend
+      medium_wavy: Middellang golvend
+      long_wavy: Lang golvend
+      wavy_fringe: Golvende pony
+      side_part: Zijscheiding
+      quiff: Quiff
+      shaggy: Slordig
+      taper: Taper
+      fringe_up: Pony omhoog
+      side_fringe: Zijpony
+    facial_hair:
+      none: Geen
+      stubble: Stoppels
+      full_beard: Volle baard
+      beard: Baard
+      circle_beard: Cirkelbaard
+      goatee: Sik
+      extended_goatee: Verlengde sik
+      mustache: Snor
+      sideburns: Bakkebaarden
+      muttonchops: Brede bakkebaarden
+
+  photo_editor:
+    title: Portretfoto bewerken
+    dropzone: Klik om een afbeelding te selecteren of sleep en zet neer.
+    hint: JPEG of PNG. Elke grootte — je snijdt het hier bij.
+    dims: 'Uitvoer: 260 × 310 px (DF11)'
+    zoom: Zoom
+    reset: Herstellen
+    change_image: Afbeelding wijzigen
+    cancel: Annuleren
+    save: Portret opslaan
+    hair_color:
+      black: Zwart
+      dark_brown: Donkerbruin
+      brown: Bruin
+      light_brown: Lichtbruin
+      dark_blonde: Donkerblond
+      blonde: Blond
+      light_blonde: Lichtblond
+      platinum_blonde: Platinablond
+      red_blonde: Roodblond
+      red: Rood
+      grey_black: Grijszwart
+      grey_brown: Grijsbruin
+      grey: Grijs
+      white: Wit
+      silver: Zilver
+      salt_and_pepper: Zout en peper
+    skin_tone:
+      very_light: Zeer licht
+      light: Licht
+      medium_light: Lichtmidden
+      medium: Midden
+      medium_dark: Donkermidden
+      dark: Donker
+      very_dark: Zeer donker
+      freckles: Sproeten
+      pale: Bleek
+      fair: Blank
+      olive: Olijfkleurig
+      tan: Getaand
+      ruby: Robijnrood
+      light_brown: Lichtbruin
+      medium_brown: Middenbruin
+      dark_brown: Donkerbruin
+      white: Wit
+      medium_white: Middenwit
+      moderate_brown: Matig bruin

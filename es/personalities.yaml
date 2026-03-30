@@ -1,0 +1,56 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# Plantillas de Personalidad
+# ══════════════════════════════════════════════════════════════════════
+personalities:
+  pragmatic_winner:
+    label: Ganador Pragmático
+    text: Pragmático implacable con un hambre insaciable de títulos. Cree en construir a través de la disciplina y la innovación táctica.
+  youth_developer:
+    label: Desarrollador de Jóvenes
+    text: Mentor paciente que valora el desarrollo a largo plazo. Prefiere nutrir el talento joven antes que los fichajes costosos.
+  defensive_mastermind:
+    label: Maestro Defensivo
+    text: Organizador meticuloso obsesionado con la estructura defensiva. Cada gol encajado es un fracaso personal.
+  attacking_idealist:
+    label: Idealista Ofensivo
+    text: Exige un fútbol expresivo y ofensivo. Preferiría perder 4-3 que ganar 1-0.
+  old_school_disciplinarian:
+    label: Disciplinario Tradicional
+    text: Tradicionalista de la vieja escuela que exige compromiso total. Los estándares son innegociables.
+  media_darling:
+    label: Favorito de los Medios
+    text: Presencia carismática en la banda que prospera en el centro de atención. Usa las ruedas de prensa como arma.
+  silent_operator:
+    label: Operador Silencioso
+    text: Tranquilo, mesurado e intensamente privado. Deja que los resultados hablen y evita el drama.
+  tactical_innovator:
+    label: Innovador Táctico
+    text: Pensador inquieto que constantemente ajusta formaciones y sistemas. Siempre buscando la próxima ventaja.
+  assistant_loyal_lieutenant:
+    label: Teniente Leal
+    text: Segundo al mando ferozmente leal que protege el mensaje del mánager en público y lo refuerza en privado. Mantiene al vestuario alineado con el entrenador principal y nunca socava su autoridad.
+  assistant_tactical_brain:
+    label: Cerebro Táctico
+    text: Analista agudo que convierte ideas generales en detalles de entrenamiento, planes para el rival y ajustes limpios durante el partido. Detecta patrones rápido y le da al mánager respuestas útiles en lugar de ruido.
+  assistant_training_ground_general:
+    label: General del Campo de Entrenamiento
+    text: Marca el tono en los entrenamientos con estructura, intensidad y seguimiento constante. Se asegura de que los estándares sean altos todos los días, no solo en el día de partido.
+  assistant_player_whisperer:
+    label: Susurrador de Jugadores
+    text: Detecta los estados de ánimo temprano y maneja conversaciones difíciles con calma y autoridad. Ayuda a que los jugadores se sientan escuchados sin rebajar los estándares del cuerpo técnico.
+  assistant_development_specialist:
+    label: Especialista en Desarrollo
+    text: Obsesionado con el crecimiento individual, la claridad de rol y la mejora a largo plazo. Destaca guiando a promesas y jugadores de rotación hacia pasos concretos de progreso.
+  assistant_standards_enforcer:
+    label: Guardián de los Estándares
+    text: Exige puntualidad, profesionalidad y constancia en cada rutina. Mantiene el entorno afilado cuando los resultados bajan y hace difícil tolerar la complacencia.
+  assistant_opposition_analyst:
+    label: Analista del Rival
+    text: Vive entre vídeos, informes y detalles de emparejamientos. Llega preparado con notas claras sobre dónde se puede presionar, protegerse y castigar al próximo rival.
+  assistant_calm_conduit:
+    label: Enlace Sereno
+    text: Comunicador estable que mantiene a jugadores y staff compuestos durante malas rachas, calendarios cargados y ruido mediático. Destaca trasladando mensajes hacia arriba y hacia abajo sin generar fricción.
+  assistant_culture_keeper:
+    label: Guardián de la Cultura
+    text: Encarnación de los valores del club y protector del tono del lugar de trabajo. Ayuda a fichajes, canteranos y jugadores periféricos a entender las expectativas con rapidez.

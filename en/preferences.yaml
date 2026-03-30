@@ -8,6 +8,11 @@ preferences:
   cancel: Cancel
 
   tabs:
+    appearance: Appearance
+    display_runtime: Display
+    asr: Voice Recognition
+    llm: LLM
+    facegen: Facegen
     saved_games: Saved Games
     display: Display
     languages: Languages
@@ -15,6 +20,22 @@ preferences:
     ui: UI
     colors: Colors
     shortcuts: Shortcuts
+
+  close: Close
+
+  common:
+    available: Available
+    default: Default
+    disabled: Disabled
+    enabled: Enabled
+    no: No
+    none: None
+    unknown: Unknown
+    yes: Yes
+
+  appearance:
+    theme_heading: Theme
+    accent_heading: Accent Color
 
   saved_games:
     title: Saved Games Settings
@@ -33,6 +54,11 @@ preferences:
 
   display:
     title: Display Settings
+    heading: Display
+    fullscreen_label: Start in Fullscreen
+    fullscreen_hint: Applies to the game window on the next launch.
+    confirm_exit_label: Confirm Before Exit
+    confirm_exit_hint: Ask for confirmation before closing the game shell.
     theme: Theme
     theme_options:
       dark: Dark (Default)
@@ -93,13 +119,210 @@ preferences:
       open_tactics: Open Tactics
       open_transfers: Open Transfers
 
+  asr:
+    heading: Voice Dictation
+    copy: Voice dictation captures audio from your microphone and transcribes it locally on your machine. Choose a voice model, an acceleration target, and a dictation mode below.
+    acceleration_label: Acceleration Target
+    model_label: Voice Model
+    mode_label: Dictation Mode
+    preview_interval_label: Live Preview Interval
+    recommendations_heading: Recommendations
+    microphone_label: Microphone
+    refresh_microphones: Refresh Microphones
+    runtime_heading: Runtime Status
+    runtime_copy: Buffered mode waits for the full utterance before decoding. Streaming mode emits live partial text while you speak, then still performs a final utterance pass when you stop recording.
+    loading: Loading ASR preferences...
+
+    runtime:
+      backend_runtime: Backend Runtime
+      kind: Runtime Kind
+      artifact: Runtime Artifact
+      selected_model_artifact: Selected Model Artifact
+      execution_backend: Execution Backend
+      requested_target: Requested Target
+      compute_api: Compute API
+      device: Device
+      worker_threads: Worker Threads
+      model_artifacts: Model Artifacts
+      model_size: Installed Model Size
+      streaming_output: Streaming Output
+
+    preview:
+      heading: Field Integration Preview
+      copy: This uses the same field-level dictation control used in text inputs. The mic action is attached directly inside the textarea frame.
+      placeholder: Type here or capture microphone audio for ASR transport validation...
+      browser_capture: Browser Capture
+      last_state: Last Dictation State
+      audio_duration: Audio Duration
+      encode_time: Encode Time
+      decode_time: Decode Time
+      total_runtime: Total Runtime
+      text_tokens: Text Tokens
+      model_load: Model Load
+
+    hints:
+      choose_acceleration: Choose the compute target to use for transcription.
+      choose_model: Choose the voice model to use for transcription.
+      choose_mode: Choose how captured microphone audio should be sent to the backend.
+      embedded_dll_only: Uses the embedded DLL runtime only.
+      device_npu: Intel NPU mode uses OpenVINO and targets the system-selected NPU device. The current bridge offloads the Whisper encoder to the NPU and keeps decoder work on the CPU.
+      device_non_cuda: Explicit GPU device selection currently applies only to CUDA. Vulkan and HIP use the runtime-default GPU device exposed by whisper.cpp.
+      device_no_cuda_devices: No CUDA-capable GPU devices are currently exposed by the ASR runtime.
+      device_choose_cuda: Choose which detected CUDA GPU ASR should use. This selector is ASR-only; face generation and LLM workloads remain separately configured.
+      device_use_cuda: Uses {name} for CUDA ASR work. This selector affects voice dictation only; face generation and LLM GPU placement are not auto-synchronized.
+      npu_notice: Intel NPU mode uses OpenVINO and the system-selected NPU device. There is no per-device picker yet, and Whisper decoder work still runs on the CPU in the current bridge.
+      non_cuda_notice: The current whisper bridge uses the runtime-default GPU for Vulkan and HIP. Explicit per-device selection is only supported for CUDA right now.
+      no_selectable_cuda: The embedded runtime did not report any selectable CUDA devices. ASR will use the runtime default device for this acceleration target.
+      single_cuda_device: 'Only one CUDA-capable ASR device is currently exposed: {name}. A separate picker is unnecessary.'
+      multiple_cuda_devices: Multiple CUDA-capable ASR devices are available. Choose which physical GPU dictation should use.
+
+    status:
+      cpu: CPU
+      default_gpu: the default GPU
+      final_pass_only: Final-pass only
+      gpu_device: ASR GPU Device
+      host_cpu: Host CPU
+      missing: Missing
+      model_file_plural: '{count} model files'
+      model_file_singular: '{count} model file'
+      native_c: native-c
+      no_model_files: No model files detected
+      npu_device: ASR NPU Device
+      present: Present
+      ready: Ready
+      recommended_suffix: (Recommended)
+      streaming_enabled: Live partials enabled
+      unavailable: Unavailable
+
+    streaming:
+      base: A segment of audio is transcribed every {chunkMs} ms while you speak.
+      ultra_fast: Maximum responsiveness. Transcription runs almost continuously. Only recommended on fast hardware with a Tiny or Base model. Expect high CPU load.
+      fast: Very responsive. Works well with Tiny and Base models. Suitable for fast typists or low-latency feedback needs.
+      recommended: Recommended sweet spot. Balanced responsiveness and CPU cost. Partial updates feel natural at this interval.
+      standard: Standard. Predictable updates without excessive CPU activity. A solid choice for any model size.
+      slow: Low-frequency preview. Fewer updates per utterance and lower CPU load. Text appears in larger chunks rather than word-by-word.
+
+    recommendations:
+      cpu_1: CPU inference: start with Tiny or Tiny English. Base can work on stronger CPUs, but Small is usually better reserved for buffered dictation.
+      cpu_2: CPU live preview - test it first. If typing or UI responsiveness degrades, increase the interval to 500-1000 ms before blaming model quality.
+      cuda_1: CUDA is the best current path for low-latency live preview and for running Base or Small models without making the UI feel sluggish.
+      cuda_2: If you have multiple NVIDIA GPUs, keep ASR on the lighter card only if the main card is busy with LLM or facegen work.
+      openvino_1: Intel NPU mode requires the matching OpenVINO encoder IR files for your selected Whisper model. The plain ggml model alone is not enough.
+      openvino_2: OpenVINO NPU currently offloads Whisper encoder work only. Expect the biggest benefit on Base or Small models, not necessarily on Tiny.
+      other_gpu: Vulkan and HIP work best as simple GPU acceleration modes. The current bridge uses the runtime-default GPU rather than a per-device selector for these backends.
+      streaming_1: Live Preview - start around 300-500 ms. If you want smoother partials, test 200 ms, but only keep it if the UI stays responsive on your machine.
+      streaming_2: Your current interval is very aggressive. If preview stalls or the field freezes, use a longer buffer before changing model size.
+      buffered: Buffered mode is still the safest option when you care more about final accuracy than seeing text appear mid-sentence.
+
+  llm:
+    heading: Language Model
+    copy: The game runtime uses one loaded model and one live context at a time. Choose a GGUF artifact, inspect the resolved config that the Go backend found for it, then explicitly load it into the shared runtime.
+    model_label: Model Artifact
+    load_button: Load Selected Model
+    refresh_button: Refresh Status
+    metadata_heading: Selected Model Metadata
+    runtime_heading: Runtime Status
+    notes_heading: Status Notes
+    loading_status: Loading LLM status...
+    loading_overlay_title: Loading Language Model
+    loading_overlay_copy: FC Tycoon is pausing the renderer while the backend loads the model and primes the single runtime context.
+
+    metadata:
+      artifact: Artifact
+      file_size: File Size
+      family: Family
+      thinking_mode: Thinking Mode
+      configured: Configured
+      max_context: Max Context
+      gpu_layers: GPU Layers
+      threads: Threads
+      cpu_moe: CPU MoE
+      temperature: Temperature
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: Presence Penalty
+      repeat_penalty: Repeat Penalty
+      seed: Seed
+
+    runtime:
+      runtime: Runtime
+      loaded_model: Loaded Model
+      context_size: Context Size
+      prompt_registry: Prompt Registry
+      tool_definitions: Tool Definitions
+      active_sys_prompt: Active Sys Prompt
+      runtime_threads: Runtime Threads
+      flash_attention: Flash Attention
+
+    hints:
+      choose_model: Choose which configured GGUF artifact the game should load into the single runtime.
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (config issue)
+      default_thinking_mode: default thinking mode
+      initialized: Initialized
+      loaded_fallback: Loaded
+      loaded_success: '{name} loaded successfully.'
+      loading_message: Loading {name} into the shared language-model runtime...
+      no_model_loaded: No model loaded
+      not_initialized: Not initialized
+      runtime_default: Runtime default
+      token_count: '{count} tokens'
+      unmatched: Unmatched
+      unmatched_family: Unmatched family
+
+    errors:
+      load_failed: Failed to load selected language model
+      refresh_failed: Failed to read LLM status
+      selected_model_missing: The selected model could not be found in the current LLM model list.
+
+  facegen:
+    heading: Face Generation
+    copy: Face generation runs through one shared runtime for the whole process. Queueing and priority are handled automatically.
+    backend_label: Inference Backend
+    quality_label: Portrait JPEG Quality
+    persist_heading: Store Portraits In Save
+    storage_heading: Portrait Storage
+    loading: Loading face generation preferences...
+
+    hints:
+      choose_backend: Choose which backend-specific facegen runtime DLL should be used for portrait generation.
+
+    status:
+      unknown_adapter: Unknown adapter
+
+    notes:
+      current_setting: 'Current setting: {quality}% - {label}.'
+      detected_adapters: 'Detected adapters: {adapters}.'
+      detected_gpu: 'Detected GPU: {adapter}. Detected VRAM: {vram}.'
+      detection_unavailable: GPU VRAM detection was unavailable on this system. Face generation will still run with the shared runtime.
+      persist_disabled: Portraits stay in memory for the current session only and regenerate after reloads.
+      persist_enabled: Portraits are written into the save database and reused after reloads.
+      storage_quality: Higher JPEG quality improves fidelity but increases portrait size when portraits are stored in the save.
+      storage_regenerate: 100% is Maximum Quality. Disable save storage if you want smaller saves and can accept portraits regenerating after each reload.
+
+    quality:
+      compact: Compact Quality
+      high: High Quality
+      maximum: Maximum Quality
+      medium: Medium Quality
+      small_file: Small File Size
+      very_high: Very High Quality
+
+    errors:
+      quality_range: Portrait JPEG Quality must be a whole number between 50 and 100.
+
   messages:
+    load_error: Failed to load preferences
     reset_dialog_title: Reset Preferences
     reset_dialog_message: This will reset all preferences to their default values. Continue?
     reset_dialog_confirm: Reset
     reset_dialog_cancel: Cancel
     reset_success: Preferences reset to defaults
     save_success: Preferences saved
+    save_error_plain: Failed to save preferences
     save_error: "Failed to save preferences: {error}"
     language_changed: "Language changed to {language}"
     language_change_error: "Failed to change language: {error}"

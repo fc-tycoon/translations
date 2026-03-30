@@ -6,8 +6,28 @@ preferences:
   save: Zapisz preferencje
   reset: Przywróć domyślne
   cancel: Anuluj
+  close: Zamknij
+
+  common:
+    available: Dostępne
+    default: Domyślne
+    disabled: Wyłączone
+    enabled: Włączone
+    no: Nie
+    none: Brak
+    unknown: Nieznane
+    yes: Tak
+
+  appearance:
+    theme_heading: Motyw
+    accent_heading: Kolor akcentu
 
   tabs:
+    appearance: Wygląd
+    display_runtime: Wyświetlanie
+    asr: Rozpoznawanie mowy
+    llm: Model językowy
+    facegen: Generowanie twarzy
     saved_games: Zapisane gry
     display: Wyświetlanie
     languages: Języki
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: Potwierdź nadpisanie
 
   display:
+    heading: Wyświetlanie
+    fullscreen_label: Uruchamiaj w trybie pełnoekranowym
+    fullscreen_hint: Zostanie zastosowane do okna gry przy następnym uruchomieniu.
+    confirm_exit_label: Potwierdzaj przed wyjściem
+    confirm_exit_hint: Poproś o potwierdzenie przed zamknięciem aplikacji gry.
     title: Ustawienia wyświetlania
     theme: Motyw
     theme_options:
@@ -93,13 +118,210 @@ preferences:
       open_tactics: Otwórz taktykę
       open_transfers: Otwórz transfery
 
+  asr:
+    heading: Dyktowanie głosowe
+    copy: Dyktowanie głosowe przechwytuje dźwięk z mikrofonu i lokalnie przepisuje go na tekst. Poniżej wybierz model głosowy, cel akceleracji i tryb dyktowania.
+    acceleration_label: Cel akceleracji
+    model_label: Model głosowy
+    mode_label: Tryb dyktowania
+    preview_interval_label: Interwał podglądu na żywo
+    recommendations_heading: Zalecenia
+    microphone_label: Mikrofon
+    refresh_microphones: Odśwież mikrofony
+    runtime_heading: Stan środowiska wykonawczego
+    runtime_copy: Tryb buforowany czeka na całą wypowiedź przed dekodowaniem. Tryb strumieniowy pokazuje częściowy tekst podczas mówienia, a po zatrzymaniu nadal wykonuje końcowy pełny przebieg.
+    loading: Ładowanie preferencji ASR...
+
+    runtime:
+      backend_runtime: Runtime backendu
+      kind: Typ środowiska wykonawczego
+      artifact: Artefakt środowiska wykonawczego
+      selected_model_artifact: Artefakt wybranego modelu
+      execution_backend: Backend wykonawczy
+      requested_target: Żądany cel
+      compute_api: API obliczeń
+      device: Urządzenie
+      worker_threads: Wątki robocze
+      model_artifacts: Artefakty modelu
+      model_size: Rozmiar zainstalowanego modelu
+      streaming_output: Wyjście strumieniowe
+
+    preview:
+      heading: Podgląd integracji z polem
+      copy: Ten podgląd używa tego samego sterowania dyktowaniem na poziomie pola, co zwykłe pola tekstowe. Akcja mikrofonu jest osadzona bezpośrednio w ramce pola tekstowego.
+      placeholder: Pisz tutaj lub przechwyć dźwięk z mikrofonu, aby zweryfikować transport ASR...
+      browser_capture: Przechwytywanie w przeglądarce
+      last_state: Ostatni stan dyktowania
+      audio_duration: Czas trwania dźwięku
+      encode_time: Czas kodowania
+      decode_time: Czas dekodowania
+      total_runtime: Łączny czas wykonania
+      text_tokens: Tokeny tekstu
+      model_load: Wczytanie modelu
+
+    hints:
+      choose_acceleration: Wybierz cel obliczeniowy używany do transkrypcji.
+      choose_model: Wybierz model głosowy używany do transkrypcji.
+      choose_mode: Wybierz sposób wysyłania przechwyconego dźwięku z mikrofonu do backendu.
+      embedded_dll_only: Używa wyłącznie osadzonego środowiska DLL.
+      device_npu: Tryb Intel NPU używa OpenVINO i kieruje pracę na urządzenie NPU wybrane przez system. Bieżący mostek przenosi enkoder Whisper na NPU, a pracę dekodera pozostawia na CPU.
+      device_non_cuda: Jawny wybór urządzenia GPU dotyczy obecnie tylko CUDA. Vulkan i HIP używają domyślnego urządzenia GPU środowiska wykonawczego udostępnionego przez whisper.cpp.
+      device_no_cuda_devices: Środowisko ASR nie udostępnia obecnie żadnych urządzeń GPU zgodnych z CUDA.
+      device_choose_cuda: Wybierz wykrytą kartę CUDA, której ASR ma używać. Ten wybór dotyczy tylko ASR; generowanie twarzy i obciążenia LLM pozostają skonfigurowane osobno.
+      device_use_cuda: Używa {name} do zadań ASR z CUDA. Ten wybór wpływa tylko na dyktowanie głosowe; przypisanie GPU dla generowania twarzy i LLM nie jest synchronizowane automatycznie.
+      npu_notice: Tryb Intel NPU używa OpenVINO i urządzenia NPU wybranego przez system. Nie ma jeszcze wyboru konkretnego urządzenia, a praca dekodera Whisper nadal odbywa się na CPU w bieżącym mostku.
+      non_cuda_notice: Obecny mostek Whisper używa domyślnego GPU środowiska wykonawczego dla Vulkan i HIP. Jawny wybór urządzenia jest na razie obsługiwany tylko dla CUDA.
+      no_selectable_cuda: Osadzone środowisko wykonawcze nie zgłosiło żadnych wybieralnych urządzeń CUDA. ASR użyje dla tego celu akceleracji domyślnego urządzenia środowiska.
+      single_cuda_device: 'Obecnie dostępne jest tylko jedno urządzenie ASR zgodne z CUDA: {name}. Osobny wybierak nie jest potrzebny.'
+      multiple_cuda_devices: Dostępnych jest wiele urządzeń ASR obsługujących CUDA. Wybierz, której fizycznej karty GPU ma używać dyktowanie.
+
+    status:
+      cpu: CPU
+      default_gpu: domyślny GPU
+      final_pass_only: Tylko przebieg końcowy
+      gpu_device: Urządzenie GPU ASR
+      host_cpu: CPU hosta
+      missing: Brak
+      model_file_plural: '{count} plików modelu'
+      model_file_singular: '{count} plik modelu'
+      native_c: native-c
+      no_model_files: Nie wykryto plików modelu
+      npu_device: Urządzenie NPU ASR
+      present: Obecne
+      ready: Gotowe
+      recommended_suffix: (Zalecane)
+      streaming_enabled: Włączono częściowe wyniki na żywo
+      unavailable: Niedostępne
+
+    streaming:
+      base: Podczas mówienia co {chunkMs} ms transkrybowany jest fragment dźwięku.
+      ultra_fast: Maksymalna responsywność. Transkrypcja działa niemal bez przerwy. Zalecane tylko na szybkim sprzęcie z modelem Tiny albo Base. Spodziewaj się wysokiego obciążenia CPU.
+      fast: Bardzo responsywne. Dobrze działa z modelami Tiny i Base. Odpowiednie dla szybkiego pisania lub gdy ważny jest niski czas reakcji.
+      recommended: Zalecany złoty środek. Dobra równowaga między responsywnością a kosztem CPU. Częściowe aktualizacje przy tym interwale wydają się naturalne.
+      standard: Standard. Przewidywalne aktualizacje bez nadmiernej aktywności CPU. Solidny wybór dla każdego rozmiaru modelu.
+      slow: Podgląd o niskiej częstotliwości. Mniej aktualizacji na wypowiedź i mniejsze obciążenie CPU. Tekst pojawia się większymi blokami zamiast słowo po słowie.
+
+    recommendations:
+      cpu_1: Wnioskowanie na CPU: zacznij od Tiny albo Tiny English. Base może działać na mocniejszych CPU, ale Small zwykle lepiej zostawić do dyktowania buforowanego.
+      cpu_2: Podgląd na żywo na CPU najpierw przetestuj. Jeśli pisanie lub responsywność interfejsu spada, zwiększ interwał do 500-1000 ms, zanim obwinisz jakość modelu.
+      cuda_1: CUDA to obecnie najlepsza ścieżka dla podglądu na żywo z niskim opóźnieniem i uruchamiania modeli Base albo Small bez spowalniania interfejsu.
+      cuda_2: Jeśli masz wiele GPU NVIDIA, trzymaj ASR na słabszej karcie tylko wtedy, gdy główna karta jest zajęta pracą LLM lub facegen.
+      openvino_1: Tryb Intel NPU wymaga dopasowanych plików IR enkodera OpenVINO dla wybranego modelu Whisper. Sam zwykły model ggml nie wystarczy.
+      openvino_2: OpenVINO NPU obecnie odciąża tylko enkoder Whisper. Największy zysk zwykle widać przy Base lub Small, niekoniecznie przy Tiny.
+      other_gpu: Vulkan i HIP najlepiej traktować jako proste tryby akceleracji GPU. Obecny mostek używa dla tych backendów domyślnego GPU środowiska zamiast wybieraka urządzeń.
+      streaming_1: Podgląd na żywo: zacznij od około 300-500 ms. Jeśli chcesz płynniejszych częściowych wyników, przetestuj 200 ms, ale zostaw to tylko wtedy, gdy interfejs na twojej maszynie nadal reaguje.
+      streaming_2: Obecny interwał jest bardzo agresywny. Jeśli podgląd się zawiesza lub pole zamarza, użyj dłuższego bufora, zanim zmienisz rozmiar modelu.
+      buffered: Tryb buforowany nadal jest najbezpieczniejszym wyborem, gdy bardziej zależy ci na końcowej dokładności niż na tym, by tekst pojawiał się w połowie zdania.
+
+  llm:
+    heading: Model językowy
+    copy: Runtime gry używa jednocześnie jednego załadowanego modelu i jednego aktywnego kontekstu. Wybierz artefakt GGUF, sprawdź konfigurację rozpoznaną przez backend Go, a następnie jawnie załaduj go do współdzielonego runtime'u.
+    model_label: Artefakt modelu
+    load_button: Załaduj wybrany model
+    refresh_button: Odśwież stan
+    metadata_heading: Metadane wybranego modelu
+    runtime_heading: Stan środowiska wykonawczego
+    notes_heading: Notatki o stanie
+    loading_status: Ładowanie stanu LLM...
+    loading_overlay_title: Ładowanie modelu językowego
+    loading_overlay_copy: FC Tycoon wstrzymuje renderer, gdy backend ładuje model i przygotowuje współdzielony kontekst runtime'u.
+
+    metadata:
+      artifact: Artefakt
+      file_size: Rozmiar pliku
+      family: Rodzina
+      thinking_mode: Tryb myślenia
+      configured: Skonfigurowano
+      max_context: Maksymalny kontekst
+      gpu_layers: Warstwy GPU
+      threads: Wątki
+      cpu_moe: CPU MoE
+      temperature: Temperatura
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: Kara obecności
+      repeat_penalty: Kara powtórzeń
+      seed: Ziarno
+
+    runtime:
+      runtime: Środowisko wykonawcze
+      loaded_model: Wczytany model
+      context_size: Rozmiar kontekstu
+      prompt_registry: Rejestr promptów
+      tool_definitions: Definicje narzędzi
+      active_sys_prompt: Aktywny prompt systemowy
+      runtime_threads: Wątki środowiska wykonawczego
+      flash_attention: Flash Attention
+
+    hints:
+      choose_model: Wybierz skonfigurowany artefakt GGUF, który gra ma wczytać do współdzielonego runtime'u.
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (problem z konfiguracją)
+      default_thinking_mode: domyślny tryb myślenia
+      initialized: Zainicjalizowano
+      loaded_fallback: Wczytano
+      loaded_success: '{name} został pomyślnie wczytany.'
+      loading_message: Trwa ładowanie {name} do współdzielonego runtime'u modelu językowego...
+      no_model_loaded: Nie wczytano żadnego modelu
+      not_initialized: Niezainicjalizowane
+      runtime_default: Domyślne środowisko wykonawcze
+      token_count: '{count} tokenów'
+      unmatched: Brak dopasowania
+      unmatched_family: Niedopasowana rodzina
+
+    errors:
+      load_failed: Nie udało się wczytać wybranego modelu językowego
+      refresh_failed: Nie udało się odczytać stanu LLM
+      selected_model_missing: Nie można znaleźć wybranego modelu na bieżącej liście modeli LLM.
+
+  facegen:
+    heading: Generowanie twarzy
+    copy: Generowanie twarzy korzysta z jednego współdzielonego runtime'u dla całego procesu. Kolejkowanie i priorytety są obsługiwane automatycznie.
+    backend_label: Backend inferencji
+    quality_label: Jakość JPEG portretu
+    persist_heading: Zapisuj portrety w sejwie
+    storage_heading: Przechowywanie portretów
+    loading: Ładowanie preferencji Facegen...
+
+    hints:
+      choose_backend: Wybierz backendową bibliotekę DLL runtime'u Facegen, która ma być używana do generowania portretów.
+
+    status:
+      unknown_adapter: Nieznany adapter
+
+    notes:
+      current_setting: 'Bieżące ustawienie: {quality}% - {label}.'
+      detected_adapters: 'Wykryte adaptery: {adapters}.'
+      detected_gpu: 'Wykryty GPU: {adapter}. Wykryty VRAM: {vram}.'
+      detection_unavailable: Wykrywanie pamięci VRAM GPU nie było dostępne na tym systemie. Generowanie twarzy nadal będzie działać we współdzielonym runtime'ie.
+      persist_disabled: Portrety pozostają w pamięci tylko podczas bieżącej sesji i są regenerowane po ponownym wczytaniu.
+      persist_enabled: Portrety są zapisywane do bazy danych sejwu i ponownie wykorzystywane po ponownym wczytaniu.
+      storage_quality: Wyższa jakość JPEG poprawia wierność obrazu, ale zwiększa rozmiar portretów, gdy są one przechowywane w sejwie.
+      storage_regenerate: 100% oznacza jakość maksymalną. Wyłącz przechowywanie w sejwie, jeśli chcesz mniejsze sejwy i akceptujesz ponowne generowanie portretów po każdym wczytaniu.
+
+    quality:
+      compact: Jakość kompaktowa
+      high: Wysoka jakość
+      maximum: Maksymalna jakość
+      medium: Średnia jakość
+      small_file: Mały rozmiar pliku
+      very_high: Bardzo wysoka jakość
+
+    errors:
+      quality_range: Jakość JPEG portretu musi być liczbą całkowitą z zakresu od 50 do 100.
+
   messages:
+    load_error: Nie udało się wczytać preferencji
     reset_dialog_title: Resetuj preferencje
     reset_dialog_message: To zresetuje wszystkie preferencje do wartości domyślnych. Kontynuować?
     reset_dialog_confirm: Resetuj
     reset_dialog_cancel: Anuluj
     reset_success: Preferencje zresetowane do wartości domyślnych
     save_success: Preferencje zapisane
+    save_error_plain: Nie udało się zapisać preferencji
     save_error: "Nie udało się zapisać preferencji: {error}"
     language_changed: "Zmieniono język na {language}"
     language_change_error: "Nie udało się zmienić języka: {error}"

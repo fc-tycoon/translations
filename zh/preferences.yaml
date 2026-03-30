@@ -6,8 +6,28 @@ preferences:
   save: 保存偏好设置
   reset: 重置为默认值
   cancel: 取消
+  close: 关闭
+
+  common:
+    available: 可用
+    default: 默认
+    disabled: 已禁用
+    enabled: 已启用
+    no: 否
+    none: 无
+    unknown: 未知
+    yes: 是
+
+  appearance:
+    theme_heading: 主题
+    accent_heading: 强调色
 
   tabs:
+    appearance: 外观
+    display_runtime: 显示
+    asr: 语音识别
+    llm: 语言模型
+    facegen: 面部生成
     saved_games: 存档
     display: 显示
     languages: 语言
@@ -32,6 +52,11 @@ preferences:
     confirm_overwrite: 确认覆盖
 
   display:
+    heading: 显示
+    fullscreen_label: 以全屏启动
+    fullscreen_hint: 将在下次启动时应用到游戏窗口。
+    confirm_exit_label: 退出前确认
+    confirm_exit_hint: 在关闭游戏应用前请求确认。
     title: 显示设置
     theme: 主题
     theme_options:
@@ -93,13 +118,210 @@ preferences:
       open_tactics: 打开战术
       open_transfers: 打开转会
 
+  asr:
+    heading: 语音听写
+    copy: 语音听写会捕获麦克风音频，并在本机上完成转写。请在下方选择语音模型、加速目标和听写模式。
+    acceleration_label: 加速目标
+    model_label: 语音模型
+    mode_label: 听写模式
+    preview_interval_label: 实时预览间隔
+    recommendations_heading: 建议
+    microphone_label: 麦克风
+    refresh_microphones: 刷新麦克风
+    runtime_heading: 运行时状态
+    runtime_copy: 缓冲模式会等待整段发言结束后再解码。流式模式会在你说话时显示部分文本，并在停止录音后再执行一次最终完整转写。
+    loading: 正在加载 ASR 偏好设置...
+
+    runtime:
+      backend_runtime: 后端运行时
+      kind: 运行时类型
+      artifact: 运行时工件
+      selected_model_artifact: 已选模型工件
+      execution_backend: 执行后端
+      requested_target: 请求目标
+      compute_api: 计算 API
+      device: 设备
+      worker_threads: 工作线程
+      model_artifacts: 模型工件
+      model_size: 已安装模型大小
+      streaming_output: 流式输出
+
+    preview:
+      heading: 字段集成预览
+      copy: 这里使用的是与文本输入相同的字段级听写控件。麦克风操作直接附加在文本区域边框内。
+      placeholder: 在此输入，或采集麦克风音频以验证 ASR 传输...
+      browser_capture: 浏览器采集
+      last_state: 上次听写状态
+      audio_duration: 音频时长
+      encode_time: 编码时间
+      decode_time: 解码时间
+      total_runtime: 总运行时间
+      text_tokens: 文本标记
+      model_load: 模型加载
+
+    hints:
+      choose_acceleration: 选择用于转写的计算目标。
+      choose_model: 选择用于转写的语音模型。
+      choose_mode: 选择如何将捕获到的麦克风音频发送到后端。
+      embedded_dll_only: 仅使用内嵌的 DLL 运行时。
+      device_npu: Intel NPU 模式使用 OpenVINO，并以系统选择的 NPU 设备为目标。当前桥接会将 Whisper 编码器卸载到 NPU，而解码器工作仍保留在 CPU 上。
+      device_non_cuda: 显式 GPU 设备选择目前只适用于 CUDA。Vulkan 和 HIP 使用 whisper.cpp 暴露的运行时默认 GPU 设备。
+      device_no_cuda_devices: ASR 运行时当前未暴露任何支持 CUDA 的 GPU 设备。
+      device_choose_cuda: 选择 ASR 应使用哪块已检测到的 CUDA GPU。此选项仅影响 ASR；面部生成和 LLM 负载仍分别配置。
+      device_use_cuda: 使用 {name} 执行 CUDA ASR 工作。此选项只影响语音听写；面部生成和 LLM 的 GPU 分配不会自动同步。
+      npu_notice: Intel NPU 模式使用 OpenVINO 和系统选择的 NPU 设备。目前还没有按设备选择器，而且当前桥接中的 Whisper 解码器工作仍在 CPU 上运行。
+      non_cuda_notice: 当前 Whisper 桥接在 Vulkan 和 HIP 上使用运行时默认 GPU。显式按设备选择目前只支持 CUDA。
+      no_selectable_cuda: 内嵌运行时没有报告任何可选的 CUDA 设备。ASR 将在此加速目标上使用运行时默认设备。
+      single_cuda_device: '当前只暴露出一个支持 CUDA 的 ASR 设备：{name}。无需单独的选择器。'
+      multiple_cuda_devices: 有多块支持 CUDA 的 ASR 设备可用。请选择听写应使用的物理 GPU。
+
+    status:
+      cpu: CPU
+      default_gpu: 默认 GPU
+      final_pass_only: 仅最终通道
+      gpu_device: ASR GPU 设备
+      host_cpu: 主机 CPU
+      missing: 缺失
+      model_file_plural: '{count} 个模型文件'
+      model_file_singular: '{count} 个模型文件'
+      native_c: native-c
+      no_model_files: 未检测到模型文件
+      npu_device: ASR NPU 设备
+      present: 已存在
+      ready: 就绪
+      recommended_suffix: (推荐)
+      streaming_enabled: 已启用实时部分结果
+      unavailable: 不可用
+
+    streaming:
+      base: 你说话时，每隔 {chunkMs} 毫秒就会转写一段音频。
+      ultra_fast: 响应速度最高。转写几乎持续不断地运行。仅建议在快速硬件上配合 Tiny 或 Base 模型使用。CPU 负载会很高。
+      fast: 非常灵敏。与 Tiny 和 Base 模型搭配良好。适合打字很快或需要低延迟反馈的场景。
+      recommended: 推荐的平衡点。兼顾响应速度和 CPU 开销。在这个间隔下，部分更新会显得比较自然。
+      standard: 标准。更新节奏可预测，且不会造成过多 CPU 活动。适合任何模型大小的稳妥选择。
+      slow: 低频预览。每次发言的更新更少，CPU 负载也更低。文本会以较大的块显示，而不是逐词出现。
+
+    recommendations:
+      cpu_1: CPU 推理建议从 Tiny 或 Tiny English 开始。Base 在更强的 CPU 上也能工作，但 Small 通常更适合缓冲式听写。
+      cpu_2: CPU 实时预览请先测试。如果打字或 UI 响应变差，请先把间隔提高到 500-1000 毫秒，再去怀疑模型质量。
+      cuda_1: 目前要获得低延迟实时预览，并在不让 UI 变得迟钝的情况下运行 Base 或 Small 模型，CUDA 是最佳路径。
+      cuda_2: 如果你有多块 NVIDIA GPU，只有在主卡正忙于 LLM 或 facegen 工作时，才应把 ASR 放到较轻的那张卡上。
+      openvino_1: Intel NPU 模式需要与你所选 Whisper 模型匹配的 OpenVINO 编码器 IR 文件，仅有普通 ggml 模型还不够。
+      openvino_2: OpenVINO NPU 目前只卸载 Whisper 编码器工作。最大收益通常出现在 Base 或 Small 上，不一定是 Tiny。
+      other_gpu: Vulkan 和 HIP 最适合作为简单的 GPU 加速模式使用。当前桥接对这些后端使用运行时默认 GPU，而不是按设备选择器。
+      streaming_1: 实时预览建议先从 300-500 毫秒开始。如果想要更平滑的部分结果，可以试试 200 毫秒，但前提是你的机器上 UI 仍然流畅。
+      streaming_2: 你当前的间隔非常激进。如果预览卡住或输入框冻结，请先加长缓冲，再考虑更换模型大小。
+      buffered: 如果你更看重最终准确率，而不是在句子中途就看到文本出现，那么缓冲模式仍然是最稳妥的选择。
+
+  llm:
+    heading: 语言模型
+    copy: 游戏运行时一次只会使用一个已加载模型和一个活动上下文。请选择一个 GGUF 工件，查看 Go 后端解析出的配置，然后明确将其加载到共享运行时中。
+    model_label: 模型工件
+    load_button: 加载所选模型
+    refresh_button: 刷新状态
+    metadata_heading: 所选模型元数据
+    runtime_heading: 运行时状态
+    notes_heading: 状态说明
+    loading_status: 正在加载 LLM 状态...
+    loading_overlay_title: 正在加载语言模型
+    loading_overlay_copy: 当后端加载模型并预热共享运行时上下文时，FC Tycoon 会暂停渲染器。
+
+    metadata:
+      artifact: 工件
+      file_size: 文件大小
+      family: 家族
+      thinking_mode: 思考模式
+      configured: 已配置
+      max_context: 最大上下文
+      gpu_layers: GPU 层数
+      threads: 线程数
+      cpu_moe: CPU MoE
+      temperature: 温度
+      top_p: Top P
+      top_k: Top K
+      min_p: Min P
+      presence_penalty: 存在惩罚
+      repeat_penalty: 重复惩罚
+      seed: 随机种子
+
+    runtime:
+      runtime: 运行时
+      loaded_model: 已加载模型
+      context_size: 上下文大小
+      prompt_registry: 提示词注册表
+      tool_definitions: 工具定义
+      active_sys_prompt: 当前系统提示词
+      runtime_threads: 运行时线程数
+      flash_attention: Flash Attention
+
+    hints:
+      choose_model: 选择游戏应加载到共享运行时中的已配置 GGUF 工件。
+      selected_model_summary: '{family}, {thinkingMode}, {size}, max context {context}.'
+
+    status:
+      config_issue_suffix: (配置问题)
+      default_thinking_mode: 默认思考模式
+      initialized: 已初始化
+      loaded_fallback: 已加载
+      loaded_success: '{name} 已成功加载。'
+      loading_message: 正在将 {name} 加载到共享语言模型运行时中...
+      no_model_loaded: 未加载任何模型
+      not_initialized: 未初始化
+      runtime_default: 运行时默认值
+      token_count: '{count} 个标记'
+      unmatched: 不匹配
+      unmatched_family: 家族不匹配
+
+    errors:
+      load_failed: 无法加载所选语言模型
+      refresh_failed: 无法读取 LLM 状态
+      selected_model_missing: 在当前 LLM 模型列表中找不到所选模型。
+
+  facegen:
+    heading: 面部生成
+    copy: 面部生成在整个过程中都使用同一个共享运行时。排队和优先级会自动处理。
+    backend_label: 推理后端
+    quality_label: 肖像 JPEG 质量
+    persist_heading: 将肖像保存到存档
+    storage_heading: 肖像存储
+    loading: 正在加载 Facegen 偏好设置...
+
+    hints:
+      choose_backend: 选择用于生成人像的后端专用 Facegen 运行时 DLL。
+
+    status:
+      unknown_adapter: 未知适配器
+
+    notes:
+      current_setting: '当前设置：{quality}% - {label}。'
+      detected_adapters: '检测到的适配器：{adapters}。'
+      detected_gpu: '检测到的 GPU：{adapter}。检测到的显存：{vram}。'
+      detection_unavailable: 此系统无法检测 GPU 显存。面部生成仍会通过共享运行时继续运行。
+      persist_disabled: 肖像只会在当前会话中保留在内存里，重新加载后会重新生成。
+      persist_enabled: 肖像会写入存档数据库，并在重新加载后重复使用。
+      storage_quality: 更高的 JPEG 质量会提升保真度，但在把肖像存入存档时也会增大文件体积。
+      storage_regenerate: 100% 表示最高质量。如果你希望存档更小并能接受每次重新加载后重新生成肖像，请关闭存档存储。
+
+    quality:
+      compact: 紧凑质量
+      high: 高质量
+      maximum: 最高质量
+      medium: 中等质量
+      small_file: 小文件体积
+      very_high: 很高质量
+
+    errors:
+      quality_range: 肖像 JPEG 质量必须是 50 到 100 之间的整数。
+
   messages:
+    load_error: 无法加载偏好设置
     reset_dialog_title: 重置偏好设置
     reset_dialog_message: 这将把所有偏好设置重置为默认值。继续吗？
     reset_dialog_confirm: 重置
     reset_dialog_cancel: 取消
     reset_success: 偏好设置已重置为默认值
     save_success: 偏好设置已保存
+    save_error_plain: 无法保存偏好设置
     save_error: "保存偏好设置失败: {error}"
     language_changed: "语言已更改为 {language}"
     language_change_error: "更改语言失败: {error}"

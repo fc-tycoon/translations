@@ -40,10 +40,12 @@ new_game_wizard:
         all_countries: Tous les pays
         all_leagues: Toutes les ligues
       badges:
-        champion: Champion
-        champion_short: Ch
-        promoted: Promu
-        relegated: Relégué
+        defendingChampion: Champion en titre (saison précédente)
+        defendingChampion_short: Ch
+        promotedFromBelow: Promu récemment (saison précédente)
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: Relégué récemment (saison précédente)
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: Équipe première
         no_first_team_players: Aucun joueur affecté à l'équipe première
@@ -63,9 +65,7 @@ new_game_wizard:
           code: Code
           reserve_team: Équipe réserve
           club_colors: Couleurs du club
-          promoted_short: (▲)
           color_background: Arrière-plan
-          relegated_short: (▼)
           color_text: Texte
           join_league: Rejoindre une ligue
           replace_team: Remplacer l'équipe
@@ -322,3 +322,325 @@ new_game_wizard:
     load_leagues_failed_with_error: "Échec du chargement des ligues : {error}"
   mod_import:
     select_mod_files_title: Sélectionner des fichiers de mod
+
+  wizard_ui:
+    title: Nouvelle Partie
+    cancel: Annuler
+    back: Retour
+    next: Suivant
+    start_game: Lancer la Partie
+    loading: Chargement...
+    db_title: Base de Données et Mods
+    db_desc: Choisissez une base de données et activez les mods installés.
+    db_col: Base de Données
+    mods_col: Mods
+    no_mods: Aucun mod installé
+    mods_hint: Placez les fichiers de mod dans le dossier mods pour les activer.
+    leagues_title: Sélectionner les Ligues
+    leagues_desc: Choisissez les ligues à inclure dans votre monde de jeu.
+    league_presets: Préréglages
+    league_season: Saison de départ
+    league_recommended: Recommandé
+    league_extended: Étendu
+    league_all: Toutes
+    league_clear: Effacer
+    league_level: 'Niveau {level} — {name}'
+    league_division: 'Division {level}'
+    league_total: '{leagues} ligues de {countries} pays'
+    club_title: Choisissez Votre Club
+    club_desc: Sélectionnez le club que vous souhaitez entraîner.
+    club_select: Sélectionner un Club
+    club_journeyman: Entraîneur Libre (Sans Club)
+    club_loading: Chargement des clubs...
+    club_empty: "Sélectionnez d'abord des ligues pour voir les clubs disponibles."
+    club_filter_country: Pays
+    club_filter_league: Ligue
+    club_filter_search: Rechercher
+    club_filter_all_countries: Tous les pays
+    club_filter_all_leagues: Toutes les ligues
+    club_table_club: Club
+    club_table_league: Ligue
+    club_table_rep: Rép
+    club_table_founded: Fondé
+    club_count: '{count} clubs affichés'
+    club_champion: Champion
+    club_promoted: Promu
+    club_relegated: Relégué
+    settings_title: Paramètres du Jeu
+    settings_desc: Ajustez la difficulté et les paramètres de simulation.
+    settings_start_date: Date de début
+    manager_title: "Profil de l'Entraîneur"
+    manager_desc: "Créez votre identité d'entraîneur."
+    assistant_title: Entraîneur Adjoint
+    assistant_desc: "Créez optionnellement un adjoint qui aidera au recrutement, à l'analyse tactique et aux conseils quotidiens. Sa personnalité et ses compétences influenceront ses recommandations."
+    enable_assistant: "Activer l'Entraîneur Adjoint"
+    skills_title: Attribution des Compétences
+    skills_desc: "Répartissez 1000 points de compétences sur vos attributs d'entraîneur."
+    skills_used: 'Points utilisés : {used} / 1000'
+    skills_remaining: '{remaining} restants'
+    skills_over: '{over} au-dessus du budget'
+    skills_preset_balanced: Équilibré (720)
+    skills_preset_tactical: Génie Tactique (740)
+    skills_preset_motivator: Motivateur (840)
+    skills_preset_reset: Tout réinitialiser
+    skills_group_tactical: Tactique
+    skills_group_mental: Mental
+    skills_group_people: Relations Humaines
+    skills_tactical_knowledge: Connaissance Tactique
+    skills_tactical_adaptability: Adaptabilité Tactique
+    skills_judging_ability: 'Évaluation des Joueurs (Capacité)'
+    skills_judging_potential: 'Évaluation des Joueurs (Potentiel)'
+    skills_determination: Détermination
+    skills_discipline: Discipline
+    skills_ambition: Ambition
+    skills_adaptability: Adaptabilité
+    skills_motivating: Motivation
+    skills_man_management: Gestion des Hommes
+    skills_charisma: Charisme
+    skills_professionalism: Professionnalisme
+    confirm_title: Confirmer et Lancer
+    confirm_desc: Vérifiez vos sélections avant de créer le monde du jeu.
+    confirm_database: Base de Données
+    confirm_season: Saison
+    confirm_leagues: Ligues
+    confirm_club: Club
+    confirm_manager: Entraîneur
+    confirm_skills: Compétences
+    confirm_start_date: Date de début
+    confirm_leagues_from: '{leagues} de {countries} pays'
+    confirm_skills_alloc: '{used} / 1000 attribués'
+    confirm_unemployed: Sans emploi
+    step_db: Base de donn\u00E9es
+    step_leagues: Ligues
+    step_club: Club
+    step_settings: "Param\u00E8tres"
+    step_manager: Manager
+    step_assistant: Assistant
+    step_skills: "Comp\u00E9tences"
+    step_confirm: Confirmer
+
+  manager_form:
+    fname: Prénom
+    lname: Nom
+    dob: Date de Naissance
+    known_as: Connu Sous
+    nationality: Nationalité
+    second_nationality: Deuxième Nationalité
+    gender: Genre
+    phenotype: Phénotype
+    attire: Tenue
+    expression: Expression
+    age_modifier: "Modificateur d'Âge"
+    hair_style: Style de Cheveux
+    facial_hair: Pilosité Faciale
+    hair_color: Couleur des Cheveux
+    skin_tone: Teint de Peau
+    shirt_color: Couleur de Chemise
+    eye_color: Couleur des Yeux
+    facial_shape: Forme du Visage
+    personality: Personnalité
+    ph_fname: Prénom
+    ph_lname: Nom
+    ph_known_as: 'Surnom, monyme ou alias'
+    ph_nationality: 'Sélectionner...'
+    ph_phenotype: 'Sélectionner un phénotype...'
+    ph_none: Aucun
+    pers_add: Ajouter une Personnalité
+    pers_edit: Modifier la Personnalité
+    pers_none: Non définie
+    pers_role_manager: entraîneur
+    pers_role_assistant: entraîneur adjoint
+    port_title_manager: "Portrait de l'Entraîneur"
+    port_title_assistant: Portrait de l'Adjoint
+    port_ai: Générer avec IA
+    port_upload: Télécharger une Photo
+    port_change: Changer la Photo
+    port_remove: Supprimer la Photo
+    port_generate: Générer des Choix
+    port_reroll: Regénérer
+    port_seed: Graine
+    port_selected: 'Visage sélectionné : {label}'
+    port_seed_label: '(graine {seed})'
+    port_queued: "Modifications en file d'attente. Les portraits se mettront à jour à la fin de la génération en cours."
+    port_generating: Génération...
+    port_no_portrait: Pas de portrait
+    port_upload_hint: 'Téléchargez une photo plutôt que la génération IA. Vous pouvez la positionner et la rogner. Sortie : 260 × 310 px (format DF11).'
+    port_age_tooltip: "Facegen utilise la date de début du jeu pour calculer l'âge, pas la date réelle."
+    port_age_with: 'Né le {dob}. Date de début en jeu : {startDate}. Âge en jeu : {age}.'
+    port_age_without: 'Né le {dob}. Date de début en jeu : {startDate}.'
+
+  personality_editor:
+    title: Modifier la Personnalité
+    desc: "Rédigez une brève description du tempérament de votre {role}. Cela influence la perception des médias, des joueurs et des PNJ."
+    text: Texte
+    preview: Aperçu
+    preview_empty: "L'aperçu apparaîtra ici…"
+    hint: 'Prend en charge **gras**, *italique* et - éléments de liste.'
+    save: Enregistrer la Personnalité
+    cancel: Annuler
+    error: La personnalité est obligatoire.
+
+  appearance:
+    gender:
+      male: Masculin
+      female: Féminin
+      non_binary: Non-binaire
+    phenotype:
+      western_european: Européen Occidental
+      scandinavian: Scandinave
+      eastern_european: Européen Oriental
+      mediterranean: Méditerranéen
+      middle_eastern: Moyen-Oriental
+      african: Africain
+      afro_diaspora: Afro-diaspora
+      mixed: 'Mixte / Multi-ethnique'
+      latino: 'Latino / Métis'
+      native_american: Amérindien
+      asian: Asiatique
+      south_east_asian: Asiatique du Sud-Est
+      south_asian: Asiatique du Sud
+      central_asian: Asiatique Central
+    attire:
+      kit_shirt: Maillot
+      suit: Costume
+      tracksuit: Survêtement
+      polo: Polo
+    expression:
+      neutral: Neutre
+      grin: Sourire large
+      smiling: Souriant
+      happy: Heureux
+      angry: En colère
+      serious: Sérieux
+      stern: Sévère
+      stoic: Stoïque
+      joyful: Joyeux
+      determined: Déterminé
+      relaxed: Détendu
+    age_modifier:
+      baby_faced: Visage poupin
+      fresh_faced: Visage frais
+      youthful: Juvénile
+      mature: Mature
+      athletic: Athlétique
+      distinguished: Distingué
+      weathered: Marqué par le temps
+      early_20s: Début vingtaine
+      mid_20s: Milieu vingtaine
+      late_20s: Fin vingtaine
+      early_30s: Début trentaine
+      mid_30s: Milieu trentaine
+      late_30s: Fin trentaine
+      early_40s: Début quarantaine
+      mid_40s: Milieu quarantaine
+      late_40s: Fin quarantaine
+      early_50s: Début cinquantaine
+      mid_50s: Milieu cinquantaine
+      late_50s: Fin cinquantaine
+      early_60s: Début soixantaine
+      mid_60s: Milieu soixantaine
+      late_60s: Fin soixantaine
+      seventies: 70 ans
+      eighties: 80 ans
+    hair_style:
+      bald: Chauve
+      stubble: Très court
+      bun: Chignon
+      short_afro: Afro court
+      long_afro: Afro long
+      afro: Afro
+      braids: Tresses
+      buzz_cut: Coupe brosse
+      curly: Bouclé
+      long: Long
+      dreadlocks: Dreadlocks
+      mohawk: Iroquois
+      ponytail: Queue de cheval
+      shaved: Rasé
+      short: Court
+      straight: Lisse
+      wavy: Ondulé
+      spikey: Piqué
+      brushed_up: Coiffé en arrière
+      comb_over: Raie latérale
+      fade: Dégradé
+      tight_curls: Boucles serrées
+      flat_top: Flat top
+      brush_cut: Coupe militaire
+      undercut: Undercut
+      crew_cut: Coupe réglementaire
+      caesar_cut: Coupe César
+      faux_hawk: Faux iroquois
+      short_curls: Boucles courtes
+      medium_curls: Boucles moyennes
+      long_curls: Boucles longues
+      curly_fringe: Frange bouclée
+      short_wavy: Ondulé court
+      medium_wavy: Ondulé moyen
+      long_wavy: Ondulé long
+      wavy_fringe: Frange ondulée
+      side_part: Séparation latérale
+      quiff: Banane
+      shaggy: Décoiffé
+      taper: Taper
+      fringe_up: Frange relevée
+      side_fringe: Frange latérale
+    facial_hair:
+      none: Rasé de près
+      stubble: Barbe de 3 jours
+      full_beard: Barbe complète
+      beard: Barbe
+      circle_beard: Barbe ronde
+      goatee: Bouc
+      extended_goatee: Bouc allongé
+      mustache: Moustache
+      sideburns: Rouflaquettes
+      muttonchops: Favoris
+
+  photo_editor:
+    title: Modifier la photo de portrait
+    dropzone: Cliquez pour sélectionner une image, ou glissez-déposez.
+    hint: JPEG ou PNG. N'importe quelle taille — vous le recadrerez ici.
+    dims: 'Sortie : 260 × 310 px (DF11)'
+    zoom: Zoom
+    reset: Réinitialiser
+    change_image: Changer l'image
+    cancel: Annuler
+    save: Enregistrer le portrait larges
+    hair_color:
+      black: Noir
+      dark_brown: Brun foncé
+      brown: Brun
+      light_brown: Brun clair
+      dark_blonde: Blond foncé
+      blonde: Blond
+      light_blonde: Blond clair
+      platinum_blonde: Blond platine
+      red_blonde: Blond roux
+      red: Roux
+      grey_black: Gris noir
+      grey_brown: Gris brun
+      grey: Gris
+      white: Blanc
+      silver: Argenté
+      salt_and_pepper: Poivre et sel
+    skin_tone:
+      very_light: Très clair
+      light: Clair
+      medium_light: Clair moyen
+      medium: Moyen
+      medium_dark: Moyen foncé
+      dark: Foncé
+      very_dark: Très foncé
+      freckles: Taches de rousseur
+      pale: Pâle
+      fair: Clair naturel
+      olive: Olivâtre
+      tan: Bronzé
+      ruby: Rubis
+      light_brown: Marron clair
+      medium_brown: Marron moyen
+      dark_brown: Marron foncé
+      white: Blanc
+      medium_white: Blanc moyen
+      moderate_brown: Marron modéré

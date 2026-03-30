@@ -1,0 +1,56 @@
+
+# ══════════════════════════════════════════════════════════════════════
+# 个性模板
+# ══════════════════════════════════════════════════════════════════════
+personalities:
+  pragmatic_winner:
+    label: 务实的胜利者
+    text: 以无止境的冠军渴望驱动的务实主义者。相信通过纪律和战术创新来构建球队。
+  youth_developer:
+    label: 青训培育者
+    text: 重视长期发展的耐心导师。更倾向于培养年轻天才，而不是昂贵的引援。
+  defensive_mastermind:
+    label: 防守大师
+    text: 痴迷于防守阵型的严谨组织者。每丢一球都视为个人失败。
+  attacking_idealist:
+    label: 进攻理想主义者
+    text: 要求富有表现力的进攻足球。宁愿4-3输球，也不愿1-0赢球。
+  old_school_disciplinarian:
+    label: 传统纪律严师
+    text: 要求全力以赴的老派传统主义者。标准不可妥协。
+  media_darling:
+    label: 媒体宠儿
+    text: 在聚光灯下如鱼得水的魅力型人物。善用新闻发布会作为武器。
+  silent_operator:
+    label: 沉默执行者
+    text: 安静、沉稳、极度低调。用成绩说话，避免戏剧性冲突。
+  tactical_innovator:
+    label: 战术革新者
+    text: 不断调整阵型和体系的思考者。永远在寻找下一个突破口。
+  assistant_loyal_lieutenant:
+    label: 忠诚副手
+    text: 对主教练极其忠诚的副手，公开场合维护主帅的信息，私下里也持续强化同样的立场。能让更衣室始终与主教练保持一致，从不削弱其权威。
+  assistant_tactical_brain:
+    label: 战术智囊
+    text: 头脑敏锐的足球分析者，能把宏观思路落实为训练细节、对手计划和比赛中的清晰调整。能迅速识别模式，给主教练提供有价值的答案而不是噪音。
+  assistant_training_ground_general:
+    label: 训练场统筹者
+    text: 以结构、强度和持续跟进为训练场定下基调。确保高标准每天都在执行，而不只是比赛日才认真。
+  assistant_player_whisperer:
+    label: 球员沟通高手
+    text: 能很早察觉情绪变化，并以冷静而有分量的方式处理困难谈话。让球员感到被倾听，同时又不放松教练组的标准。
+  assistant_development_specialist:
+    label: 培养专家
+    text: 痴迷于个人成长、角色清晰度和长期提升。尤其擅长帮助年轻球员和轮换球员找到具体的下一步方向。
+  assistant_standards_enforcer:
+    label: 标准执行者
+    text: 在每一项日常安排中都要求守时、职业态度和一致性。即使成绩下滑，也能保持环境紧凑有序，不让自满有滋生空间。
+  assistant_opposition_analyst:
+    label: 对手分析师
+    text: 沉浸在比赛片段、报告和对位细节之中。总能带着清晰笔记而来，说明下一位对手该在哪里被压迫、被限制、被惩罚。
+  assistant_calm_conduit:
+    label: 冷静纽带
+    text: 在低谷期、密集赛程和媒体噪音中，依旧能让教练组和球员保持冷静的稳定沟通者。擅长向上和向下传递信息，同时避免制造摩擦。
+  assistant_culture_keeper:
+    label: 文化守护者
+    text: 体现俱乐部价值观并守住工作环境的基调。帮助新援、青训球员和边缘球员迅速理解球队对他们的要求。

@@ -40,10 +40,12 @@ new_game_wizard:
         all_countries: 所有国家
         all_leagues: 所有联赛
       badges:
-        champion: 冠军
-        champion_short: 冠
-        promoted: 升级
-        relegated: 降级
+        defendingChampion: 冠军
+        defendingChampion_short: 冠
+        promotedFromBelow: 升级
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: 降级
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: 一线队阵容
         no_first_team_players: 一线队没有分配球员
@@ -63,9 +65,7 @@ new_game_wizard:
           code: 代码
           reserve_team: 预备队
           club_colors: 俱乐部颜色
-          promoted_short: (▲)
           color_background: 背景
-          relegated_short: (▼)
           color_text: 文本
           join_league: 加入联赛
           replace_team: 替换球队
@@ -324,3 +324,325 @@ new_game_wizard:
     load_leagues_failed_with_error: "加载联赛失败：{error}"
   mod_import:
     select_mod_files_title: 选择 Mod 文件
+
+  wizard_ui:
+    title: 新游戏
+    cancel: 取消
+    back: 返回
+    next: 下一步
+    start_game: 开始游戏
+    loading: 加载中...
+    db_title: 数据库与模组
+    db_desc: 选择数据库并启用已安装的模组。
+    db_col: 数据库
+    mods_col: 模组
+    no_mods: 未安装模组
+    mods_hint: 将模组文件放入 mods 文件夹以启用。
+    leagues_title: 选择联赛
+    leagues_desc: 选择要包含在游戏世界中的联赛。
+    league_presets: 预设
+    league_season: 开始赛季
+    league_recommended: 推荐
+    league_extended: 扩展
+    league_all: 全部
+    league_clear: 清除
+    league_level: '级别 {level} — {name}'
+    league_division: '第 {level} 级联赛'
+    league_total: '来自 {countries} 个国家的 {leagues} 个联赛'
+    club_title: 选择俱乐部
+    club_desc: 选择您想执教的俱乐部。
+    club_select: 选择俱乐部
+    club_journeyman: 自由身教练（待业）
+    club_loading: 加载俱乐部中...
+    club_empty: 请先选择联赛以查看可用俱乐部。
+    club_filter_country: 国家
+    club_filter_league: 联赛
+    club_filter_search: 搜索
+    club_filter_all_countries: 所有国家
+    club_filter_all_leagues: 所有联赛
+    club_table_club: 俱乐部
+    club_table_league: 联赛
+    club_table_rep: 声誉
+    club_table_founded: 成立
+    club_count: '显示 {count} 个俱乐部'
+    club_champion: 冠军
+    club_promoted: 晋级
+    club_relegated: 降级
+    settings_title: 游戏设置
+    settings_desc: 调整难度和模拟设置。
+    settings_start_date: 开始日期
+    manager_title: 教练资料
+    manager_desc: 创建您的教练身份。
+    assistant_title: 助理教练
+    assistant_desc: 可选择创建一名助理教练，协助球探、战术分析和日常建议。其性格和能力将影响推荐内容。
+    enable_assistant: 启用助理教练
+    skills_title: 技能分配
+    skills_desc: 将 1000 个技能点分配到您的教练属性上。
+    skills_used: '已使用: {used} / 1000'
+    skills_remaining: '剩余 {remaining}'
+    skills_over: '超出预算 {over}'
+    skills_preset_balanced: 均衡型 (720)
+    skills_preset_tactical: 战术天才 (740)
+    skills_preset_motivator: 激励大师 (840)
+    skills_preset_reset: 全部重置
+    skills_group_tactical: 战术
+    skills_group_mental: 心理
+    skills_group_people: 人际关系
+    skills_tactical_knowledge: 战术知识
+    skills_tactical_adaptability: 战术适应力
+    skills_judging_ability: '球员评估（能力）'
+    skills_judging_potential: '球员评估（潜力）'
+    skills_determination: 决心
+    skills_discipline: 纪律
+    skills_ambition: 雄心
+    skills_adaptability: 适应力
+    skills_motivating: 激励
+    skills_man_management: 人员管理
+    skills_charisma: 魅力
+    skills_professionalism: 职业精神
+    confirm_title: 确认并开始
+    confirm_desc: 创建游戏世界前请确认您的选择。
+    confirm_database: 数据库
+    confirm_season: 赛季
+    confirm_leagues: 联赛
+    confirm_club: 俱乐部
+    confirm_manager: 教练
+    confirm_skills: 技能
+    confirm_start_date: 开始日期
+    confirm_leagues_from: '来自 {countries} 个国家的 {leagues}'
+    confirm_skills_alloc: '已分配 {used} / 1000'
+    confirm_unemployed: 待业
+    step_db: 数据库
+    step_leagues: 联赛
+    step_club: 信乐部
+    step_settings: 设置
+    step_manager: 管理员
+    step_assistant: 助理
+    step_skills: 技能
+    step_confirm: 确认
+
+  manager_form:
+    fname: 名字
+    lname: 姓氏
+    dob: 出生日期
+    known_as: 常用名
+    nationality: 国籍
+    second_nationality: 第二国籍
+    gender: 性别
+    phenotype: 表型
+    attire: 着装
+    expression: 表情
+    age_modifier: 年龄修正
+    hair_style: 发型
+    facial_hair: 面部毛发
+    hair_color: 发色
+    skin_tone: 肤色
+    shirt_color: 衬衫颜色
+    eye_color: 眼睛颜色
+    facial_shape: 脸型
+    personality: 性格
+    ph_fname: 名字
+    ph_lname: 姓氏
+    ph_known_as: '绰号、单名或别名'
+    ph_nationality: '选择...'
+    ph_phenotype: '选择表型...'
+    ph_none: 无
+    pers_add: 添加性格
+    pers_edit: 编辑性格
+    pers_none: 未设置
+    pers_role_manager: 教练
+    pers_role_assistant: 助理教练
+    port_title_manager: 教练肖像
+    port_title_assistant: 助理肖像
+    port_ai: AI 生成
+    port_upload: 上传照片
+    port_change: 更换照片
+    port_remove: 删除照片
+    port_generate: 生成选项
+    port_reroll: 重新生成
+    port_seed: 种子
+    port_selected: '已选择面孔: {label}'
+    port_seed_label: '(种子 {seed})'
+    port_queued: 更改已加入队列。当前生成完成后肖像将更新。
+    port_generating: 生成中...
+    port_no_portrait: 无肖像
+    port_upload_hint: '上传照片代替 AI 生成。可调整位置和裁剪。输出: 260 × 310 px (DF11 格式)。'
+    port_age_tooltip: Facegen 使用游戏开始日期计算年龄，而非实际日期。
+    port_age_with: '出生日期: {dob}。游戏内开始日期: {startDate}。游戏内年龄: {age}。'
+    port_age_without: '出生日期: {dob}。游戏内开始日期: {startDate}。'
+
+  personality_editor:
+    title: 编辑性格
+    desc: '请为您的{role}撰写一段简短的气质与处事风格描述。这将影响媒体、球员和 NPC 对其的看法。'
+    text: 文本
+    preview: 预览
+    preview_empty: 预览将在此处显示…
+    hint: '支持 **粗体**、*斜体* 和 - 列表项。'
+    save: 保存性格
+    cancel: 取消
+    error: 性格描述不能为空。
+
+  appearance:
+    gender:
+      male: 男性
+      female: 女性
+      non_binary: 非二元性别
+    phenotype:
+      western_european: 西欧
+      scandinavian: 斯堪的纳维亚
+      eastern_european: 东欧
+      mediterranean: 地中海
+      middle_eastern: 中东
+      african: 非洲
+      afro_diaspora: 非裔离散
+      mixed: '混血 / 多族裔'
+      latino: '拉丁裔 / 混血'
+      native_american: 美洲原住民
+      asian: 亚洲
+      south_east_asian: 东南亚
+      south_asian: 南亚
+      central_asian: 中亚
+    attire:
+      kit_shirt: 球衣
+      suit: 西装
+      tracksuit: 运动服
+      polo: Polo 衫
+    expression:
+      neutral: 中立
+      grin: 咧嘴笑
+      smiling: 微笑
+      happy: 开心
+      angry: 愤怒
+      serious: 严肃
+      stern: 严厉
+      stoic: 淡定
+      joyful: 喜悦
+      determined: 坚定
+      relaxed: 放松
+    age_modifier:
+      baby_faced: 娃娃脸
+      fresh_faced: 清新面孔
+      youthful: 年轻
+      mature: 成熟
+      athletic: 运动型
+      distinguished: 高贵
+      weathered: 饱经风霜
+      early_20s: 20 岁出头
+      mid_20s: 25 岁左右
+      late_20s: 20 岁末
+      early_30s: 30 岁出头
+      mid_30s: 35 岁左右
+      late_30s: 30 岁末
+      early_40s: 40 岁出头
+      mid_40s: 45 岁左右
+      late_40s: 40 岁末
+      early_50s: 50 岁出头
+      mid_50s: 55 岁左右
+      late_50s: 50 岁末
+      early_60s: 60 岁出头
+      mid_60s: 65 岁左右
+      late_60s: 60 岁末
+      seventies: 七十岁
+      eighties: 八十岁
+    hair_style:
+      bald: 秃头
+      stubble: 极短
+      bun: 发髻
+      short_afro: 短爆炸头
+      long_afro: 长爆炸头
+      afro: 爆炸头
+      braids: 辫子
+      buzz_cut: 平头
+      curly: 卷发
+      long: 长发
+      dreadlocks: 脏辫
+      mohawk: 莫西干
+      ponytail: 马尾
+      shaved: 剃光
+      short: 短发
+      straight: 直发
+      wavy: 波浪发
+      spikey: 刺猬头
+      brushed_up: 向上梳
+      comb_over: 侧分
+      fade: 渐变
+      tight_curls: 紧卷发
+      flat_top: 平顶头
+      brush_cut: 刷子头
+      undercut: 下剃
+      crew_cut: 寸头
+      caesar_cut: 凯撒发型
+      faux_hawk: 假莫西干
+      short_curls: 短卷发
+      medium_curls: 中卷发
+      long_curls: 长卷发
+      curly_fringe: 卷刘海
+      short_wavy: 短波浪
+      medium_wavy: 中波浪
+      long_wavy: 长波浪
+      wavy_fringe: 波浪刘海
+      side_part: 侧分
+      quiff: 飞机头
+      shaggy: 蓬松发
+      taper: 锥形
+      fringe_up: 刘海向上
+      side_fringe: 侧刘海
+    facial_hair:
+      none: 无
+      stubble: 胡茬
+      full_beard: 全胡须
+      beard: 胡须
+      circle_beard: 圆形胡须
+      goatee: 山羊胡
+      extended_goatee: 延伸山羊胡
+      mustache: 胡子
+      sideburns: 络腮胡
+      muttonchops: 宽络腮胡
+
+  photo_editor:
+    title: 编辑肖像照片
+    dropzone: 点击选择图片，或拖放。
+    hint: JPEG 或 PNG。任意尺寸 — 您将在此裁剪。
+    dims: '输出：260 × 310 px（DF11）'
+    zoom: 缩放
+    reset: 重置
+    change_image: 更换图片
+    cancel: 取消
+    save: 保存肖像
+    hair_color:
+      black: 黑色
+      dark_brown: 深棕色
+      brown: 棕色
+      light_brown: 浅棕色
+      dark_blonde: 深金色
+      blonde: 金色
+      light_blonde: 浅金色
+      platinum_blonde: 铂金色
+      red_blonde: 红金色
+      red: 红色
+      grey_black: 灰黑色
+      grey_brown: 灰棕色
+      grey: 灰色
+      white: 白色
+      silver: 银色
+      salt_and_pepper: 椒盐色
+    skin_tone:
+      very_light: 非常白皙
+      light: 白皙
+      medium_light: 偏白
+      medium: 中等
+      medium_dark: 偏深
+      dark: 深色
+      very_dark: 非常深
+      freckles: 雀斑
+      pale: 苍白
+      fair: 白色
+      olive: 橄榄色
+      tan: 小麦色
+      ruby: 红宝石色
+      light_brown: 浅棕色
+      medium_brown: 中棕色
+      dark_brown: 深棕色
+      white: 白色
+      medium_white: 中等白色
+      moderate_brown: 适中棕色

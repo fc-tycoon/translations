@@ -40,12 +40,12 @@ new_game_wizard:
         all_countries: All Countries
         all_leagues: All Leagues
       badges:
-        champion: Champion
-        champion_short: Ch
-        promoted: Promoted
-        promoted_short: (▲)
-        relegated: Relegated
-        relegated_short: (▼)
+        defendingChampion: Defending Champion (Previous Season)
+        defendingChampion_short: Ch
+        promotedFromBelow: Recently Promoted (Previous Season)
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: Recently Relegated (Previous Season)
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: First Team Squad
         no_first_team_players: No players assigned to first team
@@ -324,3 +324,326 @@ new_game_wizard:
     load_leagues_failed_with_error: "Failed to load leagues: {error}"
   mod_import:
     select_mod_files_title: Select Mod Files
+
+  wizard_ui:
+    title: New Game
+    cancel: Cancel
+    back: Back
+    next: Next
+    start_game: Start Game
+    loading: Loading...
+    db_title: Database & Mods
+    db_desc: Choose a game database and enable any installed mods.
+    db_col: Database
+    mods_col: Mods
+    no_mods: No mods installed
+    mods_hint: Place mod files in the mods folder to enable them.
+    leagues_title: Select Leagues
+    leagues_desc: Choose which leagues to include in your game world.
+    league_presets: Presets
+    league_season: Starting Season
+    league_recommended: Recommended
+    league_extended: Extended
+    league_all: All
+    league_clear: Clear
+    league_level: 'Level {level} — {name}'
+    league_division: 'Division {level}'
+    league_total: '{leagues} leagues from {countries} countries'
+    club_title: Choose Your Club
+    club_desc: Select the club you want to manage.
+    club_select: Select Club
+    club_journeyman: Journeyman (Unemployed)
+    club_loading: Loading clubs...
+    club_empty: Select leagues first to see available clubs.
+    club_filter_country: Country
+    club_filter_league: League
+    club_filter_search: Search
+    club_filter_all_countries: All countries
+    club_filter_all_leagues: All leagues
+    club_table_club: Club
+    club_table_league: League
+    club_table_rep: Rep
+    club_table_founded: Founded
+    club_count: '{count} clubs shown'
+    club_champion: Champion
+    club_promoted: Promoted
+    club_relegated: Relegated
+    settings_title: Game Settings
+    settings_desc: Adjust difficulty and simulation settings.
+    settings_start_date: Start Date
+    manager_title: Manager Profile
+    manager_desc: Create your manager identity.
+    assistant_title: Assistant Manager
+    assistant_desc: 'Optionally create an assistant manager who will assist with scouting, tactical analysis, and day-to-day advice. Your assistant''s personality and skills will influence their recommendations and decision-making style.'
+    enable_assistant: Enable Assistant Manager
+    skills_title: Skill Allocation
+    skills_desc: Allocate 1000 skill points across your manager attributes.
+    skills_used: 'Points Used: {used} / 1000'
+    skills_remaining: '{remaining} remaining'
+    skills_over: '{over} over budget'
+    skills_preset_balanced: Balanced (720)
+    skills_preset_tactical: Tactical Genius (740)
+    skills_preset_motivator: Motivator (840)
+    skills_preset_reset: Reset All
+    skills_group_tactical: Tactical
+    skills_group_mental: Mental
+    skills_group_people: Working With People
+    skills_tactical_knowledge: Tactical Knowledge
+    skills_tactical_adaptability: Tactical Adaptability
+    skills_judging_ability: Judging Player Ability
+    skills_judging_potential: Judging Player Potential
+    skills_determination: Determination
+    skills_discipline: Discipline
+    skills_ambition: Ambition
+    skills_adaptability: Adaptability
+    skills_motivating: Motivating
+    skills_man_management: Man Management
+    skills_charisma: Charisma
+    skills_professionalism: Professionalism
+    confirm_title: 'Confirm & Start'
+    confirm_desc: Review your selections before creating the game world.
+    confirm_database: Database
+    confirm_season: Season
+    confirm_leagues: Leagues
+    confirm_club: Club
+    confirm_manager: Manager
+    confirm_skills: Skills
+    confirm_start_date: Start Date
+    confirm_leagues_from: '{leagues} from {countries} countries'
+    confirm_skills_alloc: '{used} / 1000 allocated'
+    confirm_unemployed: Unemployed
+    step_db: Database
+    step_leagues: Leagues
+    step_club: Club
+    step_settings: Settings
+    step_manager: Manager
+    step_assistant: Assistant
+    step_skills: Skills
+    step_confirm: Confirm
+
+  manager_form:
+    fname: First Name
+    lname: Last Name
+    dob: Date of Birth
+    known_as: Known As
+    nationality: Nationality
+    second_nationality: Second Nationality
+    gender: Gender
+    phenotype: Phenotype
+    attire: Attire
+    expression: Expression
+    age_modifier: Age Modifier
+    hair_style: Hair Style
+    facial_hair: Facial Hair
+    hair_color: Hair Color
+    skin_tone: Skin Tone
+    shirt_color: Shirt Color
+    eye_color: Eye Color
+    facial_shape: Facial Shape
+    personality: Personality
+    ph_fname: First name
+    ph_lname: Last name
+    ph_known_as: 'Nickname, mononym, or alias'
+    ph_nationality: 'Select...'
+    ph_phenotype: 'Select phenotype...'
+    ph_none: None
+    pers_add: Add Personality
+    pers_edit: Edit Personality
+    pers_none: None set
+    pers_role_manager: manager
+    pers_role_assistant: assistant manager
+    port_title_manager: Manager Portrait
+    port_title_assistant: Assistant Portrait
+    port_ai: AI Generate
+    port_upload: Upload Photo
+    port_change: Change Photo
+    port_remove: Remove Photo
+    port_generate: Generate Choices
+    port_reroll: Reroll
+    port_seed: Seed
+    port_selected: 'Selected face: {label}'
+    port_seed_label: '(seed {seed})'
+    port_queued: Changes queued. The portraits will refresh when the current generation finishes.
+    port_generating: Generating...
+    port_no_portrait: No portrait
+    port_upload_hint: 'Upload a photo instead of using AI face generation. You can position and crop it. Output: 260 × 310 px (DF11 format).'
+    port_age_tooltip: "Facegen uses the selected in-game start date to calculate age, not today's real-world date."
+    port_age_with: 'Born {dob}. In-game start date {startDate}. In-game age: {age}.'
+    port_age_without: 'Born {dob}. In-game start date {startDate}.'
+
+  personality_editor:
+    title: Edit Personality
+    desc: "Write a short description of your {role}'s temperament and approach. This influences how the media, players, and NPCs perceive and react to them."
+    text: Text
+    preview: Preview
+    preview_empty: "Preview will appear here\u2026"
+    hint: 'Supports **bold**, *italic*, and - list items.'
+    save: Save Personality
+    cancel: Cancel
+    error: Personality is required.
+
+  appearance:
+    gender:
+      male: Male
+      female: Female
+      non_binary: Non-binary
+    phenotype:
+      western_european: Western European
+      scandinavian: Scandinavian
+      eastern_european: Eastern European
+      mediterranean: Mediterranean
+      middle_eastern: Middle Eastern
+      african: African
+      afro_diaspora: Afro-diaspora
+      mixed: 'Mixed / Multi-ethnic'
+      latino: 'Latino / Mestizo'
+      native_american: Native American
+      asian: Asian
+      south_east_asian: South East Asian
+      south_asian: South Asian
+      central_asian: Central Asian
+    attire:
+      kit_shirt: Kit Shirt
+      suit: Suit
+      tracksuit: Tracksuit
+      polo: Polo Shirt
+    expression:
+      neutral: Neutral
+      grin: Grin
+      smiling: Smiling
+      happy: Happy
+      angry: Angry
+      serious: Serious
+      stern: Stern
+      stoic: Stoic
+      joyful: Joyful
+      determined: Determined
+      relaxed: Relaxed
+    age_modifier:
+      baby_faced: Baby-faced
+      fresh_faced: Fresh-faced
+      youthful: Youthful
+      mature: Mature
+      athletic: Athletic
+      distinguished: Distinguished
+      weathered: Weathered
+      early_20s: Early 20s
+      mid_20s: Mid 20s
+      late_20s: Late 20s
+      early_30s: Early 30s
+      mid_30s: Mid 30s
+      late_30s: Late 30s
+      early_40s: Early 40s
+      mid_40s: Mid 40s
+      late_40s: Late 40s
+      early_50s: Early 50s
+      mid_50s: Mid 50s
+      late_50s: Late 50s
+      early_60s: Early 60s
+      mid_60s: Mid 60s
+      late_60s: Late 60s
+      seventies: 70s
+      eighties: 80s
+    hair_style:
+      bald: Bald
+      stubble: Very Short Stubble
+      bun: Bun
+      short_afro: Short Afro
+      long_afro: Long Afro
+      afro: Afro
+      braids: Braids
+      buzz_cut: Buzz Cut
+      curly: Curly
+      long: Long
+      dreadlocks: Dreadlocks
+      mohawk: Mohawk
+      ponytail: Ponytail
+      shaved: Shaved
+      short: Short
+      straight: Straight
+      wavy: Wavy
+      spikey: Spikey
+      brushed_up: Brushed Up
+      comb_over: Comb-over
+      fade: Fade
+      tight_curls: Tight Curls
+      flat_top: Flat Top
+      brush_cut: Brush Cut
+      undercut: Undercut
+      crew_cut: Crew Cut
+      caesar_cut: Caesar Cut
+      faux_hawk: Faux Hawk
+      short_curls: Short Curls
+      medium_curls: Medium Curls
+      long_curls: Long Curls
+      curly_fringe: Curly Fringe
+      short_wavy: Short Wavy
+      medium_wavy: Medium Wavy
+      long_wavy: Long Wavy
+      wavy_fringe: Wavy Fringe
+      side_part: Side Part
+      quiff: Quiff
+      shaggy: Shaggy
+      taper: Taper
+      fringe_up: Fringe Up
+      side_fringe: Side Fringe
+    facial_hair:
+      none: Clean-shaven
+      stubble: Stubble
+      full_beard: Full Beard
+      beard: Beard
+      circle_beard: Circle Beard
+      goatee: Goatee
+      extended_goatee: Extended Goatee
+      mustache: Mustache
+      sideburns: Sideburns
+      muttonchops: Mutton Chops
+
+  photo_editor:
+    title: Edit Portrait Photo
+    dropzone: Click to select an image, or drag and drop.
+    hint: JPEG or PNG. Any size — you'll crop it here.
+    dims: 'Output: 260 × 310 px (DF11)'
+    zoom: Zoom
+    reset: Reset
+    change_image: Change Image
+    cancel: Cancel
+    save: Save Portrait
+    hair_color:
+      black: Black
+      dark_brown: Dark Brown
+      brown: Brown
+      light_brown: Light Brown
+      dark_blonde: Dark Blonde
+      blonde: Blonde
+      light_blonde: Light Blonde
+      platinum_blonde: Platinum Blonde
+      red_blonde: Red Blonde
+      red: Red
+      grey_black: Grey Black
+      grey_brown: Grey Brown
+      grey: Grey
+      white: White
+      silver: Silver
+      salt_and_pepper: Salt and Pepper
+    skin_tone:
+      very_light: Very Light
+      light: Light
+      medium_light: Medium Light
+      medium: Medium
+      medium_dark: Medium Dark
+      dark: Dark
+      very_dark: Very Dark
+      freckles: Freckles
+      pale: Pale
+      fair: Fair
+      olive: Olive
+      tan: Tan
+      ruby: Ruby
+      light_brown: Light Brown
+      medium_brown: Medium Brown
+      dark_brown: Dark Brown
+      white: White
+      medium_white: Medium White
+      moderate_brown: Moderate Brown
+

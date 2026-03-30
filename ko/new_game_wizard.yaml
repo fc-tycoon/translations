@@ -40,12 +40,12 @@ new_game_wizard:
         all_countries: 모든 국가
         all_leagues: 모든 리그
       badges:
-        champion: 챔피언
-        champion_short: 챔
-        promoted: 승격
-        promoted_short: (▲)
-        relegated: 강등
-        relegated_short: (▼)
+        defendingChampion: 챔피언
+        defendingChampion_short: 챔
+        promotedFromBelow: 승격
+        promotedFromBelow_short: (▲)
+        relegatedFromAbove: 강등
+        relegatedFromAbove_short: (▼)
       details:
         first_team_squad: 1군 스쿼드
         no_first_team_players: 1군에 배정된 선수가 없습니다
@@ -324,3 +324,325 @@ new_game_wizard:
     load_leagues_failed_with_error: "리그를 불러오지 못했습니다: {error}"
   mod_import:
     select_mod_files_title: 모드 파일 선택
+
+  wizard_ui:
+    title: 새 게임
+    cancel: 취소
+    back: 뒤로
+    next: 다음
+    start_game: 게임 시작
+    loading: 불러오는 중...
+    db_title: 데이터베이스 및 모드
+    db_desc: 데이터베이스를 선택하고 설치된 모드를 활성화하세요.
+    db_col: 데이터베이스
+    mods_col: 모드
+    no_mods: 설치된 모드 없음
+    mods_hint: 모드를 활성화하려면 모드 폴더에 파일을 넣으세요.
+    leagues_title: 리그 선택
+    leagues_desc: 게임 세계에 포함할 리그를 선택하세요.
+    league_presets: 프리셋
+    league_season: 시작 시즌
+    league_recommended: 추천
+    league_extended: 확장
+    league_all: 전체
+    league_clear: 초기화
+    league_level: '레벨 {level} — {name}'
+    league_division: '{level}부 리그'
+    league_total: '{countries}개국 {leagues}개 리그'
+    club_title: 클럽 선택
+    club_desc: 감독을 맡을 클럽을 선택하세요.
+    club_select: 클럽 선택
+    club_journeyman: 프리맨 감독 (무직)
+    club_loading: 클럽 불러오는 중...
+    club_empty: 클럽을 보려면 먼저 리그를 선택하세요.
+    club_filter_country: 국가
+    club_filter_league: 리그
+    club_filter_search: 검색
+    club_filter_all_countries: 모든 국가
+    club_filter_all_leagues: 모든 리그
+    club_table_club: 클럽
+    club_table_league: 리그
+    club_table_rep: 명성
+    club_table_founded: 창단
+    club_count: '{count}개 클럽 표시'
+    club_champion: 우승
+    club_promoted: 승격
+    club_relegated: 강등
+    settings_title: 게임 설정
+    settings_desc: 난이도 및 시뮬레이션 설정을 조정하세요.
+    settings_start_date: 시작 날짜
+    manager_title: 감독 프로필
+    manager_desc: 감독으로서의 정체성을 만드세요.
+    assistant_title: 어시스턴트 코치
+    assistant_desc: 선택적으로 어시스턴트 코치를 만들 수 있습니다. 스카우팅, 전술 분석, 일상적인 조언을 돕습니다. 성격과 능력이 추천에 영향을 줍니다.
+    enable_assistant: 어시스턴트 코치 활성화
+    skills_title: 능력치 배분
+    skills_desc: 감독 속성에 1000 능력치 포인트를 배분하세요.
+    skills_used: '사용: {used} / 1000'
+    skills_remaining: '{remaining} 남음'
+    skills_over: '예산 초과: {over}'
+    skills_preset_balanced: 균형형 (720)
+    skills_preset_tactical: 전술 천재 (740)
+    skills_preset_motivator: 동기 부여자 (840)
+    skills_preset_reset: 초기화
+    skills_group_tactical: 전술
+    skills_group_mental: 정신력
+    skills_group_people: 인간 관계
+    skills_tactical_knowledge: 전술 지식
+    skills_tactical_adaptability: 전술 적응력
+    skills_judging_ability: '선수 평가 (능력)'
+    skills_judging_potential: '선수 평가 (잠재력)'
+    skills_determination: 결단력
+    skills_discipline: 규율
+    skills_ambition: 야망
+    skills_adaptability: 적응력
+    skills_motivating: 동기 부여
+    skills_man_management: 인재 관리
+    skills_charisma: 카리스마
+    skills_professionalism: 프로 정신
+    confirm_title: 확인 및 시작
+    confirm_desc: 게임 세계를 만들기 전에 선택 사항을 확인하세요.
+    confirm_database: 데이터베이스
+    confirm_season: 시즌
+    confirm_leagues: 리그
+    confirm_club: 클럽
+    confirm_manager: 감독
+    confirm_skills: 능력치
+    confirm_start_date: 시작 날짜
+    confirm_leagues_from: '{countries}개국에서 {leagues}'
+    confirm_skills_alloc: '{used} / 1000 배분됨'
+    confirm_unemployed: 무직
+    step_db: 데이터베이스
+    step_leagues: 리그
+    step_club: 클럽
+    step_settings: 설정
+    step_manager: 매니저
+    step_assistant: 어시스턴트
+    step_skills: 스킬
+    step_confirm: 확인
+
+  manager_form:
+    fname: 이름
+    lname: 성
+    dob: 생년월일
+    known_as: 알려진 이름
+    nationality: 국적
+    second_nationality: 제2 국적
+    gender: 성별
+    phenotype: 표현형
+    attire: 복장
+    expression: 표정
+    age_modifier: 나이 조정
+    hair_style: 헤어 스타일
+    facial_hair: 수염
+    hair_color: 머리 색
+    skin_tone: 피부 톤
+    shirt_color: 셔츠 색
+    eye_color: 눈 색
+    facial_shape: 얼굴형
+    personality: 성격
+    ph_fname: 이름
+    ph_lname: 성
+    ph_known_as: '닉네임, 모노님, 별칭'
+    ph_nationality: '선택...'
+    ph_phenotype: '표현형 선택...'
+    ph_none: 없음
+    pers_add: 성격 추가
+    pers_edit: 성격 편집
+    pers_none: 미설정
+    pers_role_manager: 감독
+    pers_role_assistant: 어시스턴트 코치
+    port_title_manager: 감독 초상화
+    port_title_assistant: 어시스턴트 초상화
+    port_ai: AI 생성
+    port_upload: 사진 업로드
+    port_change: 사진 변경
+    port_remove: 사진 삭제
+    port_generate: 선택지 생성
+    port_reroll: 다시 생성
+    port_seed: 시드
+    port_selected: '선택된 얼굴: {label}'
+    port_seed_label: '(시드 {seed})'
+    port_queued: 변경 사항이 큐에 추가되었습니다. 현재 생성이 끝나면 초상화가 업데이트됩니다.
+    port_generating: 생성 중...
+    port_no_portrait: 초상화 없음
+    port_upload_hint: 'AI 생성 대신 사진을 업로드할 수 있습니다. 위치와 크롭을 조정할 수 있습니다. 출력: 260 × 310 px (DF11 형식).'
+    port_age_tooltip: Facegen은 실제 날짜가 아닌 게임 시작 날짜를 기준으로 나이를 계산합니다.
+    port_age_with: '생년월일: {dob}. 게임 내 시작일: {startDate}. 게임 내 나이: {age}.'
+    port_age_without: '생년월일: {dob}. 게임 내 시작일: {startDate}.'
+
+  personality_editor:
+    title: 성격 편집
+    desc: '{role}의 기질과 접근 방식에 대한 간단한 설명을 작성하세요. 미디어, 선수, NPC의 인식에 영향을 줍니다.'
+    text: 텍스트
+    preview: 미리보기
+    preview_empty: 미리보기가 여기에 표시됩니다…
+    hint: '**굵게**, *기울임*, - 목록 항목을 지원합니다.'
+    save: 성격 저장
+    cancel: 취소
+    error: 성격은 필수입니다.
+
+  appearance:
+    gender:
+      male: 남성
+      female: 여성
+      non_binary: 논바이너리
+    phenotype:
+      western_european: 서유럽
+      scandinavian: 스칸디나비아
+      eastern_european: 동유럽
+      mediterranean: 지중해
+      middle_eastern: 중동
+      african: 아프리카
+      afro_diaspora: 아프로-디아스포라
+      mixed: '혼혈 / 다민족'
+      latino: '라틴계 / 혼혈'
+      native_american: 아메리카 원주민
+      asian: 아시아
+      south_east_asian: 동남아시아
+      south_asian: 남아시아
+      central_asian: 중앙아시아
+    attire:
+      kit_shirt: 유니폼
+      suit: 정장
+      tracksuit: 트레이닝복
+      polo: 폴로
+    expression:
+      neutral: 중립
+      grin: 활짝 웃음
+      smiling: 미소
+      happy: 행복
+      angry: 화남
+      serious: 진지함
+      stern: 엄격함
+      stoic: 스토이크
+      joyful: 기쁨
+      determined: 결의
+      relaxed: 편안함
+    age_modifier:
+      baby_faced: 동안
+      fresh_faced: 싱그러운 얼굴
+      youthful: 젊어보임
+      mature: 성숙함
+      athletic: 운동선수 같은
+      distinguished: 품격있는
+      weathered: 세월의 흔적
+      early_20s: 20대 초반
+      mid_20s: 20대 중반
+      late_20s: 20대 후반
+      early_30s: 30대 초반
+      mid_30s: 30대 중반
+      late_30s: 30대 후반
+      early_40s: 40대 초반
+      mid_40s: 40대 중반
+      late_40s: 40대 후반
+      early_50s: 50대 초반
+      mid_50s: 50대 중반
+      late_50s: 50대 후반
+      early_60s: 60대 초반
+      mid_60s: 60대 중반
+      late_60s: 60대 후반
+      seventies: 70대
+      eighties: 80대
+    hair_style:
+      bald: 대머리
+      stubble: 매우 짧음
+      bun: 번 헤어
+      short_afro: 짧은 아프로
+      long_afro: 긴 아프로
+      afro: 아프로
+      braids: 브레이드
+      buzz_cut: 버즈컷
+      curly: 곱슬
+      long: 긴 머리
+      dreadlocks: 드레드록
+      mohawk: 모히칸
+      ponytail: 포니테일
+      shaved: 삭발
+      short: 짧은 머리
+      straight: 직모
+      wavy: 웨이브
+      spikey: 뾰족한 머리
+      brushed_up: 올백
+      comb_over: 빗어 넘김
+      fade: 페이드
+      tight_curls: 타이트 컬
+      flat_top: 플랫탑
+      brush_cut: 브러시컷
+      undercut: 언더컷
+      crew_cut: 크루컷
+      caesar_cut: 시저컷
+      faux_hawk: 가짜 모히칸
+      short_curls: 짧은 컬
+      medium_curls: 중간 컬
+      long_curls: 긴 컬
+      curly_fringe: 곱슬 앞머리
+      short_wavy: 짧은 웨이브
+      medium_wavy: 중간 웨이브
+      long_wavy: 긴 웨이브
+      wavy_fringe: 웨이브 앞머리
+      side_part: 옆 가르마
+      quiff: 퀴프
+      shaggy: 샤기
+      taper: 테이퍼
+      fringe_up: 앞머리 올림
+      side_fringe: 옆 앞머리
+    facial_hair:
+      none: 없음
+      stubble: 수염 자국
+      full_beard: 풀 비어드
+      beard: 수염
+      circle_beard: 써클 비어드
+      goatee: 염소수염
+      extended_goatee: 확장 고티
+      mustache: 콧수염
+      sideburns: 구레나룻
+      muttonchops: 넓은 구레나룻
+
+  photo_editor:
+    title: 초상화 사진 편집
+    dropzone: 이미지를 선택하려면 클릭하거나 드래그 앤 드롭하세요.
+    hint: JPEG 또는 PNG. 크기 제한 없음 — 여기서 자를 수 있습니다.
+    dims: '출력: 260 × 310 px (DF11)'
+    zoom: 확대/축소
+    reset: 초기화
+    change_image: 이미지 변경
+    cancel: 취소
+    save: 초상화 저장
+    hair_color:
+      black: 검정
+      dark_brown: 짙은 갈색
+      brown: 갈색
+      light_brown: 밝은 갈색
+      dark_blonde: 짙은 금발
+      blonde: 금발
+      light_blonde: 밝은 금발
+      platinum_blonde: 플래티넘 금발
+      red_blonde: 붉은 금발
+      red: 빨강
+      grey_black: 회흑색
+      grey_brown: 회갈색
+      grey: 회색
+      white: 흰색
+      silver: 은색
+      salt_and_pepper: 소금과 후추
+    skin_tone:
+      very_light: 매우 밝은
+      light: 밝은
+      medium_light: 약간 밝은
+      medium: 중간
+      medium_dark: 약간 어두운
+      dark: 어두운
+      very_dark: 매우 어두운
+      freckles: 주근깨
+      pale: 창백한
+      fair: 흰 피부
+      olive: 올리브
+      tan: 탄
+      ruby: 루비
+      light_brown: 밝은 갈색
+      medium_brown: 중간 갈색
+      dark_brown: 짙은 갈색
+      white: 흰색
+      medium_white: 중간 흰색
+      moderate_brown: 보통 갈색
