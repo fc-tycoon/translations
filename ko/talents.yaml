@@ -40,7 +40,7 @@ player:
           def_movement:
             label: 수비 움직임
             description: 수비 시 발놀림과 위치 선정.
-            tooltip: "영향: 조키, 압박, 수비 포지셔닝, 활동량."
+            tooltip: "영향: 컨테이닝, 압박, 수비 포지셔닝, 활동량."
 
       attacking:
         label: 공격 기반
@@ -74,7 +74,7 @@ player:
           coordination:
             label: 코디네이션
             description: 신체 제어와 미세 조정.
-            tooltip: "영향: 민첩, 밸런스, 신체 제어, 조키, 반사 신경."
+            tooltip: "영향: 민첩, 밸런스, 신체 제어, 컨테이닝, 반사 신경."
           aerial:
             label: 공중 능력
             description: 낙하지점 판단과 점프 타이밍.

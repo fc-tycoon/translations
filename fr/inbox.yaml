@@ -27,3 +27,10 @@ inbox:
   priority_low: Basse Priorité
   blocking: Nécessite une Attention
   blocking_count: "{count} message(s) important(s) nécessitent votre attention"
+  response_sent: Réponse envoyée
+  select_option: "— Sélectionner —"
+  submit_response: Envoyer la réponse
+  today: Aujourd'hui
+  yesterday: Hier
+  search: Rechercher des messages…
+  page_of: "{page} sur {total}"

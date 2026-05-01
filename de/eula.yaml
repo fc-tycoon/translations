@@ -1,0 +1,10 @@
+# EULA Translations (German)
+
+eula:
+  title: Endbenutzer-Lizenzvertrag
+  subtitle: Bitte lesen Sie die nachstehenden Bedingungen und akzeptieren Sie diese, um fortzufahren
+  accept_label: Ich habe den Endbenutzer-Lizenzvertrag gelesen und stimme ihm zu
+  decline_button: Ablehnen & Beenden
+  accept_button: Akzeptieren & Fortfahren
+  accept_tooltip: Bitte aktivieren Sie das obige Kontrollkästchen, um den Bedingungen zuzustimmen
+  load_error: Fehler beim Laden des EULA-Inhalts. Bitte wenden Sie sich an den Support.

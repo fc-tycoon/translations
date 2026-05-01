@@ -1,0 +1,14 @@
+squad:
+  title: Selectie
+  col_sharpness: Scherp
+  col_feet: Voeten
+  right_foot: Rechts
+  left_foot: Links
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Profiel bekijken
+  ctx_move: Naar team verplaatsen
+  ctx_training: Training
+  ctx_release: Speler vrijgeven

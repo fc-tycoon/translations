@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: "No hay modelo LLM cargado. Configura un modelo en Preferencias primero."
+  choose_who: "\u00bfCon qui\u00e9n quieres hablar?"
+  open_conversations: Conversaciones abiertas
+  no_summary: Sin resumen
+  back: "\u2190 Volver"
+  type_message: "Escribe un mensaje..."
+  send: Enviar

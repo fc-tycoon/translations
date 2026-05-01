@@ -1,0 +1,14 @@
+squad:
+  title: スカッド
+  col_sharpness: 鋭さ
+  col_feet: 足
+  right_foot: 右
+  left_foot: 左
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: プロフィールを見る
+  ctx_move: チームへ移す
+  ctx_training: トレーニング
+  ctx_release: 選手を放出

@@ -1,0 +1,9 @@
+substitutions:
+  description:
+    none: なし
+    template: '{subs_named}人中{subs_used}人{plus_gk_on_bench}{stops}{extra_time}{free_gk}'
+    plus_gk_on_bench: '+GK'
+    free_gk_sub_allowed: '+GK'
+    stops_one: '（中断は{count}回まで）'
+    stops_other: '（中断は{count}回まで）'
+    extra_time: '+延長{count}人'

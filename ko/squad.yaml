@@ -1,0 +1,14 @@
+squad:
+  title: 스쿼드
+  col_sharpness: 예리함
+  col_feet: 발
+  right_foot: 오른발
+  left_foot: 왼발
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: 프로필 보기
+  ctx_move: 팀으로 이동
+  ctx_training: 훈련
+  ctx_release: 선수 방출

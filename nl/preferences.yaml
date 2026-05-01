@@ -13,10 +13,10 @@ preferences:
     default: Standaard
     disabled: Uitgeschakeld
     enabled: Ingeschakeld
-    no: Nee
+    'no': Nee
     none: Geen
     unknown: Onbekend
-    yes: Ja
+    'yes': Ja
 
   appearance:
     theme_heading: Thema
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: Automatische saves bewaren
     keep_autosaves_hint: Aantal automatische saves om te bewaren voordat de oudste worden verwijderd
     confirm_overwrite: Overschrijven bevestigen
+    copy: Opslagbestanden worden nu altijd opgelost binnen de backend-beheerde map saved-games, zodat ontwikkel- en verpakte builds automatisch de juiste hoofdmap gebruiken.
+    location_hint: Deze locatie wordt door de backend vastgezet en hangt niet langer af van door de renderer aangeleverde paden.
+    autosave_hint: Kies het voorkeursinterval voor automatische opslagmomenten.
+    confirm_overwrite_hint: Vraag bevestiging voordat een bestaand handmatig opslagbestand wordt overschreven.
 
   display:
     heading: Weergave
     fullscreen_label: In volledig scherm starten
     fullscreen_hint: Wordt toegepast op het spelvenster bij de volgende start.
+    always_on_top_label: Altijd op voorgrond
+    always_on_top_hint: Houd het spelvenster boven andere bureaubladvensters. Wordt direct toegepast en onthouden voor de volgende start.
     confirm_exit_label: Bevestigen voor afsluiten
     confirm_exit_hint: Vraag om bevestiging voordat de spelapplicatie wordt gesloten.
     title: Weergave-instellingen
@@ -66,15 +72,31 @@ preferences:
     ui_scale: UI-schaal
     show_tooltips: Tooltips tonen
     animations: Animaties
+    interface_heading: Interface
+    ui_scale_hint: Schaal de interface tussen 80% en 120%.
+    show_tooltips_hint: Schakel contextuele hulpmeldingen in door de hele interface.
+    animations_hint: Sta interface-overgangen en bewegingseffecten toe.
 
   languages:
     title: Taalinstellingen
+    heading: Talen
     game_language: Speltaal
+    game_language_label: Speltaal
     game_language_hint: Wijzigt de taal voor alle spelteksten (herstart vereist voor sommige UI)
     date_format: Datumindeling
+    date_format_label: Datumindeling
+    date_format_hint: Stelt de voorkeursweergave voor datums in voor UI die deze voorkeur gebruikt.
     number_format: Getalnotatie
+    number_format_label: Getalnotatie
+    number_format_hint: Stelt de voorkeursstijl in voor duizendtallen en decimalen.
+    week_start_label: Week begint op
+    week_start_hint: Stelt in welke dag als eerste wordt getoond in kalenders en datumkiezers.
+    week_start_monday: Maandag
+    week_start_sunday: Zondag
     reload_translations: Vertalingen opnieuw laden
+    reload_label: Vertalingen opnieuw laden
     reload_btn: Opnieuw laden
+    reload_button: Opnieuw laden
     reload_hint: Alle vertaalbestanden opnieuw laden van schijf (handig voor ontwikkeling)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: Tactiekwijzigingen
     quick_continue: Snel doorgaan
     quick_continue_hint: Bevestiging overslaan bij doorgaan met het spel
+    show_tutorials_hint: Laat tutorialmeldingen ingeschakeld voor onboarding en herinneringen.
+    confirm_actions_hint: Kies voor welke beheeracties eerst om bevestiging gevraagd moet worden.
 
   ui_tab:
     title: UI-instellingen
@@ -105,6 +129,7 @@ preferences:
     midfielders: Middenvelders
     attackers: Aanvallers
     reset_btn: resetten
+    copy: Deze kleuren bepalen de accenten voor de vier positiegroepen die worden gebruikt in selectie- en rolgerichte UI-schermen.
 
   shortcuts:
     title: Toetsenbord-sneltoetsen
@@ -202,14 +227,14 @@ preferences:
       slow: Voorbeeld met lage frequentie. Minder updates per uitspraak en minder CPU-belasting. Tekst verschijnt in grotere blokken in plaats van woord voor woord.
 
     recommendations:
-      cpu_1: CPU-inferentie: begin met Tiny of Tiny English. Base kan op sterkere CPU's werken, maar Small is meestal beter voor gebufferde dictatie.
-      cpu_2: CPU-livevoorbeeld: test het eerst. Als typen of UI-responsiviteit achteruitgaat, verhoog het interval dan naar 500-1000 ms voordat je de modelkwaliteit de schuld geeft.
+      cpu_1: 'CPU-inferentie: begin met Tiny of Tiny English. Base kan op sterkere CPU''s werken, maar Small is meestal beter voor gebufferde dictatie.'
+      cpu_2: 'CPU-livevoorbeeld: test het eerst. Als typen of UI-responsiviteit achteruitgaat, verhoog het interval dan naar 500-1000 ms voordat je de modelkwaliteit de schuld geeft.'
       cuda_1: CUDA is momenteel de beste route voor livevoorbeeld met lage latentie en voor het draaien van Base- of Small-modellen zonder dat de UI traag aanvoelt.
       cuda_2: Als je meerdere NVIDIA-GPU's hebt, zet ASR alleen op de lichtere kaart als de hoofdkaart al druk is met LLM- of facegen-werk.
       openvino_1: De Intel-NPU-modus vereist de bijpassende OpenVINO-encoder-IR-bestanden voor je gekozen Whisper-model. Alleen het gewone ggml-model is niet genoeg.
       openvino_2: OpenVINO NPU offloadt momenteel alleen Whisper-encoderwerk. Het grootste voordeel zie je meestal bij Base of Small, niet per se bij Tiny.
       other_gpu: Vulkan en HIP werken het best als eenvoudige GPU-versnellingsmodi. De huidige bridge gebruikt voor deze backends de standaard-GPU van de runtime in plaats van een apparaatskiezer.
-      streaming_1: Livevoorbeeld: begin rond 300-500 ms. Als je vloeiendere deelresultaten wilt, kun je 200 ms testen, maar houd dat alleen aan als de UI op jouw machine responsief blijft.
+      streaming_1: 'Livevoorbeeld: begin rond 300-500 ms. Als je vloeiendere deelresultaten wilt, kun je 200 ms testen, maar houd dat alleen aan als de UI op jouw machine responsief blijft.'
       streaming_2: Je huidige interval is erg agressief. Als het voorbeeld hapert of het veld vastloopt, gebruik dan eerst een langere buffer voordat je de modelgrootte verandert.
       buffered: De gebufferde modus is nog steeds de veiligste keuze als je meer geeft om uiteindelijke nauwkeurigheid dan om tekst die halverwege een zin al verschijnt.
 

@@ -174,7 +174,7 @@ player:
     standing_tackles: 站立抢断
     sliding_tackles: 滑铲
     interceptions: 拦截
-    jockeying: 卡位
+    containing: 卡位
     pressing_technique: 逼抢技巧
     blocking: 封堵
     defensive_screening: 防守掩护

@@ -1,0 +1,8 @@
+asr:
+  start_dictation: Rozpocznij dyktowanie
+  stop_dictation: Zatrzymaj dyktowanie
+  waiting_microphone: Oczekiwanie na mikrofon
+  transcribing: "Transkrypcja\u2026"
+  listening: "Słucham\u2026"
+  waiting_microphone_permission: Oczekiwanie na uprawnienia mikrofonu
+  converting_speech: "Konwertowanie mowy na tekst\u2026"

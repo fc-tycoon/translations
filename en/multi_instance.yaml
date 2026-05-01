@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Another Instance Detected
+  heading: Another FC Tycoon game or editor instance is already running.
+  intro: Running multiple instances at the same time means they share the same configuration files and can target the same database or save files. Changes are not synchronized between running instances.
+  instructions: Confirm each statement below before continuing with another instance.
+  config_path_label: Shared configuration directory
+  data_path_label: Relevant database or save path
+  path_unavailable: Not available
+  preferences_ack: I understand that preference and configuration changes will not appear in the other running instance until that instance reloads or restarts.
+  database_ack: I understand that database or save changes can overwrite the other instance's work, and those changes may not appear there until it reloads the database or restarts.
+  final_ack: I accept these terms and conditions and want to continue running another instance.
+  continue: Continue
+  exit: Exit

@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Verwachting van het bestuur
+    performance: Prestatie
+    recent_form: Recente vorm
+    relegated: Gedegradeerd
+  tabs:
+    standings: Stand
+    player_stats: Spelersstatistieken
+    rules: Regels
+  messages:
+    no_fixtures_drawn: Nog geen wedstrijden ingedeeld.

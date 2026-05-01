@@ -40,7 +40,7 @@ player:
           def_movement:
             label: Defensive Movement
             description: Footwork quality while defending.
-            tooltip: "Feeds: jockeying, pressing, defensive positioning, work rate."
+            tooltip: "Feeds: containing, pressing, defensive positioning, work rate."
 
       attacking:
         label: Attacking Foundation
@@ -74,7 +74,7 @@ player:
           coordination:
             label: Coordination
             description: Body control and micro-adjustments.
-            tooltip: "Feeds: agility, balance, body control, jockeying, reflexes."
+            tooltip: "Feeds: agility, balance, body control, containing, reflexes."
           aerial:
             label: Aerial
             description: Judging flight and timing jumps.

@@ -123,6 +123,13 @@ ui:
     quick_save_description: Quick save created on {date}
     file_exists_title: File Already Exists
     file_exists_message: The file "{filename}.db" already exists. Saving will overwrite it.
+    managers: Managers
+    file_size: File Size
+    password_required: Password Required
+    enter_password: Enter save password...
+    open_folder: Open
+    password_preserve_hint: Leave the password blank to keep the existing protection, or enter a new password to replace it.
+    password_optional_hint: Leave the password blank to save without password protection.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -146,6 +153,7 @@ ui:
     help: Help
     about: About
     version: Version
+    coming_soon: Coming soon
     name: Name
     club: Club
     league: League
@@ -182,24 +190,65 @@ ui:
     unknown_error: Unknown error
     vacant: Vacant
     not_available: N/A
+    team: Team
+    teams: Teams
+    home: Home
+    away: Away
+    score: Score
+    competition: Competition
+    players: Players
+    staff: Staff
+    transfers: Transfers
+    form: Form
+    morale: Morale
+    fitness: Fitness
+    height: Height
+    contract: Contract
+    value: Value
+    city: City
+    capacity: Capacity
+    prize_money: Prize Money
+    tv_deal: TV Deal
+    fixtures: Fixtures
+    results: Results
+    round: Round
+    venue: Venue
+    goals: Goals
+    assists: Assists
+    avg_rating: Avg Rating
+    no_players_found: No players found.
+    player_count: '{count} players'
+  datepicker:
+    select_date: Select date
+    clear_date: Clear date
+    previous_year: Previous year
+    previous_month: Previous month
+    select_month: Select month
+    select_year: Select year
+    next_month: Next month
+    next_year: Next year
+    time_utc: Time (UTC)
+    hour_utc: Hour (UTC)
+    minute: Minute
+    range_end_hint: Now click an end date
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: Open licenses folder
-    third_party_notices: Third-Party Notices
-    fc_tycoon_license: FC Tycoon License
-    load_failed: Failed to load licenses
-    load_file_failed: Failed to load license file
-    load_file_failed_inline: Failed to load this license file.
-    open_folder_failed: Failed to open licenses folder
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: Failed to load credits
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: P
+    won: W
+    drawn: D
+    lost: L
+    goals_for: GF
+    goals_against: GA
+    goal_difference: GD
+    points: Pts
+    appearances: App
+    minutes: Mins
+    yellow_cards: YC
+    red_cards: RC
+    matchday: MD
 
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
@@ -223,7 +272,7 @@ ui:
     blocking_attention: You have {count} important message(s) that require your attention.
     advance_day_failed: Failed to advance to next day. Please contact support on the FC Tycoon Discord channel.
     load_success: Game loaded successfully
-    save_success: Game saved to {filename}.db
+    save_success: Game saved to {filename}
     loaded_most_recent_save: 'Loaded most recent save: {name}'
 
   # ══════════════════════════════════════════════════════════════════════
@@ -238,6 +287,8 @@ ui:
     locate_save_folder_failed: Failed to locate save folder
     open_save_dialog_failed: Failed to open save dialog
     load_most_recent_failed: Failed to load most recent save
+    read_save_metadata_failed: Failed to read save file details
+    load_save_list_failed: Failed to load save games list
     ui_init_after_load_failed: Game loaded, but failed to initialize the UI
     loaded_save_no_active_manager: Loaded save has no active manager. You may need to start a new game or repair this save.
     connection_lost: Connection lost
@@ -246,6 +297,9 @@ ui:
     permission_denied: Permission denied
     file_not_found: File not found
     database_error: Database error
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -282,3 +336,20 @@ ui:
     apply: Apply
     browse: Browse...
     exit: Exit
+    retry: Retry
+    quit: Quit
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+
+  # Ordinal position format — {n} is replaced with the position number.
+  # Plural categories (one/two/few/other) are selected by Intl.PluralRules(lang, {type:'ordinal'}).
+  ordinal:
+    one: '{n}st'
+    two: '{n}nd'
+    few: '{n}rd'
+    other: '{n}th'

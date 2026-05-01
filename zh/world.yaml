@@ -1,0 +1,56 @@
+world:
+  breadcrumb:
+    root: 世界
+    switch_continent: 切换洲
+    switch_country: 切换国家
+    switch_club: 切换俱乐部
+  continents:
+    africa:
+      description: 非洲各国、俱乐部和赛事。
+    asia:
+      description: 亚洲各国、俱乐部和赛事。
+    europe:
+      description: 欧洲各国、俱乐部和赛事。
+    north_america:
+      description: 北美洲各国、俱乐部和赛事。
+    oceania:
+      description: 大洋洲各国、俱乐部和赛事。
+    south_america:
+      description: 南美洲各国、俱乐部和赛事。
+  search:
+    continents: 搜索大洲...
+    countries: 搜索国家...
+    clubs: 搜索俱乐部...
+    players: 搜索球员...
+    staff: 搜索职员...
+    default: 搜索...
+  sections:
+    competitions: 赛事
+    clubs: 俱乐部
+  columns:
+    continent: 大洲
+    countries: 国家
+    clubs: 俱乐部
+    players: 球员
+    competitions: 赛事
+    population: 人口
+    competition: 赛事
+    teams: 球队
+    level: 级别
+    squad: 阵容
+    nationality_abbr: 国籍
+    position_abbr: 位置
+  labels:
+    players: 球员
+    staff: 职员
+  competition_types:
+    domestic_league: 国内联赛
+    domestic_cup: 国内杯赛
+    continental_cup: 洲际杯赛
+    league_cup: 联赛杯
+    international: 国际赛事
+  club_types:
+    professional: 职业
+    semi_professional: 半职业
+    amateur: 业余
+    academy: 青训学院

@@ -13,10 +13,10 @@ preferences:
     default: 既定値
     disabled: 無効
     enabled: 有効
-    no: いいえ
+    'no': いいえ
     none: なし
     unknown: 不明
-    yes: はい
+    'yes': はい
 
   appearance:
     theme_heading: テーマ
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: 自動保存を保持
     keep_autosaves_hint: 古いものを削除する前に保持する自動保存数
     confirm_overwrite: 上書きを確認
+    copy: セーブファイルは常にバックエンド管理の saved-games フォルダーに解決されるため、開発ビルドでもパッケージ版でも正しいルートが自動的に使われます。
+    location_hint: この場所はバックエンドで固定され、レンダラー側のパスには依存しません。
+    autosave_hint: 自動保存スナップショットの間隔を選択します。
+    confirm_overwrite_hint: 既存の手動セーブを上書きする前に確認します。
 
   display:
     heading: 表示
     fullscreen_label: 全画面で起動
     fullscreen_hint: 次回起動時にゲームウィンドウへ適用されます。
+    always_on_top_label: 常に最前面
+    always_on_top_hint: ゲームウィンドウを他のデスクトップウィンドウより前面に保ちます。すぐに適用され、次回起動時にも保持されます。
     confirm_exit_label: 終了前に確認する
     confirm_exit_hint: ゲームアプリを閉じる前に確認を求めます。
     title: 表示設定
@@ -66,15 +72,31 @@ preferences:
     ui_scale: UIスケール
     show_tooltips: ツールチップを表示
     animations: アニメーション
+    interface_heading: インターフェース
+    ui_scale_hint: インターフェースを 80% から 120% の間で拡大縮小します。
+    show_tooltips_hint: インターフェース全体で状況に応じたヒントを有効にします。
+    animations_hint: インターフェースの遷移やアニメーション効果を許可します。
 
   languages:
     title: 言語設定
+    heading: 言語
     game_language: ゲーム言語
+    game_language_label: ゲーム言語
     game_language_hint: ゲーム内テキストの言語を変更します（UIの一部は再起動が必要）
     date_format: 日付形式
+    date_format_label: 日付形式
+    date_format_hint: この設定に対応する UI で使う日付表示形式を設定します。
     number_format: 数値形式
+    number_format_label: 数値形式
+    number_format_hint: 桁区切りと小数点の表示形式を設定します。
+    week_start_label: 週の開始曜日
+    week_start_hint: カレンダーと日付ピッカーで最初に表示する曜日を設定します。
+    week_start_monday: 月曜日
+    week_start_sunday: 日曜日
     reload_translations: 翻訳を再読み込み
+    reload_label: 翻訳を再読み込み
     reload_btn: 再読み込み
+    reload_button: 再読み込み
     reload_hint: すべての翻訳ファイルをディスクから再読み込みします（開発向け）
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: 戦術変更
     quick_continue: クイック継続
     quick_continue_hint: 継続時の確認を省略します
+    show_tutorials_hint: 導入とリマインダーのためにチュートリアル案内を有効にしておきます。
+    confirm_actions_hint: どの管理アクションで確認を求めるかを選択します。
 
   ui_tab:
     title: UI設定
@@ -105,6 +129,7 @@ preferences:
     midfielders: ミッドフィルダー
     attackers: フォワード
     reset_btn: リセット
+    copy: これらの色は、スカッドや役割中心の UI で使われる 4 つのポジションユニット群のアクセント色を定義します。
 
   shortcuts:
     title: キーボードショートカット

@@ -1,0 +1,10 @@
+# EULA Translations (Portuguese)
+
+eula:
+  title: Contrato de Licença de Usuário Final
+  subtitle: Leia e aceite os termos abaixo para continuar
+  accept_label: Li e concordo com o Contrato de Licença de Usuário Final
+  decline_button: Recusar e Sair
+  accept_button: Aceitar e Continuar
+  accept_tooltip: Marque a caixa acima para aceitar os termos
+  load_error: Erro ao carregar o conteúdo do EULA. Por favor, entre em contato com o suporte.

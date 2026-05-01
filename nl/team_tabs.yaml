@@ -1,0 +1,10 @@
+team_tabs:
+  all_teams: Alle teams
+  first_team: Eerste elftal
+  reserves: Reserves
+  youth: Jeugd
+  c_team: C-elftal
+  all: Alle
+  results: Resultaten
+  upcoming: Komend
+  generic: 'Team {teamType}'

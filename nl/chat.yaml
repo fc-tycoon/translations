@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: Geen LLM-model geladen. Configureer eerst een model in Voorkeuren.
+  choose_who: "Met wie wil je spreken?"
+  open_conversations: Openstaande gesprekken
+  no_summary: Geen samenvatting
+  back: "\u2190 Terug"
+  type_message: "Typ een bericht..."
+  send: Verzenden

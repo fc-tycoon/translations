@@ -27,3 +27,10 @@ inbox:
   priority_low: 低優先度
   blocking: 対応が必要
   blocking_count: "{count}件の重要なメッセージが対応を必要としています"
+  response_sent: 返信済み
+  select_option: "— 選択 —"
+  submit_response: 返信を送信
+  today: 今日
+  yesterday: 昨日
+  search: メッセージを検索…
+  page_of: "{page} / {total}"

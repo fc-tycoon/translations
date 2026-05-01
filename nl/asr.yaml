@@ -1,0 +1,8 @@
+asr:
+  start_dictation: Dictaat starten
+  stop_dictation: Dictaat stoppen
+  waiting_microphone: Wachten op microfoon
+  transcribing: "Transcriberen\u2026"
+  listening: "Luisteren\u2026"
+  waiting_microphone_permission: Wachten op microfoontoestemming
+  converting_speech: "Spraak omzetten naar tekst\u2026"

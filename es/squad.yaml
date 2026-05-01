@@ -1,0 +1,14 @@
+squad:
+  title: Plantilla
+  col_sharpness: Agud.
+  col_feet: Pies
+  right_foot: Derecha
+  left_foot: Izquierda
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Ver perfil
+  ctx_move: Mover al equipo
+  ctx_training: Entrenamiento
+  ctx_release: Liberar jugador

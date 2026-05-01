@@ -358,6 +358,7 @@ new_game_wizard:
     club_filter_country: 国
     club_filter_league: リーグ
     club_filter_search: 検索
+    club_search_placeholder: クラブを検索...
     club_filter_all_countries: すべての国
     club_filter_all_leagues: すべてのリーグ
     club_table_club: クラブ
@@ -425,6 +426,7 @@ new_game_wizard:
     fname: 名前（名）
     lname: 名前（姓）
     dob: 生年月日
+    date_of_birth_placeholder: 生年月日を選択
     known_as: 通称
     nationality: 国籍
     second_nationality: 第二国籍
@@ -467,12 +469,35 @@ new_game_wizard:
     port_generating: 生成中...
     port_no_portrait: ポートレートなし
     port_upload_hint: 'AI生成の代わりに写真をアップロードできます。位置調整とトリミングが可能です。出力: 260 × 310 px (DF11フォーマット)。'
+    port_hint_base: 'Tip: Face generation uses one shared runtime and queues portrait work automatically.'
+    port_hint_vram: 'Tip: Face generation uses one shared runtime and queues portrait work automatically. Detected {vram} GB VRAM on {adapter}.'
     port_age_tooltip: Facegenはゲームの開始日を使用して年齢を計算します。実際の日付ではありません。
     port_age_with: '生年月日: {dob}。ゲーム内開始日: {startDate}。ゲーム内年齢: {age}。'
     port_age_without: '生年月日: {dob}。ゲーム内開始日: {startDate}。'
+    port_inference_unavailable: Inference time unavailable
+    port_inference_ms: '{milliseconds} ms inference'
+    port_inference_seconds: '{seconds} s inference'
+    port_file_size_unavailable: File size unavailable
+    port_file_size_kb: '{kilobytes} KB JPEG'
+    port_source_database: Loaded from portrait cache
+    port_source_generated: Freshly rendered
+    port_requirements_error: Complete nationality, phenotype, attire, and date of birth before generating portraits.
+    port_require_nationality: Select a nationality before generating portraits.
+    port_require_phenotype: Select a phenotype before generating portraits.
+    port_require_date_of_birth: Select a date of birth before generating portraits.
+    port_require_attire: Select an attire before generating portraits.
+    port_require_manager_fields: Complete the required manager fields before generating portraits.
+    port_require_assistant_fields: Complete the required assistant fields before generating portraits.
+    port_generation_no_image: Generation returned no image
+    port_seed_invalid: Seed must be a signed 32-bit integer.
+    port_seed_duplicate: Each face choice must use a different seed.
+    port_face_a: Face A
+    port_face_b: Face B
 
   personality_editor:
     title: 性格を編集
+    template_label: 性格タイプ
+    template_placeholder: 性格タイプを選択
     desc: '{role}の気質とアプローチについて簡単に説明してください。メディア、選手、NPCの認識に影響します。'
     text: テキスト
     preview: プレビュー

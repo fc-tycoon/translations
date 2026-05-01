@@ -1,0 +1,22 @@
+club_overview:
+  loading: 클럽 데이터 불러오는 중...
+  overview:
+    club_name: 클럽명
+    national_reputation: 국내 평판
+    international_reputation: 국제 평판
+    elo_rating: Elo 평점
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: 스태프를 찾을 수 없습니다.
+    other_department: 기타
+  competitions:
+    season: '{season} 시즌'
+    empty: 진행 중인 대회가 없습니다.
+  schedule:
+    placeholder: 라이벌 구단의 경기 일정은 아직 제공되지 않습니다.
+  transfers:
+    placeholder: 라이벌 구단의 이적 활동은 아직 제공되지 않습니다.
+  errors:
+    not_found: '클럽 {clubId}을(를) 찾을 수 없습니다.'
+    load_failed: 클럽 데이터 불러오기에 실패했습니다

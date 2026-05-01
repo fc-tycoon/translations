@@ -1,0 +1,73 @@
+# Game Shell Translations (Japanese)
+
+game_shell:
+  brand: FC Tycoon
+  chat: チャット
+  save_game: ゲームを保存
+  main_menu: メインメニュー
+  simulating: シミュレーション中...
+  continue: 続ける
+  match_results_title: 試合結果
+  next_match_title: 次の試合
+  vs: vs
+  welcome_title: 'ようこそ、{name}'
+  welcome_text: 旅が始まりました。続けるを押して最初の試合日に進みましょう。
+  fixtures_title: 今後の試合
+  no_fixtures: 今後の試合はありません。
+  matchday_short: 'MD {day}'
+  table_title: リーグ表
+  table_no_data: まだリーグデータがありません。最初に試合日に進んでください。
+  table_col_team: チーム
+  inbox_title: 受信箱
+  inbox_no_messages: メッセージはありません。
+  inbox_new_badge: 新着
+  squad_title: スカッド
+  squad_coming_soon: スカッド管理は近日公開予定です。
+  loading: 読み込み中...
+  nav:
+    dashboard: ダッシュボード
+    fixtures: 試合
+    table: リーグ表
+    inbox: 受信箱
+    squad: スカッド
+    tactics: 戦術
+    transfers: 移籍
+    home: ホーム
+    dynamics: ダイナミクス
+    staff: スタッフ
+    schedule: 日程
+    training: トレーニング
+    medical_centre: メディカルセンター
+    competitions: 大会
+    scouting: スカウティング
+    club_info: クラブ情報
+    board: 取締役会
+    finances: 財務
+    facilities: 施設
+    dev_centre: 育成センター
+  world:
+    title: 世界
+    navigation: 世界ナビゲーション
+  menu:
+    title: メニュー
+    exit_to_main_menu: メインメニューへ戻る
+    exit_game: ゲームを終了
+  loading:
+    title: 読み込み中...
+    subtitle: セーブファイルからゲーム状態を復元しています
+  saving:
+    title: 保存中...
+    subtitle: {filename} を書き込み中
+  about:
+    title: FC Tycoon について
+    tagline: サッカーマネジメントシミュレーション
+    tech_stack: Go・Vue・Riptide・DuckDB で構築
+    dedication_intro: このゲームを次の方々に捧げます:
+    inspiration_intro: そして、私がプログラマーになるきっかけをくれた次の方々へ:
+  exit_dialog:
+    title: ゲームを終了
+    message: ゲームを終了しますか？ 未保存の進行状況は失われます。
+  routes:
+    player_profile: 選手プロフィール
+    competition: 大会
+    club: クラブ

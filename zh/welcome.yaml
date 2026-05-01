@@ -17,6 +17,7 @@ welcome:
   competition: 赛事
   board_expectation: 董事会期望
   transfer_budget: 转会预算
+  message: "我很高兴欢迎您来到{clubName}。在我们一起了解俱乐部、设施和期望时，我将作为您的主要联系人。"
 
   confirm_save_new_game: "是否要保存新游戏？"
   manager_fallback: 主教练

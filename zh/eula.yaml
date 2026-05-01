@@ -1,0 +1,10 @@
+# EULA Translations (Chinese Simplified)
+
+eula:
+  title: 最终用户许可协议
+  subtitle: 请阅读并接受以下条款以继续
+  accept_label: 我已阅读并同意最终用户许可协议
+  decline_button: 拒绝并退出
+  accept_button: 接受并继续
+  accept_tooltip: 请勾选上方复选框以接受条款
+  load_error: 加载 EULA 内容时出错。请联系支持团队。

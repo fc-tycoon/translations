@@ -73,6 +73,7 @@ ui:
     pause: 일시정지
     speed: 속도
     fast_forward: 빨리감기
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: 다음 날
     advance_tomorrow: 내일 오전 9시로 진행
     cycle_speed: 게임 속도 변경 (클릭하여 변경)
@@ -116,6 +117,13 @@ ui:
     quick_save_description: '{date}에 만든 빠른 저장'
     file_exists_title: 파일이 이미 존재합니다
     file_exists_message: '"{filename}.db" 파일이 이미 존재합니다. 저장하면 덮어씁니다.'
+    managers: 감독
+    file_size: 파일 크기
+    password_required: 비밀번호 필요
+    enter_password: 저장 비밀번호 입력...
+    open_folder: 열기
+    password_preserve_hint: 기존 보호를 유지하려면 비밀번호를 비워 두고, 변경하려면 새 비밀번호를 입력하세요.
+    password_optional_hint: 비밀번호 보호 없이 저장하려면 비밀번호를 비워 두세요.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: 도움말
     about: 정보
     version: 버전
+    coming_soon: Coming soon
     name: 이름
     club: 클럽
     league: 리그
@@ -176,6 +185,66 @@ ui:
     vacant: 공석
     not_available: 해당 없음
 
+    team: 팀
+    teams: 팀
+    home: 홈
+    away: 원정
+    score: 스코어
+    competition: 대회
+    players: 선수
+    staff: 스태프
+    transfers: 이적
+    form: 폼
+    morale: 사기
+    fitness: 컨디션
+    height: 키
+    contract: 계약
+    value: 가치
+    city: 도시
+    capacity: 수용 인원
+    prize_money: 상금
+    tv_deal: TV 계약
+    fixtures: 경기 일정
+    results: 결과
+    round: 라운드
+    venue: 경기장
+    goals: 득점
+    assists: 도움
+    avg_rating: 평균 평점
+    no_players_found: 선수를 찾을 수 없습니다.
+    player_count: '{count}명'
+  datepicker:
+    select_date: 날짜 선택
+    clear_date: 날짜 지우기
+    previous_year: 이전 연도
+    previous_month: 이전 달
+    select_month: 월 선택
+    select_year: 연도 선택
+    next_month: 다음 달
+    next_year: 다음 연도
+    time_utc: 시간 (UTC)
+    hour_utc: 시 (UTC)
+    minute: 분
+    range_end_hint: 이제 종료 날짜를 클릭하세요
+
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: P
+    won: W
+    drawn: D
+    lost: L
+    goals_for: GF
+    goals_against: GA
+    goal_difference: GD
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: YC
+    red_cards: RC
+    matchday: MD
+
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
   # ══════════════════════════════════════════════════════════════════════
@@ -198,26 +267,8 @@ ui:
     blocking_attention: 주의가 필요한 중요한 메시지가 {count}개 있습니다.
     advance_day_failed: 다음 날로 진행하지 못했습니다. FC Tycoon Discord 채널에서 지원팀에 문의하세요.
     load_success: 게임을 불러왔습니다
-    save_success: '{filename}.db에 게임을 저장했습니다'
+    save_success: '{filename}에 게임을 저장했습니다'
     loaded_most_recent_save: '가장 최근 저장을 불러왔습니다: {name}'
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: 라이선스 폴더 열기
-    third_party_notices: 타사 고지
-    fc_tycoon_license: FC Tycoon 라이선스
-    load_failed: 라이선스를 불러오지 못했습니다
-    load_file_failed: 라이선스 파일을 불러오지 못했습니다
-    load_file_failed_inline: 이 라이선스 파일을 불러오지 못했습니다.
-    open_folder_failed: 라이선스 폴더를 열지 못했습니다
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: 크레딧을 불러오지 못했습니다
 
   # ══════════════════════════════════════════════════════════════════════
   # Error Messages
@@ -231,6 +282,8 @@ ui:
     locate_save_folder_failed: 저장 폴더를 찾을 수 없습니다
     open_save_dialog_failed: 저장 대화 상자를 열지 못했습니다
     load_most_recent_failed: 가장 최근 저장을 불러오지 못했습니다
+    read_save_metadata_failed: 저장 파일 세부 정보를 읽지 못했습니다
+    load_save_list_failed: 저장 목록을 불러오지 못했습니다
     ui_init_after_load_failed: 게임을 불러왔지만 UI 초기화에 실패했습니다
     loaded_save_no_active_manager: 불러온 저장에 활성 감독이 없습니다. 새 게임을 시작하거나 이 저장을 복구해야 할 수 있습니다.
     connection_lost: 연결이 끊어졌습니다
@@ -239,6 +292,9 @@ ui:
     permission_denied: 권한이 거부되었습니다
     file_not_found: 파일을 찾을 수 없습니다
     database_error: 데이터베이스 오류
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -275,3 +331,17 @@ ui:
     apply: 적용
     browse: 찾아보기...
     exit: 종료
+    retry: 다시 시도
+    quit: 종료
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '{n}위'
+    two: '{n}위'
+    few: '{n}위'
+    other: '{n}위'

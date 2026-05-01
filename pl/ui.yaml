@@ -73,6 +73,7 @@ ui:
     pause: Pauza
     speed: Szybkość
     fast_forward: Przewiń
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: Następny Dzień
     advance_tomorrow: Przejdź do 9:00 jutro
     cycle_speed: Zmień prędkość gry (kliknij, aby zmienić)
@@ -116,6 +117,13 @@ ui:
     quick_save_description: Szybki zapis utworzony {date}
     file_exists_title: Plik już istnieje
     file_exists_message: Plik "{filename}.db" już istnieje. Zapis spowoduje jego nadpisanie.
+    managers: Menedżerowie
+    file_size: Rozmiar pliku
+    password_required: Wymagane hasło
+    enter_password: Wprowadź hasło zapisu...
+    open_folder: Otwórz
+    password_preserve_hint: Pozostaw hasło puste, aby zachować obecną ochronę, albo wpisz nowe hasło, aby ją zastąpić.
+    password_optional_hint: Pozostaw hasło puste, aby zapisać bez ochrony hasłem.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: Pomoc
     about: O Programie
     version: Wersja
+    coming_soon: Coming soon
     name: Nazwa
     club: Klub
     league: Liga
@@ -176,6 +185,66 @@ ui:
     vacant: Wakant
     not_available: Brak danych
 
+    team: Zespół
+    teams: Zespoły
+    home: Gospodarze
+    away: Goście
+    score: Wynik
+    competition: Rozgrywki
+    players: Zawodnicy
+    staff: Sztab
+    transfers: Transfery
+    form: Forma
+    morale: Morale
+    fitness: Kondycja
+    height: Wzrost
+    contract: Kontrakt
+    value: Wartość
+    city: Miasto
+    capacity: Pojemność
+    prize_money: Nagrody pieniężne
+    tv_deal: Umowa telewizyjna
+    fixtures: Mecze
+    results: Wyniki
+    round: Runda
+    venue: Stadion
+    goals: Gole
+    assists: Asysty
+    avg_rating: Śr. ocena
+    no_players_found: Nie znaleziono zawodników.
+    player_count: '{count} zawodników'
+  datepicker:
+    select_date: Wybierz datę
+    clear_date: Wyczyść datę
+    previous_year: Poprzedni rok
+    previous_month: Poprzedni miesiąc
+    select_month: Wybierz miesiąc
+    select_year: Wybierz rok
+    next_month: Następny miesiąc
+    next_year: Następny rok
+    time_utc: Czas (UTC)
+    hour_utc: Godzina (UTC)
+    minute: Minuta
+    range_end_hint: Teraz kliknij datę końcową
+
+  abbr:
+    position: Poz
+    nationality: Nar
+    info: Inf
+    played: M
+    won: Z
+    drawn: R
+    lost: P
+    goals_for: GS
+    goals_against: GB
+    goal_difference: RB
+    points: Pkt
+    appearances: Wyst
+    minutes: Min
+    yellow_cards: ŻK
+    red_cards: CK
+    matchday: K
+
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
   # ══════════════════════════════════════════════════════════════════════
@@ -198,26 +267,8 @@ ui:
     blocking_attention: Masz {count} ważnych wiadomości, które wymagają Twojej uwagi.
     advance_day_failed: Nie udało się przejść do następnego dnia. Skontaktuj się ze wsparciem na kanale Discord FC Tycoon.
     load_success: Gra wczytana pomyślnie
-    save_success: Gra zapisana do {filename}.db
+    save_success: Gra zapisana do {filename}
     loaded_most_recent_save: 'Wczytano najnowszy zapis: {name}'
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: Otwórz folder licencji
-    third_party_notices: Informacje o podmiotach trzecich
-    fc_tycoon_license: Licencja FC Tycoon
-    load_failed: Nie udało się wczytać licencji
-    load_file_failed: Nie udało się wczytać pliku licencji
-    load_file_failed_inline: Nie udało się wczytać tego pliku licencji.
-    open_folder_failed: Nie udało się otworzyć folderu licencji
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: Nie udało się wczytać napisów końcowych
 
   # ══════════════════════════════════════════════════════════════════════
   # Error Messages
@@ -231,6 +282,8 @@ ui:
     locate_save_folder_failed: Nie udało się odnaleźć folderu zapisów
     open_save_dialog_failed: Nie udało się otworzyć okna zapisu
     load_most_recent_failed: Nie udało się wczytać najnowszego zapisu
+    read_save_metadata_failed: Nie udało się odczytać szczegółów pliku zapisu
+    load_save_list_failed: Nie udało się wczytać listy zapisów
     ui_init_after_load_failed: Gra została wczytana, ale nie udało się zainicjalizować interfejsu
     loaded_save_no_active_manager: Wczytany zapis nie ma aktywnego menedżera. Być może musisz rozpocząć nową grę lub naprawić ten zapis.
     connection_lost: Utracono połączenie
@@ -239,6 +292,9 @@ ui:
     permission_denied: Odmowa dostępu
     file_not_found: Nie znaleziono pliku
     database_error: Błąd bazy danych
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -275,3 +331,17 @@ ui:
     apply: Zastosuj
     browse: Przeglądaj...
     exit: Wyjście
+    retry: Spróbuj ponownie
+    quit: Wyjście
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '{n}.'
+    two: '{n}.'
+    few: '{n}.'
+    other: '{n}.'

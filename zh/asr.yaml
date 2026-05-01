@@ -1,0 +1,8 @@
+asr:
+  start_dictation: "\u5f00\u59cb\u542c\u5199"
+  stop_dictation: "\u505c\u6b62\u542c\u5199"
+  waiting_microphone: "\u7b49\u5f85\u9ea6\u514b\u98ce"
+  transcribing: "\u8f6c\u5f55\u4e2d\u2026"
+  listening: "\u5f55\u97f3\u4e2d\u2026"
+  waiting_microphone_permission: "\u7b49\u5f85\u9ea6\u514b\u98ce\u6743\u9650"
+  converting_speech: "\u8bed\u97f3\u8f6c\u6587\u5b57\u4e2d\u2026"

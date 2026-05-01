@@ -1,0 +1,8 @@
+asr:
+  start_dictation: Start dictation
+  stop_dictation: Stop dictation
+  waiting_microphone: Waiting for microphone
+  transcribing: "Transcribing\u2026"
+  listening: "Listening\u2026"
+  waiting_microphone_permission: Waiting for microphone permission
+  converting_speech: "Converting speech to text\u2026"

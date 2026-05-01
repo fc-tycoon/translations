@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: 对阵图
+  overview:
+    structure: 赛事结构
+    stage_meta: '{count}支球队 · {format}'
+  standings:
+    champion_short: C
+    champion_title: 冠军
+    promoted_short: ▲
+    promoted_title: 升级
+    promotion_playoff_short: PP
+    promotion_playoff_title: 升级附加赛
+    continental_qualified_short: CQ
+    continental_qualified_title: 获得洲际资格
+    qualified_short: Q
+    qualified_title: 获得资格
+    relegation_playoff_short: RP
+    relegation_playoff_title: 降级附加赛
+    relegated_short: ▼
+    relegated_title: 降级
+  rules:
+    points_for_win: 胜利积分
+    points_for_draw: 平局积分
+    substitutions: 换人名额
+    promotions: 升级名额
+    promotion_playoffs: 升级附加赛名额
+    relegation_playoffs: 降级附加赛名额
+    relegation_places: 降级名额
+    qualifications: 资格名额
+    continental_qualifications: 洲际资格名额
+    tiebreaker_order: 排名比较顺序
+    notes: 备注
+  tiebreakers:
+    goal_diff: 净胜球
+    goal_average: 平均进球
+    goals_for: 进球数
+    goals_against: 失球数
+    head_to_head: 相互战绩
+    head_to_head_gd: 相互战绩净胜球
+    head_to_head_away: 相互战绩客场进球
+    away_goals: 客场进球
+    wins: 胜场数
+    fair_play: 公平竞赛
+    coefficient: 系数
+    random: 抽签
+    extra_time: 加时赛
+    penalties: 点球大战
+  stage_status:
+    completed: 已结束
+    in_progress: 进行中
+    upcoming: 即将开始
+  stage_format:
+    round_robin: 循环赛
+    play_offs: 附加赛
+    knockout: 淘汰赛

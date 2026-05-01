@@ -1,0 +1,10 @@
+# EULA Translations (Spanish)
+
+eula:
+  title: Contrato de Licencia de Usuario Final
+  subtitle: Lea y acepte los términos a continuación para continuar
+  accept_label: He leído y acepto el Contrato de Licencia de Usuario Final
+  decline_button: Rechazar y Salir
+  accept_button: Aceptar y Continuar
+  accept_tooltip: Marque la casilla anterior para aceptar los términos
+  load_error: Error al cargar el contenido del CLUF. Por favor, contacte con el soporte.

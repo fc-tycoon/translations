@@ -174,7 +174,7 @@ player:
     standing_tackles: タックル
     sliding_tackles: スライディング
     interceptions: インターセプト
-    jockeying: ジョッキー
+    containing: コンテイン
     pressing_technique: プレス技術
     blocking: ブロック
     defensive_screening: 守備のスクリーン

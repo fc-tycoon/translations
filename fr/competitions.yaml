@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Attente du conseil
+    performance: Performance
+    recent_form: Forme récente
+    relegated: Relégué
+  tabs:
+    standings: Classement
+    player_stats: Statistiques joueurs
+    rules: Règles
+  messages:
+    no_fixtures_drawn: Aucune affiche tirée pour le moment.

@@ -1,0 +1,10 @@
+team_tabs:
+  all_teams: All Teams
+  first_team: First Team
+  reserves: Reserves
+  youth: Youth
+  c_team: C Team
+  all: All
+  results: Results
+  upcoming: Upcoming
+  generic: 'Team {teamType}'

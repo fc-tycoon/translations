@@ -1,0 +1,17 @@
+weekdays:
+  short:
+    0: Nd
+    1: Pn
+    2: Wt
+    3: Śr
+    4: Cz
+    5: Pt
+    6: So
+  long:
+    0: Niedziela
+    1: Poniedziałek
+    2: Wtorek
+    3: Środa
+    4: Czwartek
+    5: Piątek
+    6: Sobota

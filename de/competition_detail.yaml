@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Turnierbaum
+  overview:
+    structure: Wettbewerbsstruktur
+    stage_meta: '{count} Teams · {format}'
+  standings:
+    champion_short: M
+    champion_title: Meister
+    promoted_short: ▲
+    promoted_title: Aufgestiegen
+    promotion_playoff_short: PP
+    promotion_playoff_title: Aufstiegs-Playoff
+    continental_qualified_short: CQ
+    continental_qualified_title: Kontinentale Qualifikation
+    qualified_short: Q
+    qualified_title: Qualifiziert
+    relegation_playoff_short: RP
+    relegation_playoff_title: Abstiegs-Playoff
+    relegated_short: ▼
+    relegated_title: Abgestiegen
+  rules:
+    points_for_win: Punkte für Sieg
+    points_for_draw: Punkte für Unentschieden
+    substitutions: Auswechslungen
+    promotions: Aufstiege
+    promotion_playoffs: Aufstiegs-Playoffs
+    relegation_playoffs: Abstiegs-Playoffs
+    relegation_places: Abstiegsplätze
+    qualifications: Qualifikationen
+    continental_qualifications: Kontinentale Qualifikationen
+    tiebreaker_order: Reihenfolge der Tie-Breaker
+    notes: Hinweise
+  tiebreakers:
+    goal_diff: Tordifferenz
+    goal_average: Torquotient
+    goals_for: Erzielte Tore
+    goals_against: Gegentore
+    head_to_head: Direkter Vergleich
+    head_to_head_gd: Tordifferenz im direkten Vergleich
+    head_to_head_away: Auswärtstore im direkten Vergleich
+    away_goals: Auswärtstore
+    wins: Siege
+    fair_play: Fair-Play-Wertung
+    coefficient: Koeffizient
+    random: Losentscheid
+    extra_time: Verlängerung
+    penalties: Elfmeterschießen
+  stage_status:
+    completed: Abgeschlossen
+    in_progress: Läuft
+    upcoming: Bevorstehend
+  stage_format:
+    round_robin: Jeder gegen jeden
+    play_offs: Play-offs
+    knockout: K.-o.

@@ -1,0 +1,10 @@
+# EULA Translations (Polish)
+
+eula:
+  title: Umowa Licencyjna Użytkownika Końcowego
+  subtitle: Przeczytaj i zaakceptuj poniższe warunki, aby kontynuować
+  accept_label: Przeczytałem/am Umowę Licencyjną Użytkownika Końcowego i wyrażam na nią zgodę
+  decline_button: Odrzuć i Wyjśdź
+  accept_button: Zaakceptuj i Kontynuuj
+  accept_tooltip: Zaznacz powyższe pole, aby zaakceptować warunki
+  load_error: Błąd podczas wczytywania treści EULA. Skontaktuj się z pomocą techniczną.

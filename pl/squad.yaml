@@ -1,0 +1,14 @@
+squad:
+  title: Kadra
+  col_sharpness: Ostrość
+  col_feet: Nogi
+  right_foot: Prawa
+  left_foot: Lewa
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Zobacz profil
+  ctx_move: Przenieś do zespołu
+  ctx_training: Trening
+  ctx_release: Zwolnij zawodnika

@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (English)
+
+licenses:
+  title: Open Source Licenses
+  load_failed: Failed to load licenses
+  load_file_failed_inline: Failed to load this license file.
+  empty: No legal documents were found.
+  sidebar_label: Legal documents

@@ -1,0 +1,73 @@
+# Game Shell Translations (Polish)
+
+game_shell:
+  brand: FC Tycoon
+  chat: Czat
+  save_game: Zapisz grę
+  main_menu: Menu główne
+  simulating: Symulacja...
+  continue: Kontynuuj
+  match_results_title: Wyniki meczu
+  next_match_title: Następny mecz
+  vs: vs
+  welcome_title: 'Witaj, {name}'
+  welcome_text: Twoja przygoda się zaczyna. Kliknij Kontynuuj, aby przejść do pierwszego dnia meczowego.
+  fixtures_title: Nadchodzące mecze
+  no_fixtures: Brak nadchodzących meczów.
+  matchday_short: 'Kol {day}'
+  table_title: Tabela ligowa
+  table_no_data: Brak danych ligowych. Najpierw przejdź do dnia meczowego.
+  table_col_team: Drużyna
+  inbox_title: Skrzynka odbiorcza
+  inbox_no_messages: Brak wiadomości.
+  inbox_new_badge: NOWE
+  squad_title: Skład
+  squad_coming_soon: Zarządzanie składem pojawi się wkrótce.
+  loading: Ładowanie...
+  nav:
+    dashboard: Panel
+    fixtures: Mecze
+    table: Tabela
+    inbox: Skrzynka odbiorcza
+    squad: Skład
+    tactics: Taktyka
+    transfers: Transfery
+    home: Strona główna
+    dynamics: Dynamika
+    staff: Sztab
+    schedule: Terminarz
+    training: Trening
+    medical_centre: Centrum medyczne
+    competitions: Rozgrywki
+    scouting: Skauting
+    club_info: Informacje o klubie
+    board: Zarząd
+    finances: Finanse
+    facilities: Infrastruktura
+    dev_centre: Centrum rozwoju
+  world:
+    title: Świat
+    navigation: Nawigacja po świecie
+  menu:
+    title: Menu
+    exit_to_main_menu: Wyjdź do menu głównego
+    exit_game: Zamknij grę
+  loading:
+    title: Ładowanie...
+    subtitle: Przywracanie stanu gry z pliku zapisu
+  saving:
+    title: Zapisywanie...
+    subtitle: Zapisywanie {filename}
+  about:
+    title: O FC Tycoon
+    tagline: Symulacja zarządzania piłką nożną
+    tech_stack: Zbudowano przy użyciu Go · Vue · Riptide · DuckDB
+    dedication_intro: Tę grę dedykuję następującym osobom:
+    inspiration_intro: Oraz następującym osobom, które zainspirowały mnie do zostania programistą:
+  exit_dialog:
+    title: Zamknij grę
+    message: Czy na pewno chcesz zamknąć grę? Niezapisany postęp zostanie utracony.
+  routes:
+    player_profile: Profil zawodnika
+    competition: Rozgrywki
+    club: Klub

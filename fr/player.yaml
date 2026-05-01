@@ -174,7 +174,7 @@ player:
     standing_tackles: Tacles debout
     sliding_tackles: Tacles glissés
     interceptions: Interceptions
-    jockeying: Contention
+    containing: Contention
     pressing_technique: Technique de pressing
     blocking: Contres
     defensive_screening: Écrans défensifs

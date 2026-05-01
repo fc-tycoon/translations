@@ -13,10 +13,10 @@ preferences:
     default: Padrão
     disabled: Desativado
     enabled: Ativado
-    no: Não
+    'no': Não
     none: Nenhum
     unknown: Desconhecido
-    yes: Sim
+    'yes': Sim
 
   appearance:
     theme_heading: Tema
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: Manter salvamentos automáticos
     keep_autosaves_hint: Número de salvamentos automáticos a manter antes de excluir os mais antigos
     confirm_overwrite: Confirmar sobrescrita
+    copy: Os ficheiros de gravação passam agora a resolver sempre para a pasta saved-games gerida pelo backend, para que as compilações de desenvolvimento e empacotadas usem automaticamente a raiz correta.
+    location_hint: Esta localização é fixa no backend e deixou de depender de caminhos fornecidos pelo renderizador.
+    autosave_hint: Escolha o intervalo preferido para capturas automáticas de gravação.
+    confirm_overwrite_hint: Peça confirmação antes de substituir um ficheiro de gravação manual existente.
 
   display:
     heading: Exibição
     fullscreen_label: Iniciar em tela cheia
     fullscreen_hint: Aplica-se à janela do jogo na próxima inicialização.
+    always_on_top_label: Sempre no topo
+    always_on_top_hint: Mantém a janela do jogo acima das outras janelas do ambiente de trabalho. Aplica-se imediatamente e é memorizado para o próximo arranque.
     confirm_exit_label: Confirmar antes de sair
     confirm_exit_hint: Solicita confirmação antes de fechar o aplicativo do jogo.
     title: Configurações de exibição
@@ -66,15 +72,31 @@ preferences:
     ui_scale: Escala da IU
     show_tooltips: Mostrar dicas
     animations: Animações
+    interface_heading: Interface
+    ui_scale_hint: Escala a interface entre 80% e 120%.
+    show_tooltips_hint: Ativa ajuda contextual em toda a interface.
+    animations_hint: Permite transições e efeitos de movimento da interface.
 
   languages:
     title: Configurações de idioma
+    heading: Idiomas
     game_language: Idioma do jogo
+    game_language_label: Idioma do jogo
     game_language_hint: Altera o idioma de todo o texto do jogo (reinício necessário para parte da IU)
     date_format: Formato de data
+    date_format_label: Formato de data
+    date_format_hint: Define o formato preferido de apresentação de datas para a IU que usa esta preferência.
     number_format: Formato de número
+    number_format_label: Formato de número
+    number_format_hint: Define o estilo preferido para separadores de milhares e decimais.
+    week_start_label: Início da semana
+    week_start_hint: Define qual dia aparece primeiro em calendários e seletores de data.
+    week_start_monday: Segunda-feira
+    week_start_sunday: Domingo
     reload_translations: Recarregar traduções
+    reload_label: Recarregar traduções
     reload_btn: Recarregar
+    reload_button: Recarregar
     reload_hint: Recarregar todos os arquivos de tradução do disco (útil para desenvolvimento)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: Mudanças táticas
     quick_continue: Continuação rápida
     quick_continue_hint: Ignorar confirmação ao continuar o jogo
+    show_tutorials_hint: Mantenha os avisos de tutorial ativos para integração e lembretes.
+    confirm_actions_hint: Escolha que ações de gestão devem pedir confirmação primeiro.
 
   ui_tab:
     title: Configurações de IU
@@ -105,6 +129,7 @@ preferences:
     midfielders: Meio-campistas
     attackers: Atacantes
     reset_btn: redefinir
+    copy: Estas cores definem os destaques dos quatro grupos de unidades posicionais usados em superfícies de UI orientadas para plantel e papéis.
 
   shortcuts:
     title: Atalhos de teclado
@@ -202,14 +227,14 @@ preferences:
       slow: Prévia de baixa frequência. Menos atualizações por fala e menor carga de CPU. O texto aparece em blocos maiores, em vez de palavra por palavra.
 
     recommendations:
-      cpu_1: Inferência em CPU: comece com Tiny ou Tiny English. Base pode funcionar em CPUs mais fortes, mas Small normalmente é mais adequado ao ditado em buffer.
-      cpu_2: Prévia ao vivo em CPU: teste primeiro. Se a digitação ou a responsividade da IU piorarem, aumente o intervalo para 500-1000 ms antes de culpar a qualidade do modelo.
+      cpu_1: 'Inferência em CPU: comece com Tiny ou Tiny English. Base pode funcionar em CPUs mais fortes, mas Small normalmente é mais adequado ao ditado em buffer.'
+      cpu_2: 'Prévia ao vivo em CPU: teste primeiro. Se a digitação ou a responsividade da IU piorarem, aumente o intervalo para 500-1000 ms antes de culpar a qualidade do modelo.'
       cuda_1: CUDA é atualmente o melhor caminho para prévia ao vivo com baixa latência e para executar modelos Base ou Small sem deixar a IU pesada.
       cuda_2: Se você tiver várias GPUs NVIDIA, deixe o ASR na placa mais leve apenas se a placa principal estiver ocupada com trabalho de LLM ou facegen.
       openvino_1: O modo Intel NPU exige os arquivos IR do codificador OpenVINO correspondentes ao modelo Whisper selecionado. O modelo ggml simples, sozinho, não basta.
       openvino_2: O OpenVINO NPU atualmente descarrega apenas o trabalho do codificador Whisper. O maior benefício costuma aparecer em Base ou Small, não necessariamente em Tiny.
       other_gpu: Vulkan e HIP funcionam melhor como modos simples de aceleração por GPU. A ponte atual usa a GPU padrão do runtime, e não um seletor por dispositivo, para esses backends.
-      streaming_1: Prévia ao vivo: comece em torno de 300-500 ms. Se quiser parciais mais suaves, teste 200 ms, mas só mantenha isso se a IU continuar responsiva na sua máquina.
+      streaming_1: 'Prévia ao vivo: comece em torno de 300-500 ms. Se quiser parciais mais suaves, teste 200 ms, mas só mantenha isso se a IU continuar responsiva na sua máquina.'
       streaming_2: O intervalo atual é muito agressivo. Se a prévia travar ou o campo congelar, use um buffer maior antes de mudar o tamanho do modelo.
       buffered: O modo em buffer continua sendo a opção mais segura quando a precisão final importa mais do que ver o texto surgir no meio da frase.
 

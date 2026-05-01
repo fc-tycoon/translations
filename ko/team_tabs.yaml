@@ -1,0 +1,10 @@
+team_tabs:
+  all_teams: 전체 팀
+  first_team: 1군
+  reserves: 리저브
+  youth: 유스
+  c_team: C팀
+  all: 전체
+  results: 결과
+  upcoming: 예정
+  generic: '팀 {teamType}'

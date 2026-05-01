@@ -40,7 +40,7 @@ player:
           def_movement:
             label: 守備の動き
             description: 守備時のフットワーク。
-            tooltip: "影響：ジョッキー、プレス、守備ポジショニング、運動量。"
+            tooltip: "影響：コンテイン、プレス、守備ポジショニング、運動量。"
 
       attacking:
         label: 攻撃基礎
@@ -74,7 +74,7 @@ player:
           coordination:
             label: 協調性
             description: 身体コントロールと微調整。
-            tooltip: "影響：敏捷性、バランス、身体操作、ジョッキー、反射。"
+            tooltip: "影響：敏捷性、バランス、身体操作、コンテイン、反射。"
           aerial:
             label: 空中戦
             description: 落下地点判断とジャンプのタイミング。

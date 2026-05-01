@@ -1,0 +1,73 @@
+# Game Shell Translations (English)
+
+game_shell:
+  brand: FC Tycoon
+  chat: Chat
+  save_game: Save Game
+  main_menu: Main Menu
+  simulating: Simulating...
+  continue: Continue
+  match_results_title: Match Results
+  next_match_title: Next Match
+  vs: vs
+  welcome_title: 'Welcome, {name}'
+  welcome_text: Your journey begins. Press Continue to advance to your first match day.
+  fixtures_title: Upcoming Fixtures
+  no_fixtures: No upcoming fixtures.
+  matchday_short: 'MD {day}'
+  table_title: League Table
+  table_no_data: No league data yet. Advance to a match day first.
+  table_col_team: Team
+  inbox_title: Inbox
+  inbox_no_messages: No messages.
+  inbox_new_badge: NEW
+  squad_title: Squad
+  squad_coming_soon: Squad management coming soon.
+  loading: Loading...
+  world:
+    title: World
+    navigation: World Navigation
+  menu:
+    title: Menu
+    exit_to_main_menu: Exit to Main Menu
+    exit_game: Exit Game
+  loading:
+    title: Loading...
+    subtitle: Restoring game state from save file
+  saving:
+    title: Saving...
+    subtitle: Writing {filename}
+  about:
+    title: About FC Tycoon
+    tagline: A football management simulation
+    tech_stack: Built with Go · Vue · Riptide · DuckDB
+    dedication_intro: This game is dedicated to the following people:
+    inspiration_intro: And the following people who inspired me to be a programmer:
+  exit_dialog:
+    title: Exit Game
+    message: Are you sure you want to exit the game? Any unsaved progress will be lost.
+  nav:
+    home: Home
+    inbox: Inbox
+    squad: Squad
+    dynamics: Dynamics
+    dashboard: Dashboard
+    fixtures: Fixtures
+    table: League Table
+    tactics: Tactics
+    staff: Staff
+    schedule: Schedule
+    training: Training
+    medical_centre: Medical Centre
+    competitions: Competitions
+    scouting: Scouting
+    transfers: Transfers
+    club_info: Club Info
+    board: Board
+    finances: Finances
+    facilities: Facilities
+    dev_centre: Dev. Centre
+  routes:
+    player_profile: Player Profile
+    competition: Competition
+    club: Club

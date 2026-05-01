@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (Polish)
+
+licenses:
+  title: Licencje Open Source
+  load_failed: Nie udało się wczytać licencji
+  load_file_failed_inline: Nie udało się wczytać tego pliku licencji.
+  empty: Nie znaleziono dokumentów prawnych.
+  sidebar_label: Dokumenty prawne

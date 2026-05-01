@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Schema
+  overview:
+    structure: Competitiestructuur
+    stage_meta: '{count} teams · {format}'
+  standings:
+    champion_short: C
+    champion_title: Kampioen
+    promoted_short: ▲
+    promoted_title: Gepromoveerd
+    promotion_playoff_short: PP
+    promotion_playoff_title: Promotie-play-off
+    continental_qualified_short: CQ
+    continental_qualified_title: Continentale kwalificatie
+    qualified_short: Q
+    qualified_title: Gekwalificeerd
+    relegation_playoff_short: RP
+    relegation_playoff_title: Degradatie-play-off
+    relegated_short: ▼
+    relegated_title: Gedegradeerd
+  rules:
+    points_for_win: Punten voor winst
+    points_for_draw: Punten voor gelijkspel
+    substitutions: Wissels
+    promotions: Promoties
+    promotion_playoffs: Promotie-play-offs
+    relegation_playoffs: Degradatie-play-offs
+    relegation_places: Degradatieplaatsen
+    qualifications: Kwalificaties
+    continental_qualifications: Continentale kwalificaties
+    tiebreaker_order: Volgorde van tiebreakers
+    notes: Notities
+  tiebreakers:
+    goal_diff: Doelsaldo
+    goal_average: Doelgemiddelde
+    goals_for: Doelpunten voor
+    goals_against: Doelpunten tegen
+    head_to_head: Onderling resultaat
+    head_to_head_gd: Onderling doelsaldo
+    head_to_head_away: Uitdoelpunten onderling
+    away_goals: Uitdoelpunten
+    wins: Overwinningen
+    fair_play: Fair-play
+    coefficient: Coëfficiënt
+    random: Loting
+    extra_time: Verlenging
+    penalties: Strafschoppen
+  stage_status:
+    completed: Voltooid
+    in_progress: Bezig
+    upcoming: Komend
+  stage_format:
+    round_robin: Competitie
+    play_offs: Play-offs
+    knockout: Knock-out

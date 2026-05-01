@@ -1,0 +1,11 @@
+schedule:
+  loading: Spielplan wird geladen...
+  calendar:
+    events:
+      vs_opponent: 'gg. {opponent}'
+      at_opponent: 'bei {opponent}'
+  empty:
+    upcoming: Keine anstehenden Spiele.
+    results: Noch keine Ergebnisse.
+  errors:
+    load_failed: Spielplan konnte nicht geladen werden

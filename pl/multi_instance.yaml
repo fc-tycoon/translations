@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Wykryto inną instancję
+  heading: Inna instancja gry lub edytora FC Tycoon jest już uruchomiona.
+  intro: Uruchamianie wielu instancji jednocześnie oznacza współdzielenie tych samych plików konfiguracyjnych i możliwość pracy na tych samych plikach bazy danych lub zapisów gry. Zmiany nie są synchronizowane między uruchomionymi instancjami.
+  instructions: Potwierdź każdy poniższy punkt, zanim przejdziesz dalej z kolejną instancją.
+  config_path_label: Współdzielony katalog konfiguracji
+  data_path_label: Odpowiednia ścieżka bazy danych lub zapisu gry
+  path_unavailable: Niedostępne
+  preferences_ack: Rozumiem, że zmiany preferencji i konfiguracji nie pojawią się w drugiej uruchomionej instancji, dopóki ta instancja nie przeładuje się lub nie zostanie ponownie uruchomiona.
+  database_ack: Rozumiem, że zmiany w bazie danych lub zapisie gry mogą nadpisać pracę drugiej instancji i mogą nie być tam widoczne, dopóki nie przeładuje ona bazy danych lub nie zostanie ponownie uruchomiona.
+  final_ack: Akceptuję te warunki i chcę kontynuować uruchamianie kolejnej instancji.
+  continue: Kontynuuj
+  exit: Zamknij

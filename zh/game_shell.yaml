@@ -1,0 +1,73 @@
+# Game Shell Translations (Chinese Simplified)
+
+game_shell:
+  brand: FC Tycoon
+  chat: 聊天
+  save_game: 保存游戏
+  main_menu: 主菜单
+  simulating: 模拟中...
+  continue: 继续
+  match_results_title: 比赛结果
+  next_match_title: 下一场比赛
+  vs: vs
+  welcome_title: '欢迎，{name}'
+  welcome_text: 您的旅程开始了。点击继续前进到第一个比赛日。
+  fixtures_title: 即将到来的比赛
+  no_fixtures: 暂无即将到来的比赛。
+  matchday_short: '第{day}轮'
+  table_title: 联赛积分榜
+  table_no_data: 暂无联赛数据。请先进入比赛日。
+  table_col_team: 球队
+  inbox_title: 收件箱
+  inbox_no_messages: 暂无消息。
+  inbox_new_badge: 新
+  squad_title: 阵容
+  squad_coming_soon: 阵容管理即将上线。
+  loading: 加载中...
+  nav:
+    dashboard: 仪表盘
+    fixtures: 赛程
+    table: 积分榜
+    inbox: 收件箱
+    squad: 阵容
+    tactics: 战术
+    transfers: 转会
+    home: 首页
+    dynamics: 动态
+    staff: 职员
+    schedule: 日程
+    training: 训练
+    medical_centre: 医疗中心
+    competitions: 赛事
+    scouting: 球探
+    club_info: 俱乐部信息
+    board: 董事会
+    finances: 财务
+    facilities: 设施
+    dev_centre: 青训中心
+  world:
+    title: 世界
+    navigation: 世界导航
+  menu:
+    title: 菜单
+    exit_to_main_menu: 返回主菜单
+    exit_game: 退出游戏
+  loading:
+    title: 加载中...
+    subtitle: 正在从存档文件恢复游戏状态
+  saving:
+    title: 保存中...
+    subtitle: 正在写入 {filename}
+  about:
+    title: 关于 FC Tycoon
+    tagline: 足球管理模拟游戏
+    tech_stack: 使用 Go · Vue · Riptide · DuckDB 构建
+    dedication_intro: 本游戏献给以下人士：
+    inspiration_intro: 以及以下启发我成为程序员的人：
+  exit_dialog:
+    title: 退出游戏
+    message: 确定要退出游戏吗？所有未保存的进度都将丢失。
+  routes:
+    player_profile: 球员资料
+    competition: 赛事
+    club: 俱乐部

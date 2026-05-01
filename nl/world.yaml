@@ -1,0 +1,56 @@
+world:
+  breadcrumb:
+    root: Wereld
+    switch_continent: Continent wisselen
+    switch_country: Land wisselen
+    switch_club: Club wisselen
+  continents:
+    africa:
+      description: Landen, clubs en competities in Afrika.
+    asia:
+      description: Landen, clubs en competities in Azië.
+    europe:
+      description: Landen, clubs en competities in Europa.
+    north_america:
+      description: Landen, clubs en competities in Noord-Amerika.
+    oceania:
+      description: Landen, clubs en competities in Oceanië.
+    south_america:
+      description: Landen, clubs en competities in Zuid-Amerika.
+  search:
+    continents: Continenten zoeken...
+    countries: Landen zoeken...
+    clubs: Clubs zoeken...
+    players: Spelers zoeken...
+    staff: Staf zoeken...
+    default: Zoeken...
+  sections:
+    competitions: Competities
+    clubs: Clubs
+  columns:
+    continent: Continent
+    countries: Landen
+    clubs: Clubs
+    players: Spelers
+    competitions: Competities
+    population: Bevolking
+    competition: Competitie
+    teams: Teams
+    level: Niveau
+    squad: Selectie
+    nationality_abbr: Nat.
+    position_abbr: Pos.
+  labels:
+    players: Spelers
+    staff: Staf
+  competition_types:
+    domestic_league: Nationale competitie
+    domestic_cup: Nationale beker
+    continental_cup: Continentale beker
+    league_cup: Ligabeker
+    international: Internationale competitie
+  club_types:
+    professional: Professioneel
+    semi_professional: Semiprofessioneel
+    amateur: Amateur
+    academy: Academie

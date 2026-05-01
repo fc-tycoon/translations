@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Vorstandserwartung
+    performance: Leistung
+    recent_form: Letzte Form
+    relegated: Abgestiegen
+  tabs:
+    standings: Tabelle
+    player_stats: Spielerstatistiken
+    rules: Regeln
+  messages:
+    no_fixtures_drawn: Noch keine Spielpaarungen ausgelost.

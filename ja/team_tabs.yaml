@@ -1,0 +1,10 @@
+team_tabs:
+  all_teams: 全チーム
+  first_team: トップチーム
+  reserves: リザーブ
+  youth: ユース
+  c_team: Cチーム
+  all: すべて
+  results: 結果
+  upcoming: 今後
+  generic: 'チーム {teamType}'

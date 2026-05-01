@@ -1,0 +1,10 @@
+team_tabs:
+  all_teams: 全部球队
+  first_team: 一线队
+  reserves: 预备队
+  youth: 青年队
+  c_team: C队
+  all: 全部
+  results: 结果
+  upcoming: 即将进行
+  generic: '球队 {teamType}'

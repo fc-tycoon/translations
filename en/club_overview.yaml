@@ -1,0 +1,22 @@
+club_overview:
+  loading: Loading club data...
+  overview:
+    club_name: Club Name
+    national_reputation: National Rep.
+    international_reputation: Int. Rep.
+    elo_rating: Elo Rating
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: No staff found.
+    other_department: Other
+  competitions:
+    season: 'Season {season}'
+    empty: No active competitions.
+  schedule:
+    placeholder: Match schedule not yet available for rival clubs.
+  transfers:
+    placeholder: Transfer activity not yet available for rival clubs.
+  errors:
+    not_found: 'Club {clubId} not found.'
+    load_failed: Failed to load club data

@@ -73,6 +73,7 @@ ui:
     pause: Pauzeren
     speed: Snelheid
     fast_forward: Vooruitspoelen
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: Volgende Dag
     advance_tomorrow: Ga naar 9:00 morgen
     cycle_speed: Spelsnelheid wijzigen (klik om te wijzigen)
@@ -116,6 +117,13 @@ ui:
     quick_save_description: Snel opgeslagen op {date}
     file_exists_title: Bestand bestaat al
     file_exists_message: Het bestand "{filename}.db" bestaat al. Opslaan zal het overschrijven.
+    managers: Managers
+    file_size: Bestandsgrootte
+    password_required: Wachtwoord vereist
+    enter_password: Voer het wachtwoord van de save in...
+    open_folder: Openen
+    password_preserve_hint: Laat het wachtwoord leeg om de bestaande beveiliging te behouden, of voer een nieuw wachtwoord in om deze te vervangen.
+    password_optional_hint: Laat het wachtwoord leeg om zonder wachtwoordbeveiliging op te slaan.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: Help
     about: Over
     version: Versie
+    coming_soon: Coming soon
     name: Naam
     club: Club
     league: Competitie
@@ -176,23 +185,65 @@ ui:
     vacant: Vacant
     not_available: n.v.t.
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: Licentiemap openen
-    third_party_notices: Meldingen van derden
-    fc_tycoon_license: FC Tycoon-licentie
-    load_failed: Licenties laden mislukt
-    load_file_failed: Licentiebestand laden mislukt
-    load_file_failed_inline: Dit licentiebestand kon niet worden geladen.
-    open_folder_failed: Licentiemap openen mislukt
+    team: Team
+    teams: Teams
+    home: Thuis
+    away: Uit
+    score: Score
+    competition: Competitie
+    players: Spelers
+    staff: Staf
+    transfers: Transfers
+    form: Vorm
+    morale: Moraal
+    fitness: Fitheid
+    height: Lengte
+    contract: Contract
+    value: Waarde
+    city: Stad
+    capacity: Capaciteit
+    prize_money: Prijzengeld
+    tv_deal: TV-deal
+    fixtures: Wedstrijden
+    results: Resultaten
+    round: Ronde
+    venue: Locatie
+    goals: Doelpunten
+    assists: Assists
+    avg_rating: Gem. beoordeling
+    no_players_found: Geen spelers gevonden.
+    player_count: '{count} spelers'
+  datepicker:
+    select_date: Datum selecteren
+    clear_date: Datum wissen
+    previous_year: Vorig jaar
+    previous_month: Vorige maand
+    select_month: Maand selecteren
+    select_year: Jaar selecteren
+    next_month: Volgende maand
+    next_year: Volgend jaar
+    time_utc: Tijd (UTC)
+    hour_utc: Uur (UTC)
+    minute: Minuut
+    range_end_hint: Klik nu op een einddatum
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: Credits laden mislukt
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: G
+    won: W
+    drawn: G
+    lost: V
+    goals_for: GV
+    goals_against: GT
+    goal_difference: DS
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: GK
+    red_cards: RK
+    matchday: SP
 
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
@@ -216,7 +267,7 @@ ui:
     blocking_attention: U heeft {count} belangrijk(e) bericht(en) die uw aandacht vereisen.
     advance_day_failed: Kon niet doorgaan naar de volgende dag. Neem contact op met support via het FC Tycoon Discord-kanaal.
     load_success: Spel geladen
-    save_success: Spel opgeslagen naar {filename}.db
+    save_success: Spel opgeslagen naar {filename}
     loaded_most_recent_save: 'Meest recente opslag geladen: {name}'
 
   # ══════════════════════════════════════════════════════════════════════
@@ -231,6 +282,8 @@ ui:
     locate_save_folder_failed: Kon de opslagmap niet vinden
     open_save_dialog_failed: Kon het opslagvenster niet openen
     load_most_recent_failed: Meest recente opslag laden mislukt
+    read_save_metadata_failed: Details van het opslagbestand konden niet worden gelezen
+    load_save_list_failed: Lijst met opgeslagen spellen kon niet worden geladen
     ui_init_after_load_failed: Spel geladen, maar de interface kon niet worden geïnitialiseerd
     loaded_save_no_active_manager: De geladen opslag heeft geen actieve manager. Mogelijk moet u een nieuw spel starten of deze opslag herstellen.
     connection_lost: Verbinding verloren
@@ -239,6 +292,9 @@ ui:
     permission_denied: Toestemming geweigerd
     file_not_found: Bestand niet gevonden
     database_error: Databasefout
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -275,3 +331,17 @@ ui:
     apply: Toepassen
     browse: Bladeren...
     exit: Afsluiten
+    retry: Opnieuw proberen
+    quit: Afsluiten
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '{n}e'
+    two: '{n}e'
+    few: '{n}e'
+    other: '{n}e'

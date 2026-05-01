@@ -27,3 +27,10 @@ inbox:
   priority_low: Lage Prioriteit
   blocking: Vereist Aandacht
   blocking_count: "{count} belangrijke bericht(en) vereisen uw aandacht"
+  response_sent: Reactie verzonden
+  select_option: "— Selecteren —"
+  submit_response: Reactie versturen
+  today: Vandaag
+  yesterday: Gisteren
+  search: Berichten zoeken…
+  page_of: "{page} van {total}"

@@ -73,6 +73,7 @@ ui:
     pause: Pausar
     speed: Velocidade
     fast_forward: Avançar Rápido
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: Próximo Dia
     advance_tomorrow: Avançar para 9h de amanhã
     cycle_speed: Alterar velocidade do jogo (clique para mudar)
@@ -116,6 +117,13 @@ ui:
     quick_save_description: Salvamento rápido criado em {date}
     file_exists_title: O arquivo já existe
     file_exists_message: O arquivo "{filename}.db" já existe. Salvar irá sobrescrevê-lo.
+    managers: Managers
+    file_size: Tamanho do ficheiro
+    password_required: Palavra-passe obrigatória
+    enter_password: Introduza a palavra-passe do salvamento...
+    open_folder: Abrir
+    password_preserve_hint: Deixe a palavra-passe em branco para manter a proteção atual, ou introduza uma nova para a substituir.
+    password_optional_hint: Deixe a palavra-passe em branco para guardar sem proteção por palavra-passe.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: Ajuda
     about: Sobre
     version: Versão
+    coming_soon: Coming soon
     name: Nome
     club: Clube
     league: Liga
@@ -176,6 +185,66 @@ ui:
     vacant: Vago
     not_available: N/D
 
+    team: Equipa
+    teams: Equipas
+    home: Casa
+    away: Fora
+    score: Resultado
+    competition: Competição
+    players: Jogadores
+    staff: Staff
+    transfers: Transferências
+    form: Forma
+    morale: Moral
+    fitness: Condição física
+    height: Altura
+    contract: Contrato
+    value: Valor
+    city: Cidade
+    capacity: Capacidade
+    prize_money: Prémio monetário
+    tv_deal: Acordo televisivo
+    fixtures: Jogos
+    results: Resultados
+    round: Ronda
+    venue: Estádio
+    goals: Golos
+    assists: Assistências
+    avg_rating: Nota média
+    no_players_found: Nenhum jogador encontrado.
+    player_count: '{count} jogadores'
+  datepicker:
+    select_date: Selecionar data
+    clear_date: Limpar data
+    previous_year: Ano anterior
+    previous_month: Mês anterior
+    select_month: Selecionar mês
+    select_year: Selecionar ano
+    next_month: Próximo mês
+    next_year: Próximo ano
+    time_utc: Hora (UTC)
+    hour_utc: Hora (UTC)
+    minute: Minuto
+    range_end_hint: Agora clique numa data final
+
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: J
+    won: V
+    drawn: E
+    lost: D
+    goals_for: GM
+    goals_against: GS
+    goal_difference: DG
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: CA
+    red_cards: CV
+    matchday: J
+
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
   # ══════════════════════════════════════════════════════════════════════
@@ -202,6 +271,8 @@ ui:
     locate_save_folder_failed: Não foi possível localizar a pasta de salvamentos
     open_save_dialog_failed: Não foi possível abrir a caixa de diálogo de salvamento
     load_most_recent_failed: Falha ao carregar o salvamento mais recente
+    read_save_metadata_failed: Falha ao ler os detalhes do ficheiro de salvamento
+    load_save_list_failed: Falha ao carregar a lista de jogos guardados
     ui_init_after_load_failed: O jogo foi carregado, mas a interface não pôde ser inicializada
     loaded_save_no_active_manager: O salvamento carregado não tem um técnico ativo. Talvez seja necessário iniciar um novo jogo ou reparar este salvamento.
     connection_lost: Conexão perdida
@@ -210,6 +281,9 @@ ui:
     permission_denied: Permissão negada
     file_not_found: Arquivo não encontrado
     database_error: Erro de banco de dados
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -246,6 +320,14 @@ ui:
     apply: Aplicar
     browse: Procurar...
     exit: Sair
+    retry: Tentar novamente
+    quit: Sair
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
 
   # ══════════════════════════════════════════════════════════════════════
   # Toast Messages
@@ -255,23 +337,13 @@ ui:
     blocking_attention: Você tem {count} mensagem(ns) importante(s) que exigem sua atenção.
     advance_day_failed: Não foi possível avançar para o próximo dia. Entre em contato com o suporte no canal Discord do FC Tycoon.
     load_success: Jogo carregado com sucesso
-    save_success: Jogo salvo em {filename}.db
+    save_success: Jogo salvo em {filename}
     loaded_most_recent_save: 'Carregado o salvamento mais recente: {name}'
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: Abrir pasta de licenças
-    third_party_notices: Avisos de terceiros
-    fc_tycoon_license: Licença do FC Tycoon
-    load_failed: Falha ao carregar licenças
-    load_file_failed: Falha ao carregar arquivo de licença
-    load_file_failed_inline: Falha ao carregar este arquivo de licença.
-    open_folder_failed: Falha ao abrir a pasta de licenças
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: Falha ao carregar créditos
+
+  ordinal:
+    one: '{n}.°'
+    two: '{n}.°'
+    few: '{n}.°'
+    other: '{n}.°'

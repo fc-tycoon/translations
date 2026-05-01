@@ -1,0 +1,56 @@
+world:
+  breadcrumb:
+    root: 世界
+    switch_continent: 大陸を切り替え
+    switch_country: 国を切り替え
+    switch_club: クラブを切り替え
+  continents:
+    africa:
+      description: アフリカ全域の国、クラブ、大会。
+    asia:
+      description: アジア全域の国、クラブ、大会。
+    europe:
+      description: ヨーロッパ全域の国、クラブ、大会。
+    north_america:
+      description: 北アメリカ全域の国、クラブ、大会。
+    oceania:
+      description: オセアニア全域の国、クラブ、大会。
+    south_america:
+      description: 南アメリカ全域の国、クラブ、大会。
+  search:
+    continents: 大陸を検索...
+    countries: 国を検索...
+    clubs: クラブを検索...
+    players: 選手を検索...
+    staff: スタッフを検索...
+    default: 検索...
+  sections:
+    competitions: 大会
+    clubs: クラブ
+  columns:
+    continent: 大陸
+    countries: 国
+    clubs: クラブ
+    players: 選手
+    competitions: 大会
+    population: 人口
+    competition: 大会
+    teams: チーム
+    level: レベル
+    squad: スカッド
+    nationality_abbr: 国籍
+    position_abbr: ポジション
+  labels:
+    players: 選手
+    staff: スタッフ
+  competition_types:
+    domestic_league: 国内リーグ
+    domestic_cup: 国内カップ
+    continental_cup: 大陸大会
+    league_cup: リーグカップ
+    international: 国際大会
+  club_types:
+    professional: プロ
+    semi_professional: セミプロ
+    amateur: アマチュア
+    academy: アカデミー

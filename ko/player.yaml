@@ -174,7 +174,7 @@ player:
     standing_tackles: 스탠딩 태클
     sliding_tackles: 슬라이딩 태클
     interceptions: 가로채기
-    jockeying: 조키잉
+    containing: 컨테이닝
     pressing_technique: 압박 기술
     blocking: 블로킹
     defensive_screening: 수비 스크리닝

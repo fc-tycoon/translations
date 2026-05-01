@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Bracket
+  overview:
+    structure: Competition Structure
+    stage_meta: '{count} teams · {format}'
+  standings:
+    champion_short: C
+    champion_title: Champion
+    promoted_short: ▲
+    promoted_title: Promoted
+    promotion_playoff_short: PP
+    promotion_playoff_title: Promotion Playoff
+    continental_qualified_short: CQ
+    continental_qualified_title: Continental Qualification
+    qualified_short: Q
+    qualified_title: Qualified
+    relegation_playoff_short: RP
+    relegation_playoff_title: Relegation Playoff
+    relegated_short: ▼
+    relegated_title: Relegated
+  rules:
+    points_for_win: Points for Win
+    points_for_draw: Points for Draw
+    substitutions: Substitutions
+    promotions: Promotions
+    promotion_playoffs: Promotion Playoffs
+    relegation_playoffs: Relegation Playoffs
+    relegation_places: Relegation Places
+    qualifications: Qualifications
+    continental_qualifications: Continental Qualifications
+    tiebreaker_order: Tiebreaker Order
+    notes: Notes
+  tiebreakers:
+    goal_diff: Goal Difference
+    goal_average: Goal Average
+    goals_for: Goals For
+    goals_against: Goals Against
+    head_to_head: Head-to-Head
+    head_to_head_gd: Head-to-Head Goal Difference
+    head_to_head_away: Head-to-Head Away Goals
+    away_goals: Away Goals
+    wins: Wins
+    fair_play: Fair Play
+    coefficient: Coefficient
+    random: Random Draw
+    extra_time: Extra Time
+    penalties: Penalties
+  stage_status:
+    completed: Completed
+    in_progress: In Progress
+    upcoming: Upcoming
+  stage_format:
+    round_robin: Round Robin
+    play_offs: Play-offs
+    knockout: Knockout

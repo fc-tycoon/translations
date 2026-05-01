@@ -1,0 +1,73 @@
+# Game Shell Translations (German)
+
+game_shell:
+  brand: FC Tycoon
+  chat: Chat
+  save_game: Spiel speichern
+  main_menu: Hauptmenü
+  simulating: Simulation läuft...
+  continue: Weiter
+  match_results_title: Spielergebnisse
+  next_match_title: Nächstes Spiel
+  vs: vs
+  welcome_title: 'Willkommen, {name}'
+  welcome_text: Ihre Reise beginnt. Klicken Sie auf Weiter, um zum ersten Spieltag zu gelangen.
+  fixtures_title: Kommende Spiele
+  no_fixtures: Keine kommenden Spiele.
+  matchday_short: 'ST {day}'
+  table_title: Ligatabelle
+  table_no_data: Noch keine Ligadaten. Beginnen Sie erst einen Spieltag.
+  table_col_team: Verein
+  inbox_title: Posteingang
+  inbox_no_messages: Keine Nachrichten.
+  inbox_new_badge: NEU
+  squad_title: Kader
+  squad_coming_soon: Kaderverwaltung folgt in Kürze.
+  loading: Laden...
+  nav:
+    dashboard: Dashboard
+    fixtures: Spielplan
+    table: Ligatabelle
+    inbox: Posteingang
+    squad: Kader
+    tactics: Taktik
+    transfers: Transfers
+    home: Start
+    dynamics: Dynamik
+    staff: Personal
+    schedule: Spielplan
+    training: Training
+    medical_centre: Medizinisches Zentrum
+    competitions: Wettbewerbe
+    scouting: Scouting
+    club_info: Vereinsinfo
+    board: Vorstand
+    finances: Finanzen
+    facilities: Einrichtungen
+    dev_centre: Nachwuchszentrum
+  world:
+    title: Welt
+    navigation: Weltnavigation
+  menu:
+    title: Menü
+    exit_to_main_menu: Zum Hauptmenü
+    exit_game: Spiel beenden
+  loading:
+    title: Laden...
+    subtitle: Spielstand wird aus der Speicherdatei wiederhergestellt
+  saving:
+    title: Speichern...
+    subtitle: Schreibe {filename}
+  about:
+    title: Über FC Tycoon
+    tagline: Eine Fußballmanagement-Simulation
+    tech_stack: Erstellt mit Go · Vue · Riptide · DuckDB
+    dedication_intro: Dieses Spiel ist den folgenden Menschen gewidmet:
+    inspiration_intro: Und den folgenden Menschen, die mich dazu inspiriert haben, Programmierer zu werden:
+  exit_dialog:
+    title: Spiel beenden
+    message: Sind Sie sicher, dass Sie das Spiel beenden möchten? Nicht gespeicherter Fortschritt geht verloren.
+  routes:
+    player_profile: Spielerprofil
+    competition: Wettbewerb
+    club: Verein

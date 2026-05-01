@@ -13,10 +13,10 @@ preferences:
     default: 기본값
     disabled: 비활성화됨
     enabled: 활성화됨
-    no: 아니요
+    'no': 아니요
     none: 없음
     unknown: 알 수 없음
-    yes: 예
+    'yes': 예
 
   appearance:
     theme_heading: 테마
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: 자동 저장 보관
     keep_autosaves_hint: 가장 오래된 항목을 삭제하기 전에 보관할 자동 저장 수
     confirm_overwrite: 덮어쓰기 확인
+    copy: 이제 저장 파일은 항상 백엔드가 관리하는 saved-games 폴더를 기준으로 하므로 개발 빌드와 패키지 빌드 모두 올바른 루트를 자동으로 사용합니다.
+    location_hint: 이 위치는 백엔드에서 고정되며 더 이상 렌더러가 제공한 경로에 의존하지 않습니다.
+    autosave_hint: 자동 저장 스냅샷의 선호 간격을 선택하세요.
+    confirm_overwrite_hint: 기존 수동 저장 파일을 덮어쓰기 전에 확인합니다.
 
   display:
     heading: 표시
     fullscreen_label: 전체 화면으로 시작
     fullscreen_hint: 다음 실행 시 게임 창에 적용됩니다.
+    always_on_top_label: 항상 위에 표시
+    always_on_top_hint: 게임 창을 다른 데스크톱 창 위에 유지합니다. 즉시 적용되며 다음 실행에도 기억됩니다.
     confirm_exit_label: 종료 전에 확인
     confirm_exit_hint: 게임 애플리케이션을 닫기 전에 확인을 요청합니다.
     title: 표시 설정
@@ -66,15 +72,31 @@ preferences:
     ui_scale: UI 크기
     show_tooltips: 툴팁 표시
     animations: 애니메이션
+    interface_heading: 인터페이스
+    ui_scale_hint: 인터페이스 크기를 80%에서 120% 사이로 조정합니다.
+    show_tooltips_hint: 인터페이스 전반에서 상황별 안내를 표시합니다.
+    animations_hint: 인터페이스 전환과 모션 효과를 허용합니다.
 
   languages:
     title: 언어 설정
+    heading: 언어
     game_language: 게임 언어
+    game_language_label: 게임 언어
     game_language_hint: 게임 내 모든 텍스트의 언어를 변경합니다 (일부 UI는 재시작 필요)
     date_format: 날짜 형식
+    date_format_label: 날짜 형식
+    date_format_hint: 이 설정을 따르는 UI에서 사용할 달력 표시 형식을 설정합니다.
     number_format: 숫자 형식
+    number_format_label: 숫자 형식
+    number_format_hint: 천 단위 구분자와 소수점 표시 형식을 설정합니다.
+    week_start_label: 주 시작 요일
+    week_start_hint: 달력과 날짜 선택기에서 먼저 표시할 요일을 설정합니다.
+    week_start_monday: 월요일
+    week_start_sunday: 일요일
     reload_translations: 번역 다시 불러오기
+    reload_label: 번역 다시 불러오기
     reload_btn: 다시 불러오기
+    reload_button: 다시 불러오기
     reload_hint: 디스크의 모든 번역 파일을 다시 불러옵니다 (개발에 유용)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: 전술 변경
     quick_continue: 빠른 계속
     quick_continue_hint: 게임을 계속할 때 확인을 건너뜁니다
+    show_tutorials_hint: 온보딩과 알림을 위해 튜토리얼 안내를 계속 표시합니다.
+    confirm_actions_hint: 어떤 관리 작업에 먼저 확인을 요구할지 선택합니다.
 
   ui_tab:
     title: UI 설정
@@ -105,6 +129,7 @@ preferences:
     midfielders: 미드필더
     attackers: 공격수
     reset_btn: 재설정
+    copy: 이 색상들은 스쿼드 및 역할 중심 UI에서 사용하는 네 가지 포지션 유닛 그룹의 강조색을 정의합니다.
 
   shortcuts:
     title: 키보드 단축키

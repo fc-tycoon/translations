@@ -1,0 +1,10 @@
+# EULA Translations (Korean)
+
+eula:
+  title: 최종 사용자 라이선스 계약
+  subtitle: 계속하려면 아래 약관을 읽고 동의해 주세요
+  accept_label: 최종 사용자 라이선스 계약을 읽었으며 동의합니다
+  decline_button: 거부하고 종료
+  accept_button: 동의하고 계속
+  accept_tooltip: 약관에 동의하려면 위의 체크박스를 선택해 주세요
+  load_error: EULA 내용을 불러오는 중 오류가 발생했습니다. 고객 지원팀에 문의 해 주세요.

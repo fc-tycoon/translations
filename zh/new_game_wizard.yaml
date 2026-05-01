@@ -358,6 +358,7 @@ new_game_wizard:
     club_filter_country: 国家
     club_filter_league: 联赛
     club_filter_search: 搜索
+    club_search_placeholder: 搜索俱乐部...
     club_filter_all_countries: 所有国家
     club_filter_all_leagues: 所有联赛
     club_table_club: 俱乐部
@@ -425,6 +426,7 @@ new_game_wizard:
     fname: 名字
     lname: 姓氏
     dob: 出生日期
+    date_of_birth_placeholder: 选择出生日期
     known_as: 常用名
     nationality: 国籍
     second_nationality: 第二国籍
@@ -467,12 +469,35 @@ new_game_wizard:
     port_generating: 生成中...
     port_no_portrait: 无肖像
     port_upload_hint: '上传照片代替 AI 生成。可调整位置和裁剪。输出: 260 × 310 px (DF11 格式)。'
+    port_hint_base: 'Tip: Face generation uses one shared runtime and queues portrait work automatically.'
+    port_hint_vram: 'Tip: Face generation uses one shared runtime and queues portrait work automatically. Detected {vram} GB VRAM on {adapter}.'
     port_age_tooltip: Facegen 使用游戏开始日期计算年龄，而非实际日期。
     port_age_with: '出生日期: {dob}。游戏内开始日期: {startDate}。游戏内年龄: {age}。'
     port_age_without: '出生日期: {dob}。游戏内开始日期: {startDate}。'
+    port_inference_unavailable: Inference time unavailable
+    port_inference_ms: '{milliseconds} ms inference'
+    port_inference_seconds: '{seconds} s inference'
+    port_file_size_unavailable: File size unavailable
+    port_file_size_kb: '{kilobytes} KB JPEG'
+    port_source_database: Loaded from portrait cache
+    port_source_generated: Freshly rendered
+    port_requirements_error: Complete nationality, phenotype, attire, and date of birth before generating portraits.
+    port_require_nationality: Select a nationality before generating portraits.
+    port_require_phenotype: Select a phenotype before generating portraits.
+    port_require_date_of_birth: Select a date of birth before generating portraits.
+    port_require_attire: Select an attire before generating portraits.
+    port_require_manager_fields: Complete the required manager fields before generating portraits.
+    port_require_assistant_fields: Complete the required assistant fields before generating portraits.
+    port_generation_no_image: Generation returned no image
+    port_seed_invalid: Seed must be a signed 32-bit integer.
+    port_seed_duplicate: Each face choice must use a different seed.
+    port_face_a: Face A
+    port_face_b: Face B
 
   personality_editor:
     title: 编辑性格
+    template_label: 性格类型
+    template_placeholder: 选择性格类型
     desc: '请为您的{role}撰写一段简短的气质与处事风格描述。这将影响媒体、球员和 NPC 对其的看法。'
     text: 文本
     preview: 预览

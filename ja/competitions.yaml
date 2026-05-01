@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: 理事会期待
+    performance: 成績
+    recent_form: 直近のフォーム
+    relegated: 降格
+  tabs:
+    standings: 順位表
+    player_stats: 選手成績
+    rules: ルール
+  messages:
+    no_fixtures_drawn: まだ対戦カードが決まっていません。

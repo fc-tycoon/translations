@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (Portuguese)
+
+licenses:
+  title: Licenças de Código Aberto
+  load_failed: Falha ao carregar licenças
+  load_file_failed_inline: Falha ao carregar este arquivo de licença.
+  empty: Nenhum documento legal foi encontrado.
+  sidebar_label: Documentos legais

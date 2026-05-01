@@ -40,7 +40,7 @@ player:
           def_movement:
             label: Defensieve beweging
             description: Voetwerk tijdens verdedigen.
-            tooltip: "Beïnvloedt: jockeyen, druk zetten, positionering, werklust."
+            tooltip: "Beïnvloedt: containen, druk zetten, positionering, werklust."
 
       attacking:
         label: Aanvallende basis
@@ -74,7 +74,7 @@ player:
           coordination:
             label: Coördinatie
             description: Lichaamscontrole en micro-aanpassingen.
-            tooltip: "Beïnvloedt: wendbaarheid, balans, lichaamscontrole, jockeyen, reflexen."
+            tooltip: "Beïnvloedt: wendbaarheid, balans, lichaamscontrole, containen, reflexen."
           aerial:
             label: Luchtspel
             description: Vlucht inschatten en sprongen timen.

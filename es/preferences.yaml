@@ -13,10 +13,10 @@ preferences:
     default: Predeterminado
     disabled: Desactivado
     enabled: Activado
-    no: No
+    'no': No
     none: Ninguno
     unknown: Desconocido
-    yes: Sí
+    'yes': Sí
 
   appearance:
     theme_heading: Tema
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: Conservar autoguardados
     keep_autosaves_hint: Número de autoguardados a conservar antes de eliminar los más antiguos
     confirm_overwrite: Confirmar sobrescritura
+    copy: Los archivos de guardado ahora siempre se resuelven dentro de la carpeta saved-games gestionada por el backend para que las compilaciones de desarrollo y empaquetadas usen automáticamente la ruta raíz correcta.
+    location_hint: Esta ubicación la fija el backend y ya no depende de rutas proporcionadas por el renderizador.
+    autosave_hint: Elige el intervalo preferido para las instantáneas automáticas de guardado.
+    confirm_overwrite_hint: Pide confirmación antes de reemplazar un archivo de guardado manual existente.
 
   display:
     heading: Pantalla
     fullscreen_label: Iniciar en pantalla completa
     fullscreen_hint: Se aplica a la ventana del juego en el próximo inicio.
+    always_on_top_label: Siempre encima
+    always_on_top_hint: Mantén la ventana del juego encima de otras ventanas del escritorio. Se aplica de inmediato y se recuerda para el próximo inicio.
     confirm_exit_label: Confirmar antes de salir
     confirm_exit_hint: Solicita confirmación antes de cerrar la aplicación del juego.
     title: Configuración de pantalla
@@ -66,15 +72,31 @@ preferences:
     ui_scale: Escala de la IU
     show_tooltips: Mostrar ayudas emergentes
     animations: Animaciones
+    interface_heading: Interfaz
+    ui_scale_hint: Escala la interfaz entre el 80 % y el 120 %.
+    show_tooltips_hint: Activa la ayuda contextual en toda la interfaz.
+    animations_hint: Permite transiciones y efectos de movimiento en la interfaz.
 
   languages:
     title: Configuración de idioma
+    heading: Idiomas
     game_language: Idioma del juego
+    game_language_label: Idioma del juego
     game_language_hint: Cambia el idioma de todo el texto del juego (requiere reinicio para parte de la IU)
     date_format: Formato de fecha
+    date_format_label: Formato de fecha
+    date_format_hint: Define el formato preferido para mostrar fechas en la IU que usa estas preferencias.
     number_format: Formato de número
+    number_format_label: Formato de número
+    number_format_hint: Define el estilo preferido para los separadores de miles y decimales.
+    week_start_label: Inicio de la semana
+    week_start_hint: Define qué día aparece primero en los calendarios y selectores de fecha.
+    week_start_monday: Lunes
+    week_start_sunday: Domingo
     reload_translations: Recargar traducciones
+    reload_label: Recargar traducciones
     reload_btn: Recargar
+    reload_button: Recargar
     reload_hint: Recargar todos los archivos de traducción desde el disco (útil para desarrollo)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: Cambios tácticos
     quick_continue: Continuación rápida
     quick_continue_hint: Omitir confirmación al continuar la partida
+    show_tutorials_hint: Mantén activados los avisos de tutorial para la incorporación y los recordatorios.
+    confirm_actions_hint: Elige qué acciones de gestión deben pedir confirmación primero.
 
   ui_tab:
     title: Configuración de IU
@@ -105,6 +129,7 @@ preferences:
     midfielders: Centrocampistas
     attackers: Delanteros
     reset_btn: restablecer
+    copy: Estos colores definen los acentos de los cuatro grupos de unidad de posición usados por las superficies de IU orientadas a plantilla y roles.
 
   shortcuts:
     title: Atajos de teclado
@@ -202,14 +227,14 @@ preferences:
       slow: Vista previa de baja frecuencia. Menos actualizaciones por frase y menor carga de CPU. El texto aparece en bloques más grandes en lugar de palabra por palabra.
 
     recommendations:
-      cpu_1: Inferencia en CPU: empieza con Tiny o Tiny English. Base puede funcionar en CPUs más potentes, pero Small suele reservarse mejor para dictado en búfer.
-      cpu_2: Vista previa en vivo por CPU: pruébala primero. Si la escritura o la respuesta de la UI se degradan, aumenta el intervalo a 500-1000 ms antes de culpar a la calidad del modelo.
+      cpu_1: 'Inferencia en CPU: empieza con Tiny o Tiny English. Base puede funcionar en CPUs más potentes, pero Small suele reservarse mejor para dictado en búfer.'
+      cpu_2: 'Vista previa en vivo por CPU: pruébala primero. Si la escritura o la respuesta de la UI se degradan, aumenta el intervalo a 500-1000 ms antes de culpar a la calidad del modelo.'
       cuda_1: CUDA es actualmente la mejor opción para una vista previa en vivo con baja latencia y para ejecutar modelos Base o Small sin que la UI se sienta lenta.
       cuda_2: Si tienes varias GPU NVIDIA, deja ASR en la tarjeta más ligera solo si la principal está ocupada con trabajo de LLM o facegen.
       openvino_1: El modo Intel NPU requiere los archivos IR del codificador OpenVINO correspondientes al modelo Whisper seleccionado. El modelo ggml por sí solo no basta.
       openvino_2: OpenVINO NPU actualmente solo descarga el trabajo del codificador Whisper. El mayor beneficio suele verse con Base o Small, no necesariamente con Tiny.
       other_gpu: Vulkan e HIP funcionan mejor como modos sencillos de aceleración por GPU. El puente actual usa la GPU predeterminada del runtime en lugar de un selector por dispositivo para estos backends.
-      streaming_1: Vista previa en vivo: empieza alrededor de 300-500 ms. Si quieres parciales más suaves, prueba 200 ms, pero mantenlo solo si la UI sigue respondiendo bien en tu máquina.
+      streaming_1: 'Vista previa en vivo: empieza alrededor de 300-500 ms. Si quieres parciales más suaves, prueba 200 ms, pero mantenlo solo si la UI sigue respondiendo bien en tu máquina.'
       streaming_2: Tu intervalo actual es muy agresivo. Si la vista previa se atasca o el campo se congela, usa un búfer más largo antes de cambiar el tamaño del modelo.
       buffered: El modo en búfer sigue siendo la opción más segura cuando te importa más la precisión final que ver texto aparecer a mitad de frase.
 

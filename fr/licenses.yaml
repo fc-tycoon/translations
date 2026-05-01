@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (French)
+
+licenses:
+  title: Licences Open Source
+  load_failed: Échec du chargement des licences
+  load_file_failed_inline: Impossible de charger ce fichier de licence.
+  empty: Aucun document légal n'a été trouvé.
+  sidebar_label: Documents légaux

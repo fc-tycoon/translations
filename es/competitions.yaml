@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Expectativa de la directiva
+    performance: Rendimiento
+    recent_form: Forma reciente
+    relegated: Descendido
+  tabs:
+    standings: Clasificación
+    player_stats: Estadísticas de jugadores
+    rules: Reglas
+  messages:
+    no_fixtures_drawn: Todavía no se ha sorteado el calendario.

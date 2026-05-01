@@ -73,6 +73,7 @@ ui:
     pause: Pause
     speed: Geschwindigkeit
     fast_forward: Vorspulen
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: Nächster Tag
     advance_tomorrow: Zum nächsten Morgen um 9:00 Uhr vorspulen
     cycle_speed: Spielgeschwindigkeit ändern (klicken zum Wechseln)
@@ -116,6 +117,13 @@ ui:
     quick_save_description: Schnellspeicherung erstellt am {date}
     file_exists_title: Datei existiert bereits
     file_exists_message: Die Datei "{filename}.db" existiert bereits. Beim Speichern wird sie überschrieben.
+    managers: Manager
+    file_size: Dateigröße
+    password_required: Passwort erforderlich
+    enter_password: Passwort des Spielstands eingeben...
+    open_folder: Öffnen
+    password_preserve_hint: Passwort leer lassen, um den bestehenden Schutz beizubehalten, oder ein neues Passwort eingeben, um ihn zu ersetzen.
+    password_optional_hint: Passwort leer lassen, um ohne Passwortschutz zu speichern.
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: Hilfe
     about: Über
     version: Version
+    coming_soon: Coming soon
     name: Name
     club: Verein
     league: Liga
@@ -176,23 +185,65 @@ ui:
     vacant: Unbesetzt
     not_available: k. A.
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: Lizenzordner öffnen
-    third_party_notices: Hinweise zu Drittanbietern
-    fc_tycoon_license: FC Tycoon-Lizenz
-    load_failed: Lizenzen konnten nicht geladen werden
-    load_file_failed: Lizenzdatei konnte nicht geladen werden
-    load_file_failed_inline: Diese Lizenzdatei konnte nicht geladen werden.
-    open_folder_failed: Lizenzordner konnte nicht geöffnet werden
+    team: Team
+    teams: Teams
+    home: Heim
+    away: Auswärts
+    score: Ergebnis
+    competition: Wettbewerb
+    players: Spieler
+    staff: Personal
+    transfers: Transfers
+    form: Form
+    morale: Moral
+    fitness: Fitness
+    height: Größe
+    contract: Vertrag
+    value: Wert
+    city: Stadt
+    capacity: Kapazität
+    prize_money: Preisgeld
+    tv_deal: TV-Vertrag
+    fixtures: Spielplan
+    results: Ergebnisse
+    round: Runde
+    venue: Austragungsort
+    goals: Tore
+    assists: Vorlagen
+    avg_rating: Ø-Bewertung
+    no_players_found: Keine Spieler gefunden.
+    player_count: '{count} Spieler'
+  datepicker:
+    select_date: Datum auswählen
+    clear_date: Datum löschen
+    previous_year: Vorheriges Jahr
+    previous_month: Vorheriger Monat
+    select_month: Monat auswählen
+    select_year: Jahr auswählen
+    next_month: Nächster Monat
+    next_year: Nächstes Jahr
+    time_utc: Zeit (UTC)
+    hour_utc: Stunde (UTC)
+    minute: Minute
+    range_end_hint: Jetzt ein Enddatum auswählen
 
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: Credits konnten nicht geladen werden
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: P
+    won: W
+    drawn: D
+    lost: L
+    goals_for: GF
+    goals_against: GA
+    goal_difference: GD
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: GK
+    red_cards: RK
+    matchday: ST
 
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
@@ -216,7 +267,7 @@ ui:
     blocking_attention: Sie haben {count} wichtige Nachricht(en), die Ihre Aufmerksamkeit erfordern.
     advance_day_failed: Es konnte nicht zum nächsten Tag vorgespult werden. Bitte wenden Sie sich an den Support im FC Tycoon Discord-Kanal.
     load_success: Spiel erfolgreich geladen
-    save_success: Spiel in {filename}.db gespeichert
+    save_success: Spiel in {filename} gespeichert
     loaded_most_recent_save: 'Neuesten Spielstand geladen: {name}'
 
   # ══════════════════════════════════════════════════════════════════════
@@ -231,6 +282,8 @@ ui:
     locate_save_folder_failed: Speicherordner konnte nicht gefunden werden
     open_save_dialog_failed: Speicher-Dialog konnte nicht geöffnet werden
     load_most_recent_failed: Neuesten Spielstand konnte nicht geladen werden
+    read_save_metadata_failed: Details der Speicherdatei konnten nicht gelesen werden
+    load_save_list_failed: Liste der Spielstände konnte nicht geladen werden
     ui_init_after_load_failed: Spiel geladen, aber die Benutzeroberfläche konnte nicht initialisiert werden
     loaded_save_no_active_manager: Der geladene Spielstand hat keinen aktiven Manager. Möglicherweise müssen Sie ein neues Spiel starten oder diesen Spielstand reparieren.
     connection_lost: Verbindung verloren
@@ -239,6 +292,9 @@ ui:
     permission_denied: Zugriff verweigert
     file_not_found: Datei nicht gefunden
     database_error: Datenbankfehler
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -275,3 +331,17 @@ ui:
     apply: Anwenden
     browse: Durchsuchen...
     exit: Beenden
+    retry: Erneut versuchen
+    quit: Beenden
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '{n}.'
+    two: '{n}.'
+    few: '{n}.'
+    other: '{n}.'

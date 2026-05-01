@@ -1,0 +1,10 @@
+# EULA Translations (Japanese)
+
+eula:
+  title: エンドユーザーライセンス契約
+  subtitle: 続行するには以下の条件を読んで承諾してください
+  accept_label: エンドユーザーライセンス契約を読み、同意します
+  decline_button: 拒否して終了
+  accept_button: 同意して続行
+  accept_tooltip: 条件に同意するには上のチェックボックスをオンにしてください
+  load_error: EULAコンテンツの読み込みエラーが発生しました。サポートにお問い合わせください。

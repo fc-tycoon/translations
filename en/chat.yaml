@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: No LLM model loaded. Configure a model in Preferences first.
+  choose_who: "Choose who to speak with:"
+  open_conversations: Open Conversations
+  no_summary: No summary
+  back: "\u2190 Back"
+  type_message: "Type a message..."
+  send: Send

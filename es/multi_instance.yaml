@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Otra instancia detectada
+  heading: Ya se está ejecutando otra instancia del juego o del editor de FC Tycoon.
+  intro: Al ejecutar varias instancias al mismo tiempo, comparten los mismos archivos de configuración y pueden apuntar a los mismos archivos de base de datos o partida guardada. Los cambios no se sincronizan entre las instancias en ejecución.
+  instructions: Confirme cada punto siguiente antes de continuar con otra instancia.
+  config_path_label: Directorio de configuración compartido
+  data_path_label: Ruta relevante de base de datos o partida guardada
+  path_unavailable: No disponible
+  preferences_ack: Entiendo que los cambios en preferencias y configuración no aparecerán en la otra instancia en ejecución hasta que esa instancia vuelva a cargar o se reinicie.
+  database_ack: Entiendo que los cambios en la base de datos o en la partida guardada pueden sobrescribir el trabajo de la otra instancia, y que esos cambios pueden no aparecer allí hasta que vuelva a cargar la base de datos o se reinicie.
+  final_ack: Acepto estos términos y condiciones y quiero continuar ejecutando otra instancia.
+  continue: Continuar
+  exit: Salir

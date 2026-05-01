@@ -17,6 +17,7 @@ welcome:
   competition: 大会
   board_expectation: 取締役会の期待
   transfer_budget: 移籍予算
+  message: "{clubName}へようこそ。クラブや施設、そして期待される役割をご案内するあいだ、私が主な窓口を務めます。"
 
   confirm_save_new_game: "新しいゲームを保存しますか？"
   manager_fallback: マネージャー

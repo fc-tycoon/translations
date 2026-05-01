@@ -1,0 +1,11 @@
+schedule:
+  loading: 일정 불러오는 중...
+  calendar:
+    events:
+      vs_opponent: 'vs {opponent}'
+      at_opponent: '@ {opponent}'
+  empty:
+    upcoming: 예정된 경기가 없습니다.
+    results: 결과가 아직 없습니다.
+  errors:
+    load_failed: 일정 불러오기에 실패했습니다

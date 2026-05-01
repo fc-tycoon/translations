@@ -1,0 +1,11 @@
+schedule:
+  loading: Loading schedule...
+  calendar:
+    events:
+      vs_opponent: 'vs {opponent}'
+      at_opponent: '@ {opponent}'
+  empty:
+    upcoming: No upcoming fixtures.
+    results: No results yet.
+  errors:
+    load_failed: Failed to load schedule

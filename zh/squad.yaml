@@ -1,0 +1,14 @@
+squad:
+  title: 阵容
+  col_sharpness: 锐度
+  col_feet: 脚法
+  right_foot: 右脚
+  left_foot: 左脚
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: 查看资料
+  ctx_move: 移至球队
+  ctx_training: 训练
+  ctx_release: 解约球员

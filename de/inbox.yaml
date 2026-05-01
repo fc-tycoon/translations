@@ -1,5 +1,6 @@
 inbox:
   title: Posteingang
+  no_messages: Keine Nachrichten
   empty_state: Keine Nachrichten
   empty_selection: Nachricht zum Lesen auswählen
   starred: Markiert
@@ -26,3 +27,10 @@ inbox:
   priority_low: Niedrig
   blocking: Erfordert Aufmerksamkeit
   blocking_count: "{count} wichtige Nachricht(en)"
+  response_sent: Antwort gesendet
+  select_option: "— Auswählen —"
+  submit_response: Antwort absenden
+  today: Heute
+  yesterday: Gestern
+  search: Nachrichten suchen…
+  page_of: "{page} von {total}"

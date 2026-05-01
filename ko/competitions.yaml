@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: 이사회 기대치
+    performance: 성과
+    recent_form: 최근 폼
+    relegated: 강등
+  tabs:
+    standings: 순위표
+    player_stats: 선수 기록
+    rules: 규정
+  messages:
+    no_fixtures_drawn: 아직 대진이 정해지지 않았습니다.

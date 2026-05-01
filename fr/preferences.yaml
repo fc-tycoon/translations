@@ -13,10 +13,10 @@ preferences:
     default: Par défaut
     disabled: Désactivé
     enabled: Activé
-    no: Non
+    'no': Non
     none: Aucun
     unknown: Inconnu
-    yes: Oui
+    'yes': Oui
 
   appearance:
     theme_heading: Thème
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: Conserver les sauvegardes automatiques
     keep_autosaves_hint: Nombre de sauvegardes automatiques à conserver avant de supprimer les plus anciennes
     confirm_overwrite: Confirmer l'écrasement
+    copy: Les fichiers de sauvegarde sont désormais toujours résolus dans le dossier saved-games géré par le backend afin que les versions de développement et packagées utilisent automatiquement la bonne racine.
+    location_hint: Cet emplacement est fixé par le backend et ne dépend plus de chemins fournis par le moteur de rendu.
+    autosave_hint: Choisissez l'intervalle préféré pour les instantanés de sauvegarde automatique.
+    confirm_overwrite_hint: Demander confirmation avant de remplacer un fichier de sauvegarde manuelle existant.
 
   display:
     heading: Affichage
     fullscreen_label: Démarrer en plein écran
     fullscreen_hint: S'applique à la fenêtre du jeu au prochain lancement.
+    always_on_top_label: Toujours au premier plan
+    always_on_top_hint: Maintenir la fenêtre du jeu au-dessus des autres fenêtres du bureau. S'applique immédiatement et est mémorisé pour le prochain lancement.
     confirm_exit_label: Confirmer avant de quitter
     confirm_exit_hint: Demande une confirmation avant de fermer l'application du jeu.
     title: Paramètres d'Affichage
@@ -66,15 +72,31 @@ preferences:
     ui_scale: Échelle UI
     show_tooltips: Afficher les infobulles
     animations: Animations
+    interface_heading: Interface
+    ui_scale_hint: Met à l'échelle l'interface entre 80 % et 120 %.
+    show_tooltips_hint: Active les aides contextuelles dans toute l'interface.
+    animations_hint: Autorise les transitions et effets de mouvement de l'interface.
 
   languages:
     title: Paramètres de Langue
+    heading: Langues
     game_language: Langue du Jeu
+    game_language_label: Langue du Jeu
     game_language_hint: Change la langue pour tous les textes du jeu (redémarrage requis pour certains UI)
     date_format: Format de Date
+    date_format_label: Format de Date
+    date_format_hint: Définit le format d'affichage du calendrier pour l'interface qui suit cette préférence.
     number_format: Format de Nombre
+    number_format_label: Format de Nombre
+    number_format_hint: Définit le style préféré pour les séparateurs de milliers et de décimales.
+    week_start_label: Début de la semaine
+    week_start_hint: Définit le premier jour affiché dans les calendriers et sélecteurs de date.
+    week_start_monday: Lundi
+    week_start_sunday: Dimanche
     reload_translations: Recharger les Traductions
+    reload_label: Recharger les Traductions
     reload_btn: Recharger
+    reload_button: Recharger
     reload_hint: Recharger tous les fichiers de traduction depuis le disque (utile pour le développement)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: Changements Tactiques
     quick_continue: Continuer Rapidement
     quick_continue_hint: Sauter la confirmation lors de la continuation du jeu
+    show_tutorials_hint: Conservez les invites de tutoriel activées pour l'onboarding et les rappels.
+    confirm_actions_hint: Choisissez quelles actions de gestion doivent demander une confirmation.
 
   ui_tab:
     title: Paramètres UI
@@ -105,6 +129,7 @@ preferences:
     midfielders: Milieux
     attackers: Attaquants
     reset_btn: réinitialiser
+    copy: Ces couleurs définissent les accents des quatre groupes d'unités de poste utilisés par les interfaces orientées effectif et rôle.
 
   shortcuts:
     title: Raccourcis Clavier
@@ -202,14 +227,14 @@ preferences:
       slow: Aperçu à faible fréquence. Moins de mises à jour par énoncé et une charge CPU plus basse. Le texte apparaît par blocs plus larges plutôt que mot à mot.
 
     recommendations:
-      cpu_1: Inférence CPU : commencez par Tiny ou Tiny English. Base peut fonctionner sur des CPU plus puissants, mais Small est généralement mieux réservé à la dictée tamponnée.
-      cpu_2: Aperçu en direct sur CPU : testez-le d'abord. Si la frappe ou la réactivité de l'interface se dégrade, augmentez l'intervalle à 500-1000 ms avant d'incriminer la qualité du modèle.
+      cpu_1: 'Inférence CPU : commencez par Tiny ou Tiny English. Base peut fonctionner sur des CPU plus puissants, mais Small est généralement mieux réservé à la dictée tamponnée.'
+      cpu_2: 'Aperçu en direct sur CPU : testez-le d''abord. Si la frappe ou la réactivité de l''interface se dégrade, augmentez l''intervalle à 500-1000 ms avant d''incriminer la qualité du modèle.'
       cuda_1: CUDA est actuellement la meilleure voie pour un aperçu en direct à faible latence et pour exécuter des modèles Base ou Small sans rendre l'interface lente.
       cuda_2: Si vous avez plusieurs GPU NVIDIA, ne placez l'ASR sur la carte la plus légère que si la carte principale est déjà occupée par du travail LLM ou facegen.
       openvino_1: Le mode Intel NPU nécessite les fichiers IR d'encodeur OpenVINO correspondant à votre modèle Whisper sélectionné. Le simple modèle ggml ne suffit pas.
       openvino_2: OpenVINO NPU ne déporte actuellement que le travail de l'encodeur Whisper. Le gain le plus net concerne Base ou Small, pas forcément Tiny.
       other_gpu: Vulkan et HIP fonctionnent le mieux comme modes simples d'accélération GPU. Le pont actuel utilise le GPU par défaut du runtime plutôt qu'un sélecteur par périphérique pour ces backends.
-      streaming_1: Aperçu en direct : commencez autour de 300-500 ms. Si vous voulez des partiels plus fluides, testez 200 ms, mais ne le conservez que si l'interface reste réactive sur votre machine.
+      streaming_1: 'Aperçu en direct : commencez autour de 300-500 ms. Si vous voulez des partiels plus fluides, testez 200 ms, mais ne le conservez que si l''interface reste réactive sur votre machine.'
       streaming_2: Votre intervalle actuel est très agressif. Si l'aperçu se bloque ou si le champ se fige, utilisez un tampon plus long avant de changer la taille du modèle.
       buffered: Le mode tamponné reste l'option la plus sûre lorsque la précision finale compte davantage que le fait de voir le texte apparaître en cours de phrase.
 

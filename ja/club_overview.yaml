@@ -1,0 +1,22 @@
+club_overview:
+  loading: クラブデータを読み込み中...
+  overview:
+    club_name: クラブ名
+    national_reputation: 国内評価
+    international_reputation: 国際評価
+    elo_rating: Eloレーティング
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: スタッフが見つかりません。
+    other_department: その他
+  competitions:
+    season: '{season} シーズン'
+    empty: 有効な大会はありません。
+  schedule:
+    placeholder: ライバルクラブの試合日程はまだ利用できません。
+  transfers:
+    placeholder: ライバルクラブの移籍情報はまだ利用できません。
+  errors:
+    not_found: 'クラブ {clubId} が見つかりません。'
+    load_failed: クラブデータの読み込みに失敗しました

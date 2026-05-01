@@ -1,0 +1,10 @@
+# EULA Translations (French)
+
+eula:
+  title: Contrat de Licence Utilisateur Final
+  subtitle: Veuillez lire et accepter les conditions ci-dessous pour continuer
+  accept_label: J'ai lu et j'accepte le Contrat de Licence Utilisateur Final
+  decline_button: Refuser et Quitter
+  accept_button: Accepter et Continuer
+  accept_tooltip: Veuillez cocher la case ci-dessus pour accepter les conditions
+  load_error: Erreur lors du chargement du contenu du CLUF. Veuillez contacter le support.

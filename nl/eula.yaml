@@ -1,0 +1,10 @@
+# EULA Translations (Dutch)
+
+eula:
+  title: Eindgebruikerslicentieovereenkomst
+  subtitle: Lees de onderstaande voorwaarden en accepteer ze om door te gaan
+  accept_label: Ik heb de Eindgebruikerslicentieovereenkomst gelezen en ga akkoord
+  decline_button: Weigeren en Afsluiten
+  accept_button: Accepteren en Doorgaan
+  accept_tooltip: Vink het bovenstaande vakje aan om de voorwaarden te accepteren
+  load_error: Fout bij het laden van de EULA-inhoud. Neem contact op met ondersteuning.

@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: 检测到另一实例
+  heading: 另一个 FC Tycoon 游戏或编辑器实例已在运行。
+  intro: 同时运行多个实例意味着它们会共享同一套配置文件，并且可能指向同一个数据库或存档文件。更改不会在正在运行的实例之间同步。
+  instructions: 在继续启动另一个实例之前，请确认下面的每一项。
+  config_path_label: 共享配置目录
+  data_path_label: 相关数据库或存档路径
+  path_unavailable: 不可用
+  preferences_ack: 我明白，偏好设置和配置的更改在另一个运行中的实例重新加载或重新启动之前不会显示出来。
+  database_ack: 我明白，数据库或存档的更改可能会覆盖另一个实例的工作，并且这些更改在对方重新加载数据库或重新启动之前可能不会显示出来。
+  final_ack: 我接受这些条款和条件，并希望继续运行另一个实例。
+  continue: 继续
+  exit: 退出

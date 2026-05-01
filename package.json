@@ -16,8 +16,9 @@
 	"scripts": {
 		"validate:yaml": "node validate-yaml.mjs",
 		"validate:python": "python validate-yaml.py",
+		"validate:parity": "python validate-parity.py",
 		"validate:python:install": "python -m pip install -r requirements.txt",
-		"validate": "npm run validate:yaml"
+		"validate": "npm run validate:yaml && npm run validate:parity"
 	},
 	"dependencies": {
 		"yaml": "^2.8.1"

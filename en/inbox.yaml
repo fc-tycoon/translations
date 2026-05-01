@@ -4,6 +4,7 @@
 # ══════════════════════════════════════════════════════════════════════
 inbox:
   title: Inbox
+  no_messages: No messages
   empty_state: No messages
   empty_selection: Select a message to read
   starred: Starred
@@ -30,3 +31,10 @@ inbox:
   priority_low: Low Priority
   blocking: Requires Attention
   blocking_count: "{count} important message(s) require your attention"
+  response_sent: Response sent
+  select_option: "— Select —"
+  submit_response: Submit Response
+  today: Today
+  yesterday: Yesterday
+  search: Search messages…
+  page_of: "{page} of {total}"

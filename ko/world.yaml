@@ -1,0 +1,56 @@
+world:
+  breadcrumb:
+    root: 세계
+    switch_continent: 대륙 전환
+    switch_country: 국가 전환
+    switch_club: 클럽 전환
+  continents:
+    africa:
+      description: 아프리카 전역의 국가, 클럽, 대회.
+    asia:
+      description: 아시아 전역의 국가, 클럽, 대회.
+    europe:
+      description: 유럽 전역의 국가, 클럽, 대회.
+    north_america:
+      description: 북아메리카 전역의 국가, 클럽, 대회.
+    oceania:
+      description: 오세아니아 전역의 국가, 클럽, 대회.
+    south_america:
+      description: 남아메리카 전역의 국가, 클럽, 대회.
+  search:
+    continents: 대륙 검색...
+    countries: 국가 검색...
+    clubs: 클럽 검색...
+    players: 선수 검색...
+    staff: 스태프 검색...
+    default: 검색...
+  sections:
+    competitions: 대회
+    clubs: 클럽
+  columns:
+    continent: 대륙
+    countries: 국가
+    clubs: 클럽
+    players: 선수
+    competitions: 대회
+    population: 인구
+    competition: 대회
+    teams: 팀
+    level: 레벨
+    squad: 스쿼드
+    nationality_abbr: 국적
+    position_abbr: 포지션
+  labels:
+    players: 선수
+    staff: 스태프
+  competition_types:
+    domestic_league: 국내 리그
+    domestic_cup: 국내 컵
+    continental_cup: 대륙 대회
+    league_cup: 리그컵
+    international: 국제 대회
+  club_types:
+    professional: 프로
+    semi_professional: 세미프로
+    amateur: 아마추어
+    academy: 아카데미

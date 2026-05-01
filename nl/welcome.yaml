@@ -17,6 +17,7 @@ welcome:
   competition: Competitie
   board_expectation: Bestuursverwachting
   transfer_budget: Transferbudget
+  message: "Ik heet je van harte welkom bij {clubName}. Ik zal je belangrijkste aanspreekpunt zijn terwijl we de club, de faciliteiten en de verwachtingen doornemen."
 
   confirm_save_new_game: "Wil je je nieuwe spel opslaan?"
   manager_fallback: Manager

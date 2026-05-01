@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Nog een instantie gedetecteerd
+  heading: Er wordt al een andere FC Tycoon game- of editorinstantie uitgevoerd.
+  intro: Wanneer meerdere instanties tegelijk draaien, delen ze dezelfde configuratiebestanden en kunnen ze dezelfde database- of savebestanden gebruiken. Wijzigingen worden niet gesynchroniseerd tussen actieve instanties.
+  instructions: Bevestig elk punt hieronder voordat u verdergaat met nog een instantie.
+  config_path_label: Gedeelde configuratiemap
+  data_path_label: Relevant database- of savepad
+  path_unavailable: Niet beschikbaar
+  preferences_ack: Ik begrijp dat wijzigingen in voorkeuren en configuratie pas zichtbaar worden in de andere actieve instantie nadat die instantie opnieuw is geladen of opnieuw is gestart.
+  database_ack: Ik begrijp dat wijzigingen in de database of save het werk van de andere instantie kunnen overschrijven en daar mogelijk pas zichtbaar worden nadat die instantie de database opnieuw laadt of opnieuw start.
+  final_ack: Ik accepteer deze voorwaarden en wil doorgaan met het uitvoeren van nog een instantie.
+  continue: Doorgaan
+  exit: Afsluiten

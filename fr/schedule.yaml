@@ -1,0 +1,11 @@
+schedule:
+  loading: Chargement du calendrier...
+  calendar:
+    events:
+      vs_opponent: 'vs {opponent}'
+      at_opponent: 'chez {opponent}'
+  empty:
+    upcoming: Aucun match à venir.
+    results: Aucun résultat pour le moment.
+  errors:
+    load_failed: Impossible de charger le calendrier

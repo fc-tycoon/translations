@@ -174,7 +174,7 @@ player:
     standing_tackles: Standing Tackles
     sliding_tackles: Sliding Tackles
     interceptions: Interceptions
-    jockeying: Jockeying
+    containing: Containing
     pressing_technique: Pressing Technique
     blocking: Blocking
     defensive_screening: Defensive Screening

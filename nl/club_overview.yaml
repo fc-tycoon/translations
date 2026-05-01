@@ -1,0 +1,22 @@
+club_overview:
+  loading: Clubgegevens laden...
+  overview:
+    club_name: Clubnaam
+    national_reputation: Nationale reputatie
+    international_reputation: Internationale reputatie
+    elo_rating: Elo-rating
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: Geen staf gevonden.
+    other_department: Overig
+  competitions:
+    season: 'Seizoen {season}'
+    empty: Geen actieve competities.
+  schedule:
+    placeholder: Wedstrijdschema is nog niet beschikbaar voor rivaliserende clubs.
+  transfers:
+    placeholder: Transferactiviteit is nog niet beschikbaar voor rivaliserende clubs.
+  errors:
+    not_found: 'Club {clubId} niet gevonden.'
+    load_failed: Clubgegevens laden mislukt

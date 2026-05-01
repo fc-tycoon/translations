@@ -1,0 +1,14 @@
+squad:
+  title: Kader
+  col_sharpness: Schärfe
+  col_feet: Füße
+  right_foot: Rechts
+  left_foot: Links
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Profil ansehen
+  ctx_move: In Team verschieben
+  ctx_training: Training
+  ctx_release: Spieler freistellen

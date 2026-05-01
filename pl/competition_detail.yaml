@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Drabinka
+  overview:
+    structure: Struktura rozgrywek
+    stage_meta: '{count} zespołów · {format}'
+  standings:
+    champion_short: M
+    champion_title: Mistrz
+    promoted_short: ▲
+    promoted_title: Awans
+    promotion_playoff_short: PP
+    promotion_playoff_title: Baraż o awans
+    continental_qualified_short: CQ
+    continental_qualified_title: Kwalifikacja kontynentalna
+    qualified_short: Q
+    qualified_title: Zakwalifikowany
+    relegation_playoff_short: RP
+    relegation_playoff_title: Baraż spadkowy
+    relegated_short: ▼
+    relegated_title: Spadek
+  rules:
+    points_for_win: Punkty za zwycięstwo
+    points_for_draw: Punkty za remis
+    substitutions: Zmiany
+    promotions: Awanse
+    promotion_playoffs: Baraże o awans
+    relegation_playoffs: Baraże spadkowe
+    relegation_places: Miejsca spadkowe
+    qualifications: Kwalifikacje
+    continental_qualifications: Kwalifikacje kontynentalne
+    tiebreaker_order: Kolejność tie-breakerów
+    notes: Uwagi
+  tiebreakers:
+    goal_diff: Różnica bramek
+    goal_average: Średnia bramek
+    goals_for: Bramki zdobyte
+    goals_against: Bramki stracone
+    head_to_head: Bezpośredni bilans
+    head_to_head_gd: Różnica bramek w bezpośrednich meczach
+    head_to_head_away: Bramki wyjazdowe w bezpośrednich meczach
+    away_goals: Bramki na wyjeździe
+    wins: Zwycięstwa
+    fair_play: Fair play
+    coefficient: Współczynnik
+    random: Losowanie
+    extra_time: Dogrywka
+    penalties: Rzuty karne
+  stage_status:
+    completed: Zakończony
+    in_progress: W toku
+    upcoming: Nadchodzący
+  stage_format:
+    round_robin: Liga
+    play_offs: Baraże
+    knockout: Puchar

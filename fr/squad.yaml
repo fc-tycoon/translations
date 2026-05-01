@@ -1,0 +1,14 @@
+squad:
+  title: Effectif
+  col_sharpness: Tranch.
+  col_feet: Pieds
+  right_foot: Droit
+  left_foot: Gauche
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Voir le profil
+  ctx_move: Déplacer dans l'équipe
+  ctx_training: Entraînement
+  ctx_release: Libérer le joueur

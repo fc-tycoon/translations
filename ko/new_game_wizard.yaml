@@ -358,6 +358,7 @@ new_game_wizard:
     club_filter_country: 국가
     club_filter_league: 리그
     club_filter_search: 검색
+    club_search_placeholder: 클럽 검색...
     club_filter_all_countries: 모든 국가
     club_filter_all_leagues: 모든 리그
     club_table_club: 클럽
@@ -425,6 +426,7 @@ new_game_wizard:
     fname: 이름
     lname: 성
     dob: 생년월일
+    date_of_birth_placeholder: 생년월일 선택
     known_as: 알려진 이름
     nationality: 국적
     second_nationality: 제2 국적
@@ -467,12 +469,35 @@ new_game_wizard:
     port_generating: 생성 중...
     port_no_portrait: 초상화 없음
     port_upload_hint: 'AI 생성 대신 사진을 업로드할 수 있습니다. 위치와 크롭을 조정할 수 있습니다. 출력: 260 × 310 px (DF11 형식).'
+    port_hint_base: 'Tip: Face generation uses one shared runtime and queues portrait work automatically.'
+    port_hint_vram: 'Tip: Face generation uses one shared runtime and queues portrait work automatically. Detected {vram} GB VRAM on {adapter}.'
     port_age_tooltip: Facegen은 실제 날짜가 아닌 게임 시작 날짜를 기준으로 나이를 계산합니다.
     port_age_with: '생년월일: {dob}. 게임 내 시작일: {startDate}. 게임 내 나이: {age}.'
     port_age_without: '생년월일: {dob}. 게임 내 시작일: {startDate}.'
+    port_inference_unavailable: Inference time unavailable
+    port_inference_ms: '{milliseconds} ms inference'
+    port_inference_seconds: '{seconds} s inference'
+    port_file_size_unavailable: File size unavailable
+    port_file_size_kb: '{kilobytes} KB JPEG'
+    port_source_database: Loaded from portrait cache
+    port_source_generated: Freshly rendered
+    port_requirements_error: Complete nationality, phenotype, attire, and date of birth before generating portraits.
+    port_require_nationality: Select a nationality before generating portraits.
+    port_require_phenotype: Select a phenotype before generating portraits.
+    port_require_date_of_birth: Select a date of birth before generating portraits.
+    port_require_attire: Select an attire before generating portraits.
+    port_require_manager_fields: Complete the required manager fields before generating portraits.
+    port_require_assistant_fields: Complete the required assistant fields before generating portraits.
+    port_generation_no_image: Generation returned no image
+    port_seed_invalid: Seed must be a signed 32-bit integer.
+    port_seed_duplicate: Each face choice must use a different seed.
+    port_face_a: Face A
+    port_face_b: Face B
 
   personality_editor:
     title: 성격 편집
+    template_label: 성격 유형
+    template_placeholder: 성격 유형 선택
     desc: '{role}의 기질과 접근 방식에 대한 간단한 설명을 작성하세요. 미디어, 선수, NPC의 인식에 영향을 줍니다.'
     text: 텍스트
     preview: 미리보기

@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (Dutch)
+
+licenses:
+  title: Open Source Licenties
+  load_failed: Licenties laden mislukt
+  load_file_failed_inline: Dit licentiebestand kon niet worden geladen.
+  empty: Er zijn geen juridische documenten gevonden.
+  sidebar_label: Juridische documenten

@@ -13,10 +13,10 @@ preferences:
     default: Standard
     disabled: Deaktiviert
     enabled: Aktiviert
-    no: Nein
+    'no': Nein
     none: Keine
     unknown: Unbekannt
-    yes: Ja
+    'yes': Ja
 
   appearance:
     theme_heading: Thema
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: Automatische Speicherstände behalten
     keep_autosaves_hint: Anzahl der automatischen Speicherstände, die behalten werden, bevor die ältesten gelöscht werden
     confirm_overwrite: Überschreiben bestätigen
+    copy: Speicherstände werden jetzt immer im backendverwalteten saved-games-Ordner abgelegt, damit Entwicklungs- und Paket-Builds automatisch den richtigen Stammordner verwenden.
+    location_hint: Dieser Ort wird vom Backend festgelegt und hängt nicht mehr von rendererseitigen Pfaden ab.
+    autosave_hint: Bevorzugtes Intervall für automatische Speicherschnappschüsse wählen.
+    confirm_overwrite_hint: Vor dem Ersetzen einer bestehenden manuellen Speicherdatei nachfragen.
 
   display:
     heading: Anzeige
     fullscreen_label: Im Vollbild starten
     fullscreen_hint: Gilt für das Spielfenster beim nächsten Start.
+    always_on_top_label: Immer im Vordergrund
+    always_on_top_hint: Spielfenster über anderen Desktopfenstern halten. Wirkt sofort und wird für den nächsten Start gespeichert.
     confirm_exit_label: Vor dem Beenden bestätigen
     confirm_exit_hint: Vor dem Schließen der Spielanwendung eine Bestätigung anfordern.
     title: Anzeigeeinstellungen
@@ -66,15 +72,31 @@ preferences:
     ui_scale: UI-Skalierung
     show_tooltips: Kurzinfos anzeigen
     animations: Animationen
+    interface_heading: Oberfläche
+    ui_scale_hint: Oberfläche zwischen 80 % und 120 % skalieren.
+    show_tooltips_hint: Kontextbezogene Hinweise in der gesamten Oberfläche aktivieren.
+    animations_hint: Oberflächenübergänge und Bewegungseffekte zulassen.
 
   languages:
     title: Spracheinstellungen
+    heading: Sprachen
     game_language: Spielsprache
+    game_language_label: Spielsprache
     game_language_hint: Ändert die Sprache für alle Spieltexte (erfordert Neustart für einige UI-Elemente)
     date_format: Datumsformat
+    date_format_label: Datumsformat
+    date_format_hint: Legt das bevorzugte Kalenderanzeigeformat für UI-Elemente fest, die diese Einstellung unterstützen.
     number_format: Zahlenformat
+    number_format_label: Zahlenformat
+    number_format_hint: Legt das bevorzugte Format für Tausendertrennzeichen und Dezimalstellen fest.
+    week_start_label: Wochenbeginn
+    week_start_hint: Legt fest, welcher Wochentag in Kalendern und Datumsauswählern zuerst angezeigt wird.
+    week_start_monday: Montag
+    week_start_sunday: Sonntag
     reload_translations: Übersetzungen neu laden
+    reload_label: Übersetzungen neu laden
     reload_btn: Neu laden
+    reload_button: Neu laden
     reload_hint: Alle Übersetzungsdateien von der Festplatte neu laden (nützlich für die Entwicklung)
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: Taktikänderungen
     quick_continue: Schnelles Fortfahren
     quick_continue_hint: Bestätigung beim Fortfahren überspringen
+    show_tutorials_hint: Tutorial-Hinweise für Onboarding und Erinnerungen aktiviert lassen.
+    confirm_actions_hint: Festlegen, bei welchen Managementaktionen zuerst eine Bestätigung abgefragt wird.
 
   ui_tab:
     title: UI-Einstellungen
@@ -105,6 +129,7 @@ preferences:
     midfielders: Mittelfeldspieler
     attackers: Angreifer
     reset_btn: zurücksetzen
+    copy: Diese Farben definieren die Akzentfarben der vier Positionsgruppen für kader- und rollenorientierte UI-Flächen.
 
   shortcuts:
     title: Tastenkürzel
@@ -202,14 +227,14 @@ preferences:
       slow: Vorschau mit niedriger Frequenz. Weniger Aktualisierungen pro Äußerung und geringere CPU-Last. Der Text erscheint in größeren Blöcken statt Wort für Wort.
 
     recommendations:
-      cpu_1: CPU-Inferenz: Beginnen Sie mit Tiny oder Tiny English. Base kann auf stärkeren CPUs funktionieren, Small ist aber meist besser für gepufferte Diktate reserviert.
-      cpu_2: CPU-Live-Vorschau: erst testen. Wenn Tipp- oder UI-Reaktionsgeschwindigkeit leidet, erhöhen Sie das Intervall auf 500-1000 ms, bevor Sie die Modellqualität verantwortlich machen.
+      cpu_1: 'CPU-Inferenz: Beginnen Sie mit Tiny oder Tiny English. Base kann auf stärkeren CPUs funktionieren, Small ist aber meist besser für gepufferte Diktate reserviert.'
+      cpu_2: 'CPU-Live-Vorschau: erst testen. Wenn Tipp- oder UI-Reaktionsgeschwindigkeit leidet, erhöhen Sie das Intervall auf 500-1000 ms, bevor Sie die Modellqualität verantwortlich machen.'
       cuda_1: CUDA ist derzeit der beste Weg für latenzarme Live-Vorschau und um Base- oder Small-Modelle zu nutzen, ohne dass sich die UI träge anfühlt.
       cuda_2: Wenn Sie mehrere NVIDIA-GPUs haben, legen Sie ASR nur dann auf die schwächere Karte, wenn die Hauptkarte bereits mit LLM- oder Facegen-Arbeit ausgelastet ist.
       openvino_1: Der Intel-NPU-Modus benötigt die passenden OpenVINO-Encoder-IR-Dateien für Ihr ausgewähltes Whisper-Modell. Das reine ggml-Modell allein reicht nicht aus.
       openvino_2: OpenVINO NPU lagert derzeit nur die Whisper-Encoder-Arbeit aus. Den größten Vorteil sehen Sie bei Base oder Small, nicht zwingend bei Tiny.
       other_gpu: Vulkan und HIP funktionieren am besten als einfache GPU-Beschleunigungsmodi. Die aktuelle Bridge nutzt für diese Backends die Standard-GPU der Laufzeit statt einer separaten Geräteauswahl.
-      streaming_1: Live-Vorschau: Beginnen Sie bei etwa 300-500 ms. Wenn Sie flüssigere Teiltexte möchten, testen Sie 200 ms, behalten Sie das aber nur bei, wenn die UI auf Ihrem System reaktionsfähig bleibt.
+      streaming_1: 'Live-Vorschau: Beginnen Sie bei etwa 300-500 ms. Wenn Sie flüssigere Teiltexte möchten, testen Sie 200 ms, behalten Sie das aber nur bei, wenn die UI auf Ihrem System reaktionsfähig bleibt.'
       streaming_2: Ihr aktuelles Intervall ist sehr aggressiv. Wenn die Vorschau stockt oder das Feld einfriert, verwenden Sie einen längeren Puffer, bevor Sie die Modellgröße ändern.
       buffered: Der gepufferte Modus ist weiterhin die sicherste Wahl, wenn Ihnen die Endgenauigkeit wichtiger ist als Text, der schon mitten im Satz erscheint.
 

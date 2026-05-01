@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Weitere Instanz erkannt
+  heading: Eine andere FC Tycoon-Spiel- oder Editor-Instanz wird bereits ausgeführt.
+  intro: Wenn mehrere Instanzen gleichzeitig laufen, verwenden sie dieselben Konfigurationsdateien und können dieselben Datenbank- oder Spielstandsdateien verwenden. Änderungen werden zwischen laufenden Instanzen nicht synchronisiert.
+  instructions: Bestätigen Sie jede Aussage unten, bevor Sie mit einer weiteren Instanz fortfahren.
+  config_path_label: Gemeinsam genutztes Konfigurationsverzeichnis
+  data_path_label: Relevanter Datenbank- oder Spielstandpfad
+  path_unavailable: Nicht verfügbar
+  preferences_ack: Ich verstehe, dass Änderungen an Einstellungen und Konfigurationen in der anderen laufenden Instanz erst sichtbar werden, wenn diese neu lädt oder neu startet.
+  database_ack: Ich verstehe, dass Datenbank- oder Spielstandänderungen die Arbeit der anderen Instanz überschreiben können und dort erst sichtbar werden, wenn sie die Datenbank neu lädt oder neu startet.
+  final_ack: Ich akzeptiere diese Bedingungen und möchte eine weitere Instanz ausführen.
+  continue: Fortfahren
+  exit: Beenden

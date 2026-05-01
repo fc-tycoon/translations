@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (Chinese Simplified)
+
+licenses:
+  title: 开源许可证
+  load_failed: 无法加载许可证
+  load_file_failed_inline: 无法加载此许可证文件。
+  empty: 未找到法律文档。
+  sidebar_label: 法律文档

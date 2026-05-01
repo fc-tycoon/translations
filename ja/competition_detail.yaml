@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: トーナメント表
+  overview:
+    structure: 大会構造
+    stage_meta: '{count}チーム・{format}'
+  standings:
+    champion_short: C
+    champion_title: 優勝
+    promoted_short: ▲
+    promoted_title: 昇格
+    promotion_playoff_short: PP
+    promotion_playoff_title: 昇格プレーオフ
+    continental_qualified_short: CQ
+    continental_qualified_title: 大陸大会出場権獲得
+    qualified_short: Q
+    qualified_title: 出場権獲得
+    relegation_playoff_short: RP
+    relegation_playoff_title: 降格プレーオフ
+    relegated_short: ▼
+    relegated_title: 降格
+  rules:
+    points_for_win: 勝利時の勝点
+    points_for_draw: 引き分け時の勝点
+    substitutions: 交代人数
+    promotions: 昇格数
+    promotion_playoffs: 昇格プレーオフ枠
+    relegation_playoffs: 降格プレーオフ枠
+    relegation_places: 降格枠
+    qualifications: 出場権枠
+    continental_qualifications: 大陸大会出場権枠
+    tiebreaker_order: 順位決定順
+    notes: 備考
+  tiebreakers:
+    goal_diff: 得失点差
+    goal_average: ゴールアベレージ
+    goals_for: 得点数
+    goals_against: 失点数
+    head_to_head: 直接対決
+    head_to_head_gd: 直接対決得失点差
+    head_to_head_away: 直接対決アウェーゴール
+    away_goals: アウェーゴール
+    wins: 勝利数
+    fair_play: フェアプレー
+    coefficient: 係数
+    random: 抽選
+    extra_time: 延長戦
+    penalties: PK戦
+  stage_status:
+    completed: 完了
+    in_progress: 進行中
+    upcoming: 予定
+  stage_format:
+    round_robin: 総当たり
+    play_offs: プレーオフ
+    knockout: ノックアウト

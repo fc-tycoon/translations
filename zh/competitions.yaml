@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: 董事会期望
+    performance: 表现
+    recent_form: 近期状态
+    relegated: 降级
+  tabs:
+    standings: 积分榜
+    player_stats: 球员数据
+    rules: 规则
+  messages:
+    no_fixtures_drawn: 尚未生成赛程。

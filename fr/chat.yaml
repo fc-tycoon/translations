@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: "Aucun mod\u00e8le LLM charg\u00e9. Veuillez configurer un mod\u00e8le dans les pr\u00e9f\u00e9rences."
+  choose_who: "Avec qui souhaitez-vous parler\u00a0?"
+  open_conversations: Conversations ouvertes
+  no_summary: Aucun r\u00e9sum\u00e9
+  back: "\u2190 Retour"
+  type_message: "Saisissez un message..."
+  send: Envoyer

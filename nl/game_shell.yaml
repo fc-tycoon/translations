@@ -1,0 +1,73 @@
+# Game Shell Translations (Dutch)
+
+game_shell:
+  brand: FC Tycoon
+  chat: Chat
+  save_game: Spel opslaan
+  main_menu: Hoofdmenu
+  simulating: Simuleren...
+  continue: Doorgaan
+  match_results_title: Wedstrijdresultaten
+  next_match_title: Volgende wedstrijd
+  vs: vs
+  welcome_title: 'Welkom, {name}'
+  welcome_text: Uw reis begint. Druk op Doorgaan om naar uw eerste speeldag te gaan.
+  fixtures_title: Aankomende wedstrijden
+  no_fixtures: Geen aankomende wedstrijden.
+  matchday_short: 'SD {day}'
+  table_title: Competitietabel
+  table_no_data: Nog geen competitiegegevens. Ga eerst naar een speeldag.
+  table_col_team: Club
+  inbox_title: Postvak
+  inbox_no_messages: Geen berichten.
+  inbox_new_badge: NIEUW
+  squad_title: Selectie
+  squad_coming_soon: Selectiebeheer komt binnenkort.
+  loading: Laden...
+  nav:
+    dashboard: Dashboard
+    fixtures: Wedstrijden
+    table: Competitietabel
+    inbox: Postvak
+    squad: Selectie
+    tactics: Tactiek
+    transfers: Transfers
+    home: Home
+    dynamics: Dynamiek
+    staff: Staf
+    schedule: Schema
+    training: Training
+    medical_centre: Medisch centrum
+    competitions: Competities
+    scouting: Scouting
+    club_info: Clubinfo
+    board: Bestuur
+    finances: Financiën
+    facilities: Faciliteiten
+    dev_centre: Ontwikkelingscentrum
+  world:
+    title: Wereld
+    navigation: Wereldnavigatie
+  menu:
+    title: Menu
+    exit_to_main_menu: Terug naar hoofdmenu
+    exit_game: Spel afsluiten
+  loading:
+    title: Laden...
+    subtitle: Spelstatus herstellen vanuit opslagbestand
+  saving:
+    title: Opslaan...
+    subtitle: Schrijft {filename}
+  about:
+    title: Over FC Tycoon
+    tagline: Een voetbalmanagementsimulatie
+    tech_stack: Gemaakt met Go · Vue · Riptide · DuckDB
+    dedication_intro: Dit spel is opgedragen aan de volgende mensen:
+    inspiration_intro: En aan de volgende mensen die mij inspireerden om programmeur te worden:
+  exit_dialog:
+    title: Spel afsluiten
+    message: Weet je zeker dat je het spel wilt afsluiten? Niet-opgeslagen voortgang gaat verloren.
+  routes:
+    player_profile: Spelersprofiel
+    competition: Competitie
+    club: Club

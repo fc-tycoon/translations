@@ -1,43 +1,278 @@
 # ══════════════════════════════════════════════════════════════════════
-# Staff
+# Staff Skills & Attributes
+# ══════════════════════════════════════════════════════════════════════
+# Hierarchy: staff.skills.<snake_key>.label / .abbr / .desc
+# Access:    $t('staff.skills.tactical_knowledge.label', 'Tactical Knowledge')
+#            $t('staff.skills.tactical_knowledge.abbr',  'TK')
+#            $t('staff.skills.tactical_knowledge.desc',  '...')
 # ══════════════════════════════════════════════════════════════════════
 staff:
   skills:
     categories:
-      tactical: Tactical
-      mental: Mental
-      people: Working With People
-    labels:
-      attacking: Attacking
-      defending: Defending
-      tactical_knowledge: Tactical Knowledge
-      tactical_adaptability: Tactical Adaptability
-      judging_player_ability: Judging Player Ability
-      judging_player_potential: Judging Potential
-      man_marking: Man Marking
-      zonal_marking: Zonal Marking
-      pressing: Pressing
-      determination: Determination
-      discipline: Discipline
-      integrity: Integrity
-      fortitude: Fortitude
-      resilience: Resilience
-      ambition: Ambition
-      adaptability: Adaptability
-      motivating: Motivating
-      man_management: Man Management
-      charisma: Charisma
-      professionalism: Professionalism
-    descriptions:
-      tactical_knowledge: Understanding of tactics and formations
-      tactical_adaptability: Ability to adapt tactics during matches
-      judging_player_ability: Accurately assess player potential
-      judging_player_potential: Identify future stars
-      determination: Drive to succeed
-      discipline: Maintain standards and control
-      ambition: Desire for success and advancement
-      adaptability: Adjust to new situations
-      motivating: Inspire players to perform
-      man_management: Handle player relationships
-      charisma: Personal magnetism and influence
-      professionalism: Set example through behavior
+      workflow: Workflow
+      coaching: Coaching
+      gk_coaching: GK Coaching
+      recruitment: Recruitment
+      medical: Medical
+      tactical_preferences: Tactical Preferences
+      commercial: Commercial
+      facilities: Facilities
+      behavioural: Behavioural
+      board: Board Preferences
+      talents: Staff Talents
+
+    # ── Workflow ──────────────────────────────────────────────────
+    people_management:
+      label: People Management
+      abbr: PM
+      desc: Organizing staff, conflict handling, standards, and day-to-day oversight
+    negotiation:
+      label: Negotiation
+      abbr: Neg
+      desc: Contract and decision negotiation ability
+    time_management:
+      label: Time Management
+      abbr: TM
+      desc: Planning, scheduling, and operational discipline
+    presentations:
+      label: Presentations
+      abbr: Prs
+      desc: Structuring and delivering analysis, findings, and strategy
+    impartiality:
+      label: Impartiality
+      abbr: Imp
+      desc: Ability to stay fair, evidence-led, and unbiased
+
+    # ── Coaching & Development ────────────────────────────────────
+    tactical_knowledge:
+      label: Tactical Knowledge
+      abbr: TK
+      desc: Understanding shape, structure, and role interaction
+    tactical_adaptability:
+      label: Tactical Adaptability
+      abbr: TA
+      desc: Ability to adjust ideas to opposition, squad, and match context
+    player_handling:
+      label: Player Handling
+      abbr: PH
+      desc: Handling individual player personalities, egos, morale, and dynamics
+    squad_management:
+      label: Squad Management
+      abbr: SM
+      desc: Managing squad depth, rotation, player usage, and fringe-player morale
+    training_planning:
+      label: Training Planning
+      abbr: TP
+      desc: Designing coherent training weeks and session load
+    player_development:
+      label: Player Development
+      abbr: PD
+      desc: Improving individuals over medium and long horizons
+    working_with_youth:
+      label: Working With Youth
+      abbr: WwY
+      desc: Suitability for academy and young-player development
+    tactical_coaching:
+      label: Tactical Coaching
+      abbr: TC
+      desc: Coaching shape execution, role discipline, and game-model delivery
+    attacking_coaching:
+      label: Attacking Coaching
+      abbr: AC
+      desc: Coaching attacking patterns, movement, and combination play
+    defensive_coaching:
+      label: Defensive Coaching
+      abbr: DC
+      desc: Coaching shape, duels, pressing, and defensive organization
+    technical_coaching:
+      label: Technical Coaching
+      abbr: TnC
+      desc: Coaching first touch, passing, finishing, and on-ball technical execution
+    ball_mastery_coaching:
+      label: Ball Mastery Coaching
+      abbr: BMC
+      desc: Coaching ball manipulation, dribbling, tight control, and press resistance
+    passing_coaching:
+      label: Passing Coaching
+      abbr: PC
+      desc: Coaching all passing varieties, line-breaking delivery, and crossing
+    finishing_coaching:
+      label: Finishing Coaching
+      abbr: FC
+      desc: Coaching finishing, shot mechanics, volleys, and heading accuracy
+    transition_coaching:
+      label: Transition Coaching
+      abbr: TrC
+      desc: Coaching possession-change reactions and recovery shape
+    mental_coaching:
+      label: Mental Coaching
+      abbr: MC
+      desc: Coaching concentration, composure, resilience, and mentality
+    physical_coaching:
+      label: Physical Coaching
+      abbr: PhC
+      desc: Developing player physical attributes over time
+    fitness_coaching:
+      label: Fitness Coaching
+      abbr: FiC
+      desc: Conditioning sessions, match readiness, and weekly fitness programming
+    set_piece_coaching:
+      label: Set Piece Coaching
+      abbr: SPC
+      desc: Coaching attacking and defensive set-piece detail
+
+    # ── GK Coaching ───────────────────────────────────────────────
+    gk_shot_stopping_coaching:
+      label: GK Shot Stopping
+      abbr: GSS
+      desc: Coaching GK reflexes, diving, 1v1, and save mechanics
+    gk_handling_coaching:
+      label: GK Handling
+      abbr: GH
+      desc: Coaching GK catching, receiving, and parrying
+    gk_distribution_coaching:
+      label: GK Distribution
+      abbr: GD
+      desc: Coaching GK kicking, throwing, punting, and clearing
+    gk_positioning_coaching:
+      label: GK Positioning
+      abbr: GP
+      desc: Coaching GK command of area, angle-setting, and line organisation
+
+    # ── Recruitment & Analysis ────────────────────────────────────
+    judging_player_ability:
+      label: Judging Ability
+      abbr: JPA
+      desc: Assessing current player level accurately
+    judging_player_potential:
+      label: Judging Potential
+      abbr: JPP
+      desc: Assessing long-term upside accurately
+    judging_player_talent:
+      label: Judging Talent
+      abbr: JPT
+      desc: Assessing player talents only
+    scouting_accuracy:
+      label: Scouting Accuracy
+      abbr: SA
+      desc: Reliability of scouting observations and recommendations
+    tactical_analysis:
+      label: Tactical Analysis
+      abbr: TAn
+      desc: Analysing own-team and opposition tactics from footage and data
+    player_data_analysis:
+      label: Player Data Analysis
+      abbr: PDA
+      desc: Interpreting player-level data, stats, and performance metrics
+    team_data_analysis:
+      label: Team Data Analysis
+      abbr: TDA
+      desc: Interpreting team-level data, shape metrics, and tactical patterns
+
+    # ── Medical & Performance Science ─────────────────────────────
+    psychology:
+      label: Psychology
+      abbr: Psy
+      desc: Sports psychology ability
+    physiotherapy:
+      label: Physiotherapy
+      abbr: Phy
+      desc: Physiotherapy and hands-on rehabilitation ability
+    sports_medicine:
+      label: Sports Medicine
+      abbr: SpM
+      desc: Sports-specific medical expertise
+    medical_diagnosis:
+      label: Medical Diagnosis
+      abbr: MDx
+      desc: Diagnosing injury and availability issues correctly
+    rehabilitation_planning:
+      label: Rehabilitation
+      abbr: Reh
+      desc: Designing phased return-to-play plans
+    sports_science:
+      label: Sports Science
+      abbr: SpS
+      desc: Recovery science, monitoring, and performance support
+    injury_prevention:
+      label: Injury Prevention
+      abbr: IP
+      desc: Building programs that reduce injury risk
+    injury_risk_assessment:
+      label: Injury Risk
+      abbr: IR
+      desc: Estimating injury likelihood and load-related danger
+    load_management:
+      label: Load Management
+      abbr: LM
+      desc: Managing training and match load intelligently
+    nutrition:
+      label: Nutrition
+      abbr: Nut
+      desc: Nutritional science knowledge
+    strength_and_conditioning:
+      label: Strength & Conditioning
+      abbr: S&C
+      desc: Strength and conditioning expertise
+
+    # ── Tactical Preferences ──────────────────────────────────────
+    tactical_depth:
+      label: Depth
+      abbr: TDp
+      desc: Preferred defensive line height (low = deep block, high = high line)
+    tactical_directness:
+      label: Directness
+      abbr: TDr
+      desc: Preferred play style (low = possession, high = direct/vertical)
+    tactical_tempo:
+      label: Tempo
+      abbr: TTm
+      desc: Preferred speed-of-play (low = patient, high = fast tempo)
+    tactical_width:
+      label: Width
+      abbr: TWd
+      desc: Preferred attack width (low = narrow/central, high = wide)
+    tactical_pressing:
+      label: Pressing
+      abbr: TPr
+      desc: Preferred press intensity (low = sit off, high = aggressive press)
+    tactical_marking:
+      label: Marking
+      abbr: TMk
+      desc: Preferred marking style (low = zonal, high = man-marking)
+    tactical_flexibility:
+      label: Flexibility
+      abbr: TFl
+      desc: Willingness to change shape in and between matches
+
+    # ── Commercial & Communications ───────────────────────────────
+    public_relations:
+      label: Public Relations
+      abbr: PR
+      desc: Managing narratives, brand, reputation, and crisis communications
+    media_handling:
+      label: Media Handling
+      abbr: MH
+      desc: Working with press, handling interviews, and staying on-message
+    social_media:
+      label: Social Media
+      abbr: SoM
+      desc: Managing digital platform presence and audience engagement
+    marketing:
+      label: Marketing
+      abbr: Mkt
+      desc: Commercial, sponsorship, and brand strategy understanding
+    business_acumen:
+      label: Business Acumen
+      abbr: BA
+      desc: Commercial decision-making, financial intelligence, and strategic judgment
+
+    # ── Facilities & Operations ───────────────────────────────────
+    facilities_management:
+      label: Facilities Mgmt
+      abbr: FM
+      desc: Day-to-day facility upkeep, maintenance quality, and cost control
+    construction_management:
+      label: Construction Mgmt
+      abbr: CM
+      desc: Project management for new builds and renovations

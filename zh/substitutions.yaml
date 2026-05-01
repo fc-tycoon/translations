@@ -1,0 +1,9 @@
+substitutions:
+  description:
+    none: 无
+    template: '{subs_named}人名单中可用{subs_used}人{plus_gk_on_bench}{stops}{extra_time}{free_gk}'
+    plus_gk_on_bench: '+GK'
+    free_gk_sub_allowed: '+GK'
+    stops_one: '（最多{count}次比赛中断）'
+    stops_other: '（最多{count}次比赛中断）'
+    extra_time: '+加时{count}人'

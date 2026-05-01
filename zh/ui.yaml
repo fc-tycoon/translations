@@ -73,6 +73,7 @@ ui:
     pause: 暂停
     speed: 速度
     fast_forward: 快进
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: 下一天
     advance_tomorrow: 前进到明天上午9点
     cycle_speed: 切换游戏速度（点击更改）
@@ -116,6 +117,13 @@ ui:
     quick_save_description: 于 {date} 创建的快速保存
     file_exists_title: 文件已存在
     file_exists_message: 文件“{filename}.db”已存在。保存将覆盖它。
+    managers: 经理
+    file_size: 文件大小
+    password_required: 需要密码
+    enter_password: 输入存档密码...
+    open_folder: 打开
+    password_preserve_hint: 若要保留现有保护，请将密码留空；若要替换，请输入新密码。
+    password_optional_hint: 若要在没有密码保护的情况下保存，请将密码留空。
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: 帮助
     about: 关于
     version: 版本
+    coming_soon: Coming soon
     name: 名称
     club: 俱乐部
     league: 联赛
@@ -176,6 +185,66 @@ ui:
     vacant: 空缺
     not_available: 不适用
 
+    team: 球队
+    teams: 球队
+    home: 主队
+    away: 客队
+    score: 比分
+    competition: 赛事
+    players: 球员
+    staff: 工作人员
+    transfers: 转会
+    form: 状态
+    morale: 士气
+    fitness: 体能
+    height: 身高
+    contract: 合同
+    value: 身价
+    city: 城市
+    capacity: 容量
+    prize_money: 奖金
+    tv_deal: 电视转播合同
+    fixtures: 赛程
+    results: 结果
+    round: 轮次
+    venue: 球场
+    goals: 进球
+    assists: 助攻
+    avg_rating: 平均评分
+    no_players_found: 未找到球员。
+    player_count: '{count}名球员'
+  datepicker:
+    select_date: 选择日期
+    clear_date: 清除日期
+    previous_year: 上一年
+    previous_month: 上一月
+    select_month: 选择月份
+    select_year: 选择年份
+    next_month: 下一月
+    next_year: 下一年
+    time_utc: 时间 (UTC)
+    hour_utc: 小时 (UTC)
+    minute: 分钟
+    range_end_hint: 现在点击结束日期
+
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: P
+    won: W
+    drawn: D
+    lost: L
+    goals_for: GF
+    goals_against: GA
+    goal_difference: GD
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: YC
+    red_cards: RC
+    matchday: MD
+
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
   # ══════════════════════════════════════════════════════════════════════
@@ -198,26 +267,8 @@ ui:
     blocking_attention: 你有 {count} 条需要注意的重要消息。
     advance_day_failed: 无法前进到下一天。请在 FC Tycoon 的 Discord 频道联系支持。
     load_success: 游戏加载成功
-    save_success: 游戏已保存到 {filename}.db
+    save_success: 游戏已保存到 {filename}
     loaded_most_recent_save: 已加载最新存档：{name}
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: 打开许可证文件夹
-    third_party_notices: 第三方声明
-    fc_tycoon_license: FC Tycoon 许可证
-    load_failed: 无法加载许可证
-    load_file_failed: 无法加载许可证文件
-    load_file_failed_inline: 无法加载此许可证文件。
-    open_folder_failed: 无法打开许可证文件夹
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: 无法加载制作人员名单
 
   # ══════════════════════════════════════════════════════════════════════
   # Error Messages
@@ -231,6 +282,8 @@ ui:
     locate_save_folder_failed: 无法找到存档文件夹
     open_save_dialog_failed: 无法打开保存对话框
     load_most_recent_failed: 无法加载最新存档
+    read_save_metadata_failed: 无法读取存档文件详细信息
+    load_save_list_failed: 无法加载存档列表
     ui_init_after_load_failed: 游戏已加载，但无法初始化界面
     loaded_save_no_active_manager: 已加载的存档没有激活的主教练。你可能需要开始新游戏或修复此存档。
     connection_lost: 连接丢失
@@ -239,6 +292,9 @@ ui:
     permission_denied: 权限被拒绝
     file_not_found: 文件未找到
     database_error: 数据库错误
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
@@ -275,3 +331,17 @@ ui:
     apply: 应用
     browse: 浏览...
     exit: 退出
+    retry: 重试
+    quit: 退出
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '第{n}'
+    two: '第{n}'
+    few: '第{n}'
+    other: '第{n}'

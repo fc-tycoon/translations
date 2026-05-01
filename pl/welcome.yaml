@@ -17,6 +17,7 @@ welcome:
   competition: Rozgrywki
   board_expectation: Oczekiwania Zarządu
   transfer_budget: Budżet Transferowy
+  message: "Z przyjemnością witam Cię w {clubName}. Będę Twoim głównym punktem kontaktowym, gdy omówimy klub, obiekty i oczekiwania."
 
   confirm_save_new_game: "Czy chcesz zapisać nową grę?"
   manager_fallback: Menedżer

@@ -1,0 +1,14 @@
+squad:
+  title: Plantel
+  col_sharpness: Ritmo
+  col_feet: Pés
+  right_foot: Direito
+  left_foot: Esquerdo
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: Ver perfil
+  ctx_move: Mover para a equipa
+  ctx_training: Treino
+  ctx_release: Dispensar jogador

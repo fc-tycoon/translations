@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Oczekiwania zarządu
+    performance: Wyniki
+    recent_form: Ostatnia forma
+    relegated: Zdegradowany
+  tabs:
+    standings: Tabela
+    player_stats: Statystyki zawodników
+    rules: Zasady
+  messages:
+    no_fixtures_drawn: Nie wylosowano jeszcze terminarza.

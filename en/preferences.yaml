@@ -28,10 +28,10 @@ preferences:
     default: Default
     disabled: Disabled
     enabled: Enabled
-    no: No
+    'no': No
     none: None
     unknown: Unknown
-    yes: Yes
+    'yes': Yes
 
   appearance:
     theme_heading: Theme
@@ -51,12 +51,18 @@ preferences:
     keep_autosaves: Keep Autosaves
     keep_autosaves_hint: Number of autosaves to keep before deleting oldest
     confirm_overwrite: Confirm Overwrite
+    copy: Save files now always resolve inside the backend-owned saved-games folder so dev and packaged builds use the correct root automatically.
+    location_hint: This location is fixed by the backend and no longer depends on renderer-provided paths.
+    autosave_hint: Choose the preferred interval for automatic save snapshots.
+    confirm_overwrite_hint: Ask before replacing an existing manual save file.
 
   display:
     title: Display Settings
     heading: Display
     fullscreen_label: Start in Fullscreen
     fullscreen_hint: Applies to the game window on the next launch.
+    always_on_top_label: Always on Top
+    always_on_top_hint: Keep the game window above other desktop windows. Applies immediately and is remembered for the next launch.
     confirm_exit_label: Confirm Before Exit
     confirm_exit_hint: Ask for confirmation before closing the game shell.
     theme: Theme
@@ -67,15 +73,31 @@ preferences:
     ui_scale: UI Scale
     show_tooltips: Show Tooltips
     animations: Animations
+    interface_heading: Interface
+    ui_scale_hint: Scale the interface between 80% and 120%.
+    show_tooltips_hint: Enable contextual guidance throughout the interface.
+    animations_hint: Allow interface transitions and motion effects.
 
   languages:
     title: Language Settings
+    heading: Languages
     game_language: Game Language
+    game_language_label: Game Language
     game_language_hint: Changes the language for all in-game text (requires restart for some UI)
     date_format: Date Format
+    date_format_label: Date Format
+    date_format_hint: Sets the preferred calendar display format for preferences-aware UI.
     number_format: Number Format
+    number_format_label: Number Format
+    number_format_hint: Sets the preferred grouping and decimal separator style.
+    week_start_label: Week Starts On
+    week_start_hint: Sets the first day shown in calendars and date pickers.
+    week_start_monday: Monday
+    week_start_sunday: Sunday
     reload_translations: Reload Translations
+    reload_label: Reload Translations
     reload_btn: Reload
+    reload_button: Reload
     reload_hint: Reload all translation files from disk (useful for development)
 
   gameplay:
@@ -90,6 +112,8 @@ preferences:
       tactics: Tactic Changes
     quick_continue: Quick Continue
     quick_continue_hint: Skip confirmation when continuing game
+    show_tutorials_hint: Keep tutorial prompts enabled for onboarding and reminders.
+    confirm_actions_hint: Choose which management actions should ask for confirmation first.
 
   ui_tab:
     title: UI Settings
@@ -106,6 +130,7 @@ preferences:
     midfielders: Midfielders
     attackers: Attackers
     reset_btn: reset
+    copy: These colors define the four position-unit group accents used by squad and role-oriented UI surfaces.
 
   shortcuts:
     title: Keyboard Shortcuts
@@ -203,14 +228,14 @@ preferences:
       slow: Low-frequency preview. Fewer updates per utterance and lower CPU load. Text appears in larger chunks rather than word-by-word.
 
     recommendations:
-      cpu_1: CPU inference: start with Tiny or Tiny English. Base can work on stronger CPUs, but Small is usually better reserved for buffered dictation.
+      cpu_1: 'CPU inference: start with Tiny or Tiny English. Base can work on stronger CPUs, but Small is usually better reserved for buffered dictation.'
       cpu_2: CPU live preview - test it first. If typing or UI responsiveness degrades, increase the interval to 500-1000 ms before blaming model quality.
       cuda_1: CUDA is the best current path for low-latency live preview and for running Base or Small models without making the UI feel sluggish.
       cuda_2: If you have multiple NVIDIA GPUs, keep ASR on the lighter card only if the main card is busy with LLM or facegen work.
       openvino_1: Intel NPU mode requires the matching OpenVINO encoder IR files for your selected Whisper model. The plain ggml model alone is not enough.
       openvino_2: OpenVINO NPU currently offloads Whisper encoder work only. Expect the biggest benefit on Base or Small models, not necessarily on Tiny.
       other_gpu: Vulkan and HIP work best as simple GPU acceleration modes. The current bridge uses the runtime-default GPU rather than a per-device selector for these backends.
-      streaming_1: Live Preview - start around 300-500 ms. If you want smoother partials, test 200 ms, but only keep it if the UI stays responsive on your machine.
+      streaming_1: 'Live Preview - start around 300-500 ms. If you want smoother partials, test 200 ms, but only keep it if the UI stays responsive on your machine.'
       streaming_2: Your current interval is very aggressive. If preview stalls or the field freezes, use a longer buffer before changing model size.
       buffered: Buffered mode is still the safest option when you care more about final accuracy than seeing text appear mid-sentence.
 

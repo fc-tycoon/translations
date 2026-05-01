@@ -1,0 +1,22 @@
+club_overview:
+  loading: Vereinsdaten werden geladen...
+  overview:
+    club_name: Vereinsname
+    national_reputation: Nationale Reputation
+    international_reputation: Internationale Reputation
+    elo_rating: Elo-Wert
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: Kein Personal gefunden.
+    other_department: Sonstiges
+  competitions:
+    season: 'Saison {season}'
+    empty: Keine aktiven Wettbewerbe.
+  schedule:
+    placeholder: Spielplan für Rivalen ist noch nicht verfügbar.
+  transfers:
+    placeholder: Transferaktivitäten für Rivalen sind noch nicht verfügbar.
+  errors:
+    not_found: 'Verein {clubId} wurde nicht gefunden.'
+    load_failed: Vereinsdaten konnten nicht geladen werden

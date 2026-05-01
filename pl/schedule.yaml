@@ -1,0 +1,11 @@
+schedule:
+  loading: Wczytywanie terminarza...
+  calendar:
+    events:
+      vs_opponent: 'vs {opponent}'
+      at_opponent: 'u {opponent}'
+  empty:
+    upcoming: Brak nadchodzących meczów.
+    results: Brak wyników.
+  errors:
+    load_failed: Nie udało się wczytać terminarza

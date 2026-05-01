@@ -174,7 +174,7 @@ player:
     standing_tackles: Entradas de pie
     sliding_tackles: Entradas deslizantes
     interceptions: Intercepciones
-    jockeying: Contención
+    containing: Contención
     pressing_technique: Técnica de presión
     blocking: Bloqueo
     defensive_screening: Pantalla defensiva

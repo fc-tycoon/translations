@@ -1,0 +1,8 @@
+# Licenses Dialog Translations (Japanese)
+
+licenses:
+  title: オープンソースライセンス
+  load_failed: ライセンスの読み込みに失敗しました
+  load_file_failed_inline: このライセンスファイルを読み込めませんでした。
+  empty: 法的文書が見つかりませんでした。
+  sidebar_label: 法的文書

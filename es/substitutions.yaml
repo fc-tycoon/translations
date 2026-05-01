@@ -1,0 +1,9 @@
+substitutions:
+  description:
+    none: ninguna
+    template: '{subs_used}{plus_gk_on_bench} de {subs_named}{stops}{extra_time}{free_gk}'
+    plus_gk_on_bench: '+GK'
+    free_gk_sub_allowed: '+GK'
+    stops_one: ' (máx. {count} interrupción)'
+    stops_other: ' (máx. {count} interrupciones)'
+    extra_time: '+{count} prórroga'

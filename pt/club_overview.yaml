@@ -1,0 +1,22 @@
+club_overview:
+  loading: A carregar dados do clube...
+  overview:
+    club_name: Nome do clube
+    national_reputation: Reputação nacional
+    international_reputation: Reputação internacional
+    elo_rating: Classificação Elo
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: Nenhum elemento do staff encontrado.
+    other_department: Outro
+  competitions:
+    season: 'Época {season}'
+    empty: Não há competições ativas.
+  schedule:
+    placeholder: O calendário de jogos ainda não está disponível para clubes rivais.
+  transfers:
+    placeholder: A atividade de transferências ainda não está disponível para clubes rivais.
+  errors:
+    not_found: 'Clube {clubId} não encontrado.'
+    load_failed: Falha ao carregar dados do clube

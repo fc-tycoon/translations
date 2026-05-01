@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Outra instância detetada
+  heading: Outra instância do jogo ou do editor FC Tycoon já está em execução.
+  intro: Executar várias instâncias ao mesmo tempo significa que partilham os mesmos ficheiros de configuração e podem apontar para os mesmos ficheiros de base de dados ou de gravação. As alterações não são sincronizadas entre as instâncias em execução.
+  instructions: Confirme cada ponto abaixo antes de continuar com outra instância.
+  config_path_label: Diretório de configuração partilhado
+  data_path_label: Caminho relevante da base de dados ou da gravação
+  path_unavailable: Indisponível
+  preferences_ack: Compreendo que as alterações às preferências e à configuração não aparecerão na outra instância em execução até que essa instância volte a carregar ou reinicie.
+  database_ack: Compreendo que as alterações na base de dados ou na gravação podem substituir o trabalho da outra instância e que essas alterações podem não aparecer lá até que a base de dados seja recarregada ou a aplicação reinicie.
+  final_ack: Aceito estes termos e condições e quero continuar a executar outra instância.
+  continue: Continuar
+  exit: Sair

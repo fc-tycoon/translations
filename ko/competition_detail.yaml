@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: 대진표
+  overview:
+    structure: 대회 구조
+    stage_meta: '{count}팀 · {format}'
+  standings:
+    champion_short: C
+    champion_title: 우승
+    promoted_short: ▲
+    promoted_title: 승격
+    promotion_playoff_short: PP
+    promotion_playoff_title: 승격 플레이오프
+    continental_qualified_short: CQ
+    continental_qualified_title: 대륙 대항전 진출
+    qualified_short: Q
+    qualified_title: 진출
+    relegation_playoff_short: RP
+    relegation_playoff_title: 강등 플레이오프
+    relegated_short: ▼
+    relegated_title: 강등
+  rules:
+    points_for_win: 승리 승점
+    points_for_draw: 무승부 승점
+    substitutions: 교체 수
+    promotions: 승격
+    promotion_playoffs: 승격 플레이오프
+    relegation_playoffs: 강등 플레이오프
+    relegation_places: 강등 자리
+    qualifications: 진출권
+    continental_qualifications: 대륙 대항전 진출권
+    tiebreaker_order: 순위 결정 순서
+    notes: 비고
+  tiebreakers:
+    goal_diff: 골 득실차
+    goal_average: 득점 평균
+    goals_for: 득점
+    goals_against: 실점
+    head_to_head: 상대 전적
+    head_to_head_gd: 상대 전적 득실차
+    head_to_head_away: 상대 전적 원정 다득점
+    away_goals: 원정 다득점
+    wins: 승수
+    fair_play: 페어플레이
+    coefficient: 계수
+    random: 추첨
+    extra_time: 연장전
+    penalties: 승부차기
+  stage_status:
+    completed: 완료
+    in_progress: 진행 중
+    upcoming: 예정
+  stage_format:
+    round_robin: 리그
+    play_offs: 플레이오프
+    knockout: 토너먼트

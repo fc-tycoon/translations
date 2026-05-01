@@ -1,0 +1,22 @@
+club_overview:
+  loading: 正在加载俱乐部数据...
+  overview:
+    club_name: 俱乐部名称
+    national_reputation: 国内声望
+    international_reputation: 国际声望
+    elo_rating: Elo 评分
+  players:
+    height_cm: '{height} cm'
+  staff:
+    empty: 未找到工作人员。
+    other_department: 其他
+  competitions:
+    season: '{season} 赛季'
+    empty: 没有正在进行的赛事。
+  schedule:
+    placeholder: 对手俱乐部的赛程暂不可用。
+  transfers:
+    placeholder: 对手俱乐部的转会活动暂不可用。
+  errors:
+    not_found: '未找到俱乐部 {clubId}。'
+    load_failed: 加载俱乐部数据失败

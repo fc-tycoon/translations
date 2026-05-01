@@ -357,6 +357,7 @@ new_game_wizard:
     club_filter_country: País
     club_filter_league: Liga
     club_filter_search: Pesquisar
+    club_search_placeholder: Pesquisar clubes...
     club_filter_all_countries: Todos os países
     club_filter_all_leagues: Todas as ligas
     club_table_club: Clube
@@ -424,6 +425,7 @@ new_game_wizard:
     fname: Primeiro Nome
     lname: Sobrenome
     dob: Data de Nascimento
+    date_of_birth_placeholder: Selecionar data de nascimento
     known_as: Conhecido Como
     nationality: Nacionalidade
     second_nationality: Segunda Nacionalidade
@@ -466,12 +468,35 @@ new_game_wizard:
     port_generating: Gerando...
     port_no_portrait: Sem retrato
     port_upload_hint: 'Envie uma foto em vez de geração IA. Você pode ajustar a posição e o recorte. Saída: 260 × 310 px (formato DF11).'
+    port_hint_base: 'Tip: Face generation uses one shared runtime and queues portrait work automatically.'
+    port_hint_vram: 'Tip: Face generation uses one shared runtime and queues portrait work automatically. Detected {vram} GB VRAM on {adapter}.'
     port_age_tooltip: O Facegen usa a data de início do jogo para calcular a idade, não a data real.
     port_age_with: 'Nascido em {dob}. Data de início no jogo: {startDate}. Idade no jogo: {age}.'
     port_age_without: 'Nascido em {dob}. Data de início no jogo: {startDate}.'
+    port_inference_unavailable: Inference time unavailable
+    port_inference_ms: '{milliseconds} ms inference'
+    port_inference_seconds: '{seconds} s inference'
+    port_file_size_unavailable: File size unavailable
+    port_file_size_kb: '{kilobytes} KB JPEG'
+    port_source_database: Loaded from portrait cache
+    port_source_generated: Freshly rendered
+    port_requirements_error: Complete nationality, phenotype, attire, and date of birth before generating portraits.
+    port_require_nationality: Select a nationality before generating portraits.
+    port_require_phenotype: Select a phenotype before generating portraits.
+    port_require_date_of_birth: Select a date of birth before generating portraits.
+    port_require_attire: Select an attire before generating portraits.
+    port_require_manager_fields: Complete the required manager fields before generating portraits.
+    port_require_assistant_fields: Complete the required assistant fields before generating portraits.
+    port_generation_no_image: Generation returned no image
+    port_seed_invalid: Seed must be a signed 32-bit integer.
+    port_seed_duplicate: Each face choice must use a different seed.
+    port_face_a: Face A
+    port_face_b: Face B
 
   personality_editor:
     title: Editar Personalidade
+    template_label: Tipo de personalidade
+    template_placeholder: Escolha um tipo de personalidade
     desc: 'Escreva uma breve descrição do temperamento e abordagem do seu {role}. Isso influencia a percepção da mídia, jogadores e NPCs.'
     text: Texto
     preview: Visualização

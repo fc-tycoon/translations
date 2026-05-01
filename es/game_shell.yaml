@@ -1,0 +1,73 @@
+# Game Shell Translations (Spanish)
+
+game_shell:
+  brand: FC Tycoon
+  chat: Chat
+  save_game: Guardar partida
+  main_menu: Menú principal
+  simulating: Simulando...
+  continue: Continuar
+  match_results_title: Resultados del partido
+  next_match_title: Próximo partido
+  vs: vs
+  welcome_title: 'Bienvenido/a, {name}'
+  welcome_text: Tu viaje comienza. Haz clic en Continuar para avanzar a tu primer día de partido.
+  fixtures_title: Próximos partidos
+  no_fixtures: No hay partidos próximos.
+  matchday_short: 'J{day}'
+  table_title: Clasificación
+  table_no_data: Aún no hay datos de liga. Avanza primero a un día de partido.
+  table_col_team: Equipo
+  inbox_title: Bandeja de entrada
+  inbox_no_messages: No hay mensajes.
+  inbox_new_badge: NUEVO
+  squad_title: Plantilla
+  squad_coming_soon: La gestión de la plantilla llegará pronto.
+  loading: Cargando...
+  nav:
+    dashboard: Panel
+    fixtures: Partidos
+    table: Clasificación
+    inbox: Bandeja de entrada
+    squad: Plantilla
+    tactics: Táctica
+    transfers: Fichajes
+    home: Inicio
+    dynamics: Dinámica
+    staff: Personal
+    schedule: Calendario
+    training: Entrenamiento
+    medical_centre: Centro médico
+    competitions: Competiciones
+    scouting: Ojeo
+    club_info: Información del club
+    board: Directiva
+    finances: Finanzas
+    facilities: Instalaciones
+    dev_centre: Centro de desarrollo
+  world:
+    title: Mundo
+    navigation: Navegación mundial
+  menu:
+    title: Menú
+    exit_to_main_menu: Salir al menú principal
+    exit_game: Salir del juego
+  loading:
+    title: Cargando...
+    subtitle: Restaurando el estado de la partida desde el archivo de guardado
+  saving:
+    title: Guardando...
+    subtitle: Escribiendo {filename}
+  about:
+    title: Acerca de FC Tycoon
+    tagline: Una simulación de gestión futbolística
+    tech_stack: Creado con Go · Vue · Riptide · DuckDB
+    dedication_intro: Este juego está dedicado a las siguientes personas:
+    inspiration_intro: Y a las siguientes personas que me inspiraron a ser programador:
+  exit_dialog:
+    title: Salir del juego
+    message: ¿Seguro que quieres salir del juego? Se perderá todo progreso no guardado.
+  routes:
+    player_profile: Perfil del jugador
+    competition: Competición
+    club: Club

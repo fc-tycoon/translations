@@ -124,7 +124,9 @@ new_game_wizard:
         fc_tycoon_season: 'FC Tycoon {year} - Base de données de la saison en cours'
       dialogs:
         mod_failure:
-          prompt: 'Souhaitez-vous {copy} ou {move} ce fichier dans votre dossier de mods ?'
+          title: Mod Application Failed
+          warning_label: Warning
+          warning_summary: '{failed} of {total} mod queries failed.'
           affected_mods_label: Mods concernés
           proceed_question: La base de données peut être instable. Voulez-vous continuer ?
           table:
@@ -356,6 +358,7 @@ new_game_wizard:
     club_filter_country: Pays
     club_filter_league: Ligue
     club_filter_search: Rechercher
+    club_search_placeholder: Rechercher des clubs...
     club_filter_all_countries: Tous les pays
     club_filter_all_leagues: Toutes les ligues
     club_table_club: Club
@@ -423,6 +426,7 @@ new_game_wizard:
     fname: Prénom
     lname: Nom
     dob: Date de Naissance
+    date_of_birth_placeholder: Sélectionner la date de naissance
     known_as: Connu Sous
     nationality: Nationalité
     second_nationality: Deuxième Nationalité
@@ -465,12 +469,35 @@ new_game_wizard:
     port_generating: Génération...
     port_no_portrait: Pas de portrait
     port_upload_hint: 'Téléchargez une photo plutôt que la génération IA. Vous pouvez la positionner et la rogner. Sortie : 260 × 310 px (format DF11).'
+    port_hint_base: 'Tip: Face generation uses one shared runtime and queues portrait work automatically.'
+    port_hint_vram: 'Tip: Face generation uses one shared runtime and queues portrait work automatically. Detected {vram} GB VRAM on {adapter}.'
     port_age_tooltip: "Facegen utilise la date de début du jeu pour calculer l'âge, pas la date réelle."
     port_age_with: 'Né le {dob}. Date de début en jeu : {startDate}. Âge en jeu : {age}.'
     port_age_without: 'Né le {dob}. Date de début en jeu : {startDate}.'
+    port_inference_unavailable: Inference time unavailable
+    port_inference_ms: '{milliseconds} ms inference'
+    port_inference_seconds: '{seconds} s inference'
+    port_file_size_unavailable: File size unavailable
+    port_file_size_kb: '{kilobytes} KB JPEG'
+    port_source_database: Loaded from portrait cache
+    port_source_generated: Freshly rendered
+    port_requirements_error: Complete nationality, phenotype, attire, and date of birth before generating portraits.
+    port_require_nationality: Select a nationality before generating portraits.
+    port_require_phenotype: Select a phenotype before generating portraits.
+    port_require_date_of_birth: Select a date of birth before generating portraits.
+    port_require_attire: Select an attire before generating portraits.
+    port_require_manager_fields: Complete the required manager fields before generating portraits.
+    port_require_assistant_fields: Complete the required assistant fields before generating portraits.
+    port_generation_no_image: Generation returned no image
+    port_seed_invalid: Seed must be a signed 32-bit integer.
+    port_seed_duplicate: Each face choice must use a different seed.
+    port_face_a: Face A
+    port_face_b: Face B
 
   personality_editor:
     title: Modifier la Personnalité
+    template_label: Type de personnalité
+    template_placeholder: Choisissez un type de personnalité
     desc: "Rédigez une brève description du tempérament de votre {role}. Cela influence la perception des médias, des joueurs et des PNJ."
     text: Texte
     preview: Aperçu

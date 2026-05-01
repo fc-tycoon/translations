@@ -13,10 +13,10 @@ preferences:
     default: 默认
     disabled: 已禁用
     enabled: 已启用
-    no: 否
+    'no': 否
     none: 无
     unknown: 未知
-    yes: 是
+    'yes': 是
 
   appearance:
     theme_heading: 主题
@@ -50,11 +50,17 @@ preferences:
     keep_autosaves: 保留自动存档
     keep_autosaves_hint: 在删除最旧存档前要保留的自动存档数量
     confirm_overwrite: 确认覆盖
+    copy: 现在存档文件始终定位到后端管理的 saved-games 文件夹中，因此开发版和打包版都会自动使用正确的根目录。
+    location_hint: 此位置由后端固定，不再依赖渲染器提供的路径。
+    autosave_hint: 选择自动存档快照的首选间隔。
+    confirm_overwrite_hint: 在覆盖现有手动存档文件之前先进行确认。
 
   display:
     heading: 显示
     fullscreen_label: 以全屏启动
     fullscreen_hint: 将在下次启动时应用到游戏窗口。
+    always_on_top_label: 始终置顶
+    always_on_top_hint: 使游戏窗口保持在其他桌面窗口之上。立即生效，并会在下次启动时记住。
     confirm_exit_label: 退出前确认
     confirm_exit_hint: 在关闭游戏应用前请求确认。
     title: 显示设置
@@ -66,15 +72,31 @@ preferences:
     ui_scale: UI 缩放
     show_tooltips: 显示工具提示
     animations: 动画
+    interface_heading: 界面
+    ui_scale_hint: 将界面缩放在 80% 到 120% 之间。
+    show_tooltips_hint: 在整个界面中启用上下文提示。
+    animations_hint: 允许界面过渡和动态效果。
 
   languages:
     title: 语言设置
+    heading: 语言
     game_language: 游戏语言
+    game_language_label: 游戏语言
     game_language_hint: 更改游戏内所有文本的语言（部分 UI 需要重启）
     date_format: 日期格式
+    date_format_label: 日期格式
+    date_format_hint: 为使用此偏好的界面设置首选日期显示格式。
     number_format: 数字格式
+    number_format_label: 数字格式
+    number_format_hint: 设置千位分隔符和小数分隔符的首选样式。
+    week_start_label: 每周开始于
+    week_start_hint: 设置日历和日期选择器中首先显示的星期几。
+    week_start_monday: 星期一
+    week_start_sunday: 星期日
     reload_translations: 重新加载翻译
+    reload_label: 重新加载翻译
     reload_btn: 重新加载
+    reload_button: 重新加载
     reload_hint: 从磁盘重新加载所有翻译文件（对开发有用）
 
   gameplay:
@@ -89,6 +111,8 @@ preferences:
       tactics: 战术变更
     quick_continue: 快速继续
     quick_continue_hint: 继续游戏时跳过确认
+    show_tutorials_hint: 为新手引导和提醒保留教程提示。
+    confirm_actions_hint: 选择哪些管理操作需要先确认。
 
   ui_tab:
     title: UI 设置
@@ -105,6 +129,7 @@ preferences:
     midfielders: 中场
     attackers: 前锋
     reset_btn: 重置
+    copy: 这些颜色定义了阵容和角色导向界面中使用的四个位置单元组的强调色。
 
   shortcuts:
     title: 键盘快捷键

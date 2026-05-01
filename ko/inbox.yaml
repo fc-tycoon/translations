@@ -27,3 +27,10 @@ inbox:
   priority_low: 낮은 우선순위
   blocking: 확인 필요
   blocking_count: "{count}개의 중요한 메시지가 확인이 필요합니다"
+  response_sent: 응답 전송됨
+  select_option: "— 선택 —"
+  submit_response: 응답 보내기
+  today: 오늘
+  yesterday: 어제
+  search: 메시지 검색…
+  page_of: "{page} / {total}"

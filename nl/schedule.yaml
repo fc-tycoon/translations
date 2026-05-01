@@ -1,0 +1,11 @@
+schedule:
+  loading: Schema laden...
+  calendar:
+    events:
+      vs_opponent: 'tegen {opponent}'
+      at_opponent: 'bij {opponent}'
+  empty:
+    upcoming: Geen komende wedstrijden.
+    results: Nog geen resultaten.
+  errors:
+    load_failed: Schema laden mislukt

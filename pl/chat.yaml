@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: "Brak za\u0142adowanego modelu LLM. Skonfiguruj model w Preferencjach."
+  choose_who: "Z kim chcesz porozmawia\u0107?"
+  open_conversations: Otwarte rozmowy
+  no_summary: Brak podsumowania
+  back: "\u2190 Powr\u00f3t"
+  type_message: "Wpisz wiadomo\u015b\u0107..."
+  send: "Wy\u015blij"

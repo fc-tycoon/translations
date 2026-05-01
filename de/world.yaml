@@ -1,0 +1,56 @@
+world:
+  breadcrumb:
+    root: Welt
+    switch_continent: Kontinent wechseln
+    switch_country: Land wechseln
+    switch_club: Verein wechseln
+  continents:
+    africa:
+      description: Länder, Vereine und Wettbewerbe in Afrika.
+    asia:
+      description: Länder, Vereine und Wettbewerbe in Asien.
+    europe:
+      description: Länder, Vereine und Wettbewerbe in Europa.
+    north_america:
+      description: Länder, Vereine und Wettbewerbe in Nordamerika.
+    oceania:
+      description: Länder, Vereine und Wettbewerbe in Ozeanien.
+    south_america:
+      description: Länder, Vereine und Wettbewerbe in Südamerika.
+  search:
+    continents: Kontinente suchen...
+    countries: Länder suchen...
+    clubs: Vereine suchen...
+    players: Spieler suchen...
+    staff: Personal suchen...
+    default: Suchen...
+  sections:
+    competitions: Wettbewerbe
+    clubs: Vereine
+  columns:
+    continent: Kontinent
+    countries: Länder
+    clubs: Vereine
+    players: Spieler
+    competitions: Wettbewerbe
+    population: Bevölkerung
+    competition: Wettbewerb
+    teams: Teams
+    level: Stufe
+    squad: Kader
+    nationality_abbr: Nat.
+    position_abbr: Pos.
+  labels:
+    players: Spieler
+    staff: Personal
+  competition_types:
+    domestic_league: Nationale Liga
+    domestic_cup: Nationaler Pokal
+    continental_cup: Kontinentalpokal
+    league_cup: Ligapokal
+    international: Internationaler Wettbewerb
+  club_types:
+    professional: Professionell
+    semi_professional: Halbprofessionell
+    amateur: Amateur
+    academy: Akademie

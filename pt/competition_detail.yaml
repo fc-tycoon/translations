@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Quadro
+  overview:
+    structure: Estrutura da competição
+    stage_meta: '{count} equipas · {format}'
+  standings:
+    champion_short: C
+    champion_title: Campeão
+    promoted_short: ▲
+    promoted_title: Promovido
+    promotion_playoff_short: PP
+    promotion_playoff_title: Play-off de promoção
+    continental_qualified_short: CQ
+    continental_qualified_title: Qualificação continental
+    qualified_short: Q
+    qualified_title: Qualificado
+    relegation_playoff_short: RP
+    relegation_playoff_title: Play-off de despromoção
+    relegated_short: ▼
+    relegated_title: Despromovido
+  rules:
+    points_for_win: Pontos pela vitória
+    points_for_draw: Pontos pelo empate
+    substitutions: Substituições
+    promotions: Promoções
+    promotion_playoffs: Play-offs de promoção
+    relegation_playoffs: Play-offs de despromoção
+    relegation_places: Lugares de despromoção
+    qualifications: Qualificações
+    continental_qualifications: Qualificações continentais
+    tiebreaker_order: Ordem de desempate
+    notes: Notas
+  tiebreakers:
+    goal_diff: Diferença de golos
+    goal_average: Média de golos
+    goals_for: Golos marcados
+    goals_against: Golos sofridos
+    head_to_head: Confronto direto
+    head_to_head_gd: Diferença de golos no confronto direto
+    head_to_head_away: Golos fora no confronto direto
+    away_goals: Golos fora
+    wins: Vitórias
+    fair_play: Fair play
+    coefficient: Coeficiente
+    random: Sorteio
+    extra_time: Prolongamento
+    penalties: Penáltis
+  stage_status:
+    completed: Concluído
+    in_progress: Em curso
+    upcoming: Em breve
+  stage_format:
+    round_robin: Liga
+    play_offs: Play-offs
+    knockout: Eliminatória

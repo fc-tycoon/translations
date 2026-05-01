@@ -1,0 +1,14 @@
+squad:
+  title: Squad
+  col_sharpness: Sharp
+  col_feet: Feet
+  right_foot: Right
+  left_foot: Left
+  pos_gk: GK
+  pos_def: DEF
+  pos_mid: MID
+  pos_att: ATT
+  ctx_view: View Profile
+  ctx_move: Move to Team
+  ctx_training: Training
+  ctx_release: Release Player

@@ -1,0 +1,8 @@
+asr:
+  start_dictation: "\ub354\ud14c\uc774\uc158 \uc2dc\uc791"
+  stop_dictation: "\ub354\ud14c\uc774\uc158 \uc911\uc9c0"
+  waiting_microphone: "\ub9c8\uc774\ud06c \ub300\uae30 \uc911"
+  transcribing: "\uc804\uc0ac \uc911\u2026"
+  listening: "\ub179\uc74c \uc911\u2026"
+  waiting_microphone_permission: "\ub9c8\uc774\ud06c \uc0ac\uc6a9 \uad8c\ud55c \ub300\uae30 \uc911"
+  converting_speech: "\uc74c\uc131\uc744 \ud14d\uc2a4\ud2b8\ub85c \ubcc0\ud658 \uc911\u2026"

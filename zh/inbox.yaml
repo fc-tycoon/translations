@@ -27,3 +27,10 @@ inbox:
   priority_low: 低优先级
   blocking: 需要关注
   blocking_count: "{count}条重要消息需要您的关注"
+  response_sent: 已回复
+  select_option: "— 选择 —"
+  submit_response: 提交回复
+  today: 今天
+  yesterday: 昨天
+  search: 搜索消息…
+  page_of: "{page} / {total}"

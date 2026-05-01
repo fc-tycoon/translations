@@ -40,7 +40,7 @@ player:
           def_movement:
             label: Defensivbewegung
             description: Fußarbeit und Positionierung in der Defensive.
-            tooltip: "Beeinflusst: Jockeying, Pressing, Defensivpositionierung, Arbeitseifer."
+            tooltip: "Beeinflusst: Stellen, Pressing, Defensivpositionierung, Arbeitseifer."
 
       attacking:
         label: Offensiv-Grundlage
@@ -74,7 +74,7 @@ player:
           coordination:
             label: Koordination
             description: Körperkontrolle und Mikroanpassungen.
-            tooltip: "Beeinflusst: Agilität, Balance, Körperkontrolle, Jockeying, Reflexe."
+            tooltip: "Beeinflusst: Agilität, Balance, Körperkontrolle, Stellen, Reflexe."
           aerial:
             label: Luftduelle
             description: Flugbahn einschätzen und Sprünge timen.

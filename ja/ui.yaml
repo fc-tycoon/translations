@@ -73,6 +73,7 @@ ui:
     pause: 一時停止
     speed: 速度
     fast_forward: 早送り
+    cancel_fast_forward: Click to cancel fast-forward
     next_day: 翌日
     advance_tomorrow: 明日の午前9時に進む
     cycle_speed: ゲーム速度を変更（クリックで変更）
@@ -116,6 +117,13 @@ ui:
     quick_save_description: '{date} に作成されたクイックセーブ'
     file_exists_title: ファイルは既に存在します
     file_exists_message: ファイル"{filename}.db"は既に存在します。保存すると上書きされます。
+    managers: 監督
+    file_size: ファイルサイズ
+    password_required: パスワードが必要です
+    enter_password: セーブのパスワードを入力...
+    open_folder: 開く
+    password_preserve_hint: 既存の保護を維持するにはパスワードを空欄のままにするか、置き換えるには新しいパスワードを入力してください。
+    password_optional_hint: パスワード保護なしで保存するにはパスワードを空欄のままにしてください。
 
   # ══════════════════════════════════════════════════════════════════════
   # Common Labels
@@ -139,6 +147,7 @@ ui:
     help: ヘルプ
     about: について
     version: バージョン
+    coming_soon: Coming soon
     name: 名前
     club: クラブ
     league: リーグ
@@ -176,6 +185,66 @@ ui:
     vacant: 空席
     not_available: 該当なし
 
+    team: チーム
+    teams: チーム
+    home: ホーム
+    away: アウェー
+    score: スコア
+    competition: 大会
+    players: 選手
+    staff: スタッフ
+    transfers: 移籍
+    form: 調子
+    morale: 士気
+    fitness: コンディション
+    height: 身長
+    contract: 契約
+    value: 価値
+    city: 都市
+    capacity: 収容人数
+    prize_money: 賞金
+    tv_deal: TV契約
+    fixtures: 試合日程
+    results: 結果
+    round: ラウンド
+    venue: 会場
+    goals: ゴール
+    assists: アシスト
+    avg_rating: 平均評価
+    no_players_found: 選手が見つかりません。
+    player_count: '{count}人'
+  datepicker:
+    select_date: 日付を選択
+    clear_date: 日付をクリア
+    previous_year: 前の年
+    previous_month: 前の月
+    select_month: 月を選択
+    select_year: 年を選択
+    next_month: 次の月
+    next_year: 次の年
+    time_utc: 時刻 (UTC)
+    hour_utc: 時 (UTC)
+    minute: 分
+    range_end_hint: 終了日をクリックしてください
+
+  abbr:
+    position: Pos
+    nationality: Nat
+    info: Inf
+    played: P
+    won: W
+    drawn: D
+    lost: L
+    goals_for: GF
+    goals_against: GA
+    goal_difference: GD
+    points: Pts
+    appearances: App
+    minutes: Min
+    yellow_cards: YC
+    red_cards: RC
+    matchday: MD
+
   # ══════════════════════════════════════════════════════════════════════
   # Toast Messages
   # ══════════════════════════════════════════════════════════════════════
@@ -184,26 +253,8 @@ ui:
     blocking_attention: 注意が必要な重要メッセージが {count} 件あります。
     advance_day_failed: 次の日に進めませんでした。FC Tycoon の Discord チャンネルでサポートに連絡してください。
     load_success: ゲームを読み込みました
-    save_success: '{filename}.db にゲームを保存しました'
+    save_success: '{filename} にゲームを保存しました'
     loaded_most_recent_save: '最新のセーブを読み込みました: {name}'
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Licenses Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  licenses:
-    open_folder: ライセンスフォルダーを開く
-    third_party_notices: サードパーティー通知
-    fc_tycoon_license: FC Tycoon ライセンス
-    load_failed: ライセンスの読み込みに失敗しました
-    load_file_failed: ライセンスファイルの読み込みに失敗しました
-    load_file_failed_inline: このライセンスファイルを読み込めませんでした。
-    open_folder_failed: ライセンスフォルダーを開けませんでした
-
-  # ══════════════════════════════════════════════════════════════════════
-  # Credits Dialog
-  # ══════════════════════════════════════════════════════════════════════
-  credits:
-    load_failed: クレジットの読み込みに失敗しました
 
   # ══════════════════════════════════════════════════════════════════════
   # Tooltips
@@ -231,12 +282,17 @@ ui:
     permission_denied: 権限が拒否されました
     file_not_found: ファイルが見つかりません
     database_error: データベースエラー
+    steam_integration_required: Steam integration is required for this build.
+    steam_initialization_failed: Steam initialization failed.
+    steam_ownership_failed: Steam ownership verification failed.
     exit_failed: アプリケーションを終了できませんでした
     save_failed_with_error: 'ゲームの保存に失敗しました: {error}'
     open_folder_dialog_failed: フォルダー選択ダイアログを開けませんでした
     locate_save_folder_failed: セーブフォルダーを見つけられませんでした
     open_save_dialog_failed: 保存ダイアログを開けませんでした
     load_most_recent_failed: 最新のセーブを読み込めませんでした
+    read_save_metadata_failed: セーブファイルの詳細を読み込めませんでした
+    load_save_list_failed: セーブ一覧を読み込めませんでした
     ui_init_after_load_failed: ゲームは読み込まれましたが、UI の初期化に失敗しました
     loaded_save_no_active_manager: 読み込んだセーブに有効な監督がいません。新しいゲームを開始するか、このセーブを修復する必要があるかもしれません。
 
@@ -275,3 +331,17 @@ ui:
     apply: 適用
     browse: 参照...
     exit: 終了
+    retry: 再試行
+    quit: 終了
+
+  # ══════════════════════════════════════════════════════════════════════
+  # Main Menu
+  # ══════════════════════════════════════════════════════════════════════
+  main_menu:
+    subtitle: Club Manager 2027
+
+  ordinal:
+    one: '{n}位'
+    two: '{n}位'
+    few: '{n}位'
+    other: '{n}位'

@@ -1,0 +1,11 @@
+schedule:
+  loading: 日程を読み込み中...
+  calendar:
+    events:
+      vs_opponent: '対 {opponent}'
+      at_opponent: '@ {opponent}'
+  empty:
+    upcoming: 今後の試合はありません。
+    results: まだ結果はありません。
+  errors:
+    load_failed: 日程の読み込みに失敗しました

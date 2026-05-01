@@ -1,0 +1,12 @@
+competitions:
+  labels:
+    board_expectation: Board Expectation
+    performance: Performance
+    recent_form: Recent Form
+    relegated: Relegated
+  tabs:
+    standings: Standings
+    player_stats: Player Stats
+    rules: Rules
+  messages:
+    no_fixtures_drawn: No fixtures drawn yet.

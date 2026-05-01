@@ -1,0 +1,9 @@
+chat:
+  title: Chat
+  no_model: Kein LLM-Modell geladen. Bitte zuerst ein Modell in den Einstellungen konfigurieren.
+  choose_who: "Mit wem m\u00f6chtest du sprechen?"
+  open_conversations: Offene Gespr\u00e4che
+  no_summary: Keine Zusammenfassung
+  back: "\u2190 Zur\u00fcck"
+  type_message: "Nachricht eingeben..."
+  send: Senden

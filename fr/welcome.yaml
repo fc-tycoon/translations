@@ -17,6 +17,7 @@ welcome:
   competition: Compétition
   board_expectation: Attente du Conseil
   transfer_budget: Budget Transferts
+  message: "Je suis ravi de vous accueillir à {clubName}. Je serai votre principal point de contact pendant que nous passerons en revue le club, les installations et les attentes."
 
   confirm_save_new_game: "Voulez-vous sauvegarder votre nouvelle partie ?"
   manager_fallback: Manager

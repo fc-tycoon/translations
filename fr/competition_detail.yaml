@@ -1,0 +1,56 @@
+competition_detail:
+  tabs:
+    bracket: Tableau
+  overview:
+    structure: Structure de la compétition
+    stage_meta: '{count} équipes · {format}'
+  standings:
+    champion_short: C
+    champion_title: Champion
+    promoted_short: ▲
+    promoted_title: Promu
+    promotion_playoff_short: PP
+    promotion_playoff_title: Barrage de promotion
+    continental_qualified_short: CQ
+    continental_qualified_title: Qualification continentale
+    qualified_short: Q
+    qualified_title: Qualifié
+    relegation_playoff_short: RP
+    relegation_playoff_title: Barrage de relégation
+    relegated_short: ▼
+    relegated_title: Relégué
+  rules:
+    points_for_win: Points pour une victoire
+    points_for_draw: Points pour un nul
+    substitutions: Remplacements
+    promotions: Promotions
+    promotion_playoffs: Barrages de promotion
+    relegation_playoffs: Barrages de relégation
+    relegation_places: Places de relégation
+    qualifications: Qualifications
+    continental_qualifications: Qualifications continentales
+    tiebreaker_order: Ordre de départage
+    notes: Notes
+  tiebreakers:
+    goal_diff: Différence de buts
+    goal_average: Quotient de buts
+    goals_for: Buts marqués
+    goals_against: Buts encaissés
+    head_to_head: Confrontation directe
+    head_to_head_gd: Différence de buts en confrontation directe
+    head_to_head_away: Buts à l'extérieur en confrontation directe
+    away_goals: Buts à l'extérieur
+    wins: Victoires
+    fair_play: Fair-play
+    coefficient: Coefficient
+    random: Tirage au sort
+    extra_time: Prolongation
+    penalties: Tirs au but
+  stage_status:
+    completed: Terminé
+    in_progress: En cours
+    upcoming: À venir
+  stage_format:
+    round_robin: Championnat
+    play_offs: Barrages
+    knockout: Élimination directe

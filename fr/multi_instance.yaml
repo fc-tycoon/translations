@@ -1,0 +1,13 @@
+multi_instance:
+  window_title: Autre instance détectée
+  heading: Une autre instance du jeu ou de l'éditeur FC Tycoon est déjà en cours d'exécution.
+  intro: L'exécution de plusieurs instances en même temps signifie qu'elles partagent les mêmes fichiers de configuration et peuvent cibler les mêmes fichiers de base de données ou de sauvegarde. Les modifications ne sont pas synchronisées entre les instances en cours d'exécution.
+  instructions: Confirmez chaque point ci-dessous avant de continuer avec une autre instance.
+  config_path_label: Répertoire de configuration partagé
+  data_path_label: Chemin pertinent de la base de données ou de la sauvegarde
+  path_unavailable: Non disponible
+  preferences_ack: Je comprends que les modifications des préférences et de la configuration n'apparaîtront pas dans l'autre instance en cours tant que cette instance ne se recharge pas ou ne redémarre pas.
+  database_ack: Je comprends que les modifications de la base de données ou de la sauvegarde peuvent écraser le travail de l'autre instance, et qu'elles peuvent ne pas y apparaître tant qu'elle ne recharge pas la base de données ou ne redémarre pas.
+  final_ack: J'accepte ces conditions et je souhaite continuer à exécuter une autre instance.
+  continue: Continuer
+  exit: Quitter
