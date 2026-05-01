@@ -190,12 +190,12 @@ preferences:
       choose_mode: 选择如何将捕获到的麦克风音频发送到后端。
       embedded_dll_only: 仅使用内嵌的 DLL 运行时。
       device_npu: Intel NPU 模式使用 OpenVINO，并以系统选择的 NPU 设备为目标。当前桥接会将 Whisper 编码器卸载到 NPU，而解码器工作仍保留在 CPU 上。
-      device_non_cuda: 显式 GPU 设备选择目前只适用于 CUDA。Vulkan 和 HIP 使用 whisper.cpp 暴露的运行时默认 GPU 设备。
+      device_non_cuda: 显式 GPU 设备选择目前只适用于 CUDA。Vulkan 使用 whisper.cpp 暴露的运行时默认 GPU 设备。
       device_no_cuda_devices: ASR 运行时当前未暴露任何支持 CUDA 的 GPU 设备。
       device_choose_cuda: 选择 ASR 应使用哪块已检测到的 CUDA GPU。此选项仅影响 ASR；面部生成和 LLM 负载仍分别配置。
       device_use_cuda: 使用 {name} 执行 CUDA ASR 工作。此选项只影响语音听写；面部生成和 LLM 的 GPU 分配不会自动同步。
       npu_notice: Intel NPU 模式使用 OpenVINO 和系统选择的 NPU 设备。目前还没有按设备选择器，而且当前桥接中的 Whisper 解码器工作仍在 CPU 上运行。
-      non_cuda_notice: 当前 Whisper 桥接在 Vulkan 和 HIP 上使用运行时默认 GPU。显式按设备选择目前只支持 CUDA。
+      non_cuda_notice: 当前 Whisper 桥接在 Vulkan 上使用运行时默认 GPU。显式按设备选择目前只支持 CUDA。
       no_selectable_cuda: 内嵌运行时没有报告任何可选的 CUDA 设备。ASR 将在此加速目标上使用运行时默认设备。
       single_cuda_device: '当前只暴露出一个支持 CUDA 的 ASR 设备：{name}。无需单独的选择器。'
       multiple_cuda_devices: 有多块支持 CUDA 的 ASR 设备可用。请选择听写应使用的物理 GPU。
@@ -233,7 +233,7 @@ preferences:
       cuda_2: 如果你有多块 NVIDIA GPU，只有在主卡正忙于 LLM 或 facegen 工作时，才应把 ASR 放到较轻的那张卡上。
       openvino_1: Intel NPU 模式需要与你所选 Whisper 模型匹配的 OpenVINO 编码器 IR 文件，仅有普通 ggml 模型还不够。
       openvino_2: OpenVINO NPU 目前只卸载 Whisper 编码器工作。最大收益通常出现在 Base 或 Small 上，不一定是 Tiny。
-      other_gpu: Vulkan 和 HIP 最适合作为简单的 GPU 加速模式使用。当前桥接对这些后端使用运行时默认 GPU，而不是按设备选择器。
+      other_gpu: Vulkan 最适合作为简单的 GPU 加速模式使用。当前桥接对这个后端使用运行时默认 GPU，而不是按设备选择器。
       streaming_1: 实时预览建议先从 300-500 毫秒开始。如果想要更平滑的部分结果，可以试试 200 毫秒，但前提是你的机器上 UI 仍然流畅。
       streaming_2: 你当前的间隔非常激进。如果预览卡住或输入框冻结，请先加长缓冲，再考虑更换模型大小。
       buffered: 如果你更看重最终准确率，而不是在句子中途就看到文本出现，那么缓冲模式仍然是最稳妥的选择。

@@ -191,12 +191,12 @@ preferences:
       choose_mode: Choose how captured microphone audio should be sent to the backend.
       embedded_dll_only: Uses the embedded DLL runtime only.
       device_npu: Intel NPU mode uses OpenVINO and targets the system-selected NPU device. The current bridge offloads the Whisper encoder to the NPU and keeps decoder work on the CPU.
-      device_non_cuda: Explicit GPU device selection currently applies only to CUDA. Vulkan and HIP use the runtime-default GPU device exposed by whisper.cpp.
+      device_non_cuda: Explicit GPU device selection currently applies only to CUDA. Vulkan uses the runtime-default GPU device exposed by whisper.cpp.
       device_no_cuda_devices: No CUDA-capable GPU devices are currently exposed by the ASR runtime.
       device_choose_cuda: Choose which detected CUDA GPU ASR should use. This selector is ASR-only; face generation and LLM workloads remain separately configured.
       device_use_cuda: Uses {name} for CUDA ASR work. This selector affects voice dictation only; face generation and LLM GPU placement are not auto-synchronized.
       npu_notice: Intel NPU mode uses OpenVINO and the system-selected NPU device. There is no per-device picker yet, and Whisper decoder work still runs on the CPU in the current bridge.
-      non_cuda_notice: The current whisper bridge uses the runtime-default GPU for Vulkan and HIP. Explicit per-device selection is only supported for CUDA right now.
+      non_cuda_notice: The current whisper bridge uses the runtime-default GPU for Vulkan. Explicit per-device selection is only supported for CUDA right now.
       no_selectable_cuda: The embedded runtime did not report any selectable CUDA devices. ASR will use the runtime default device for this acceleration target.
       single_cuda_device: 'Only one CUDA-capable ASR device is currently exposed: {name}. A separate picker is unnecessary.'
       multiple_cuda_devices: Multiple CUDA-capable ASR devices are available. Choose which physical GPU dictation should use.
@@ -234,7 +234,7 @@ preferences:
       cuda_2: If you have multiple NVIDIA GPUs, keep ASR on the lighter card only if the main card is busy with LLM or facegen work.
       openvino_1: Intel NPU mode requires the matching OpenVINO encoder IR files for your selected Whisper model. The plain ggml model alone is not enough.
       openvino_2: OpenVINO NPU currently offloads Whisper encoder work only. Expect the biggest benefit on Base or Small models, not necessarily on Tiny.
-      other_gpu: Vulkan and HIP work best as simple GPU acceleration modes. The current bridge uses the runtime-default GPU rather than a per-device selector for these backends.
+      other_gpu: Vulkan works best as a simple GPU acceleration mode. The current bridge uses the runtime-default GPU rather than a per-device selector for this backend.
       streaming_1: 'Live Preview - start around 300-500 ms. If you want smoother partials, test 200 ms, but only keep it if the UI stays responsive on your machine.'
       streaming_2: Your current interval is very aggressive. If preview stalls or the field freezes, use a longer buffer before changing model size.
       buffered: Buffered mode is still the safest option when you care more about final accuracy than seeing text appear mid-sentence.

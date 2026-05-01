@@ -190,12 +190,12 @@ preferences:
       choose_mode: Wybierz sposób wysyłania przechwyconego dźwięku z mikrofonu do backendu.
       embedded_dll_only: Używa wyłącznie osadzonego środowiska DLL.
       device_npu: Tryb Intel NPU używa OpenVINO i kieruje pracę na urządzenie NPU wybrane przez system. Bieżący mostek przenosi enkoder Whisper na NPU, a pracę dekodera pozostawia na CPU.
-      device_non_cuda: Jawny wybór urządzenia GPU dotyczy obecnie tylko CUDA. Vulkan i HIP używają domyślnego urządzenia GPU środowiska wykonawczego udostępnionego przez whisper.cpp.
+      device_non_cuda: Jawny wybór urządzenia GPU dotyczy obecnie tylko CUDA. Vulkan używa domyślnego urządzenia GPU środowiska wykonawczego udostępnionego przez whisper.cpp.
       device_no_cuda_devices: Środowisko ASR nie udostępnia obecnie żadnych urządzeń GPU zgodnych z CUDA.
       device_choose_cuda: Wybierz wykrytą kartę CUDA, której ASR ma używać. Ten wybór dotyczy tylko ASR; generowanie twarzy i obciążenia LLM pozostają skonfigurowane osobno.
       device_use_cuda: Używa {name} do zadań ASR z CUDA. Ten wybór wpływa tylko na dyktowanie głosowe; przypisanie GPU dla generowania twarzy i LLM nie jest synchronizowane automatycznie.
       npu_notice: Tryb Intel NPU używa OpenVINO i urządzenia NPU wybranego przez system. Nie ma jeszcze wyboru konkretnego urządzenia, a praca dekodera Whisper nadal odbywa się na CPU w bieżącym mostku.
-      non_cuda_notice: Obecny mostek Whisper używa domyślnego GPU środowiska wykonawczego dla Vulkan i HIP. Jawny wybór urządzenia jest na razie obsługiwany tylko dla CUDA.
+      non_cuda_notice: Obecny mostek Whisper używa domyślnego GPU środowiska wykonawczego dla Vulkan. Jawny wybór urządzenia jest na razie obsługiwany tylko dla CUDA.
       no_selectable_cuda: Osadzone środowisko wykonawcze nie zgłosiło żadnych wybieralnych urządzeń CUDA. ASR użyje dla tego celu akceleracji domyślnego urządzenia środowiska.
       single_cuda_device: 'Obecnie dostępne jest tylko jedno urządzenie ASR zgodne z CUDA: {name}. Osobny wybierak nie jest potrzebny.'
       multiple_cuda_devices: Dostępnych jest wiele urządzeń ASR obsługujących CUDA. Wybierz, której fizycznej karty GPU ma używać dyktowanie.
@@ -233,7 +233,7 @@ preferences:
       cuda_2: Jeśli masz wiele GPU NVIDIA, trzymaj ASR na słabszej karcie tylko wtedy, gdy główna karta jest zajęta pracą LLM lub facegen.
       openvino_1: Tryb Intel NPU wymaga dopasowanych plików IR enkodera OpenVINO dla wybranego modelu Whisper. Sam zwykły model ggml nie wystarczy.
       openvino_2: OpenVINO NPU obecnie odciąża tylko enkoder Whisper. Największy zysk zwykle widać przy Base lub Small, niekoniecznie przy Tiny.
-      other_gpu: Vulkan i HIP najlepiej traktować jako proste tryby akceleracji GPU. Obecny mostek używa dla tych backendów domyślnego GPU środowiska zamiast wybieraka urządzeń.
+      other_gpu: Vulkan najlepiej traktować jako prosty tryb akceleracji GPU. Obecny mostek używa dla tego backendu domyślnego GPU środowiska zamiast wybieraka urządzeń.
       streaming_1: 'Podgląd na żywo: zacznij od około 300-500 ms. Jeśli chcesz płynniejszych częściowych wyników, przetestuj 200 ms, ale zostaw to tylko wtedy, gdy interfejs na twojej maszynie nadal reaguje.'
       streaming_2: Obecny interwał jest bardzo agresywny. Jeśli podgląd się zawiesza lub pole zamarza, użyj dłuższego bufora, zanim zmienisz rozmiar modelu.
       buffered: Tryb buforowany nadal jest najbezpieczniejszym wyborem, gdy bardziej zależy ci na końcowej dokładności niż na tym, by tekst pojawiał się w połowie zdania.

@@ -190,12 +190,12 @@ preferences:
       choose_mode: 캡처한 마이크 오디오를 백엔드에 어떻게 보낼지 선택하세요.
       embedded_dll_only: 내장 DLL 런타임만 사용합니다.
       device_npu: Intel NPU 모드는 OpenVINO를 사용하며 시스템이 선택한 NPU 장치를 대상으로 합니다. 현재 브리지는 Whisper 인코더를 NPU로 오프로드하고 디코더 작업은 CPU에 남깁니다.
-      device_non_cuda: 명시적인 GPU 장치 선택은 현재 CUDA에만 적용됩니다. Vulkan과 HIP은 whisper.cpp가 노출하는 런타임 기본 GPU 장치를 사용합니다.
+      device_non_cuda: 명시적인 GPU 장치 선택은 현재 CUDA에만 적용됩니다. Vulkan은 whisper.cpp가 노출하는 런타임 기본 GPU 장치를 사용합니다.
       device_no_cuda_devices: ASR 런타임에서 현재 노출된 CUDA 지원 GPU 장치가 없습니다.
       device_choose_cuda: ASR에 사용할 감지된 CUDA GPU를 선택합니다. 이 선택기는 ASR 전용이며 얼굴 생성과 LLM 작업 부하는 별도로 구성됩니다.
       device_use_cuda: CUDA ASR 작업에 {name}을 사용합니다. 이 선택기는 음성 받아쓰기에만 영향을 주며 얼굴 생성과 LLM의 GPU 배치는 자동으로 동기화되지 않습니다.
       npu_notice: Intel NPU 모드는 OpenVINO와 시스템이 선택한 NPU 장치를 사용합니다. 아직 장치별 선택기는 없으며, 현재 브리지에서는 Whisper 디코더 작업이 계속 CPU에서 실행됩니다.
-      non_cuda_notice: 현재 Whisper 브리지는 Vulkan과 HIP에 대해 런타임 기본 GPU를 사용합니다. 명시적인 장치 선택은 현재 CUDA에서만 지원됩니다.
+      non_cuda_notice: 현재 Whisper 브리지는 Vulkan에 대해 런타임 기본 GPU를 사용합니다. 명시적인 장치 선택은 현재 CUDA에서만 지원됩니다.
       no_selectable_cuda: 내장 런타임이 선택 가능한 CUDA 장치를 보고하지 않았습니다. ASR은 이 가속 대상에 대해 런타임 기본 장치를 사용합니다.
       single_cuda_device: '현재 노출된 CUDA 지원 ASR 장치는 {name} 하나뿐입니다. 별도의 선택기는 필요하지 않습니다.'
       multiple_cuda_devices: 사용 가능한 CUDA 지원 ASR 장치가 여러 개 있습니다. 받아쓰기에 사용할 물리 GPU를 선택하세요.
@@ -233,7 +233,7 @@ preferences:
       cuda_2: NVIDIA GPU가 여러 개인 경우, 메인 카드가 LLM이나 facegen 작업으로 바쁠 때만 ASR을 더 가벼운 카드에 두세요.
       openvino_1: Intel NPU 모드에는 선택한 Whisper 모델에 맞는 OpenVINO 인코더 IR 파일이 필요합니다. 단순 ggml 모델만으로는 충분하지 않습니다.
       openvino_2: OpenVINO NPU는 현재 Whisper 인코더 작업만 오프로드합니다. Tiny보다는 Base나 Small에서 더 큰 이점을 기대할 수 있습니다.
-      other_gpu: Vulkan과 HIP은 단순 GPU 가속 모드로 사용하는 것이 가장 좋습니다. 현재 브리지는 이 백엔드들에 대해 장치 선택기 대신 런타임 기본 GPU를 사용합니다.
+      other_gpu: Vulkan은 단순 GPU 가속 모드로 사용하는 것이 가장 좋습니다. 현재 브리지는 이 백엔드에 대해 장치 선택기 대신 런타임 기본 GPU를 사용합니다.
       streaming_1: 실시간 미리보기는 300-500ms 정도에서 시작하세요. 더 부드러운 부분 결과를 원하면 200ms를 시험할 수 있지만, UI가 계속 반응할 때만 유지하세요.
       streaming_2: 현재 간격은 매우 공격적입니다. 미리보기가 멈추거나 필드가 얼어붙으면 모델 크기를 바꾸기 전에 버퍼를 더 길게 잡으세요.
       buffered: 문장 중간에 텍스트가 보이는 것보다 최종 정확도가 더 중요하다면, 버퍼형 모드가 여전히 가장 안전한 선택입니다.

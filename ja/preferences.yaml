@@ -190,12 +190,12 @@ preferences:
       choose_mode: 収録したマイク音声をどのようにバックエンドへ送るかを選択してください。
       embedded_dll_only: 組み込み DLL ランタイムのみを使用します。
       device_npu: Intel NPU モードは OpenVINO を使用し、システムで選択された NPU デバイスを対象にします。現在のブリッジでは Whisper エンコーダーを NPU にオフロードし、デコーダー処理は CPU に残します。
-      device_non_cuda: 明示的な GPU デバイス選択は現在 CUDA のみ対応しています。Vulkan と HIP は whisper.cpp が公開するランタイム既定の GPU を使用します。
+      device_non_cuda: 明示的な GPU デバイス選択は現在 CUDA のみ対応しています。Vulkan は whisper.cpp が公開するランタイム既定の GPU を使用します。
       device_no_cuda_devices: ASR ランタイムから利用可能な CUDA 対応 GPU デバイスは現在公開されていません。
       device_choose_cuda: ASR で使用する検出済み CUDA GPU を選択します。この選択は ASR 専用で、顔生成や LLM の負荷設定とは個別です。
       device_use_cuda: CUDA ASR に {name} を使用します。この選択は音声ディクテーションのみに影響し、顔生成や LLM の GPU 配置とは自動同期されません。
       npu_notice: Intel NPU モードは OpenVINO とシステム選択の NPU デバイスを使用します。まだデバイスごとの選択機能はなく、現在のブリッジでは Whisper デコーダー処理は引き続き CPU 上で動作します。
-      non_cuda_notice: 現在の Whisper ブリッジは Vulkan と HIP でランタイム既定の GPU を使用します。明示的なデバイス選択は現時点では CUDA のみ対応しています。
+      non_cuda_notice: 現在の Whisper ブリッジは Vulkan でランタイム既定の GPU を使用します。明示的なデバイス選択は現時点では CUDA のみ対応しています。
       no_selectable_cuda: 組み込みランタイムは選択可能な CUDA デバイスを報告しませんでした。ASR はこの加速ターゲットでランタイム既定のデバイスを使用します。
       single_cuda_device: '現在公開されている CUDA 対応 ASR デバイスは {name} のみです。個別の選択は不要です。'
       multiple_cuda_devices: 複数の CUDA 対応 ASR デバイスが利用可能です。ディクテーションで使用する物理 GPU を選択してください。
@@ -233,7 +233,7 @@ preferences:
       cuda_2: NVIDIA GPU が複数ある場合、メインのカードが LLM や facegen で忙しいときだけ ASR を軽いカードに割り当ててください。
       openvino_1: Intel NPU モードでは、選択した Whisper モデルに対応する OpenVINO エンコーダー IR ファイルが必要です。ggml モデルだけでは不十分です。
       openvino_2: OpenVINO NPU が現在オフロードするのは Whisper エンコーダー処理のみです。効果が大きいのは Tiny より Base や Small のことが多いです。
-      other_gpu: Vulkan と HIP は単純な GPU アクセラレーションモードとして使うのが最適です。現在のブリッジでは、これらのバックエンドに対して個別のデバイス選択ではなくランタイム既定 GPU を使用します。
+      other_gpu: Vulkan は単純な GPU アクセラレーションモードとして使うのが最適です。現在のブリッジでは、このバックエンドに対して個別のデバイス選択ではなくランタイム既定 GPU を使用します。
       streaming_1: ライブプレビューは 300-500 ms 前後から始めてください。より滑らかな部分結果が欲しい場合は 200 ms を試せますが、UI の応答性が維持できるときだけ採用してください。
       streaming_2: 現在の間隔はかなり攻めています。プレビューが止まったりフィールドが固まる場合は、モデルサイズを変える前にバッファを長めにしてください。
       buffered: 文の途中で文字が出ることより最終精度を重視するなら、バッファリングモードが依然として最も安全です。

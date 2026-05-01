@@ -190,12 +190,12 @@ preferences:
       choose_mode: Elige cómo debe enviarse al backend el audio capturado por el micrófono.
       embedded_dll_only: Usa solo el runtime DLL integrado.
       device_npu: El modo Intel NPU usa OpenVINO y apunta al dispositivo NPU seleccionado por el sistema. El puente actual descarga el codificador Whisper en la NPU y mantiene el trabajo del decodificador en la CPU.
-      device_non_cuda: La selección explícita de dispositivos GPU actualmente solo se aplica a CUDA. Vulkan e HIP usan la GPU predeterminada del runtime expuesta por whisper.cpp.
+      device_non_cuda: La selección explícita de dispositivos GPU actualmente solo se aplica a CUDA. Vulkan usa la GPU predeterminada del runtime expuesta por whisper.cpp.
       device_no_cuda_devices: El runtime de ASR no expone actualmente ninguna GPU compatible con CUDA.
       device_choose_cuda: Elige qué GPU CUDA detectada debe usar ASR. Este selector solo afecta a ASR; la generación facial y las cargas de LLM siguen configurándose por separado.
       device_use_cuda: Usa {name} para el trabajo ASR con CUDA. Este selector solo afecta al dictado por voz; la asignación de GPU para generación facial y LLM no se sincroniza automáticamente.
       npu_notice: El modo Intel NPU usa OpenVINO y el dispositivo NPU seleccionado por el sistema. Todavía no hay selector por dispositivo, y el trabajo del decodificador Whisper sigue ejecutándose en la CPU en el puente actual.
-      non_cuda_notice: El puente actual de Whisper usa la GPU predeterminada del runtime para Vulkan e HIP. La selección explícita por dispositivo solo está disponible para CUDA por ahora.
+      non_cuda_notice: El puente actual de Whisper usa la GPU predeterminada del runtime para Vulkan. La selección explícita por dispositivo solo está disponible para CUDA por ahora.
       no_selectable_cuda: El runtime integrado no informó de ningún dispositivo CUDA seleccionable. ASR usará el dispositivo predeterminado del runtime para este objetivo de aceleración.
       single_cuda_device: 'Solo hay un dispositivo ASR compatible con CUDA expuesto actualmente: {name}. No hace falta un selector aparte.'
       multiple_cuda_devices: Hay varios dispositivos ASR compatibles con CUDA disponibles. Elige qué GPU física debe usar el dictado.
@@ -233,7 +233,7 @@ preferences:
       cuda_2: Si tienes varias GPU NVIDIA, deja ASR en la tarjeta más ligera solo si la principal está ocupada con trabajo de LLM o facegen.
       openvino_1: El modo Intel NPU requiere los archivos IR del codificador OpenVINO correspondientes al modelo Whisper seleccionado. El modelo ggml por sí solo no basta.
       openvino_2: OpenVINO NPU actualmente solo descarga el trabajo del codificador Whisper. El mayor beneficio suele verse con Base o Small, no necesariamente con Tiny.
-      other_gpu: Vulkan e HIP funcionan mejor como modos sencillos de aceleración por GPU. El puente actual usa la GPU predeterminada del runtime en lugar de un selector por dispositivo para estos backends.
+      other_gpu: Vulkan funciona mejor como un modo sencillo de aceleración por GPU. El puente actual usa la GPU predeterminada del runtime en lugar de un selector por dispositivo para este backend.
       streaming_1: 'Vista previa en vivo: empieza alrededor de 300-500 ms. Si quieres parciales más suaves, prueba 200 ms, pero mantenlo solo si la UI sigue respondiendo bien en tu máquina.'
       streaming_2: Tu intervalo actual es muy agresivo. Si la vista previa se atasca o el campo se congela, usa un búfer más largo antes de cambiar el tamaño del modelo.
       buffered: El modo en búfer sigue siendo la opción más segura cuando te importa más la precisión final que ver texto aparecer a mitad de frase.
