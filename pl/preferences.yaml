@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: Ustawienia UI
+    classic_player_ratings: Klasyczny widok 1-20
+    classic_player_ratings_hint: Wyświetla atrybuty piłkarza i oceny pozycji w klasycznej skali 1 do 20.
+    classic_player_ratings_tooltip: Przełącza atrybuty piłkarza, oceny profilu i zgodne wyszukiwania piłkarzy na klasyczną skalę wyświetlania od 1 do 20. To ustawienie dotyczy wyłącznie interfejsu; nie zmienia sposobu zapisywania, oceniania ani trenowania wartości w tle. To wygoda interfejsu.
     pitch_map_footedness: Preferowana noga na mapie boiska
     pitch_map_footedness_preview: Podgląd
     pitch_map_footedness_hint: Przełącz dodatkowe znaczniki lewo/prawo (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

@@ -1,0 +1,13 @@
+team_names:
+  standalone:
+    first_team: Eerste elftal
+    reserves: Reserves
+    c_team: C-elftal
+    under_age: U{age}
+    generic: Team {teamType}
+  club:
+    first_team: '{clubName}'
+    reserves: '{clubName} Reserves'
+    c_team: '{clubName} C-elftal'
+    under_age: '{clubName} U{age}'
+    generic: '{clubName} Team {teamType}'

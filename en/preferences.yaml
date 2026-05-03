@@ -117,6 +117,9 @@ preferences:
 
   ui_tab:
     title: UI Settings
+    classic_player_ratings: 1-20 Classic View
+    classic_player_ratings_hint: Show player attributes and position ratings on a classic 1 to 20 display scale.
+    classic_player_ratings_tooltip: Switches player attributes, profile ratings, and compatible player-rating searches to the classic 1 to 20 display scale. This is a UI-only preference; it does not change how ratings are stored, evaluated, or how players are trained under the hood. It's a UI convenience.
     pitch_map_footedness: Pitch Map Footedness Positions
     pitch_map_footedness_preview: Preview
     pitch_map_footedness_hint: Toggle extra left/right markers (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

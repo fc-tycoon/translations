@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: UI 设置
+    classic_player_ratings: 1-20 经典视图
+    classic_player_ratings_hint: 以经典的 1 到 20 显示刻度来显示球员属性和位置评分。
+    classic_player_ratings_tooltip: 将球员属性、资料页评分以及兼容的球员搜索切换为经典的 1 到 20 显示刻度。这只是一个 UI 偏好设置；它不会改变评分在底层的存储、评估或训练方式。这只是显示上的便利功能。
     pitch_map_footedness: 球场地图左右脚位置标记
     pitch_map_footedness_preview: 预览
     pitch_map_footedness_hint: 切换额外的左右标记（LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM）

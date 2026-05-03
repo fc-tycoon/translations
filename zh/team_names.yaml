@@ -1,0 +1,13 @@
+team_names:
+  standalone:
+    first_team: 一线队
+    reserves: 预备队
+    c_team: C队
+    under_age: U{age}
+    generic: 球队 {teamType}
+  club:
+    first_team: '{clubName}'
+    reserves: '{clubName} 预备队'
+    c_team: '{clubName} C队'
+    under_age: '{clubName} U{age}'
+    generic: '{clubName} 球队 {teamType}'

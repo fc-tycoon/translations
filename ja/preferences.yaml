@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: UI設定
+    classic_player_ratings: 1-20 クラシック表示
+    classic_player_ratings_hint: 選手能力とポジション評価を、クラシックな 1 から 20 の表示スケールで表示します。
+    classic_player_ratings_tooltip: 選手能力、プロフィール評価、対応する選手検索を、クラシックな 1 から 20 の表示スケールに切り替えます。これは UI 専用の設定であり、数値の保存方法、評価方法、育成処理そのものは内部的に変更しません。表示上の利便性のための機能です。
     pitch_map_footedness: ピッチマップの利き足表示
     pitch_map_footedness_preview: プレビュー
     pitch_map_footedness_hint: 追加の左右マーカーを切り替え（LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM）

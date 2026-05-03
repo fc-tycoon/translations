@@ -1,0 +1,13 @@
+team_names:
+  standalone:
+    first_team: トップチーム
+    reserves: リザーブ
+    c_team: Cチーム
+    under_age: U{age}
+    generic: チーム {teamType}
+  club:
+    first_team: '{clubName}'
+    reserves: '{clubName} リザーブ'
+    c_team: '{clubName} Cチーム'
+    under_age: '{clubName} U{age}'
+    generic: '{clubName} チーム {teamType}'

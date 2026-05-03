@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: UI 설정
+    classic_player_ratings: 1-20 클래식 보기
+    classic_player_ratings_hint: 선수 능력치와 포지션 평점을 클래식한 1부터 20까지의 표시 스케일로 보여줍니다.
+    classic_player_ratings_tooltip: 선수 능력치, 프로필 평점, 호환되는 선수 검색을 클래식한 1부터 20까지의 표시 스케일로 전환합니다. 이 설정은 UI 전용이며, 수치가 내부적으로 저장, 평가, 훈련되는 방식은 바꾸지 않습니다. 표시 편의를 위한 기능입니다.
     pitch_map_footedness: 피치 맵 왼발/오른발 표시
     pitch_map_footedness_preview: 미리보기
     pitch_map_footedness_hint: 추가 좌/우 마커 토글 (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

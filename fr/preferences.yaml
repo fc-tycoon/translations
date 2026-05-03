@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: Paramètres UI
+    classic_player_ratings: Vue classique 1-20
+    classic_player_ratings_hint: Affiche les attributs du joueur et les notes de poste sur une échelle d'affichage classique de 1 à 20.
+    classic_player_ratings_tooltip: Bascule les attributs du joueur, les notes du profil et les recherches de joueurs compatibles vers l'échelle d'affichage classique de 1 à 20. Il s'agit d'une préférence purement UI ; elle ne change pas la manière dont les notes sont stockées, évaluées ou entraînées en arrière-plan. C'est un confort d'affichage.
     pitch_map_footedness: Positions des Pieds sur la Carte
     pitch_map_footedness_preview: Aperçu
     pitch_map_footedness_hint: Basculer les marqueurs gauche/droite supplémentaires (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: UI-instellingen
+    classic_player_ratings: Klassieke 1-20-weergave
+    classic_player_ratings_hint: Toont spelersattributen en positiewaarderingen op een klassieke 1 tot 20-weergaveschaal.
+    classic_player_ratings_tooltip: Zet spelersattributen, profielwaarderingen en compatibele spelerszoekopdrachten om naar de klassieke 1 tot 20-weergaveschaal. Dit is alleen een UI-voorkeur; het verandert niet hoe waarderingen op de achtergrond worden opgeslagen, beoordeeld of getraind. Het is een interfacegemak.
     pitch_map_footedness: Voorkeursvoet-posities op veldkaart
     pitch_map_footedness_preview: Voorbeeld
     pitch_map_footedness_hint: Extra links/rechts-markeringen toggelen (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

@@ -41,8 +41,8 @@ game_shell:
     title: About FC Tycoon
     tagline: A football management simulation
     tech_stack: Built with Go · Vue · Riptide · DuckDB
-    dedication_intro: This game is dedicated to the following people:
-    inspiration_intro: And the following people who inspired me to be a programmer:
+    dedication_intro: "This game is dedicated to the following people:"
+    inspiration_intro: "And the following people who inspired me to be a programmer:"
   exit_dialog:
     title: Exit Game
     message: Are you sure you want to exit the game? Any unsaved progress will be lost.

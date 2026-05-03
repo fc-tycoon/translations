@@ -116,6 +116,9 @@ preferences:
 
   ui_tab:
     title: Configuración de IU
+    classic_player_ratings: Vista clásica 1-20
+    classic_player_ratings_hint: Muestra los atributos del jugador y las valoraciones de posición en una escala clásica de visualización de 1 a 20.
+    classic_player_ratings_tooltip: Cambia los atributos del jugador, las valoraciones del perfil y las búsquedas compatibles de jugadores a la escala clásica de visualización de 1 a 20. Es una preferencia solo de UI; no cambia cómo se almacenan, evalúan o entrenan los valores internamente. Es una comodidad de la interfaz.
     pitch_map_footedness: Marcadores zurdo/derecho en el mapa del campo
     pitch_map_footedness_preview: Vista previa
     pitch_map_footedness_hint: Alternar marcadores adicionales izquierda/derecha (LCD/RCD, LDM/RDM, LCM/RCM, LAM/RAM)

@@ -1,0 +1,13 @@
+team_names:
+  standalone:
+    first_team: Équipe première
+    reserves: Réserves
+    c_team: Équipe C
+    under_age: U{age}
+    generic: Équipe {teamType}
+  club:
+    first_team: '{clubName}'
+    reserves: '{clubName} Réserves'
+    c_team: '{clubName} Équipe C'
+    under_age: '{clubName} U{age}'
+    generic: '{clubName} Équipe {teamType}'
