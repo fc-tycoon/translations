@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - 足球纪事报
+        - 晚间边线报
+        - 比赛日专刊
+        - 球迷公报
+        - 周六论坛报
+      national:
+        - 国家足球邮报
+        - 每日体育纪要
+        - 全国体育评论
+      international:
+        - 世界足球快报
+        - 全球赛事评论
+        - 洲际先驱报
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName}正式执掌{clubName}'
+          subheadline: 董事会将信任交给新任主帅，一个新时代由此开启。
+          article: '{clubName}已经确认任命{managerName}。如今，球迷们最关心的是这位新任主教练能多快塑造球队，并为即将到来的赛季奠定基调。'
+        dugout_keys:
+          headline: '{clubName}将教练席钥匙交给{managerName}'
+          subheadline: 这一抢眼任命登上头条，也让外界期待迅速升温。
+          article: '{managerName}上任后的任务，是让{clubName}重回稳定并建立上升势头。外界最先关注的将是引援、在更衣室中的权威，以及短期成绩能否配得上这次任命带来的乐观情绪。'
+        new_boss:
+          headline: '{managerName}亮相，正式成为{clubName}新任主帅'
+          subheadline: 俱乐部高层从第一天起就明确支持全新的方向。
+          article: '任命{managerName}这一决定，清楚传达了{clubName}的意图。在备战工作已经展开的情况下，接下来的焦点将转向训练场上的第一印象，以及新班底能多快建立起自己的风格。'
+        fresh_leadership:
+          headline: '{clubName}选择{managerName}，寻求全新领导力'
+          subheadline: 球迷们都在等待，这次任命将如何重塑俱乐部。
+          article: '{managerName}上任后立刻置身聚光灯下，但同时也迎来了明确的机会。如果理念能够迅速落地，表现也随之提升，那么{clubName}这次任命的时机就可能选得非常准确。'

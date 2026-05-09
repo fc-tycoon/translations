@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - サッカー年代記
+        - 夕刊タッチライン
+        - マッチデー日報
+        - サポーターズ通信
+        - 土曜トリビューン
+      national:
+        - 全国サッカー通信
+        - デイリー・スポーツ記録
+        - 全国スポーツ評論
+      international:
+        - 世界サッカー速報
+        - グローバル試合レビュー
+        - 大陸スポーツ報
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName}が{clubName}の指揮を執る'
+          subheadline: 取締役会が新たな人選に信頼を託し、新時代の幕が上がる。
+          article: '{clubName}は{managerName}の就任を正式に発表した。サポーターは、新指揮官がどれだけ早くチームを形作り、来季へ向けた空気を生み出せるかに大きな期待を寄せている。'
+        dugout_keys:
+          headline: '{clubName}が{managerName}にベンチの鍵を託す'
+          subheadline: 大きな注目を集める就任を受けて期待が高まっている。
+          article: '{managerName}は{clubName}を立て直し、勢いを築く使命を帯びてやって来る。当面の焦点は補強、ロッカールームでの求心力、そしてその期待感に結果がどこまで応えられるかに集まるだろう。'
+        new_boss:
+          headline: '{managerName}が{clubName}の新指揮官としてお披露目'
+          subheadline: クラブ首脳陣は初日から明確な新路線を支持している。
+          article: '{managerName}の招へいは、{clubName}の明確な意思を示している。準備がすでに進む中、今後の焦点はトレーニング場での第一印象と、新体制がどれだけ早く独自の色を打ち出せるかに移っていく。'
+        fresh_leadership:
+          headline: '{clubName}が新たなリーダーシップを求めて{managerName}を招く'
+          subheadline: サポーターはこの新任がクラブをどう変えるのかを見守っている。
+          article: '{managerName}は就任直後から厳しい視線を浴びる一方で、大きな好機も手にしている。メッセージが素早く浸透し、パフォーマンスが伴えば、{clubName}は絶好のタイミングでこの決断を下したことになるかもしれない。'

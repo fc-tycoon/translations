@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - Die Fußball-Chronik
+        - Die Abendliche Seitenlinie
+        - Das Spieltagsjournal
+        - Die Fan-Gazette
+        - Die Samstags-Tribüne
+      national:
+        - Die Nationale Fußballpost
+        - Das Tägliche Sportblatt
+        - Die Sport-Rundschau des Landes
+      international:
+        - Der Weltfußball-Bericht
+        - Die Globale Spielanalyse
+        - Der Kontinentale Herold
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName} übernimmt das Kommando bei {clubName}'
+          subheadline: Eine neue Ära beginnt, nachdem die Vereinsführung ihr Vertrauen in eine frische Besetzung setzt.
+          article: '{clubName} hat die Verpflichtung von {managerName} bestätigt. Nun sind die Fans gespannt, wie schnell der neue Trainer den Kader formen und den Ton für die kommende Saison setzen kann.'
+        dugout_keys:
+          headline: '{clubName} übergibt die Schlüssel zur Trainerbank an {managerName}'
+          subheadline: Nach einer aufsehenerregenden Ernennung steigen die Erwartungen.
+          article: '{managerName} übernimmt mit der Aufgabe, {clubName} zu stabilisieren und neuen Schwung zu erzeugen. Der frühe Fokus wird auf Kaderplanung, Autorität in der Kabine und darauf liegen, ob schnelle Resultate den Optimismus rund um die Ernennung bestätigen können.'
+        new_boss:
+          headline: '{managerName} als neuer Chef von {clubName} vorgestellt'
+          subheadline: Die Vereinsführung bekennt sich vom ersten Tag an zu einer klaren neuen Richtung.
+          article: 'Die Entscheidung für {managerName} sendet ein deutliches Signal von {clubName}. Während die Vorbereitungen bereits laufen, richtet sich der Blick nun auf die ersten Eindrücke auf dem Trainingsplatz und darauf, wie schnell das neue Regime eine eigene Identität entwickeln kann.'
+        fresh_leadership:
+          headline: '{clubName} setzt für frische Führung auf {managerName}'
+          subheadline: Die Anhänger warten darauf, wie die neue Besetzung den Klub verändern wird.
+          article: '{managerName} tritt die Rolle sofort unter genauer Beobachtung an, erhält aber zugleich eine klare Chance. Wenn die Botschaft schnell ankommt und die Leistungen folgen, könnte {clubName} mit diesem Schritt genau den richtigen Zeitpunkt getroffen haben.'

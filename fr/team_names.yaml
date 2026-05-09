@@ -3,11 +3,13 @@ team_names:
     first_team: Équipe première
     reserves: Réserves
     c_team: Équipe C
+    suffix: 'Équipe {suffix}'
     under_age: U{age}
     generic: Équipe {teamType}
   club:
     first_team: '{clubName}'
     reserves: '{clubName} Réserves'
     c_team: '{clubName} Équipe C'
+    suffix: '{clubName} {suffix}'
     under_age: '{clubName} U{age}'
     generic: '{clubName} Équipe {teamType}'

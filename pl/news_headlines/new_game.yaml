@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - Kronika Futbolu
+        - Wieczorna Linia Boczna
+        - Dziennik Meczowy
+        - Gazeta Kibiców
+        - Sobotnia Trybuna
+      national:
+        - Krajowy Kurier Piłkarski
+        - Codzienny Przegląd Sportowy
+        - Narodowy Magazyn Sportowy
+      international:
+        - Światowy Biuletyn Piłkarski
+        - Globalny Przegląd Meczu
+        - Herald Kontynentalny
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName} obejmuje stery w {clubName}'
+          subheadline: Zaczyna się nowa era, bo władze klubu stawiają na nowe otwarcie.
+          article: '{clubName} potwierdził zatrudnienie {managerName}. Kibice z niecierpliwością czekają teraz, jak szybko nowy menedżer ułoży kadrę i nada ton nadchodzącemu sezonowi.'
+        dugout_keys:
+          headline: '{clubName} przekazuje klucze do ławki {managerName}'
+          subheadline: Oczekiwania rosną po nominacji, o której mówi się wszędzie.
+          article: '{managerName} przychodzi z zadaniem ustabilizowania {clubName} i zbudowania rozpędu. W centrum uwagi od początku będą transfery, autorytet w szatni oraz to, czy szybkie wyniki dorównają optymizmowi wokół tej decyzji.'
+        new_boss:
+          headline: '{managerName} zaprezentowany jako nowy szef {clubName}'
+          subheadline: Władze klubu od pierwszego dnia popierają wyraźnie nowy kierunek.
+          article: 'Decyzja o zatrudnieniu {managerName} pokazuje ambicje {clubName}. Gdy przygotowania już trwają, uwaga przenosi się na pierwsze wrażenia z boiska treningowego i na to, jak szybko nowy sztab zbuduje własną tożsamość.'
+        fresh_leadership:
+          headline: '{clubName} stawia na {managerName}, szukając nowego przywództwa'
+          subheadline: Kibice czekają, jak ta nominacja odmieni klub.
+          article: '{managerName} wchodzi w rolę pod natychmiastową presją, ale także z wyraźną szansą. Jeśli przekaz szybko trafi do zespołu, a wyniki pójdą za nim, {clubName} mógł idealnie wyczuć moment na tę decyzję.'

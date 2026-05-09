@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - De Voetbalkroniek
+        - De Avondlijke Zijlijn
+        - Het Wedstrijddagjournaal
+        - De Supportersgazet
+        - De Zaterdagtribune
+      national:
+        - De Nationale Voetbalpost
+        - Het Dagelijks Sportblad
+        - De Nationale Sportrubriek
+      international:
+        - De Wereldvoetbal Dispatch
+        - De Wereldwijde Wedstrijdreview
+        - De Continentale Heraut
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName} neemt de leiding bij {clubName}'
+          subheadline: Een nieuw tijdperk begint nu het bestuur zijn vertrouwen uitspreekt in een frisse aanstelling.
+          article: '{clubName} heeft de komst van {managerName} bevestigd en de supporters kijken nu reikhalzend uit naar hoe snel de nieuwe manager de selectie kan vormgeven en de toon voor het komende seizoen kan zetten.'
+        dugout_keys:
+          headline: '{clubName} geeft de dug-outsleutels aan {managerName}'
+          subheadline: De verwachtingen stijgen na een aanstelling die de krantenkoppen haalt.
+          article: '{managerName} arriveert met de opdracht om {clubName} te stabiliseren en nieuw momentum op te bouwen. De eerste aandacht zal uitgaan naar versterkingen, gezag in de kleedkamer en de vraag of snelle resultaten het optimisme rond deze keuze kunnen waarmaken.'
+        new_boss:
+          headline: '{managerName} gepresenteerd als nieuwe baas van {clubName}'
+          subheadline: De clubleiding schaart zich vanaf dag één achter een duidelijke nieuwe koers.
+          article: 'De keuze voor {managerName} onderstreept de ambities van {clubName}. Terwijl de voorbereidingen al zijn begonnen, verschuift de aandacht nu naar de eerste indrukken op het trainingsveld en hoe snel het nieuwe regime een eigen identiteit kan neerzetten.'
+        fresh_leadership:
+          headline: '{clubName} kiest voor {managerName} als frisse leider'
+          subheadline: Supporters wachten af hoe deze nieuwe aanstelling de club zal hervormen.
+          article: '{managerName} stapt meteen onder een vergrootglas in, maar krijgt tegelijk een duidelijke kans. Als de boodschap snel landt en de prestaties volgen, kan {clubName} dit moment uitstekend hebben gekozen.'

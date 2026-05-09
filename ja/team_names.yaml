@@ -3,11 +3,13 @@ team_names:
     first_team: トップチーム
     reserves: リザーブ
     c_team: Cチーム
+    suffix: '{suffix}チーム'
     under_age: U{age}
     generic: チーム {teamType}
   club:
     first_team: '{clubName}'
     reserves: '{clubName} リザーブ'
     c_team: '{clubName} Cチーム'
+    suffix: '{clubName} {suffix}'
     under_age: '{clubName} U{age}'
     generic: '{clubName} チーム {teamType}'

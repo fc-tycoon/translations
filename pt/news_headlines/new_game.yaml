@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - A Crónica do Futebol
+        - A Linha Lateral da Noite
+        - O Jornal do Dia de Jogo
+        - A Gazeta dos Adeptos
+        - A Tribuna de Sábado
+      national:
+        - O Correio Nacional do Futebol
+        - O Registo Desportivo Diário
+        - A Revista Desportiva Nacional
+      international:
+        - O Boletim Mundial do Futebol
+        - A Revista Global do Jogo
+        - O Arauto Continental
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName} assume o comando do {clubName}'
+          subheadline: Uma nova era começa, com a direção a depositar confiança numa nova escolha.
+          article: 'O {clubName} confirmou a nomeação de {managerName}, e os adeptos querem agora ver quão depressa o novo treinador consegue moldar o plantel e definir o tom da época que se aproxima.'
+        dugout_keys:
+          headline: '{clubName} entrega as chaves do banco a {managerName}'
+          subheadline: A expectativa sobe após uma nomeação que faz manchetes.
+          article: '{managerName} chega com a missão de estabilizar o {clubName} e criar embalo. As primeiras atenções vão recair sobre reforços, autoridade no balneário e sobre se os resultados imediatos conseguem acompanhar o otimismo em torno da mudança.'
+        new_boss:
+          headline: '{managerName} apresentado como novo líder do {clubName}'
+          subheadline: A hierarquia do clube apoia uma nova direção clara desde o primeiro dia.
+          article: 'A decisão de contratar {managerName} mostra claramente a ambição do {clubName}. Com os trabalhos de preparação já em curso, a atenção vira-se agora para as primeiras impressões no treino e para a rapidez com que a nova equipa técnica consegue impor a sua identidade.'
+        fresh_leadership:
+          headline: '{clubName} recorre a {managerName} para uma liderança renovada'
+          subheadline: Os adeptos aguardam para ver como esta nomeação vai remodelar o clube.
+          article: '{managerName} assume o cargo sob escrutínio imediato, mas também com uma oportunidade clara. Se a mensagem passar depressa e o rendimento acompanhar, o {clubName} poderá ter acertado em cheio no momento desta decisão.'

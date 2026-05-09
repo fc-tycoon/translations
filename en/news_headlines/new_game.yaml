@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - The Football Chronicle
+        - The Evening Touchline
+        - The Matchday Journal
+        - The Supporters Gazette
+        - The Saturday Tribune
+      national:
+        - The National Football Post
+        - The Daily Sporting Record
+        - The Nation Sport Review
+      international:
+        - World Football Dispatch
+        - Global Match Review
+        - The Continental Herald
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName} Takes Charge At {clubName}'
+          subheadline: A new era begins as the board places its faith in a fresh appointment.
+          article: '{clubName} have confirmed the appointment of {managerName}, with supporters now eager to see how quickly the new manager can shape the squad and set the tone for the season ahead.'
+        dugout_keys:
+          headline: '{clubName} Hand Dugout Keys To {managerName}'
+          subheadline: Expectation rises after a headline-making appointment.
+          article: '{managerName} arrives with the task of steadying {clubName} and building momentum. Early attention will fall on recruitment, dressing-room authority, and whether immediate results can match the optimism around the move.'
+        new_boss:
+          headline: '{managerName} Presented As New {clubName} Boss'
+          subheadline: Club hierarchy backs a clear new direction from day one.
+          article: 'The decision to appoint {managerName} signals intent from {clubName}. With preparations already under way, the focus now turns to first impressions on the training ground and how quickly the new regime can establish its identity.'
+        fresh_leadership:
+          headline: '{clubName} Turn To {managerName} For Fresh Leadership'
+          subheadline: Supporters wait to see how the new appointment reshapes the club.
+          article: '{managerName} steps into the role under immediate scrutiny, but also with a clear opportunity. If the message lands quickly and performances respond, {clubName} may have timed this appointment well.'

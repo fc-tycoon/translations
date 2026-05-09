@@ -1,0 +1,40 @@
+news_headlines:
+  new_game:
+    newspaper_names:
+      local:
+        - 축구 연대기
+        - 저녁 터치라인
+        - 경기일 저널
+        - 서포터 가제트
+        - 토요 트리뷴
+      national:
+        - 전국 축구 포스트
+        - 데일리 스포츠 레코드
+        - 네이션 스포츠 리뷰
+      international:
+        - 월드 풋볼 디스패치
+        - 글로벌 매치 리뷰
+        - 대륙 헤럴드
+    manager_hiring:
+      templates:
+        ids:
+          - takes_charge
+          - dugout_keys
+          - new_boss
+          - fresh_leadership
+        takes_charge:
+          headline: '{managerName}, {clubName} 지휘봉 잡다'
+          subheadline: 구단 수뇌부가 새로운 인선에 신뢰를 보내며 새로운 시대가 시작된다.
+          article: '{clubName}은(는) {managerName}의 선임을 공식 발표했다. 이제 팬들은 새 감독이 얼마나 빨리 스쿼드를 정비하고 다가올 시즌의 분위기를 만들어낼 수 있을지 주목하고 있다.'
+        dugout_keys:
+          headline: '{clubName}, {managerName}에게 벤치의 열쇠를 맡기다'
+          subheadline: 헤드라인을 장식한 선임 이후 기대감이 커지고 있다.
+          article: '{managerName}은(는) {clubName}을 안정시키고 상승세를 만드는 임무를 안고 부임한다. 초반 관심은 영입, 라커룸 장악력, 그리고 즉각적인 결과가 이번 결정에 대한 낙관론에 부응할 수 있을지에 쏠릴 것이다.'
+        new_boss:
+          headline: '{managerName}, {clubName}의 새 사령탑으로 공식 소개'
+          subheadline: 구단 수뇌부는 첫날부터 분명한 새 방향을 지지하고 있다.
+          article: '{managerName} 선임은 {clubName}의 의도를 분명히 보여준다. 이미 준비가 진행 중인 가운데, 이제 시선은 훈련장에서의 첫인상과 새로운 체제가 얼마나 빨리 정체성을 구축할 수 있을지로 향한다.'
+        fresh_leadership:
+          headline: '{clubName}, 새로운 리더십을 위해 {managerName} 선택'
+          subheadline: 팬들은 이번 선임이 구단을 어떻게 바꿔 놓을지 지켜보고 있다.
+          article: '{managerName}은(는) 즉각적인 검증과 시선 속에서 역할을 시작하지만 동시에 분명한 기회도 잡고 있다. 메시지가 빠르게 전달되고 경기력까지 따라온다면, {clubName}은(는) 이번 결단의 타이밍을 제대로 잡은 셈이 될 수 있다.'
