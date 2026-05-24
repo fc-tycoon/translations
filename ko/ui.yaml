@@ -292,9 +292,10 @@ ui:
     permission_denied: 권한이 거부되었습니다
     file_not_found: 파일을 찾을 수 없습니다
     database_error: 데이터베이스 오류
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: 이 빌드에는 Steam 연동이 필요합니다.
+    steam_initialization_failed: Steam 초기화에 실패했습니다.
+    steam_ownership_failed: Steam 소유권 확인에 실패했습니다.
+    steam_client_not_found: 'Steam 클라이언트를 찾을 수 없어 Steam 초기화에 실패했습니다. 힌트: Steam 클라이언트가 설치되어 있나요?'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs

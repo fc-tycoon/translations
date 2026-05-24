@@ -292,9 +292,10 @@ ui:
     permission_denied: Toestemming geweigerd
     file_not_found: Bestand niet gevonden
     database_error: Databasefout
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: Steam-integratie is vereist voor deze build.
+    steam_initialization_failed: Steam-initialisatie mislukt.
+    steam_ownership_failed: Verificatie van Steam-eigendom mislukt.
+    steam_client_not_found: 'Steam-initialisatie is mislukt omdat de Steam-client niet kon worden gevonden. Tip: Is de Steam-client geïnstalleerd?'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs

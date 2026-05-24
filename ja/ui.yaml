@@ -282,9 +282,10 @@ ui:
     permission_denied: 権限が拒否されました
     file_not_found: ファイルが見つかりません
     database_error: データベースエラー
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: このビルドではSteam連携が必要です。
+    steam_initialization_failed: Steamの初期化に失敗しました。
+    steam_ownership_failed: Steam所有権の確認に失敗しました。
+    steam_client_not_found: 'Steamクライアントが見つからないため、Steamの初期化に失敗しました。ヒント: Steamクライアントはインストールされていますか？'
     exit_failed: アプリケーションを終了できませんでした
     save_failed_with_error: 'ゲームの保存に失敗しました: {error}'
     open_folder_dialog_failed: フォルダー選択ダイアログを開けませんでした

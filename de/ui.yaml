@@ -292,9 +292,10 @@ ui:
     permission_denied: Zugriff verweigert
     file_not_found: Datei nicht gefunden
     database_error: Datenbankfehler
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: Für diesen Build ist die Steam-Integration erforderlich.
+    steam_initialization_failed: Die Steam-Initialisierung ist fehlgeschlagen.
+    steam_ownership_failed: Die Steam-Besitzprüfung ist fehlgeschlagen.
+    steam_client_not_found: 'Die Steam-Initialisierung ist fehlgeschlagen, weil der Steam-Client nicht gefunden werden konnte. Hinweis: Ist der Steam-Client installiert?'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs

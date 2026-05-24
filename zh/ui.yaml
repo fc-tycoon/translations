@@ -292,9 +292,10 @@ ui:
     permission_denied: 权限被拒绝
     file_not_found: 文件未找到
     database_error: 数据库错误
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: 此构建需要 Steam 集成。
+    steam_initialization_failed: Steam 初始化失败。
+    steam_ownership_failed: Steam 所有权验证失败。
+    steam_client_not_found: '由于找不到 Steam 客户端，Steam 初始化失败。提示：是否已安装 Steam 客户端？'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs

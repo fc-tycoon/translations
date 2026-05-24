@@ -292,9 +292,10 @@ ui:
     permission_denied: Odmowa dostępu
     file_not_found: Nie znaleziono pliku
     database_error: Błąd bazy danych
-    steam_integration_required: Steam integration is required for this build.
-    steam_initialization_failed: Steam initialization failed.
-    steam_ownership_failed: Steam ownership verification failed.
+    steam_integration_required: Integracja ze Steam jest wymagana dla tej kompilacji.
+    steam_initialization_failed: Inicjalizacja Steam nie powiodła się.
+    steam_ownership_failed: Weryfikacja własności w Steam nie powiodła się.
+    steam_client_not_found: 'Inicjalizacja Steam nie powiodła się, ponieważ nie udało się odnaleźć klienta Steam. Wskazówka: czy klient Steam jest zainstalowany?'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs

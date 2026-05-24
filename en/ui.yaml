@@ -300,6 +300,7 @@ ui:
     steam_integration_required: Steam integration is required for this build.
     steam_initialization_failed: Steam initialization failed.
     steam_ownership_failed: Steam ownership verification failed.
+    steam_client_not_found: 'Steam initialization failed because the Steam client could not be found. Hint: Is the Steam client installed?'
 
   # ══════════════════════════════════════════════════════════════════════
   # Confirmation Dialogs
