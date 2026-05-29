@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NUEVO
   squad_title: Plantilla
   squad_coming_soon: La gestión de la plantilla llegará pronto.
-  loading: Cargando...
   nav:
     dashboard: Panel
     fixtures: Partidos

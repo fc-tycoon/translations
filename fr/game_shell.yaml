@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NOUVEAU
   squad_title: Effectif
   squad_coming_soon: La gestion de l'effectif arrive bientôt.
-  loading: Chargement...
   nav:
     dashboard: Tableau de bord
     fixtures: Matchs

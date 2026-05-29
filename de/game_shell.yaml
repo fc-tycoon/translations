@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NEU
   squad_title: Kader
   squad_coming_soon: Kaderverwaltung folgt in Kürze.
-  loading: Laden...
   nav:
     dashboard: Dashboard
     fixtures: Spielplan

@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NOVO
   squad_title: Plantel
   squad_coming_soon: A gestão do plantel chegará em breve.
-  loading: Carregando...
   nav:
     dashboard: Painel
     fixtures: Jogos

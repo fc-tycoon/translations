@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NOWE
   squad_title: Skład
   squad_coming_soon: Zarządzanie składem pojawi się wkrótce.
-  loading: Ładowanie...
   nav:
     dashboard: Panel
     fixtures: Mecze

@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: 새 메시지
   squad_title: 선수단
   squad_coming_soon: 선수단 관리 기능이 곧 출시됩니다.
-  loading: 로딩 중...
   nav:
     dashboard: 대시보드
     fixtures: 경기 일정

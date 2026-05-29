@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NIEUW
   squad_title: Selectie
   squad_coming_soon: Selectiebeheer komt binnenkort.
-  loading: Laden...
   nav:
     dashboard: Dashboard
     fixtures: Wedstrijden

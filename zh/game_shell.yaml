@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: 新
   squad_title: 阵容
   squad_coming_soon: 阵容管理即将上线。
-  loading: 加载中...
   nav:
     dashboard: 仪表盘
     fixtures: 赛程

@@ -23,7 +23,6 @@ game_shell:
   inbox_new_badge: NEW
   squad_title: Squad
   squad_coming_soon: Squad management coming soon.
-  loading: Loading...
   world:
     title: World
     navigation: World Navigation
